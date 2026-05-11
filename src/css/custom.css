@@ -3,69 +3,76 @@
  */
 
 :root {
-  /* 1. Color Principal: Verde Menta (Asociado a frescura y salud) */
+  /* Color Principal: Verde Menta */
+  
   --ifm-color-primary: #98FB98;
   --ifm-color-primary-dark: #7ee87e;
   --ifm-color-primary-darker: #70d670;
-  --ifm-color-primary-darkest: #5cb85c; /* Este es el verde de la pleca */
+  --ifm-color-primary-darkest: #5cb85c; 
   --ifm-color-primary-light: #b2ffb2;
   --ifm-color-primary-lighter: #c9ffc9;
   --ifm-color-primary-lightest: #e0ffe0;
 
-  /* 2. Fondos y Textos del Centro del Sitio */
-  --ifm-background-color: #FFFFFF; /* Centro blanco puro */
-  --ifm-font-color-base: #4a4a4a; /* Gris oscuro para legibilidad UX */
-  --ifm-heading-color: #111111; /* Títulos casi negros para contraste */
+  /* Fondos y Textos */
+  --ifm-background-color: #FFFFFF; 
+  --ifm-font-color-base: #4a4a4a; 
+  --ifm-heading-color: #111111; 
 
-  /* 3. Header (Navbar) Blanco */
+  /* Header (Navbar) Blanco */
   --ifm-navbar-background-color: #FFFFFF;
   --ifm-navbar-link-color: #4a4a4a;
-  --ifm-navbar-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Sombra sutil para separarlo del centro blanco */
+  --ifm-navbar-shadow: 0 4px 10px rgba(0,0,0,0.05); 
 
-  /* 4. Footer: Negro más claro para el contenido */
+  /* Footer */
   --ifm-footer-background-color: #242526; 
-  --ifm-footer-color: #A9A9A9; /* Gris suave para los textos/enlaces del footer */
+  --ifm-footer-color: #A9A9A9; 
   --ifm-footer-link-color: #FFFFFF;
-  --ifm-footer-link-hover-color: #98FB98; /* Los enlaces del footer se ponen verdes al pasar el mouse */
+  --ifm-footer-link-hover-color: #98FB98; 
 }
 
 /* ==========================================
    AJUSTES ESTRUCTURALES Y DE DISEÑO (UX/UI)
    ========================================== */
 
-/* --- HEADER: PLECA VERDE SUPERIOR --- */
-/* Añade la franja verde sólida en la parte superior del menú blanco */
+/* --- CAMBIO 6: PLECA VERDE SUPERIOR MÁS ALTA --- */
 .navbar {
-  border-top: 6px solid var(--ifm-color-primary-darkest) !important;
+  border-top: 16px solid var(--ifm-color-primary-darkest) !important;
 }
 
-/* --- FOOTER: AJUSTES DE ESPACIOS Y PLECA NEGRA --- */
-/* Quitamos el colchón de relleno inferior que Docusaurus pone por defecto para eliminar el espacio extra */
+/* --- CAMBIO 7A: FOOTER FULL-WIDTH --- */
+/* Forzamos a que el contenedor del footer abarque toda la pantalla sin márgenes */
 .footer {
-  padding-bottom: 0 !important; 
+  width: 100vw !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-/* Pleca Negra Oscura para el Copyright (Footer Bottom) */
+/* Contenedor interno del footer para que los links no se peguen a las orillas */
+.footer > .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem 1rem 1rem; /* Espaciado interno superior */
+}
+
+/* --- CAMBIO 7B: PLECA NEGRA INFERIOR MÁS PEQUEÑA --- */
 .footer__bottom {
-  background-color: #111111 !important; /* Negro más oscuro como en tu imagen */
+  background-color: #111111 !important; 
   border-top: none;
-  padding: 1.5rem 0 !important;
+  padding: 0.6rem 0 !important; /* Reducido drásticamente para hacerla delgada */
   margin-top: 2rem;
-  width: 100%; /* Asegura que se extienda de lado a lado */
+  width: 100%; 
+}
+
+/* Ajuste del texto del copyright para que se vea más elegante */
+.footer__copyright {
+  font-size: 0.85rem;
+  color: #7a7a7a;
 }
 
 /* --- BOTONES PRIMARIOS --- */
-/* Como el Verde Menta es claro, el texto del botón debe ser oscuro para poder leerse bien */
 .button--primary {
   color: #111111 !important;
   font-weight: 600;
-  border-radius: 8px; /* Bordes redondeados más amigables */
-}
-
-/* --- MODO OSCURO --- */
-/* (Opcional, por si el usuario tiene su dispositivo en modo noche) */
-[data-theme='dark'] {
-  --ifm-color-primary: #ADD8E6; /* Azul Cielo para modo noche (calma y confianza) */
-  --ifm-background-color: #121212;
-  --ifm-navbar-background-color: #181818;
+  border-radius: 8px; 
 }
