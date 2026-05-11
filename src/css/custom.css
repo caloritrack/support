@@ -1,0 +1,71 @@
+/**
+ * ESTILOS BASE COMPLETOS - CALORITRACK SUPPORT
+ */
+
+:root {
+  /* 1. Color Principal: Verde Menta (Asociado a frescura y salud) */
+  --ifm-color-primary: #98FB98;
+  --ifm-color-primary-dark: #7ee87e;
+  --ifm-color-primary-darker: #70d670;
+  --ifm-color-primary-darkest: #5cb85c; /* Este es el verde de la pleca */
+  --ifm-color-primary-light: #b2ffb2;
+  --ifm-color-primary-lighter: #c9ffc9;
+  --ifm-color-primary-lightest: #e0ffe0;
+
+  /* 2. Fondos y Textos del Centro del Sitio */
+  --ifm-background-color: #FFFFFF; /* Centro blanco puro */
+  --ifm-font-color-base: #4a4a4a; /* Gris oscuro para legibilidad UX */
+  --ifm-heading-color: #111111; /* Títulos casi negros para contraste */
+
+  /* 3. Header (Navbar) Blanco */
+  --ifm-navbar-background-color: #FFFFFF;
+  --ifm-navbar-link-color: #4a4a4a;
+  --ifm-navbar-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Sombra sutil para separarlo del centro blanco */
+
+  /* 4. Footer: Negro más claro para el contenido */
+  --ifm-footer-background-color: #242526; 
+  --ifm-footer-color: #A9A9A9; /* Gris suave para los textos/enlaces del footer */
+  --ifm-footer-link-color: #FFFFFF;
+  --ifm-footer-link-hover-color: #98FB98; /* Los enlaces del footer se ponen verdes al pasar el mouse */
+}
+
+/* ==========================================
+   AJUSTES ESTRUCTURALES Y DE DISEÑO (UX/UI)
+   ========================================== */
+
+/* --- HEADER: PLECA VERDE SUPERIOR --- */
+/* Añade la franja verde sólida en la parte superior del menú blanco */
+.navbar {
+  border-top: 6px solid var(--ifm-color-primary-darkest) !important;
+}
+
+/* --- FOOTER: AJUSTES DE ESPACIOS Y PLECA NEGRA --- */
+/* Quitamos el colchón de relleno inferior que Docusaurus pone por defecto para eliminar el espacio extra */
+.footer {
+  padding-bottom: 0 !important; 
+}
+
+/* Pleca Negra Oscura para el Copyright (Footer Bottom) */
+.footer__bottom {
+  background-color: #111111 !important; /* Negro más oscuro como en tu imagen */
+  border-top: none;
+  padding: 1.5rem 0 !important;
+  margin-top: 2rem;
+  width: 100%; /* Asegura que se extienda de lado a lado */
+}
+
+/* --- BOTONES PRIMARIOS --- */
+/* Como el Verde Menta es claro, el texto del botón debe ser oscuro para poder leerse bien */
+.button--primary {
+  color: #111111 !important;
+  font-weight: 600;
+  border-radius: 8px; /* Bordes redondeados más amigables */
+}
+
+/* --- MODO OSCURO --- */
+/* (Opcional, por si el usuario tiene su dispositivo en modo noche) */
+[data-theme='dark'] {
+  --ifm-color-primary: #ADD8E6; /* Azul Cielo para modo noche (calma y confianza) */
+  --ifm-background-color: #121212;
+  --ifm-navbar-background-color: #181818;
+}
