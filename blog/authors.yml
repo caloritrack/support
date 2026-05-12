@@ -1,25 +1,26 @@
-yangshun:
-  name: Yangshun Tay
-  title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
-  url: https://linkedin.com/in/yangshun
-  image_url: https://github.com/yangshun.png
-  page: true
-  socials:
-    x: yangshunz
-    linkedin: yangshun
-    github: yangshun
-    newsletter: https://www.greatfrontend.com
+# Nombre del archivo: blog/authors.yml
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-11
+# Versión: 1.0
+# Descripción: Archivo de configuración global de autores para el blog de Docusaurus. Define el perfil de Arturo para asociarlo correctamente con el tag 'authors: [arturo]' en las cabeceras de los archivos Markdown, solucionando el error de compilación.
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
-  page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
-  socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
+arturo:
+  name: Josh Bettencourt
+  title: CEO & CPO @ CaloriTrack
+  url: https://caloritrack.com/josh-bettencourt/
+  # He configurado un avatar automático con tus iniciales y el color verde de tu marca (#5BC85B). 
+  # Si tienes una foto tuya en URL, puedes reemplazar este link más adelante.
+  image_url: https://caloritrack.com/wp-content/uploads/2026/05/cropped-cropped-IMG_0499.jpg
+
+# Mantengo estos dos comentados por si en el futuro Ale Flores o alguien del equipo quiere escribir. 
+# Solo tendrías que quitar el '#' y cambiar sus datos.
+# ale:
+#   name: Ale Flores
+#   title: Directora de Marketing Growth (CMO)
+#   url: https://caloritrack.com
+#   image_url: https://ui-avatars.com/api/?name=Ale+Flores&background=5BC85B&color=fff&bold=true
+jarvis:
+  name: Jarvis
+  title: Arquitecto Docusaurus
+  url: https://support.caloritrack.com
+  image_url: https://github.com/jarvis.png

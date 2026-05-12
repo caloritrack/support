@@ -1,78 +1,105 @@
-/**
- * ESTILOS BASE COMPLETOS - CALORITRACK SUPPORT
- */
+/*
+// Nombre del archivo: src/css/custom.css
+// Autor: Arturo Enriquez Betancourt con Jarvis
+// Fecha: 2026-05-11
+// Versión: 1.6
+// Descripción: Refinamiento de tipografía y ajustes de header. Se reduce el tamaño del título principal (h1) para mejorar la estética del blog. Se mantienen la pleca verde de 30px y la altura de navbar de 6.5rem según la última configuración del usuario.
+*/
 
+/* ==============================================================================
+   1. VARIABLES DE MARCA, COLORES Y TIPOGRAFÍA (CONFIGURABLE)
+   ============================================================================== */
 :root {
-  /* Color Principal: Verde Menta */
-  
-  --ifm-color-primary: #98FB98;
-  --ifm-color-primary-dark: #7ee87e;
-  --ifm-color-primary-darker: #70d670;
-  --ifm-color-primary-darkest: #5cb85c; 
-  --ifm-color-primary-light: #b2ffb2;
-  --ifm-color-primary-lighter: #c9ffc9;
-  --ifm-color-primary-lightest: #e0ffe0;
+  /* CAMBIA ESTO PARA EL COLOR VERDE PRINCIPAL */
+  --ifm-color-primary: #5BC85B;
+  --ifm-color-primary-dark: #52b452;
+  --ifm-color-primary-darker: #4eab4e;
+  --ifm-color-primary-darkest: #408c40;
+  --ifm-color-primary-light: #6cd06c;
+  --ifm-color-primary-lighter: #74d374;
+  --ifm-color-primary-lightest: #8edc8e;
 
-  /* Fondos y Textos */
-  --ifm-background-color: #FFFFFF; 
-  --ifm-font-color-base: #4a4a4a; 
-  --ifm-heading-color: #111111; 
+  /* COLOR DE LOS LINKS EN EL CONTENIDO */
+  --ifm-link-color: #5BC85B;
+  --ifm-link-hover-color: #4eab4e;
 
-  /* Header (Navbar) Blanco */
-  --ifm-navbar-background-color: #FFFFFF;
-  --ifm-navbar-link-color: #4a4a4a;
-  --ifm-navbar-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+  /* ============================================================================
+     AJUSTE DE TAMAÑO DE TÍTULOS (MD)
+     Si el título del blog se ve muy grande, reduce este valor (ej. 2rem).
+     Si lo quieres un poco más grande, súbelo (ej. 3rem).
+     ============================================================================ */
+  --ifm-h1-font-size: 1.5rem;
 
-  /* Footer */
-  --ifm-footer-background-color: #242526; 
-  --ifm-footer-color: #A9A9A9; 
-  --ifm-footer-link-color: #FFFFFF;
-  --ifm-footer-link-hover-color: #98FB98; 
+  /* ============================================================================
+     AJUSTE MAESTRO DE ALTURA DEL HEADER 
+     Mantenemos los 6.5rem de tu versión actual.
+     ============================================================================ */
+  --ifm-navbar-height: 6.5rem;
 }
 
-/* ==========================================
-   AJUSTES ESTRUCTURALES Y DE DISEÑO (UX/UI)
-   ========================================== */
-
-/* --- CAMBIO 6: PLECA VERDE SUPERIOR MÁS ALTA --- */
+/* ==============================================================================
+   2. HEADER / NAVBAR (PLECA VERDE DE 30PX)
+   ============================================================================== */
 .navbar {
-  border-top: 16px solid var(--ifm-color-primary-darkest) !important;
+  /* AJUSTE DE GROSOR DE LA PLECA VERDE SUPERIOR (30px según tu versión) */
+  border-top: 30px solid #5BC85B !important;
+  
+  /* Mantener alineación flex nativa para centrado perfecto */
+  display: flex;
+  align-items: center;
+  padding-top: var(--ifm-navbar-padding-vertical) !important;
+  padding-bottom: var(--ifm-navbar-padding-vertical) !important;
 }
 
-/* --- CAMBIO 7A: FOOTER FULL-WIDTH --- */
-/* Forzamos a que el contenedor del footer abarque toda la pantalla sin márgenes */
+/* ==============================================================================
+   3. FOOTER (GRIS OSCURO + PLECA NEGRA 100% ANCHO)
+   ============================================================================== */
 .footer {
-  width: 100vw !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding-bottom: 0 !important;
+  /* COLOR GRIS OSCURO DE LA PARTE SUPERIOR DEL FOOTER */
+  --ifm-footer-background-color: #242526 !important;
+  background-color: var(--ifm-footer-background-color) !important;
+  padding-bottom: 0 !important; 
 }
 
-/* Contenedor interno del footer para que los links no se peguen a las orillas */
-.footer > .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 3rem 1rem 1rem 1rem; /* Espaciado interno superior */
-}
-
-/* --- CAMBIO 7B: PLECA NEGRA INFERIOR MÁS PEQUEÑA --- */
 .footer__bottom {
-  background-color: #111111 !important; 
-  border-top: none;
-  padding: 0.6rem 0 !important; /* Reducido drásticamente para hacerla delgada */
-  margin-top: 2rem;
-  width: 100%; 
+  /* COLOR DE LA PLECA DE HASTA ABAJO */
+  background-color: #000000 !important;
+  
+  /* EFECTO 100% ANCHO DE PANTALLA (Breakout) */
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  
+  /* ALTURA DE LA PLECA NEGRA */
+  padding-top: 1.2rem !important;
+  padding-bottom: 1.2rem !important;
+  margin-bottom: 0 !important;
+  text-align: center;
 }
 
-/* Ajuste del texto del copyright para que se vea más elegante */
+/* ESTILO DEL TEXTO DENTRO DE LA PLECA NEGRA */
 .footer__copyright {
-  font-size: 0.85rem;
-  color: #7a7a7a;
+  margin: 0 !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #ffffff;
 }
 
-/* --- BOTONES PRIMARIOS --- */
-.button--primary {
-  color: #111111 !important;
-  font-weight: 600;
-  border-radius: 8px; 
+/* ==============================================================================
+   4. PROTECCIÓN DE LIGAS EN EL FOOTER (MODO OSCURO)
+   ============================================================================== */
+.footer.footer--dark {
+  --ifm-link-color: #98FB98;
+  --ifm-link-hover-color: #ADD8E6; 
 }
+
+.footer.footer--dark .footer__link-item {
+  color: var(--ifm-link-color);
+}
+
+.footer.footer--dark .footer__link-item:hover {
+  color: var(--ifm-link-hover-color);
+  text-decoration: none;
+}
+

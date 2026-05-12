@@ -1,19 +1,37 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+# Nombre del archivo: blog/tags.yml
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-11
+# Versión: 1.3
+# Descripción: Diccionario de Macro-etiquetas optimizado por UX/IA. Se corrigió un error de sintaxis YAML (YAMLException) envolviendo los textos en comillas para evitar conflictos con caracteres especiales como los dos puntos (:).
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+dashboard:
+  label: "Dashboard"
+  description: "Entiende tu centro de mando, las gráficas principales y el resumen de tu progreso diario."
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+nutricion:
+  label: "Nutrición"
+  description: "Guías sobre el registro inteligente de alimentos, ingredientes naturales y gestión de antinutrientes."
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+ayuno:
+  label: "Ayuno"
+  description: "Aprende a configurar tus ventanas de ayuno y comprende la ciencia detrás de la regeneración celular."
+
+bienestar:
+  label: "Bienestar Mental"
+  description: "Herramientas para tu equilibrio: sesiones de Soundhealing, Breathwork y registro de Estado de Ánimo."
+
+bioanalisis:
+  label: "Bioanálisis"
+  description: "Profundiza en la ciencia de tu cuerpo: Ritmo Circadiano, VFC, calidad de sueño y métricas avanzadas."
+
+kai-coach:
+  label: "kAI Coach"
+  description: "Descubre cómo sacar el máximo provecho de tu coach personal basado en IA y sabiduría estoica."
+
+gamificacion:
+  label: "Gamificación"
+  description: "Todo sobre el sistema de logros, rachas, recompensas y mecánicas para mantener tu motivación."
+
+cuenta-ajustes:
+  label: "Cuenta y Ajustes"
+  description: "Gestión de tu perfil, suscripciones/membresías, notificaciones y sincronización con dispositivos de terceros (Apple Health, Garmin, etc.)."

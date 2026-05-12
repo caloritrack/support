@@ -1,4 +1,9 @@
-// @ts-check
+// Nombre del archivo: docusaurus.config.js
+// Autor: Arturo Enriquez Betancourt con Jarvis
+// Fecha: 2026-05-11
+// Versión: 1.3
+// Descripción: Archivo principal de configuración. Se actualizó el pie de página (footer) para eliminar el enlace roto hacia /docs/intro tras la limpieza de la arquitectura y se adaptó al ecosistema Caloritrack.
+
 import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
@@ -6,8 +11,8 @@ const config = {
   title: 'CaloriTrack Support',
   tagline: 'Controla tu bienestar, potencia tu vida. Tu salud integral, en una sola app.',
   
-  /* --- Favicon de la pestaña del navegador --- */
-  favicon: 'img/favicon.ico', 
+  /* --- REPARACIÓN DE FAVICON (Cache Busting) --- */
+  favicon: 'img/favicon.ico?v=2', 
 
   future: {
     v4: true,
@@ -18,6 +23,7 @@ const config = {
   organizationName: 'caloritrack', 
   projectName: 'support-site', 
 
+  /* Reglas estrictas de calidad (¡Las que causaron tu error anterior, pero protegen tu SEO!) */
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -61,18 +67,16 @@ const config = {
     ({
       image: 'img/docusaurus-social-card.jpg', 
       
-      /* --- Desactivar Modo Oscuro (Requerimiento del proyecto) --- */
       colorMode: {
         defaultMode: 'light',
-        disableSwitch: true, // Quita el botón de sol/luna
-        respectPrefersColorScheme: false, // Ignora si la PC del usuario está en modo oscuro
+        disableSwitch: true, 
+        respectPrefersColorScheme: false, 
       },
 
       navbar: {
         title: 'CaloriTrack',
         logo: {
           alt: 'CaloriTrack Logo',
-          /* --- Logo principal del header --- */
           src: 'img/logo.png', 
         },
         items: [
@@ -89,43 +93,37 @@ const config = {
           },
           {
             href: 'https://caloritrack.com',
-            label: 'Web Oficial Caloritrack',
+            label: 'Web Oficial',
             position: 'right',
           },
         ],
       },
+      
+      /* --- FOOTER CORREGIDO --- */
       footer: {
-        style: 'light', 
+        style: 'dark', 
         links: [
           {
             title: 'Soporte',
             items: [
               {
-                label: 'Guías de Inicio',
-                to: '/docs/intro',
+                label: 'Inicio del Centro de Ayuda',
+                to: '/', // Apunta a la raíz, eliminando el error de /docs/intro
+              },
+              {
+                label: 'Novedades y Actualizaciones',
+                to: '/blog',
               },
             ],
           },
           {
-            title: 'Ecosistema CaloriTrack',
+            title: 'CaloriTrack',
             items: [
               {
                 label: 'Sitio Web Principal',
                 href: 'https://caloritrack.com',
               },
-              {
-                label: 'Gestión de Cuenta',
-                href: 'https://accounts.caloritrack.com',
-              },
-            ],
-          },
-          {
-            title: 'Más',
-            items: [
-              {
-                label: 'Novedades',
-                to: '/blog',
-              },
+              
             ],
           },
         ],
