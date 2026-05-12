@@ -2,15 +2,14 @@
 // Nombre del archivo: src/css/custom.css
 // Autor: Arturo Enriquez Betancourt con Jarvis
 // Fecha: 2026-05-11
-// Versión: 1.6
-// Descripción: Refinamiento de tipografía y ajustes de header. Se reduce el tamaño del título principal (h1) para mejorar la estética del blog. Se mantienen la pleca verde de 30px y la altura de navbar de 6.5rem según la última configuración del usuario.
+// Versión: 1.12
+// Descripción: Estabilización de UX y limpieza minimalista. Se fijó el buscador del Home a 450px para garantizar estabilidad absoluta del plugin. Además, se añadieron reglas de limpieza visual para ocultar los iconos por defecto de Docusaurus: el globo terráqueo en el selector de idiomas y las flechas de enlace externo en el Navbar ("Web Oficial") y el Footer ("Sitio Web Principal").
 */
 
 /* ==============================================================================
    1. VARIABLES DE MARCA, COLORES Y TIPOGRAFÍA (CONFIGURABLE)
    ============================================================================== */
 :root {
-  /* CAMBIA ESTO PARA EL COLOR VERDE PRINCIPAL */
   --ifm-color-primary: #5BC85B;
   --ifm-color-primary-dark: #52b452;
   --ifm-color-primary-darker: #4eab4e;
@@ -19,21 +18,10 @@
   --ifm-color-primary-lighter: #74d374;
   --ifm-color-primary-lightest: #8edc8e;
 
-  /* COLOR DE LOS LINKS EN EL CONTENIDO */
   --ifm-link-color: #5BC85B;
   --ifm-link-hover-color: #4eab4e;
 
-  /* ============================================================================
-     AJUSTE DE TAMAÑO DE TÍTULOS (MD)
-     Si el título del blog se ve muy grande, reduce este valor (ej. 2rem).
-     Si lo quieres un poco más grande, súbelo (ej. 3rem).
-     ============================================================================ */
   --ifm-h1-font-size: 1.5rem;
-
-  /* ============================================================================
-     AJUSTE MAESTRO DE ALTURA DEL HEADER 
-     Mantenemos los 6.5rem de tu versión actual.
-     ============================================================================ */
   --ifm-navbar-height: 6.5rem;
 }
 
@@ -41,10 +29,7 @@
    2. HEADER / NAVBAR (PLECA VERDE DE 30PX)
    ============================================================================== */
 .navbar {
-  /* AJUSTE DE GROSOR DE LA PLECA VERDE SUPERIOR (30px según tu versión) */
   border-top: 30px solid #5BC85B !important;
-  
-  /* Mantener alineación flex nativa para centrado perfecto */
   display: flex;
   align-items: center;
   padding-top: var(--ifm-navbar-padding-vertical) !important;
@@ -55,30 +40,23 @@
    3. FOOTER (GRIS OSCURO + PLECA NEGRA 100% ANCHO)
    ============================================================================== */
 .footer {
-  /* COLOR GRIS OSCURO DE LA PARTE SUPERIOR DEL FOOTER */
   --ifm-footer-background-color: #242526 !important;
   background-color: var(--ifm-footer-background-color) !important;
   padding-bottom: 0 !important; 
 }
 
 .footer__bottom {
-  /* COLOR DE LA PLECA DE HASTA ABAJO */
   background-color: #000000 !important;
-  
-  /* EFECTO 100% ANCHO DE PANTALLA (Breakout) */
   margin-left: calc(50% - 50vw) !important;
   margin-right: calc(50% - 50vw) !important;
   width: 100vw !important;
   max-width: 100vw !important;
-  
-  /* ALTURA DE LA PLECA NEGRA */
   padding-top: 1.2rem !important;
   padding-bottom: 1.2rem !important;
   margin-bottom: 0 !important;
   text-align: center;
 }
 
-/* ESTILO DEL TEXTO DENTRO DE LA PLECA NEGRA */
 .footer__copyright {
   margin: 0 !important;
   font-size: 0.9rem;
@@ -86,20 +64,72 @@
   color: #ffffff;
 }
 
-/* ==============================================================================
-   4. PROTECCIÓN DE LIGAS EN EL FOOTER (MODO OSCURO)
-   ============================================================================== */
 .footer.footer--dark {
   --ifm-link-color: #98FB98;
   --ifm-link-hover-color: #ADD8E6; 
 }
+.footer.footer--dark .footer__link-item { color: var(--ifm-link-color); }
+.footer.footer--dark .footer__link-item:hover { color: var(--ifm-link-hover-color); text-decoration: none; }
 
-.footer.footer--dark .footer__link-item {
-  color: var(--ifm-link-color);
+/* ==============================================================================
+   4. LIMPIEZA DE UX (PARTE 1): ATAJOS DE TECLADO
+   ============================================================================== */
+.searchBarShortcut,
+.searchHintContainer,
+.navbar__search-hint,
+kbd {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
 }
 
-.footer.footer--dark .footer__link-item:hover {
-  color: var(--ifm-link-hover-color);
-  text-decoration: none;
+/* ==============================================================================
+   5. LIMPIEZA DE UX (PARTE 2): ICONOS DEL HEADER Y FOOTER (MINIMALISMO)
+   ============================================================================== */
+/* Ocultar iconos de "Enlace Externo" (Flecha en diagonal) en Navbar y Footer */
+.navbar__link--external svg,
+.footer__link-item svg,
+a[target="_blank"] svg {
+  display: none !important;
 }
 
+/* Ocultar icono de "Globo Terráqueo" en el selector de idiomas del Header */
+.navbar__item.dropdown > .navbar__link > svg {
+  display: none !important;
+}
+
+/* ==============================================================================
+   6. BUSCADOR DEL HOME: MEDIDA EXACTA, SEGURA Y ELEGANTE (450px)
+   ============================================================================== */
+.hero-search-wrapper input.navbar__search-input {
+  width: 450px !important; /* Regresado al tamaño de oro (450px) para máxima estabilidad */
+  height: 60px !important;
+  font-size: 1.2rem !important;
+  border-radius: 30px !important;
+  padding-left: 3.5rem !important;
+  padding-right: 2rem !important;
+  background-color: #f9fafb !important;
+  border: 2px solid #eaeaea !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.2s ease !important;
+}
+
+.hero-search-wrapper input.navbar__search-input:focus,
+.hero-search-wrapper input.navbar__search-input:hover {
+  width: 450px !important; /* Bloqueo firme en 450px */
+  border-color: var(--ifm-color-primary) !important; 
+  background-color: #ffffff !important;
+  box-shadow: 0 10px 25px -5px rgba(91, 200, 91, 0.2) !important;
+}
+
+.hero-search-wrapper input.navbar__search-input {
+  background-position: 1.2rem center !important;
+  background-size: 1.4rem !important;
+}
+
+/* Corrección de posición para pantallas móviles pequeñas */
+@media (max-width: 600px) {
+  .hero-search-wrapper input.navbar__search-input {
+    width: 90vw !important; /* Se adapta automáticamente si lo abren en iPhone */
+  }
+}

@@ -1,8 +1,8 @@
 // Nombre del archivo: docusaurus.config.js
 // Autor: Arturo Enriquez Betancourt con Jarvis
 // Fecha: 2026-05-11
-// Versión: 1.3
-// Descripción: Archivo principal de configuración. Se actualizó el pie de página (footer) para eliminar el enlace roto hacia /docs/intro tras la limpieza de la arquitectura y se adaptó al ecosistema Caloritrack.
+// Versión: 1.5
+// Descripción: Migración de motor de búsqueda. Se eliminó la configuración de Algolia DocSearch para priorizar la privacidad y el rendimiento sin latencia. Se integró y configuró el plugin '@easyops-cn/docusaurus-search-local' con soporte bilingüe (ES/EN) para indexar localmente documentos, blogs y páginas.
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
@@ -23,11 +23,11 @@ const config = {
   organizationName: 'caloritrack', 
   projectName: 'support-site', 
 
-  /* Reglas estrictas de calidad (¡Las que causaron tu error anterior, pero protegen tu SEO!) */
+  /* Reglas estrictas de calidad */
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Internacionalización base
+  // Internacionalización base (Español e Inglés)
   i18n: {
     defaultLocale: 'es',
     locales: ['es', 'en'],
@@ -62,11 +62,29 @@ const config = {
     ],
   ],
 
+  // --- NUEVA CONFIGURACIÓN DEL BUSCADOR LOCAL ---
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        hashed: true,
+        language: ["es", "en"], // Activamos indexación para español e inglés
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: true,
+      }),
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/docusaurus-social-card.jpg', 
       
+      // REQUERIMIENTO CRÍTICO: Bloqueo de Modo Oscuro (Solo Light Mode)
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true, 
@@ -99,7 +117,6 @@ const config = {
         ],
       },
       
-      /* --- FOOTER CORREGIDO --- */
       footer: {
         style: 'dark', 
         links: [
@@ -108,7 +125,7 @@ const config = {
             items: [
               {
                 label: 'Inicio del Centro de Ayuda',
-                to: '/', // Apunta a la raíz, eliminando el error de /docs/intro
+                to: '/', 
               },
               {
                 label: 'Novedades y Actualizaciones',
@@ -123,7 +140,6 @@ const config = {
                 label: 'Sitio Web Principal',
                 href: 'https://caloritrack.com',
               },
-              
             ],
           },
         ],
