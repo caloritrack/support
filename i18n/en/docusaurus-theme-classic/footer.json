@@ -1,0 +1,26 @@
+{
+  "copyright": {
+    "message": "© 2026 CaloriTrack ™, All Rights Reserved",
+    "description": "The footer copyright"
+  },
+  "link.title.Soporte": {
+    "message": "Support",
+    "description": "The title of the footer links column with title=Soporte in the footer"
+  },
+  "link.title.CaloriTrack": {
+    "message": "CaloriTrack",
+    "description": "The title of the footer links column with title=CaloriTrack in the footer"
+  },
+  "link.item.label.Inicio del Centro de Ayuda": {
+    "message": "Help Center",
+    "description": "The label of footer link with label=Inicio del Centro de Ayuda linking to /"
+  },
+  "link.item.label.Novedades y Actualizaciones": {
+    "message": "App Releases",
+    "description": "The label of footer link with label=Novedades y Actualizaciones linking to /blog"
+  },
+  "link.item.label.Sitio Web Principal": {
+    "message": "Main Website",
+    "description": "The label of footer link with label=Sitio Web Principal linking to https://caloritrack.com"
+  }
+}

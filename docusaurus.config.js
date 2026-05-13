@@ -111,7 +111,7 @@ const config = {
           },
           {
             href: 'https://caloritrack.com',
-            label: 'Web Oficial',
+            label: 'Sitio Web Principal',
             position: 'right',
           },
         ],
@@ -124,7 +124,7 @@ const config = {
             title: 'Soporte',
             items: [
               {
-                label: 'Inicio del Centro de Ayuda',
+                label: 'Centro de Ayuda',
                 to: '/', 
               },
               {

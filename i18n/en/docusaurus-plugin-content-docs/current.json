@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.🌿 Salud": {
+    "message": "🌿 Health",
+    "description": "The label for category '🌿 Salud' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.🌿 Salud.link.generated-index.description": {
+    "message": "Your personal command center. Here, we reveal the hidden connections between your habits and your biological well-being to foster conscious and lasting change.",
+    "description": "The generated-index page description for category '🌿 Salud' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Ayuno Intermitente": {
+    "message": "Intermittent Fasting",
+    "description": "The label for category 'Ayuno Intermitente' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Ayuno Intermitente.link.generated-index.description": {
+    "message": "Explore the science of fasting, learn to configure your metabolic windows, and understand the cellular benefits of autophagy on Caloritrack.",
+    "description": "The generated-index page description for category 'Ayuno Intermitente' in sidebar 'tutorialSidebar'"
+  }
+}

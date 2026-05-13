@@ -1,0 +1,28 @@
+{
+  "__comentario_cabecera__": {
+    "message": "Nombre del archivo: code.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-12 | Versión: 1.0 | Descripción: Diccionario de traducciones forzadas al español (idioma base). Corrige el placeholder del buscador y otros elementos internos del tema que vienen en inglés por defecto en el código fuente.",
+    "description": "Control de versión y autoría adaptado a formato JSON"
+  },
+  "theme.SearchBar.label": {
+    "message": "Buscar",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "Ver todos los resultados"
+  },
+  "theme.SearchBar.noResultsText": {
+    "message": "No hay resultados"
+  },
+  "theme.SearchBar.searchInContext": {
+    "message": "Ver todos los resultados en \"{context}\""
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Buscar en la documentación"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "Resultados de búsqueda para \"{query}\""
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "No se encontraron documentos"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "CaloriTrack",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "CaloriTrack Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Centro de Ayuda": {
+    "message": "Help Center",
+    "description": "Navbar item with label Centro de Ayuda"
+  },
+  "item.label.Novedades de la App": {
+    "message": "App Releases",
+    "description": "Navbar item with label Novedades de la App"
+  },
+  "item.label.Web Oficial": {
+    "message": "Website",
+    "description": "Navbar item with label Web Oficial"
+  }
+}
