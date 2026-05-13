@@ -3,6 +3,8 @@ Estructura de carpetas y archivos:
 |____docs
 | |____01-salud
 | | |_____category_.json
+| |____02-nutricion
+| | |_____category_.json
 | |____03-ayuno
 | | |_____category_.json
 |____docusaurus.config.js
@@ -14,6 +16,8 @@ Estructura de carpetas y archivos:
 | | | |____current
 | | | |____current.json
 | | | | |____01-salud
+| | | | |____02-nutricion
+| | | | |____03-ayuno
 | | |____docusaurus-theme-classic
 | | | |____footer.json
 | | | |____navbar.json
@@ -26,9 +30,12 @@ Estructura de carpetas y archivos:
 | |____components
 | | |____HomepageFeatures
 | | | |____index.js
+| | | |____styles.module.css
 | |____css
+| | |____custom.css
 | |____pages
 | | |____index.js
+| | |____index.module.css
 -----
 Contenido de archivos:
 Archivo: ./docs/01-salud/_category_.json
@@ -45,6 +52,22 @@ Archivo: ./docs/01-salud/_category_.json
   "link": {
     "type": "generated-index",
     "description": "Tu centro de mando personal. Aquí revelamos las conexiones ocultas entre tus hábitos y tu bienestar biológico para fomentar un cambio consciente y duradero."
+  }
+}-----
+Archivo: ./docs/02-nutricion/_category_.json
+{
+  "customProps": {
+    "archivo": "docs/02-nutricion/_category_.json",
+    "autor": "Arturo Enriquez Betancourt con Jarvis",
+    "fecha": "2026-05-11",
+    "version": "1.2",
+    "descripcion": "Configuración de la categoría Ayuno. Define el nombre con emoji para el sidebar, la posición jerárquica (3) y activa la página de índice generado. Absorbe automáticamente los MD y MDX de la carpeta."
+  },
+  "label": "Nutrición",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Encuentra tu guía para poder tener la mejor nutrición en forma natural."
   }
 }-----
 Archivo: ./docs/03-ayuno/_category_.json
@@ -19633,9 +19656,9 @@ Archivo: ./package.json
 Archivo: ./docusaurus.config.js
 // Nombre del archivo: docusaurus.config.js
 // Autor: Arturo Enriquez Betancourt con Jarvis
-// Fecha: 2026-05-11
-// Versión: 1.5
-// Descripción: Migración de motor de búsqueda. Se eliminó la configuración de Algolia DocSearch para priorizar la privacidad y el rendimiento sin latencia. Se integró y configuró el plugin '@easyops-cn/docusaurus-search-local' con soporte bilingüe (ES/EN) para indexar localmente documentos, blogs y páginas.
+// Fecha: 2026-05-12
+// Versión: 1.6
+// Descripción: Actualización de la configuración del navbar para ocultar el texto junto al logo (title vacío) y aplicar cache-busting al logo para forzar su actualización visual. Se documenta la ubicación para futuros cambios de nombre de archivo.
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
@@ -19725,10 +19748,13 @@ const config = {
       },
 
       navbar: {
-        title: 'CaloriTrack',
+        // Al dejar el title vacío (''), Docusaurus ocultará el texto y dejará solo el logo.
+        title: '',
         logo: {
           alt: 'CaloriTrack Logo',
-          src: 'img/logo.png', 
+          // AQUÍ CAMBIAS EL NOMBRE DEL ARCHIVO DEL LOGO.
+          // El ?v=2 es un "cache buster" para obligar al navegador a recargar la nueva imagen.
+          src: 'img/logo-caloritrack.png', 
         },
         items: [
           {
@@ -20272,6 +20298,10 @@ Archivo: ./i18n/en/docusaurus-theme-classic/navbar.json
 -----
 Archivo: ./i18n/en/docusaurus-plugin-content-docs/current.json
 {
+  "__comentario_cabecera__": {
+    "message": "Nombre del archivo: current.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-12 | Versión: 1.1 | Descripción: Se agregaron las traducciones para la categoría de Nutrición en el sidebar.",
+    "description": "Control de versión y autoría adaptado a formato JSON"
+  },
   "version.label": {
     "message": "Next",
     "description": "The label for version current"
@@ -20284,6 +20314,14 @@ Archivo: ./i18n/en/docusaurus-plugin-content-docs/current.json
     "message": "Your personal command center. Here, we reveal the hidden connections between your habits and your biological well-being to foster conscious and lasting change.",
     "description": "The generated-index page description for category '🌿 Salud' in sidebar 'tutorialSidebar'"
   },
+  "sidebar.tutorialSidebar.category.🥗 Nutrición": {
+    "message": "🥗 Nutrition",
+    "description": "The label for category '🥗 Nutrición' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.🥗 Nutrición.link.generated-index.description": {
+    "message": "Guides on natural food logging, macronutrients, and antinutrient management in CaloriTrack.",
+    "description": "The generated-index page description for category '🥗 Nutrición' in sidebar 'tutorialSidebar'"
+  },
   "sidebar.tutorialSidebar.category.Ayuno Intermitente": {
     "message": "Intermittent Fasting",
     "description": "The label for category 'Ayuno Intermitente' in sidebar 'tutorialSidebar'"
@@ -20292,8 +20330,7 @@ Archivo: ./i18n/en/docusaurus-plugin-content-docs/current.json
     "message": "Explore the science of fasting, learn to configure your metabolic windows, and understand the cellular benefits of autophagy on Caloritrack.",
     "description": "The generated-index page description for category 'Ayuno Intermitente' in sidebar 'tutorialSidebar'"
   }
-}
------
+}-----
 Archivo: ./sidebars.js
 // @ts-check
 
@@ -20330,6 +20367,168 @@ const sidebars = {
 };
 
 export default sidebars;
+-----
+Archivo: ./src/css/custom.css
+/*
+// Nombre del archivo: src/css/custom.css
+// Autor: Arturo Enriquez Betancourt con Jarvis
+// Fecha: 2026-05-12
+// Versión: 1.13
+// Descripción: Estabilización de UX y limpieza minimalista. Se integró el aumento de tamaño del logo (.navbar__logo) con efecto de interacción (hover) para mejorar la presencia de la marca. Se mantienen las reglas previas de estabilidad del buscador, footer y limpieza de iconos.
+*/
+
+/* ==============================================================================
+   1. VARIABLES DE MARCA, COLORES Y TIPOGRAFÍA (CONFIGURABLE)
+   ============================================================================== */
+:root {
+  --ifm-color-primary: #5BC85B;
+  --ifm-color-primary-dark: #52b452;
+  --ifm-color-primary-darker: #4eab4e;
+  --ifm-color-primary-darkest: #408c40;
+  --ifm-color-primary-light: #6cd06c;
+  --ifm-color-primary-lighter: #74d374;
+  --ifm-color-primary-lightest: #8edc8e;
+
+  --ifm-link-color: #5BC85B;
+  --ifm-link-hover-color: #4eab4e;
+
+  --ifm-h1-font-size: 1.5rem;
+  --ifm-navbar-height: 6.5rem;
+}
+
+/* ==============================================================================
+   2. HEADER / NAVBAR Y LOGO (PLECA VERDE DE 30PX)
+   ============================================================================== */
+.navbar {
+  border-top: 30px solid #5BC85B !important;
+  display: flex;
+  align-items: center;
+  padding-top: var(--ifm-navbar-padding-vertical) !important;
+  padding-bottom: var(--ifm-navbar-padding-vertical) !important;
+}
+
+/* --- AJUSTE DEL TAMAÑO DEL LOGO --- */
+.navbar__logo {
+  height: 4.0rem !important; /* Ajusta este valor si lo quieres aún más grande (ej: 4rem) */
+  width: auto !important; 
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Efecto visual elegante al pasar el mouse por el logo */
+.navbar__logo:hover {
+  transform: scale(1.05);
+}
+
+/* ==============================================================================
+   3. FOOTER (GRIS OSCURO + PLECA NEGRA 100% ANCHO)
+   ============================================================================== */
+.footer {
+  --ifm-footer-background-color: #242526 !important;
+  background-color: var(--ifm-footer-background-color) !important;
+  padding-bottom: 0 !important; 
+}
+
+.footer__bottom {
+  background-color: #000000 !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  padding-top: 1.2rem !important;
+  padding-bottom: 1.2rem !important;
+  margin-bottom: 0 !important;
+  text-align: center;
+}
+
+.footer__copyright {
+  margin: 0 !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.footer.footer--dark {
+  --ifm-link-color: #98FB98;
+  --ifm-link-hover-color: #ADD8E6; 
+}
+.footer.footer--dark .footer__link-item { color: var(--ifm-link-color); }
+.footer.footer--dark .footer__link-item:hover { color: var(--ifm-link-hover-color); text-decoration: none; }
+
+/* ==============================================================================
+   4. LIMPIEZA DE UX (PARTE 1): ATAJOS DE TECLADO
+   ============================================================================== */
+.searchBarShortcut,
+.searchHintContainer,
+.navbar__search-hint,
+kbd {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* ==============================================================================
+   5. LIMPIEZA DE UX (PARTE 2): ICONOS DEL HEADER Y FOOTER (MINIMALISMO)
+   ============================================================================== */
+/* Ocultar iconos de "Enlace Externo" (Flecha en diagonal) en Navbar y Footer */
+.navbar__link--external svg,
+.footer__link-item svg,
+a[target="_blank"] svg {
+  display: none !important;
+}
+
+/* Ocultar icono de "Globo Terráqueo" en el selector de idiomas del Header */
+.navbar__item.dropdown > .navbar__link > svg {
+  display: none !important;
+}
+
+/* ==============================================================================
+   6. BUSCADOR DEL HOME: MEDIDA EXACTA, SEGURA Y ELEGANTE (450px)
+   ============================================================================== */
+.hero-search-wrapper input.navbar__search-input {
+  width: 450px !important; /* Regresado al tamaño de oro (450px) para máxima estabilidad */
+  height: 60px !important;
+  font-size: 1.2rem !important;
+  border-radius: 30px !important;
+  padding-left: 3.5rem !important;
+  padding-right: 2rem !important;
+  background-color: #f9fafb !important;
+  border: 2px solid #eaeaea !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.2s ease !important;
+}
+
+.hero-search-wrapper input.navbar__search-input:focus,
+.hero-search-wrapper input.navbar__search-input:hover {
+  width: 450px !important; /* Bloqueo firme en 450px */
+  border-color: var(--ifm-color-primary) !important; 
+  background-color: #ffffff !important;
+  box-shadow: 0 10px 25px -5px rgba(91, 200, 91, 0.2) !important;
+}
+
+.hero-search-wrapper input.navbar__search-input {
+  background-position: 1.2rem center !important;
+  background-size: 1.4rem !important;
+}
+
+/* Corrección de posición para pantallas móviles pequeñas */
+@media (max-width: 600px) {
+  .hero-search-wrapper input.navbar__search-input {
+    width: 90vw !important; /* Se adapta automáticamente si lo abren en iPhone */
+  }
+}-----
+Archivo: ./src/components/HomepageFeatures/styles.module.css
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
 -----
 Archivo: ./src/components/HomepageFeatures/index.js
 import clsx from 'clsx';
@@ -20395,6 +20594,31 @@ export default function HomepageFeatures() {
       </div>
     </section>
   );
+}
+-----
+Archivo: ./src/pages/index.module.css
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 -----
 Archivo: ./src/pages/index.js

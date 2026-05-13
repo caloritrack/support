@@ -1,4 +1,8 @@
 {
+  "__comentario_cabecera__": {
+    "message": "Nombre del archivo: current.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-12 | Versión: 1.1 | Descripción: Se agregaron las traducciones para la categoría de Nutrición en el sidebar.",
+    "description": "Control de versión y autoría adaptado a formato JSON"
+  },
   "version.label": {
     "message": "Next",
     "description": "The label for version current"
@@ -10,6 +14,14 @@
   "sidebar.tutorialSidebar.category.🌿 Salud.link.generated-index.description": {
     "message": "Your personal command center. Here, we reveal the hidden connections between your habits and your biological well-being to foster conscious and lasting change.",
     "description": "The generated-index page description for category '🌿 Salud' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.🥗 Nutrición": {
+    "message": "🥗 Nutrition",
+    "description": "The label for category '🥗 Nutrición' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.🥗 Nutrición.link.generated-index.description": {
+    "message": "Guides on natural food logging, macronutrients, and antinutrient management in CaloriTrack.",
+    "description": "The generated-index page description for category '🥗 Nutrición' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Ayuno Intermitente": {
     "message": "Intermittent Fasting",

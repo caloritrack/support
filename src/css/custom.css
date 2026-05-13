@@ -1,9 +1,9 @@
 /*
 // Nombre del archivo: src/css/custom.css
 // Autor: Arturo Enriquez Betancourt con Jarvis
-// Fecha: 2026-05-11
-// Versión: 1.12
-// Descripción: Estabilización de UX y limpieza minimalista. Se fijó el buscador del Home a 450px para garantizar estabilidad absoluta del plugin. Además, se añadieron reglas de limpieza visual para ocultar los iconos por defecto de Docusaurus: el globo terráqueo en el selector de idiomas y las flechas de enlace externo en el Navbar ("Web Oficial") y el Footer ("Sitio Web Principal").
+// Fecha: 2026-05-12
+// Versión: 1.13
+// Descripción: Estabilización de UX y limpieza minimalista. Se integró el aumento de tamaño del logo (.navbar__logo) con efecto de interacción (hover) para mejorar la presencia de la marca. Se mantienen las reglas previas de estabilidad del buscador, footer y limpieza de iconos.
 */
 
 /* ==============================================================================
@@ -26,7 +26,7 @@
 }
 
 /* ==============================================================================
-   2. HEADER / NAVBAR (PLECA VERDE DE 30PX)
+   2. HEADER / NAVBAR Y LOGO (PLECA VERDE DE 30PX)
    ============================================================================== */
 .navbar {
   border-top: 30px solid #5BC85B !important;
@@ -34,6 +34,19 @@
   align-items: center;
   padding-top: var(--ifm-navbar-padding-vertical) !important;
   padding-bottom: var(--ifm-navbar-padding-vertical) !important;
+}
+
+/* --- AJUSTE DEL TAMAÑO DEL LOGO --- */
+.navbar__logo {
+  height: 4.0rem !important; /* Ajusta este valor si lo quieres aún más grande (ej: 4rem) */
+  width: auto !important; 
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Efecto visual elegante al pasar el mouse por el logo */
+.navbar__logo:hover {
+  transform: scale(1.05);
 }
 
 /* ==============================================================================

@@ -1,0 +1,15 @@
+{
+  "customProps": {
+    "archivo": "docs/02-nutricion/_category_.json",
+    "autor": "Arturo Enriquez Betancourt con Jarvis",
+    "fecha": "2026-05-11",
+    "version": "1.2",
+    "descripcion": "Configuración de la categoría Ayuno. Define el nombre con emoji para el sidebar, la posición jerárquica (3) y activa la página de índice generado. Absorbe automáticamente los MD y MDX de la carpeta."
+  },
+  "label": "Nutrición",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Encuentra tu guía para poder tener la mejor nutrición en forma natural."
+  }
+}

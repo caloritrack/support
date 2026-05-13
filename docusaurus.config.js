@@ -1,8 +1,8 @@
 // Nombre del archivo: docusaurus.config.js
 // Autor: Arturo Enriquez Betancourt con Jarvis
-// Fecha: 2026-05-11
-// Versión: 1.5
-// Descripción: Migración de motor de búsqueda. Se eliminó la configuración de Algolia DocSearch para priorizar la privacidad y el rendimiento sin latencia. Se integró y configuró el plugin '@easyops-cn/docusaurus-search-local' con soporte bilingüe (ES/EN) para indexar localmente documentos, blogs y páginas.
+// Fecha: 2026-05-12
+// Versión: 1.6
+// Descripción: Actualización de la configuración del navbar para ocultar el texto junto al logo (title vacío) y aplicar cache-busting al logo para forzar su actualización visual. Se documenta la ubicación para futuros cambios de nombre de archivo.
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
@@ -92,10 +92,13 @@ const config = {
       },
 
       navbar: {
-        title: 'CaloriTrack',
+        // Al dejar el title vacío (''), Docusaurus ocultará el texto y dejará solo el logo.
+        title: '',
         logo: {
           alt: 'CaloriTrack Logo',
-          src: 'img/logo.png', 
+          // AQUÍ CAMBIAS EL NOMBRE DEL ARCHIVO DEL LOGO.
+          // El ?v=2 es un "cache buster" para obligar al navegador a recargar la nueva imagen.
+          src: 'img/logo-caloritrack.png', 
         },
         items: [
           {
