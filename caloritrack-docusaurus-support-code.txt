@@ -1,12 +1,23 @@
 Estructura de carpetas y archivos:
+|____README.md
 |____blog
+| |____2026-05-11-v1-4-0.md
 |____docs
 | |____01-salud
 | | |_____category_.json
+| | |____faqs-dashboard-salud.md
+| | |____guia-salud.mdx
 | |____02-nutricion
 | | |_____category_.json
+| | |____faqs-nutricion.md
 | |____03-ayuno
 | | |_____category_.json
+| | |____faqs-ayuno.md
+| | |____guia-ayuno.mdx
+| |____04-wellness
+| |____04-welness
+| | |____faq-wellness.md
+| |____05-kai
 |____docusaurus.config.js
 |____i18n
 | |____en
@@ -16,8 +27,16 @@ Estructura de carpetas y archivos:
 | | | |____current
 | | | |____current.json
 | | | | |____01-salud
+| | | | | |____faqs-dashboard-salud.md
+| | | | | |____guia-salud.mdx
 | | | | |____02-nutricion
+| | | | | |____faqs-nutricion.md
 | | | | |____03-ayuno
+| | | | | |____faqs-ayuno.md
+| | | | | |____guia-ayuno.mdx
+| | | | |____04-wellness
+| | | | | |____faq-welness.md
+| | | | |____05-kai
 | | |____docusaurus-theme-classic
 | | | |____footer.json
 | | | |____navbar.json
@@ -36,8 +55,84 @@ Estructura de carpetas y archivos:
 | |____pages
 | | |____index.js
 | | |____index.module.css
+| | |____markdown-page.mdx
 -----
 Contenido de archivos:
+Archivo: ./docs/04-welness/faq-wellness.md
+---
+id: wellness-faq
+title: Preguntas Frecuentes de Wellness
+slug: /wellness-preguntas-frecuentes
+sidebar_position: 1
+---
+
+## 🧭 Acceso y Exploración General
+
+### ¿Por qué cuando intento entrar a la pestaña de Wellness me aparece una pantalla pidiéndome mejorar mi plan?
+Todo el catálogo de meditaciones, frecuencias y ejercicios de respiración de la pestaña Wellness es contenido exclusivo. Para poder reproducir y explorar este material, se requiere contar con la membresía Premium activa en tu cuenta de Caloritrack.
+
+### Hay mucho contenido, ¿cómo puedo encontrar rápidamente algo específico para lo que siento hoy?
+Tienes dos formas muy rápidas de filtrar el contenido:
+
+* **Buscador:** En la parte superior hay una barra de texto donde puedes escribir palabras clave (ej. "ansiedad" o "dormir") y la lista se actualizará automáticamente.
+* **Filtros Rápidos (Chips):** Justo debajo del buscador, verás botones ovalados con categorías como "Sueño", "Relajación" o "Enfoque" (si estás en Soundhealing), o "Reducir estrés", "Energía", etc. (si estás en Breathwork). Toca cualquiera de ellos para ver solo los ejercicios de esa categoría.
+
+### ¿Cómo guardo los audios o ejercicios que más me gustan para no tener que buscarlos cada vez?
+Puedes guardar cualquier ejercicio en tus "Favoritos" tocando el ícono de la estrella que aparece en la tarjeta del ejercicio directamente en la lista. Si ya estás dentro del reproductor de sonido, puedes tocar el ícono de corazón en la esquina superior derecha. Para ver todo lo que has guardado, selecciona el filtro "Favoritos" en la pantalla principal de Wellness.
+
+---
+
+## 🎧 Soundhealing (Terapia de Sonido)
+
+### Al tocar un audio, me manda a una pantalla con información en lugar de empezar a sonar inmediatamente. ¿Por qué?
+Esa es la pantalla de previsualización (Preview). Está diseñada para darte contexto antes de tu sesión. Allí podrás ver la categoría del sonido, una descripción corta y una explicación más profunda de cómo esa frecuencia o sonido te ayudará. También verás un recordatorio para usar audífonos, lo cual recomendamos para obtener los mejores beneficios. Solo toca "Reproducir Ahora" en la parte inferior para iniciar el audio.
+
+### ¿Qué significan los controles dentro del reproductor de sonido?
+El reproductor cuenta con herramientas para personalizar tu sesión:
+
+* **Botón Central (Play/Pause):** Detiene o reanuda la pista principal.
+* **Temporizador (ícono de reloj):** Te permite establecer un tiempo específico (por ejemplo, 15 o 30 minutos) para que el audio se apague automáticamente, ideal si lo usas para dormir.
+* **AirPlay (ícono de pantallas concéntricas):** Te permite enviar el audio a tus bocinas inteligentes, HomePod o Apple TV.
+* **Repetición (ícono de flechas en bucle):** Puedes configurarlo para que el audio termine al acabar la pista, se repita una sola vez, o se repita infinitamente.
+
+### ¿Puedo poner sonido de lluvia o viento de fondo mientras escucho mi terapia de sonido?
+¡Sí! Hemos unificado los controles de volumen y ambiente en una sola tarjeta dentro del reproductor. Debajo del control de volumen de la pista principal, verás una sección llamada "Ambiente". Al tocar el ícono de "+", se abrirá un menú donde puedes elegir entre opciones como arroyo, lluvia, bosque, viento, tormenta, entre otros. Una vez seleccionado, podrás ajustar el volumen de ese sonido ambiental de forma independiente a la pista principal.
+
+### Si uso AirPlay para escuchar en mi HomePod, ¿se escuchará también el sonido ambiental (ej. la lluvia) que le agregué?
+Sí. El sistema de audio de la app está optimizado (Soporte AirPlay Dual) para mezclar ambos audios (la pista de Soundhealing y el ambiente) y enviarlos juntos a tu dispositivo externo sin problema.
+
+### Minimicé el reproductor para navegar por la app. ¿Cómo lo vuelvo a abrir o cómo lo quito?
+Mientras navegas, verás un minireproductor en la parte inferior de la pantalla. Si tocas cualquier parte de él, se volverá a abrir en pantalla completa. Si decides "deslizarlo" (swipe) hacia la izquierda, se colapsará en una pequeña pestaña lateral para no estorbarte.
+
+---
+
+## 🌬️ Breathwork (Ejercicios de Respiración)
+
+### ¿Cómo debo seguir el ritmo del ejercicio de respiración?
+La pantalla te guiará de tres maneras:
+
+* **Visualmente:** Un círculo central de color Verde Menta se expandirá cuando debas inhalar, se mantendrá fijo cuando debas retener el aire, y se contraerá cuando debas exhalar.
+* **Por texto:** En el centro del círculo verás instrucciones claras ("Inhalar", "Retener", "Exhalar", "Sostener") junto con un contador de segundos en tiempo real.
+* **Vibraciones (Háptica):** Sentirás pulsaciones en tu dispositivo que varían en intensidad para guiarte sin que tengas que mirar la pantalla.
+
+### Las vibraciones (háptica) me distraen, ¿puedo apagarlas?
+Por supuesto. En la parte inferior derecha del reproductor de respiración, encontrarás un botón con el ícono de un teléfono. Tócalo para desactivar (o volver a activar) las vibraciones táctiles.
+
+### ¿Cómo sé cuánto me falta para terminar mi sesión de respiración?
+Tienes dos indicadores. En la parte superior hay una barra de progreso lineal y un temporizador que te muestra los minutos totales restantes. En la parte inferior, verás el número de "Ciclos" actuales frente al total (por ejemplo, "2/5"), lo que te ayuda a saber en qué repetición vas.
+
+---
+
+## 📊 Historial, Sincronización y Estadísticas
+
+### Si hago un ejercicio de Soundhealing o Breathwork, ¿se guarda en mi historial?
+¡Sí! Siempre y cuando la sesión de audio o respiración haya durado más de 10 segundos continuos, el sistema la registrará automáticamente como completada.
+
+### ¿Se conecta todo esto con la app de Salud (Apple Health) de mi iPhone?
+Absolutamente. El módulo de Wellness sincroniza bidireccionalmente con Apple Salud.
+
+* Tus sesiones de Soundhealing y Breathwork se envían automáticamente como "Minutos de Mindfulness" a Apple Salud.
+* Tus registros de Estado de Ánimo, si tienes iOS 17 o superior, se envían directamente a la nueva sección nativa "State of Mind" de Apple Salud con su nivel de valencia (positivo/negativo). Si tienes un iOS anterior, se registra alternativamente como un registro general de atención plena.-----
 Archivo: ./docs/01-salud/_category_.json
 {
   "customProps": {
@@ -47,13 +142,292 @@ Archivo: ./docs/01-salud/_category_.json
     "version": "1.0",
     "descripcion": "Configuración del Pilar 1: Salud. Define la jerarquía principal en el sidebar, el nombre con emoji '🌿' y la descripción del índice generado para el Dashboard 'Mi Cuerpo'."
   },
-  "label": "🌿 Salud",
+  "label": "Salud",
   "position": 1,
   "link": {
     "type": "generated-index",
     "description": "Tu centro de mando personal. Aquí revelamos las conexiones ocultas entre tus hábitos y tu bienestar biológico para fomentar un cambio consciente y duradero."
   }
 }-----
+Archivo: ./docs/01-salud/guia-salud.mdx
+---
+# Nombre del archivo: docs/01-salud/guia-salud.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-11
+# Versión: 1.0
+# Descripción: Guía maestra de la pantalla principal "Mi Cuerpo" (Dashboard). Explica la personalización de tarjetas, el carrusel biológico y la sincronización de datos.
+slug: guia-salud
+title: "Guía Definitiva: Vista de Salud (Mi Cuerpo) "
+sidebar_label: "Mi Cuerpo (Dashboard)"
+sidebar_position: 1
+---
+
+¡Bienvenido a tu centro de mando personal! La pestaña **"Mi Cuerpo"** es la pantalla principal de CaloriTrack. Aquí podrás visualizar, de un solo vistazo, cómo se están comportando todos los aspectos vitales de tu organismo en tiempo real.
+
+Nuestra filosofía es que *"lo que no se mide, no se puede mejorar"*, y este panel está diseñado exactamente para darte el control total. Vamos a desglosar cada sección:
+
+## 1. El Saludo Inteligente y Avisos
+
+Al entrar, la aplicación te recibirá con un saludo personalizado (*"Buenos días"*, *"Buenas tardes"* o *"Buenas noches"*) acompañado de tu nombre. 
+
+:::info Actualizaciones
+Si hemos lanzado nuevas mejoras para la aplicación, verás una tarjeta distintiva de **"Actualización disponible"** en la parte superior. Esta incluye un botón directo para que puedas descargarla y no perderte ninguna innovación en tu ecosistema de salud.
+:::
+
+## 2. El Carrusel de Inspiración y Biología
+
+Justo debajo del saludo, encontrarás una sección deslizable (carrusel) con dos tarjetas fundamentales para comenzar tu día con consciencia:
+
+### Tu Ritmo Circadiano
+Esta tarjeta cambia de color dinámicamente según el momento del día (mañana, tarde, atardecer o noche). 
+* **Línea de tiempo:** Muestra la hora exacta del amanecer y el atardecer.
+* **Recomendaciones:** Te indicará acciones positivas (ej. tomar luz solar, hidratarte) y negativas (ej. evitar estrés o azúcares) ideales para tu biología en esa hora específica. 
+* **Profundización:** Si tocas la tarjeta, accederás a una explicación científica sobre tu fase circadiana actual.
+
+### Tip del Día
+Al deslizar, encontrarás una dosis de sabiduría: una cita inspiradora de autores célebres acompañada de una reflexión y un ejemplo práctico. 
+* **Aleatoriedad:** Si deseas leer otro, simplemente toca el ícono de las flechas circulares para cargar un nuevo pensamiento al azar.
+
+## 3. Tu Panel de Control Personalizable
+
+Este es el núcleo de la app: un tablero interactivo lleno de tarjetas que resumen tu estado actual. El orden predeterminado sigue esta lógica:
+
+* **⏱️ Ayuno:** Muestra el estatus de tu ayuno. Si no estás ayunando, verás un botón para iniciar. Si estás en progreso, verás el anillo de colores con el tiempo restante.
+* **🔥 KetoFlame:** Para usuarios en dieta cetogénica. Muestra una llama que crece y se intensifica según tu racha de días en cetosis. Toca la "i" para aprender sobre cetoadaptación.
+* **🍽️ Calorías:** Un anillo verde que indica tu presupuesto energético diario (consumidas vs. quemadas).
+* **⚡ Hidratación y Electrolitos:** Visualiza tu equilibrio de sodio (sal) y agua. Si la proporción se desbalancea, la barra cambiará a color rojo como advertencia.
+* **🏃‍♂️ Actividad Física:** Representa tus calorías activas. La app te clasifica dinámicamente (Sedentario, Ligero, Moderado, Fuerte) según tu movimiento.
+* **⚖️ Índice de Masa Corporal (IMC):** Un medidor estilo velocímetro que marca tu zona actual según tu último registro de peso.
+* **🛡️ Salud y Recuperación:** Tu sistema inmunológico digital. Muestra tu "Racha de días sanos" en verde o los días de recuperación en rojo si registraste una enfermedad.
+* **🌙 Calidad de Sueño:** Evalúa tu descanso (escala 1/100) basándose en datos de Apple Watch, detallando fases de **Sueño Profundo** y **REM**.
+
+## 4. Hazlo Tuyo: Editar el Panel
+
+Sabemos que cada persona tiene prioridades diferentes. Al final de todas las tarjetas, encontrarás el botón **"Reorganizar Panel"**.
+
+1. Tócalo para abrir la lista de edición.
+2. Arrastra las tarjetas hacia arriba o abajo según tu enfoque actual (ej. pon Ayuno y Calorías al principio si tu meta es la pérdida de grasa).
+3. El diseño es **100% personalizable** y se adapta a tus necesidades.
+
+## 5. Actualización Mágica (Pull-to-Refresh)
+
+¿Acabas de registrar una comida o un entrenamiento y quieres ver los cambios reflejados? 
+
+:::tip Sincronización Instantánea
+Simplemente coloca tu dedo en la parte superior de la pantalla y **desliza hacia abajo**. Sentirás una pequeña vibración (respuesta háptica) y la aplicación sincronizará automáticamente todos tus datos con **Apple Health**, recalculando todas tus tarjetas al instante.
+:::-----
+Archivo: ./docs/01-salud/faqs-dashboard-salud.md
+---
+# Nombre del archivo: docs/01-salud/faqs-dashboard-salud.md
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-11
+# Versión: 1.0
+# Descripción: Documento de Preguntas Frecuentes (FAQ) sobre el uso, interpretación y configuración del Dashboard principal "Mi Cuerpo". Formato MD puro optimizado para SEO y UX.
+
+slug: faqs-dashboard-salud
+title: "Dashboard: Preguntas Frecuentes"
+sidebar_label: "Preguntas Frecuentes"
+sidebar_position: 2
+---
+
+# Preguntas Frecuentes: Mi Cuerpo | Dashboard 
+
+En esta sección resolvemos las dudas más comunes sobre la interpretación de tus métricas diarias y la personalización de tu centro de mando principal.
+
+## 1. Panel Principal | Tu Dashboard
+
+### ¿Por qué el saludo en la parte superior cambia a lo largo del día?
+CaloriTrack está diseñado para acompañarte en tu rutina diaria. El saludo se actualiza automáticamente leyendo la hora local de tu dispositivo, dándote los "Buenos días", "Buenas tardes" o "Buenas noches" según corresponda, junto con tu nombre.
+
+### ¿Puedo cambiar el orden en el que aparecen las tarjetas de salud?
+¡Totalmente! Sabemos que cada cuerpo es diferente y tus prioridades pueden cambiar. Al final de tu pantalla de Salud, encontrarás un botón llamado **"Editar Panel"**. Al tocarlo, se abrirá una lista donde podrás arrastrar y soltar las tarjetas para organizarlas exactamente en el orden que prefieras (por ejemplo, poner el Ayuno o la Hidratación hasta arriba).
+
+### Me apareció un recuadro verde que dice "Actualización disponible", ¿qué hago?
+¡Son excelentes noticias! Significa que nuestro equipo ha lanzado nuevas mejoras y funciones. Solo tienes que tocar el botón **"Actualizar"** y te llevaremos directamente a la App Store para que descargues la última versión de forma segura.
+
+---
+
+## 2. Ritmo Circadiano (Tu reloj biológico)
+
+### ¿Qué significa la barra superior con el sol y la luna?
+Esta es tu línea de tiempo circadiana. La aplicación utiliza tu ubicación para calcular exactamente a qué hora amanece y anochece en tu ciudad. El sol dorado o la luna te muestran visualmente en qué fase del día te encuentras (mañana, tarde, noche o madrugada) y cuánto falta para el siguiente ciclo.
+
+### Veo que hay íconos de "palomita" y "tacha" debajo de la línea de tiempo. ¿Para qué sirven?
+Son recomendaciones dinámicas basadas en la ciencia del ritmo circadiano. CaloriTrack te dice qué es óptimo hacer en este preciso momento (las **"palomitas"**, como hidratarte, tomar el sol o hacer ejercicio fuerte) y qué deberías evitar (las **"tachas"**, como tomar café tarde, usar pantallas de noche o cenar pesado). Estas recomendaciones cambian automáticamente a lo largo del día.
+
+### El color del texto en esta tarjeta a veces es oscuro y a veces es blanco. ¿Es normal?
+¡Sí! Es una característica de diseño para proteger tu vista. Durante el día, la tarjeta simula los colores del amanecer o el cielo azul, usando texto oscuro. Por la noche, simula un atardecer o la oscuridad, y el texto cambia a blanco para que siempre puedas leerlo sin forzar la vista.
+
+---
+
+## 3. El Tip del Día
+
+### ¿Cómo puedo ver un consejo diferente si ya leí el de hoy?
+En la esquina superior derecha de la tarjeta del Tip del Día verás un pequeño **ícono de flechas circulares**. Si lo tocas, la aplicación se conectará a nuestra base de datos y cargará un nuevo consejo aleatorio al instante para mantenerte motivado.
+
+### El consejo me pareció muy interesante, ¿cómo puedo aprender más al respecto?
+Simplemente **toca en cualquier parte de la tarjeta** del consejo. Esto abrirá una ventana detallada donde te daremos una reflexión más profunda sobre esa frase, un ejemplo práctico de cómo aplicarla en tu día a día, y un botón directo a nuestro blog de ciencia y nutrición para que te conviertas en un experto.
+
+---
+
+## 4. Seguimiento de Ayuno (Fasting)
+
+### Mi tarjeta de ayuno solo muestra un círculo gris con un signo de "+". ¿Está fallando?
+No está fallando, esto simplemente significa que actualmente no tienes ningún ayuno en progreso. Para comenzar, toca la tarjeta y presiona **"Iniciar tu ayuno"**.
+
+### ¿Cómo interpreto la dona de colores cuando estoy ayunando?
+Cuando inicias un ayuno, verás un contador regresivo en el centro de la tarjeta y una barra que se irá llenando poco a poco. El color cambia según el tiempo que lleves: se pinta de naranja al inicio, luego pasa por tonos verde menta y azul cielo, hasta llegar a morado en ayunos profundos. Abajo verás dos datos clave: a la izquierda, el tiempo que ya has ayunado, y a la derecha, tu meta de horas.
+
+---
+
+## 5. Cetosis (KetoFlame)
+
+### ¿Por qué la flama de mi tarjeta cambió de color amarillo a rojo?
+¡Felicidades, tu cuerpo está en modo de quema de grasa profunda! El color de tu KetoFlame refleja la longitud de tu racha de días consecutivos en cetosis. Comienza en un color neutro o amarillo (de 1 a 6 días), cambia a naranja intenso (7 a 20 días) y se vuelve completamente roja cuando logras una racha sólida de 21 días o más.
+
+### ¿Qué pasa si toco el ícono de "i" (información) en la tarjeta KetoFlame?
+Te abrirá una guía rápida explicando qué significa entrar en cetosis y cómo tu cuerpo se está "ceto-adaptando". También encontrarás un enlace a un artículo completo de nuestro blog sobre el tema.
+
+---
+
+## 6. Calorías Activas (Energía Diaria)
+
+### ¿Por qué el círculo de mis calorías a veces se vuelve naranja?
+El círculo de progreso se dibuja en nuestro clásico color Verde Menta mientras te mantengas dentro de tu meta calórica. Sin embargo, si superas tu objetivo diario (más del 100%), el anillo cambiará a color naranja para alertarte visualmente de que has excedido tu presupuesto.
+
+### ¿Qué significan los dos números en la parte inferior de la tarjeta de calorías?
+El **ícono azul** del tenedor y cuchillo representa las calorías que has consumido hoy mediante tus alimentos. El **ícono naranja** de la flama indica las calorías que has quemado hoy mediante tu actividad física o entrenamientos.
+
+---
+
+## 7. Balance de Electrolitos (Hidratación)
+
+### Bebí mucha agua hoy, pero mi barra de hidratación sigue mostrándose en color rojo. ¿Qué estoy haciendo mal?
+En CaloriTrack no solo nos importa cuánta agua bebes, sino tu **balance hidroelectrolítico**. Tu cuerpo necesita sal (sodio) para retener el agua correctamente. La proporción ideal que buscamos es de aproximadamente 6 gramos de sal por cada litro de agua. Si bebes mucha agua pero consumes poca sal, la barra se pondrá roja o naranja para avisarte del desbalance. Se pintará de verde cuando encuentres el equilibrio perfecto.
+
+### La tarjeta se ve gris y me pide "Añadir Agua", pero sí he comido sal. ¿Por qué?
+Si no has registrado al menos un poco de agua (ml) en el día, es imposible calcular matemáticamente tu ratio de hidratación. Por eso, la tarjeta se vuelve gris de forma neutral y te invita a registrar tus líquidos primero tocando el **botón azul de "+"**.
+
+---
+
+## 8. Nivel de Actividad Física
+
+### Mi tarjeta de actividad dice "Moderado" o "Fuerte". ¿Cómo calcula la app esta clasificación?
+La aplicación evalúa las calorías activas totales que has quemado en el día (a través de Apple Salud) y las compara contra tu Gasto Energético Diario Total (tu meta metabólica). Basado en ese porcentaje, te asignamos automáticamente un nivel en tiempo real: Reposo, Ligero, Moderado, Fuerte o Muy Fuerte.
+
+### ¿Por qué la dona de actividad es siempre roja y naranja?
+Para representar visualmente el "fuego" y el calor que genera tu cuerpo al quemar energía, utilizamos un gradiente exclusivo de tonos cálidos (rojos y naranjas) para esta tarjeta.
+
+---
+
+## 9. Índice de Masa Corporal (IMC)
+
+### ¿Cómo leo el arcoíris de colores de mi tarjeta de IMC?
+Es un medidor visual de tu salud física general. La aguja señala tu posición actual basándose en tu peso y altura. La zona izquierda amarilla indica bajo peso (menos de 18.5), la franja verde es el peso normal y saludable (18.5 a 25), la franja amarilla derecha señala sobrepeso (25 a 30) y la zona roja es obesidad (más de 30).
+
+### En mi tarjeta dice "Sin datos", ¿está rota?
+Para calcular tu IMC, necesitamos saber exactamente cuánto mides y cuánto pesas. Si ves este mensaje, simplemente ve a tu perfil y asegúrate de haber llenado tu información corporal.
+
+---
+
+## 10. Seguimiento de Enfermedades (Sickness)
+
+### ¿Por qué mi tarjeta de salud aparece toda roja con el ícono de un botiquín de primeros auxilios?
+Esto ocurre porque has registrado recientemente un episodio de enfermedad y te encuentras en "Modo Recuperación". El número rojo gigante te indica exactamente cuántos días han transcurrido desde que te enfermaste.
+
+### Ya me curé, ¿cómo quito el modo de recuperación para que mi tarjeta vuelva a ser un escudo verde?
+¡Qué bueno que te sientes mejor! Solo tienes que tocar la tarjeta roja para entrar al historial. Ahí verás un botón verde muy claro que dice **"Me he recuperado"**. Al tocarlo, se cerrará el registro de esa enfermedad y la pantalla volverá a mostrar orgullosamente tu racha de días completamente sano.
+
+---
+
+## 11. Calidad del Sueño
+
+### Ayer dormí 8 horas completas, pero mi puntuación de sueño marca 75 puntos y no 100. ¿Por qué es tan estricto?
+La cantidad de horas que pasas en la cama es solo una parte de la ecuación (representa el 50% de tus puntos). Nuestro algoritmo médico avanzado también evalúa la calidad de ese sueño a través de tu reloj inteligente. Te otorgamos hasta un 20% adicional por llegar a tu meta de **Sueño Profundo** (vital para recuperación física) y otro 20% por tu **Sueño REM** (vital para tu cerebro). Además, te restamos puntos de eficiencia si detectamos que te despertaste muchas veces o pasaste mucho tiempo dando vueltas en la cama.
+
+### ¿Cómo obtiene CaloriTrack la información sobre mi fase REM o Sueño Profundo?
+Nos conectamos de manera segura y privada con Apple Salud (HealthKit). Cuando usas tu Apple Watch para dormir, este registra las fases de tu sueño basándose en tu ritmo cardíaco y movimiento, y CaloriTrack extrae e interpreta estos datos por ti cada mañana. Solo asegúrate de tener los permisos activos en la sección de "Sincronización con terceros" en tu Perfil.-----
+Archivo: ./docs/02-nutricion/faqs-nutricion.md
+---
+id: faqs-nutricion
+title: Preguntas Frecuentes de Nutrición
+sidebar_label: Preguntas Frecuentes
+sidebar_position: 2
+slug: preguntas-frecuentes-nutricion
+---
+
+# Preguntas Frecuentes
+
+## 📅 Registro Diario y Organización de Comidas
+
+### Solo veo la opción de "Comida" en mi diario, ¿dónde quedaron el "Desayuno", la "Cena" y los "Refrigerios"?
+
+CaloriTrack se adapta a tu estilo de vida. Si solo ves una comida, es probable que tengas configurada la preferencia de "1 Comida (OMAD)". Para ver el resto, ve al final de tu diario de nutrición, toca el botón con el ícono de cuadritos y selecciona la estructura que prefieras (4, 3, 2 o 1 comida al día). Tu diario se actualizará automáticamente.
+
+### Siempre desayuno lo mismo. ¿Tengo que buscar y registrar mis huevos con avena todos los días?
+
+¡Para nada! Tienes herramientas para agilizar esto. En el encabezado de la comida (por ejemplo, "Desayuno"), toca el menú de tres puntos (o el botón de opciones) y selecciona "Copiar de ayer". También, al registrar un alimento, puedes usar la sección "Añadir a múltiples días" para seleccionarlo para toda la semana de un solo golpe.
+
+### Registré un alimento en la "Cena" pero era para la "Comida", ¿tengo que borrarlo y volverlo a buscar?
+
+No es necesario. Simplemente toca el alimento que te equivocaste en tu diario. En la pantalla de edición, busca la sección "Detalles del Registro" y cambia el selector de "Cena" a "Comida". Toca guardar y se moverá automáticamente.
+
+### ¿Cómo elimino un alimento o un platillo completo que registré por error?
+
+Tienes un par de opciones. Puedes mantener presionado el alimento o platillo y seleccionar "Eliminar" en el menú desplegable. Si estás en modo edición, puedes tocar el ícono rojo de restar junto al alimento.
+
+---
+
+## 🔍 Búsqueda, Escáner y Alimentos Privados
+
+### Escaneé un código de barras pero la aplicación dice que no se encontró el alimento. ¿Qué hago?
+
+Aunque nuestra base de datos es enorme, algunos productos locales o muy nuevos pueden faltar. Cuando esto pase, la pantalla te mostrará un botón para "Crear alimento privado". Allí podrás ingresar el nombre, marca y los macros principales (calorías, proteínas, grasas y carbohidratos) de la etiqueta del producto. Una vez guardado, podrás registrarlo inmediatamente y quedará guardado para tu uso personal.
+
+### En los resultados de búsqueda, ¿qué significa el ícono de la palomita azul frente al ícono de un mundo?
+ Es un indicador de confianza. El ícono de la palomita azul (sello) significa que el alimento está "Certificado por CaloriTrack"; es decir, nuestra base de datos lo ha validado. El ícono del mundo indica que el alimento proviene de una base de datos pública, como la del USDA.
+
+### Entré al "Catálogo de Platillos" pero quiero ver solo opciones bajas en carbohidratos. ¿Se puede?
+¡Claro que sí! En la parte superior del Catálogo de Platillos encontrarás una barra desplazable con diferentes "píldoras" o etiquetas. Simplemente desliza, busca la opción "Baja en Carbohidratos" y tócala; la cuadrícula filtrará inmediatamente las opciones compatibles.
+
+---
+
+## 🎯 Metas, Macros y Progreso
+
+### Mis metas de calorías y macros cambiaron solas y ahora no me deja editarlas manualmente. ¿Por qué?
+ Esto ocurre cuando activas un Plan de Alimentación. El sistema prioriza las metas específicas que requiere el plan para que alcances tu objetivo. Si prefieres volver a tener el control manual completo de tus calorías y macros, debes ir a la tarjeta de tu Plan Activo, seleccionar "Gestionar" y luego "Cancelar Plan Actual".
+
+### No me gusta contar gramos, prefiero ajustar mis macros por porcentajes (ej. 40% protes, 30% grasas, 30% carbs). ¿Dónde hago esto?
+ Ve a la pantalla de "Ajustar Objetivos", toca la tarjeta visual de tus Macros (Proteínas, Carbs, Grasas) y se abrirá una hoja de ajuste. En la parte superior, cambia el modo de entrada de "Gramos" a "Porcentajes". El sistema calculará los gramos exactos por ti en base a tus calorías totales.
+
+### Los fines de semana como diferente, ¿puedo tener una meta de calorías distinta para el sábado y domingo?
+ Sí. En la configuración de tus objetivos, activa el interruptor "Personalizar objetivos por día". Esto habilitará una nueva opción llamada "Editar Metas Semanales", donde podrás establecer calorías y macros específicos para cada día de la semana de forma independiente.
+
+### En mi "Resumen Semanal de Calorías", veo que las barras cambian de color. ¿Qué me indican?
+ La gráfica de barras es un semáforo de tu cumplimiento. Si la barra está de color Verde Menta, significa que lograste tu meta o te mantuviste por debajo de tu límite. Si la barra se pinta de color Naranja, significa que sobrepasaste tu objetivo calórico de ese día.
+
+ ---
+
+## 🥗 Micronutrientes y Antinutrientes
+
+### ¿Qué es la tarjeta de "Antinutrientes" y por qué algunas barras se ponen rojas? 
+ Los antinutrientes son compuestos presentes en alimentos (principalmente vegetales, semillas y legumbres) que pueden interferir con la absorción de vitaminas y minerales si se consumen en exceso. Si la barra está en Verde, tu consumo es bajo y seguro. Si se pone Naranja, te estás acercando al límite tolerable. Si está en Rojo, has superado el límite recomendado diario (por ejemplo, alto consumo de oxalatos).
+
+### Quiero ver si logré mis metas de Potasio en toda la semana, no solo hoy. ¿Se puede?
+Por supuesto. Entra al detalle tocando la tarjeta de "Micronutrientes". En la parte superior, debajo del título, verás un selector que dice "Hoy" y "7 Días" (o Semanal). Selecciona la vista semanal y el sistema te mostrará los promedios de consumo de los últimos días comparados con tu meta diaria. También puedes filtrar solo los nutrientes "Faltantes" para ver en cuáles enfocarte.
+
+---
+
+## 📋 Planes de Alimentación y Listas del Súper
+
+### Activé un plan, ¿dónde encuentro los ingredientes que necesito comprar?
+ En la pantalla principal de Nutrición, toca en "Gestionar" dentro de la tarjeta de tu plan activo. Luego selecciona "Lista de Súper". Te mostraremos todos los ingredientes agrupados por categoría.
+
+### La lista del súper tiene cosas que ya tengo en mi despensa, ¿puedo compartir solo lo que me falta a mi pareja?
+Totalmente. En la pantalla de la Lista de Súper, toca el botón "Seleccionar" en la parte superior derecha. Esto te permitirá marcar únicamente los ingredientes que te faltan. Luego, toca el ícono de Compartir y CaloriTrack generará un texto limpio solo con tu selección para enviarlo por WhatsApp o cualquier otra app.
+
+### En el Asistente de Planes, ¿puedo elegir dieta Cetogénica (Keto) y al mismo tiempo ser Libre de Lácteos?
+ Sí. El asistente está diseñado para combinar tus preferencias. En el paso 3 eliges tus restricciones (por ejemplo, Sin Lácteos) y en el paso 4 seleccionas el estilo de dieta (ej. Dieta Cetogénica). El sistema filtrará la base de datos y te recomendará en el paso final únicamente los planes que cumplan con ambas condiciones estrictamente.-----
 Archivo: ./docs/02-nutricion/_category_.json
 {
   "customProps": {
@@ -70,6 +444,81 @@ Archivo: ./docs/02-nutricion/_category_.json
     "description": "Encuentra tu guía para poder tener la mejor nutrición en forma natural."
   }
 }-----
+Archivo: ./docs/03-ayuno/guia-ayuno.mdx
+---
+# Nombre del archivo: docs/03-ayuno/guia-ayuno.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-11
+# Versión: 1.1
+# Descripción: Guía detallada del módulo de ayuno. Incluye configuración, uso del anillo interactivo, gestión de historial y sección de dudas frecuentes (FAQs) integradas.
+
+slug: guia-definitiva-ayuno
+title: "Guía Definitiva: Domina tu Ayuno"
+sidebar_label: "Domina tu Ayuno"
+sidebar_position: 1
+---
+
+¡Te damos la bienvenida a tu centro de control de ayuno! Esta pantalla está diseñada para acompañarte en cada paso de tu proceso, desde tus primeras 12 horas hasta retos avanzados. Aquí te explicamos cómo usar todas sus herramientas:
+
+## 1. Configura tus Preferencias (El primer paso)
+
+Antes de empezar, ¡personalicemos tu experiencia! En la esquina superior izquierda de la pantalla principal de ayuno, verás un **ícono de ajustes** (deslizadores).
+
+Tócalo para abrir tus preferencias. Allí podrás:
+* Establecer tu **meta de horas predeterminada** (desde 12 hasta 96 horas).
+* Fijar tus **horarios habituales** de inicio y fin para que la app se adapte orgánicamente a tu rutina diaria.
+
+## 2. El Anillo Mágico (Tu Temporizador Interactivo)
+
+En el centro de la pantalla verás un gran anillo circular. ¡Es totalmente interactivo!
+
+* **Ajuste rápido:** Puedes tocar y arrastrar la "bolita" (indicador) a lo largo del anillo para aumentar o disminuir tus horas de meta en tiempo real.
+* **Aprende mientras ajustas:** Mientras deslizas el dedo, aparecerán pequeños mensajes en pantalla explicándote qué ocurre en tu cuerpo exactamente en esa hora (ej. *"16 horas: Quema de grasa acelerada"*).
+* **Información clara:** En el centro del anillo siempre verás tu tiempo restante en números grandes, además de tu meta total y el tiempo transcurrido.
+
+:::tip Sabiduría CaloriTrack
+El anillo no es solo un reloj; es un mapa de tu fisiología. Presta atención a los mensajes de las etapas celulares para entender tu progreso biológico.
+:::
+
+## 3. Iniciar, Editar y Compartir
+
+* **¡Arranca!:** Toca el botón grande en la parte inferior para iniciar tu ayuno.
+* **¿Olvidaste darle inicio?:** No te preocupes. Una vez que tu ayuno esté corriendo, verás un **ícono de lápiz** junto a la frase "Ayuno iniciado". Tócalo para ajustar la fecha y hora exacta en la que dejaste de comer.
+* **Presume tu logro:** Cuando tengas un ayuno en progreso, aparecerá un **ícono para Compartir** en la parte inferior. Podrás generar una imagen elegante con fondos personalizados para Instagram o WhatsApp.
+* **Terminar:** Usa el botón principal nuevamente para registrar el final de tu ayuno.
+
+## 4. Educación y Beneficios
+
+No estás solo en este camino; la app te enseña mientras avanzas.
+
+* **Los beneficios de tu esfuerzo:** En la esquina superior derecha, toca el **ícono de información ("i")**. Se abrirá una lista detallada de los beneficios fisiológicos separados por etapas (desde las 12 horas hasta el ayuno prolongado de 96 horas).
+* **Guía para principiantes:** Si no tienes un ayuno activo, verás un botón con un **signo de interrogación** en la parte inferior. Es una guía rápida y paso a paso para asegurar que tu primer ayuno sea un éxito rotundo.
+
+## 5. Historial y Estadísticas
+
+Justo debajo de tu anillo de ayuno, verás una tarjeta que te felicita por tu **Racha actual**. ¡Tócala para entrar a tu panel de estadísticas!
+
+* **Tus Récords:** Visualiza tus KPIs como tu ayuno más largo, tu racha máxima y el promedio de horas.
+* **Gráficas:** Observa tu progreso en una gráfica de barras filtrable por semana, mes o año.
+* **Bitácora Completa:** Encontrarás la lista de todos tus ayunos históricos. Si dejas presionado uno, podrás **Editar** las horas si te equivocaste o **Eliminarlo** si fue un registro de prueba.
+
+---
+
+## Dudas Frecuentes (FAQs)
+
+### ¿Qué puedo consumir sin romper la autofagia?
+Durante tu ventana de ayuno, el objetivo es mantener la insulina baja. Puedes consumir:
+* Agua mineral o natural.
+* Café negro y té (sin endulzantes).
+* Sueros de hidratación (sin glucosa) disponibles en la app.
+* **Evita:** Cualquier alimento con calorías o edulcorantes artificiales.
+
+### ¿Por qué mi cronómetro cambió de hora solo?
+CaloriTrack es una herramienta de salud integral. Si registras una comida en tu **Diario de Alimentación** durante una hora en la que supuestamente estabas ayunando, la app ajustará automáticamente el inicio de tu ayuno para mantener la integridad de tus datos biológicos. ¡La honestidad con tus datos es la clave del autoconocimiento!
+
+:::info Nota Técnica
+Recuerda que para una sincronización perfecta, es recomendable permitir los permisos de notificaciones para que CaloriTrack pueda avisarte cuando alcances tus metas celulares.
+:::-----
 Archivo: ./docs/03-ayuno/_category_.json
 {
   "customProps": {
@@ -86,6 +535,204 @@ Archivo: ./docs/03-ayuno/_category_.json
     "description": "Explora la ciencia del ayuno, aprende a configurar tus ventanas metabólicas y comprende los beneficios celulares de la autofagia en Caloritrack."
   }
 }-----
+Archivo: ./docs/03-ayuno/faqs-ayuno.md
+---
+# Nombre del archivo: docs/03-ayuno/preguntas-y-respuestas-ayuno.md
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-12
+# Versión: 1.0
+# Descripción: Documento de Preguntas Frecuentes (FAQ) sobre configuración, historial y dudas técnicas del módulo de ayuno. Formato MD puro optimizado para SEO y UX.
+
+slug: preguntas-frecuentes-ayuno
+title: "Preguntas Frecuentes de Ayuno"
+sidebar_label: "Preguntas Frecuentes"
+sidebar_position: 2
+---
+
+### ¿Cómo inicio mi temporizador de ayuno?
+
+¡Es muy sencillo! Al entrar a la pestaña de **Ayuno** (el icono del reloj en el menú inferior), verás un gran círculo central con tu meta de horas. Simplemente ajusta las horas deslizando el dedo sobre el borde del círculo y presiona el botón grande que dice **"Iniciar Ayuno"** en la parte inferior.
+
+### Olvidé darle a "Iniciar" cuando terminé de comer. ¿Puedo cambiar la hora de inicio?
+
+¡Sí, por supuesto! No te preocupes si se te pasó la hora exacta. Una vez que hayas iniciado el ayuno en la app, verás un texto debajo del círculo que dice *"Ayuno iniciado"* con la hora actual. Toca el **ícono de lápiz** junto a esa hora y podrás seleccionar retroactivamente la fecha y hora exactas en las que realmente comenzaste tu ayuno.
+
+### ¿Cómo detengo mi ayuno si ya voy a comer?
+
+Cuando estés listo para romper tu ayuno, entra a la vista principal y toca el botón dorado que dice **"Terminar Ayuno"**. La app registrará el tiempo total que lograste, actualizará tus estadísticas y te mostrará una pantalla de felicitación con tu nueva racha.
+
+### Terminé mi ayuno antes de tiempo, ¿se guarda igual?
+
+La aplicación está diseñada para ayudarte a crear hábitos. Si detienes tu ayuno antes de cumplir la meta, el registro se guardará en tu historial solo si han pasado **más de 10 segundos**. Esto evita que se guarden toques accidentales. Sin embargo, recuerda que para mantener tu "Racha", lo ideal es alcanzar la meta que te propusiste.
+
+---
+
+## 🎯 Metas y Preferencias Personalizadas
+
+### ¿Cómo cambio mi meta de horas mientras estoy ayunando?
+
+Si ya estás en medio de un ayuno y decides que quieres alargarlo o acortarlo, simplemente pon tu dedo sobre la "bolita" (indicador) en el borde del círculo y deslízala. Verás cómo la meta de horas se actualiza en tiempo real. También verás que la hora en la que *"El ayuno termina"* se ajustará automáticamente en la parte de abajo.
+
+### Quiero hacer un ayuno prolongado, ¿cuál es el límite de horas en la app?
+
+Nuestra aplicación soporta desde ayunos intermitentes clásicos (12 o 16 horas) hasta ayunos prolongados. Puedes girar el círculo para configurar una meta de **hasta 96 horas**.
+
+### ¿Tengo que configurar mis horas cada vez que inicio un ayuno?
+
+No es necesario. Si tienes un protocolo fijo (por ejemplo, 16 horas todos los días), puedes tocar el **ícono de ajustes** (las tres líneas con controles deslizantes) en la esquina superior izquierda de la pantalla de Ayuno. Allí podrás definir:
+
+* Tu meta de horas por defecto (ej. 16 horas).
+* Tu hora habitual de inicio (ej. 8:00 PM).
+* La hora calculada de fin (ej. 12:00 PM).
+
+Una vez guardado, cada vez que abras la app, tu círculo ya estará posicionado en esa meta.
+
+---
+
+## 🎨 El Círculo de Progreso y Colores
+
+### ¿Por qué cambia de color el texto del tiempo transcurrido?
+
+El color del tiempo que llevas ayunando es un indicador visual de la fase metabólica en la que te encuentras:
+
+* 🟧 **Naranja suave (0 a 12 horas):** Tu cuerpo está procesando la última comida y utilizando el glucógeno.
+* 🟩 **Verde menta (12 a 16 horas):** Comienza la quema de grasa y la cetosis temprana.
+* 🟦 **Azul cielo (16 a 20 horas):** Aumenta la quema de grasa y puede iniciar la autofagia.
+* 🟪 **Morado (Más de 20 horas):** Fase de autofagia profunda y máxima reparación celular.
+
+### Ya cumplí mi meta de horas, pero el cronómetro sigue contando. ¿Qué significa el signo "+"?
+
+Cuando alcanzas tu meta (el círculo se llena por completo), la aplicación no te detiene automáticamente, ya que podrías decidir continuar un poco más. A partir de ese momento, verás que el texto cambia a *"Tiempo excedido"* y te mostrará un cronómetro con un **signo "+"** (ej. `+45 m` o `+2 h`). Esto indica exactamente cuánto tiempo extra lograste por encima de tu objetivo original.
+
+---
+
+## 📚 Aprendizaje y Guías
+
+### Soy nuevo en esto del ayuno intermitente. ¿Tienen consejos para empezar?
+
+¡Absolutamente! Si aún no has iniciado tu ayuno, verás un botón con un **signo de interrogación (?)** en la parte inferior. Al tocarlo, se abrirá la *"Guía Rápida para Principiantes"*, donde aprenderás sobre hidratación, qué rompe el ayuno, cómo manejar el hambre y qué comer al terminar.
+
+### Mientras ayuno, quiero saber qué le está pasando a mi cuerpo.
+
+En la esquina superior derecha de la pantalla principal verás un botón con una **"i" (Información)**. Toca ahí para abrir la sección de *"Beneficios del Ayuno"*. Te mostrará una línea de tiempo detallada (de 0 a 96 horas) explicando cómo se comporta tu cuerpo en cada etapa (quema de grasa, cetosis, autofagia, etc.).
+
+---
+
+## 📊 Historial y Estadísticas
+
+### ¿Dónde puedo ver cuántos días seguidos llevo ayunando?
+
+Toca la tarjeta de estadísticas que aparece justo debajo del círculo de progreso en la vista principal. Esto te llevará a la pantalla de **Estadísticas de Ayuno**. Allí verás tu *"Racha actual"* (días consecutivos cumpliendo tu meta) y tu *"Racha más larga histórica"*.
+
+### ¿Qué otras métricas puedo ver en la sección de estadísticas?
+
+Dentro de las estadísticas, puedes visualizar:
+
+* Tu racha actual y récord histórico.
+* El ayuno más largo que has logrado.
+* Tu promedio de horas por ayuno.
+* El número total de ayunos completados.
+* Una gráfica de barras interactiva que puedes filtrar por Semana, Mes o Año.
+
+### Terminé mi ayuno ayer, pero se me olvidó darle a "Terminar" en la app y se guardaron muchísimas horas. ¿Puedo corregirlo?
+
+¡Sí! Ve a la pantalla de Estadísticas y desplázate hacia abajo hasta la sección **"Registro Completo"**. Busca el ayuno que quieres corregir, mantén presionado el dedo sobre él y selecciona **"Editar"**. Podrás ajustar manualmente la fecha y hora exacta en la que lo terminaste.
+
+### ¿Puedo llevar un diario de cómo me sentí en cada ayuno?
+
+Por supuesto. En la misma opción de *"Editar"* que mencionamos arriba, encontrarás una caja de texto para **"Notas Personales"**. Puedes usarla para escribir si tuviste mucha energía, si sentiste hambre, o qué comiste al romper el ayuno.
+
+### ¿Qué significa el recuadro "Personas ayunando ahora" en mis estadísticas?
+
+Es un resumen global que te muestra cuántos usuarios de la comunidad CaloriTrack están en medio de un ayuno en este mismo momento. ¡Nunca estás solo en tu camino hacia el bienestar!
+
+---
+
+## 📲 Compartir tus Logros
+
+### Estoy a mitad de mi ayuno y quiero compartir mi progreso. ¿Es posible?
+
+¡Sí! Mientras tu ayuno está en progreso, verás un botón con un **ícono de compartir** (un cuadro con una flecha hacia arriba) en la parte inferior izquierda de la pantalla. Al tocarlo, se generará una imagen elegante que muestra cuánto tiempo te falta y tu meta actual. Puedes elegir diferentes colores de fondo y compartirla directamente en tus redes sociales o por mensaje.
+
+### ¡Completé mi ayuno de 24 horas! ¿Cómo lo presumo?
+
+Cuando presiones *"Terminar Ayuno"*, aparecerá una pantalla de felicitación con un resumen de tu racha y tiempo logrado. En esa misma pantalla verás el botón **"Compartir tu logro"**. Podrás personalizar la imagen conmemorativa de *"Ayuno Completado"* y enviarla a tus amigos para inspirarlos a unirse a ti.-----
+Archivo: ./blog/2026-05-11-v1-4-0.md
+---
+# Nombre del archivo: v1-4-0.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-11
+# Versión: 1.0
+# Descripción: Notas de la versión 1.4.0 de Caloritrack. Etiquetas actualizadas a la nueva arquitectura de Macro-etiquetas de 8 pilares.
+
+slug: v1-4-0
+title: "CaloriTrack v1.4.0: Tu pantalla, tus reglas"
+authors: [arturo]
+tags: [dashboard, cuenta-ajustes, nutricion, kai-coach]
+date: 2026-05-11T10:00
+---
+
+¡Gracias por ser parte de nuestra comunidad! En esta versión hemos añadido nuevas funciones, optimizado tu experiencia y reforzado nuestro compromiso con tu privacidad:
+
+### ✨ Novedades y Personalización
+* **Tu pantalla, tus reglas:** Ahora tienes el control total para ajustar y ordenar las tarjetas de tu panel principal exactamente como prefieras.
+* **Nuevo Balance Hidroelectrolítico:** Rediseñamos la interfaz para darte mayor claridad. Ajusta tus cantidades en menos clics y utiliza los nuevos botones de acceso rápido para sueros de hidratación.
+* **Flexibilidad a tu medida:** ¿No deseas llevar un plan por ahora? Hemos agregado la opción de minimizar la tarjeta correspondiente para mantener tu pantalla despejada.
+
+### 🎨 Mejoras en la Experiencia de Usuario (UX)
+* **Tips de KAI optimizados:** Refinamos los consejos de KAI para brindarte mejores herramientas de reflexión que te ayudarán a abordar tus retos diarios.
+* **Claridad en tu cuenta:** Ajustamos la interfaz para que identificar tu tipo de membresía actual sea mucho más rápido y visual.
+* **Contrastes perfeccionados:** Mejoramos la legibilidad y el contraste de colores en el registro nutricional, el ritmo circadiano y la visualización de tu plan.
+
+### 🛡️ Correcciones y Privacidad Total
+* **Privacidad absoluta:** Eliminamos archivos de terceros (Firebase) para garantizar que nadie acceda a tu información. Nuestra política es estricta: *no rastreamos ni compartimos tus datos con nadie*. El rendimiento ahora se mide mediante métodos internos 100% seguros.
+* **Compras y renovaciones impecables:** Solucionamos el inconveniente que evitaba que la pantalla se actualizara tras adquirir o renovar una membresía. Tu pago ahora se refleja al instante.
+* **Estabilidad visual y técnica:** Corregimos los estilos en modo claro y oscuro para las tarjetas de búsqueda de alimentos y otras pantallas. Además, optimizamos el manejo de imágenes de platillos, los sonidos de la app y el registro de nutrición para un funcionamiento fluido.
+
+Agradecemos profundamente toda la retroalimentación recibida. Para nosotros, escuchar a nuestros clientes es lo más importante y el motor principal detrás de cada mejora. ¡Actualiza ahora y disfruta de la mejor versión de nuestra app!-----
+Archivo: ./README.md
+# Website
+
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+
+## Installation
+
+```bash
+yarn
+```
+
+## Local Development
+
+```bash
+yarn start
+```
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+## Build
+
+```bash
+yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+Using SSH:
+
+```bash
+USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```bash
+GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+-----
 Archivo: ./package-lock.json
 {
   "name": ".",
@@ -20247,6 +20894,10 @@ Archivo: ./i18n/en/code.json
 }-----
 Archivo: ./i18n/en/docusaurus-theme-classic/footer.json
 {
+  "__comentario_cabecera__": {
+    "message": "Nombre del archivo: footer.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-13 | Versión: 1.1 | Descripción: Sincronización de llaves de traducción. Se ajustó 'link.item.label.Centro de Ayuda' para que el i18n de Docusaurus coincida con el config.",
+    "description": "Control de versión y autoría adaptado a formato JSON"
+  },
   "copyright": {
     "message": "© 2026 CaloriTrack ™, All Rights Reserved",
     "description": "The footer copyright"
@@ -20259,9 +20910,9 @@ Archivo: ./i18n/en/docusaurus-theme-classic/footer.json
     "message": "CaloriTrack",
     "description": "The title of the footer links column with title=CaloriTrack in the footer"
   },
-  "link.item.label.Inicio del Centro de Ayuda": {
+  "link.item.label.Centro de Ayuda": {
     "message": "Help Center",
-    "description": "The label of footer link with label=Inicio del Centro de Ayuda linking to /"
+    "description": "The label of footer link with label=Centro de Ayuda linking to /"
   },
   "link.item.label.Novedades y Actualizaciones": {
     "message": "App Releases",
@@ -20274,8 +20925,12 @@ Archivo: ./i18n/en/docusaurus-theme-classic/footer.json
 }-----
 Archivo: ./i18n/en/docusaurus-theme-classic/navbar.json
 {
+  "__comentario_cabecera__": {
+    "message": "Nombre del archivo: navbar.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-13 | Versión: 1.1 | Descripción: Corrección del título del navbar para ocultar el texto en inglés dejándolo vacío, y actualización de la llave de 'Sitio Web Principal' para asegurar el match con docusaurus.config.js.",
+    "description": "Control de versión y autoría adaptado a formato JSON"
+  },
   "title": {
-    "message": "CaloriTrack",
+    "message": "",
     "description": "The title in the navbar"
   },
   "logo.alt": {
@@ -20290,12 +20945,561 @@ Archivo: ./i18n/en/docusaurus-theme-classic/navbar.json
     "message": "App Releases",
     "description": "Navbar item with label Novedades de la App"
   },
-  "item.label.Web Oficial": {
-    "message": "Website",
-    "description": "Navbar item with label Web Oficial"
+  "item.label.Sitio Web Principal": {
+    "message": "Main Website",
+    "description": "Navbar item with label Sitio Web Principal"
   }
-}
+}-----
+Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/01-salud/guia-salud.mdx
+---
+# Nombre del archivo: guia-salud.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-12
+# Versión: 1.0.2
+# Descripción: Master guide for the main screen "My Body" (Dashboard). It explains the customization of cards, the biological carousel, and data synchronization.
+slug: guia-salud
+title: "Definitive Guide: Health View (My Body)"
+sidebar_label: "My Body (Dashboard)"
+sidebar_position: 1
+---
+
+Welcome to your personal command center!
+The **"My Body"** tab is the main screen of CaloriTrack.
+Here you will be able to visualize, at a single glance, how all the vital aspects of your organism are behaving in real time.
+Our philosophy is that *"what is not measured, cannot be improved"*, and this dashboard is designed exactly to give you total control.
+Let's break down each section:
+
+## 1. The Smart Greeting and Notices
+
+Upon entering, the application will welcome you with a personalized greeting (*"Good morning"*, *"Good afternoon"*, or *"Good evening"*) accompanied by your name.
+:::info Updates
+If we have released new improvements for the application, you will see a distinctive **"Update available"** card at the top.
+This includes a direct button so you can download it and not miss out on any innovation in your health ecosystem.
+:::
+
+## 2. The Inspiration and Biology Carousel
+
+Right below the greeting, you will find a swipeable section (carousel) with two fundamental cards to start your day with mindfulness:
+
+### Your Circadian Rhythm
+This card changes color dynamically according to the time of day (morning, afternoon, sunset, or night).
+* **Timeline:** Shows the exact time of sunrise and sunset.
+* **Recommendations:** It will indicate positive actions (e.g., getting sunlight, hydrating) and negative actions (e.g., avoiding stress or sugars) ideal for your biology at that specific time.
+* **Deep Dive:** If you tap the card, you will access a scientific explanation about your current circadian phase.
+### Tip of the Day
+By swiping, you will find a dose of wisdom: an inspiring quote from famous authors accompanied by a reflection and a practical example.
+* **Randomness:** If you wish to read another one, simply tap the circular arrows icon to load a new random thought.
+## 3. Your Customizable Control Panel
+
+This is the core of the app: an interactive dashboard full of cards that summarize your current status.
+The default order follows this logic:
+
+* **⏱️ Fasting:** Shows the status of your fast.
+If you are not fasting, you will see a button to start. If you are in progress, you will see the colored ring with the time remaining.
+* **🔥 KetoFlame:** For users on a ketogenic diet. It shows a flame that grows and intensifies according to your streak of days in ketosis.
+Tap the "i" to learn about keto-adaptation.
+* **🍽️ Calories:** A green ring that indicates your daily energy budget (consumed vs. burned).
+* **⚡ Hydration and Electrolytes:** Visualize your balance of sodium (salt) and water.
+If the ratio becomes unbalanced, the bar will turn red as a warning.
+* **🏃‍♂️ Physical Activity:** Represents your active calories. The app dynamically classifies you (Sedentary, Light, Moderate, Heavy) based on your movement.
+* **⚖️ Body Mass Index (BMI):** A speedometer-style gauge that marks your current zone based on your last logged weight.
+* **🛡️ Health and Recovery:** Your digital immune system. It shows your "Healthy days streak" in green or recovery days in red if you logged an illness.
+* **🌙 Sleep Quality:** Evaluates your rest (1/100 scale) based on Apple Watch data, detailing **Deep Sleep** and **REM** phases.
+## 4. Make It Yours: Editing the Panel
+
+We know that everyone has different priorities.
+At the bottom of all the cards, you will find the **"Rearrange Panel"** button.
+
+1. Tap it to open the editing list.
+2. Drag the cards up or down according to your current focus (e.g., put Fasting and Calories at the top if your goal is fat loss).
+3. The design is **100% customizable** and adapts to your needs.
+## 5. Magic Update (Pull-to-Refresh)
+
+Did you just log a meal or a workout and want to see the changes reflected?
+:::tip Instant Synchronization
+Simply place your finger at the top of the screen and **swipe down**.
+You will feel a small vibration (haptic feedback) and the application will automatically synchronize all your data with **Apple Health**, recalculating all your cards instantly.
+:::-----
+Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/01-salud/faqs-dashboard-salud.md
+---
+# File Name: docs/01-salud/faqs-dashboard-salud.md
+# Author: Arturo Enriquez Betancourt with Jarvis
+# Date: 2026-05-12
+# Version: 1.0
+# Description: FAQ document regarding the use, interpretation, and configuration of the main "My Body" Dashboard. Pure MD format optimized for SEO and UX.
+
+slug: faqs-dashboard-salud
+title: "Dashboard: Frequently Asked Questions"
+sidebar_label: "Frequently Asked Questions"
+sidebar_position: 2
+---
+
+# Frequently Asked Questions: My Body | Main Dashboard
+
+In this section, we address the most common questions regarding the interpretation of your daily metrics and the customization of your main command center.
+
+## 1. Main Panel (Your Dashboard)
+
+### Why does the greeting at the top change throughout the day?
+CaloriTrack is designed to accompany you in your daily routine. The greeting updates automatically by reading your device's local time, giving you a "Good morning," "Good afternoon," or "Good evening" as appropriate, along with your name.
+
+### Can I change the order in which the health cards appear?
+Absolutely! We know every body is different and your priorities can change. At the bottom of your Health screen, you will find a button called **"Edit Panel"**. Tapping it will open a list where you can drag and drop the cards to organize them exactly in the order you prefer (for example, placing Fasting or Hydration at the very top).
+
+### A green box appeared saying "Update available," what should I do?
+That’s great news! It means our team has released new improvements and features. Just tap the **"Update"** button, and we will take you directly to the App Store so you can download the latest version securely.
+
+---
+
+## 2. Circadian Rhythm (Your biological clock)
+
+### What does the top bar with the sun and moon mean?
+This is your circadian timeline. The app uses your location to calculate exactly what time the sun rises and sets in your city. The golden sun or the moon visually shows you which phase of the day you are in (morning, afternoon, evening, or late night) and how long until the next cycle.
+
+### I see "checkmark" and "cross" icons below the timeline. What are they for?
+These are dynamic recommendations based on circadian rhythm science. CaloriTrack tells you what is optimal to do at this precise moment (the **"checkmarks"**, such as hydrating, getting sunlight, or intense exercise) and what you should avoid (the **"crosses"**, such as drinking coffee late, using screens at night, or having a heavy dinner). These recommendations change automatically throughout the day.
+
+### The text color on this card is sometimes dark and sometimes white. Is this normal?
+Yes! It is a design feature to protect your eyesight. During the day, the card simulates the colors of sunrise or the blue sky using dark text. At night, it simulates a sunset or darkness, and the text changes to white so you can always read it without straining your eyes.
+
+---
+
+## 3. Tip of the Day
+
+### How can I see a different tip if I already read today's?
+In the upper right corner of the Tip of the Day card, you will see a small **circular arrows icon**. If you tap it, the app will connect to our database and instantly load a new random tip to keep you motivated.
+
+### I found the tip very interesting, how can I learn more about it?
+Simply **tap anywhere on the tip card**. This will open a detailed window where we provide a deeper reflection on that quote, a practical example of how to apply it to your daily life, and a direct button to our science and nutrition blog so you can become an expert.
+
+---
+
+## 4. Fasting Tracking
+
+### My fasting card only shows a gray circle with a "+" sign. Is it glitching?
+It is not glitching; this simply means you currently do not have a fast in progress. To begin, tap the card and press **"Start your fast"**.
+
+### How do I interpret the colored donut when I am fasting?
+When you start a fast, you will see a countdown timer in the center of the card and a bar that fills up gradually. The color changes based on how much time has elapsed: it turns orange at the beginning, then moves through mint green and sky blue tones, until it reaches purple during deep fasts. Below, you will see two key data points: on the left, the time you have already fasted, and on the right, your hour goal.
+
+---
+
+## 5. Ketosis (KetoFlame)
+
+### Why did my card's flame change from yellow to red?
+Congratulations, your body is in deep fat-burning mode! The color of your KetoFlame reflects the length of your streak of consecutive days in ketosis. It starts as a neutral or yellow color (1 to 6 days), changes to intense orange (7 to 20 days), and turns completely red when you achieve a solid streak of 21 days or more.
+
+### What happens if I tap the "i" (information) icon on the KetoFlame card?
+It will open a quick guide explaining what it means to enter ketosis and how your body is "keto-adapting." You will also find a link to a full article on our blog about the topic.
+
+---
+
+## 6. Active Calories (Daily Energy)
+
+### Why does my calorie circle sometimes turn orange?
+The progress circle is drawn in our classic Mint Green as long as you stay within your calorie goal. However, if you exceed your daily target (more than 100%), the ring will change to orange to visually alert you that you have exceeded your budget.
+
+### What do the two numbers at the bottom of the calorie card mean?
+The **blue fork and knife icon** represents the calories you have consumed today through food. The **orange flame icon** indicates the calories you have burned today through physical activity or workouts.
+
+---
+
+## 7. Electrolyte Balance (Hydration)
+
+### I drank a lot of water today, but my hydration bar is still showing red. What am I doing wrong?
+At CaloriTrack, we don't just care about how much water you drink, but your **hydro-electrolytic balance**. Your body needs salt (sodium) to retain water correctly. The ideal ratio we look for is approximately 6 grams of salt for every liter of water. If you drink a lot of water but consume very little salt, the bar will turn red or orange to warn you of the imbalance. It will turn green when you find the perfect equilibrium.
+
+### The card looks gray and asks me to "Add Water," but I have eaten salt. Why?
+If you haven't logged at least some water (ml) during the day, it is mathematically impossible to calculate your hydration ratio. Therefore, the card turns a neutral gray and invites you to log your liquids first by tapping the **blue "+" button**.
+
+---
+
+## 8. Physical Activity Level
+
+### My activity card says "Moderate" or "Strong." How does the app calculate this classification?
+The app evaluates the total active calories you have burned in the day (via Apple Health) and compares them against your Total Daily Energy Expenditure (your metabolic goal). Based on that percentage, we automatically assign you a real-time level: Resting, Light, Moderate, Strong, or Very Strong.
+
+### Why is the activity donut always red and orange?
+To visually represent the "fire" and heat your body generates when burning energy, we use an exclusive gradient of warm tones (reds and oranges) for this card.
+
+---
+
+## 9. Body Mass Index (BMI)
+
+### How do I read the color rainbow on my BMI card?
+It is a visual gauge of your general physical health. The needle points to your current position based on your weight and height. The left yellow zone indicates underweight (less than 18.5), the green band is normal and healthy weight (18.5 to 25), the right yellow band indicates overweight (25 to 30), and the red zone is obesity (over 30).
+
+### My card says "No data," is it broken?
+To calculate your BMI, we need to know exactly how tall you are and how much you weigh. If you see this message, simply go to your profile and make sure you have filled in your body information.
+
+---
+
+## 10. Sickness Tracking
+
+### Why does my health card appear all red with a first aid kit icon?
+This happens because you have recently logged a sickness episode and are in "Recovery Mode." The giant red number tells you exactly how many days have passed since you got sick.
+
+### I'm cured now, how do I turn off recovery mode so my card becomes a green shield again?
+We're glad you're feeling better! You just need to tap the red card to enter the history. There you will see a very clear green button that says **"I have recovered"**. Tapping it will close the record for that sickness, and the screen will proudly show your streak of completely healthy days again.
+
+---
+
+## 11. Sleep Quality
+
+### Yesterday I slept a full 8 hours, but my sleep score is 75 points and not 100. Why is it so strict?
+The amount of hours you spend in bed is only part of the equation (it represents 50% of your points). Our advanced medical algorithm also evaluates the quality of that sleep via your smartwatch. We award up to an additional 20% for reaching your **Deep Sleep** goal (vital for physical recovery) and another 20% for your **REM Sleep** (vital for your brain). Additionally, we subtract efficiency points if we detect that you woke up many times or spent a lot of time tossing and turning in bed.
+
+### How does CaloriTrack get information about my REM phase or Deep Sleep?
+We connect securely and privately with Apple Health (HealthKit). When you use your Apple Watch to sleep, it records your sleep phases based on your heart rate and movement, and CaloriTrack extracts and interprets this data for you every morning. Just make sure you have the permissions active in the "Third-party synchronization" section in your Profile.-----
+Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/02-nutricion/faqs-nutricion.md
+---
+id: faqs-nutricion
+title: Nutrition FAQ
+sidebar_label: Frecuently Asked Questions
+sidebar_position: 2
+slug: preguntas-frecuentes-nutricion
+---
+
+# Frequently Asked Questions
+
+## 📅 Daily Logging and Meal Organization
+
+### I only see the "Lunch/Meal" option in my diary, where are "Breakfast", "Dinner", and "Snacks"?
+
+CaloriTrack adapts to your lifestyle. If you only see one meal, you likely have the "1 Meal (OMAD)" preference set. To see the rest, go to the bottom of your nutrition diary, tap the button with the grid icon, and select your preferred structure (4, 3, 2, or 1 meal a day). Your diary will update automatically.
+
+### I always eat the same breakfast. Do I have to search and log my eggs and oatmeal every day? 
+
+Not at all! You have tools to speed this up. In the meal header (e.g., "Breakfast"), tap the three-dot menu (or options button) and select "Copy from yesterday". Also, when logging a food, you can use the "Add to multiple days" section to select it for the whole week at once.
+
+### I logged a food under "Dinner" but it was for "Lunch", do I have to delete it and search for it again?
+
+ No need. Simply tap the food you mistakenly logged in your diary. On the edit screen, look for the "Log Details" section and change the selector from "Dinner" to "Lunch". Tap save and it will move automatically.
+
+### How do I delete a food or a complete meal that I logged by mistake?
+ You have a couple of options. You can long-press the food or meal and select "Delete" from the dropdown menu. If you are in edit mode, you can tap the red minus icon next to the food.
+
+---
+
+## 🔍 Search, Scanner, and Private Foods
+
+### I scanned a barcode but the app says the food was not found. What do I do?
+ Although our database is huge, some local or very new products might be missing. When this happens, the screen will show you a button to "Create private food". There you can enter the name, brand, and main macros (calories, proteins, fats, and carbs) from the product's label. Once saved, you can log it immediately and it will be saved for your personal use.
+
+### In the search results, what does the blue checkmark icon versus a world icon mean?
+ It's an indicator of trust. The blue checkmark (seal) means the food is "Certified by CaloriTrack"; meaning, our database has validated it. The world icon indicates that the food comes from a public database, like the USDA.
+
+### I entered the "Meal Catalog" but I only want to see low-carb options. Is that possible?
+ Absolutely! At the top of the Meal Catalog, you will find a scrollable bar with different "pills" or tags. Simply swipe, find the "Low Carb" option and tap it; the grid will immediately filter for compatible options.
+
+---
+
+## 🎯 Goals, Macros, and Progress
+
+### My calorie and macro goals changed on their own and now it won't let me edit them manually. Why?
+ This happens when you activate a Meal Plan. The system prioritizes the specific goals required by the plan so you can reach your objective. If you prefer to have full manual control of your calories and macros again, you must go to your Active Plan card, select "Manage", and then "Cancel Current Plan".
+
+### I don't like counting grams, I prefer to adjust my macros by percentages (e.g., 40% protein, 30% fat, 30% carbs). Where do I do this?
+ Go to the "Adjust Goals" screen, tap the visual Macros card (Proteins, Carbs, Fats) and an adjustment sheet will open. At the top, change the input mode from "Grams" to "Percentages". The system will calculate the exact grams for you based on your total calories.
+
+### I eat differently on weekends, can I have a different calorie goal for Saturday and Sunday?
+ Yes. In your goals settings, toggle the "Customize goals by day" switch. This will enable a new option called "Edit Weekly Goals", where you can set specific calories and macros for each day of the week independently.
+
+### In my "Weekly Calorie Summary", I see the bars change color. What does that indicate?
+ The bar chart is a traffic light for your adherence. If the bar is Mint Green, it means you achieved your goal or stayed below your limit. If the bar turns Orange, it means you exceeded your caloric goal for that day.
+
+---
+
+## 🥗 Micronutrients and Antinutrientes
+
+### What is the "Antinutrients" card and why do some bars turn red?
+ Antinutrients are compounds found in foods (mainly vegetables, seeds, and legumes) that can interfere with the absorption of vitamins and minerals if consumed in excess. If the bar is Green, your intake is low and safe. If it turns Orange, you are approaching the tolerable limit. If it is Red, you have exceeded the recommended daily limit (e.g., high oxalate consumption).
+
+### I want to see if I met my Potassium goals for the whole week, not just today. Is that possible?
+ Of course. Enter the details by tapping the "Micronutrients" card. At the top, below the title, you will see a selector that says "Today" and "7 Days" (or Weekly). Select the weekly view and the system will show you the average consumption of the last few days compared to your daily goal. You can also filter only the "Missing" nutrients to see which ones to focus on.
+
+---
+
+## 📋 Meal Plans and Grocery Lists
+
+### I activated a plan, where do I find the ingredients I need to buy?
+ On the main Nutrition screen, tap "Manage" inside your active plan's card. Then select "Grocery List". We will show you all the ingredients grouped by category.
+
+### The grocery list has things I already have in my pantry, can I share only what I'm missing with my partner?
+ Totally. On the Grocery List screen, tap the "Select" button in the top right. This will allow you to check only the ingredients you are missing. Then, tap the Share icon and CaloriTrack will generate a clean text with only your selection to send via WhatsApp or any other app.
+
+### In the Plan Assistant, can I choose a Ketogenic (Keto) diet and be Dairy-Free at the same time?
+ Yes. The assistant is designed to combine your preferences. In step 3 you choose your restrictions (e.g., Dairy-Free) and in step 4 you select the diet style (e.g., Ketogenic Diet). The system will filter the database and recommend in the final step only the plans that strictly meet both conditions.-----
+Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/03-ayuno/guia-ayuno.mdx
+---
+
+# Nombre del archivo: docs/03-ayuno/guia-ayuno.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-11
+# Versión: 1.1
+# Descripción: Guía detallada del módulo de ayuno. Incluye configuración, uso del anillo interactivo, gestión de historial y sección de dudas frecuentes (FAQs) integradas.
+
+id: guia-definitiva-ayuno
+title: "Ultimate Guide: Master Your Fast"
+sidebar_label: "Master Your Fast"
+sidebar_position: 1
+slug: guia-definitiva-ayuno
+---
+
+Welcome to your fasting control center! This screen is designed to accompany you through every step of your process, from your first 12 hours to advanced challenges. Here we explain how to use all its tools:
+
+## 1. Set Your Preferences (The First Step)
+
+Before getting started, let's personalize your experience! In the upper left corner of the main fasting screen, you will see a **settings icon** (sliders).
+
+Tap it to open your preferences. There you can:
+* Set your **default hour goal** (from 12 up to 96 hours).
+* Set your **usual start and end times** so the app adapts organically to your daily routine.
+
+## 2. The Magic Ring (Your Interactive Timer)
+
+In the center of the screen, you'll see a large circular ring. It's fully interactive!
+
+* **Quick adjustment:** You can tap and drag the "dot" (indicator) along the ring to increase or decrease your goal hours in real-time.
+* **Learn while you adjust:** As you slide your finger, small on-screen messages will appear explaining exactly what is happening in your body at that hour (e.g., *"16 hours: Accelerated fat burning"*).
+* **Clear information:** In the center of the ring, you will always see your remaining time in large numbers, along with your total goal and elapsed time.
+
+:::tip CaloriTrack Wisdom
+The ring is not just a clock; it is a map of your physiology. Pay attention to the cellular stage messages to understand your biological progress.
+:::
+
+## 3. Start, Edit, and Share
+
+* **Kick it off!:** Tap the large button at the bottom to start your fast.
+* **Forgot to tap start?:** Don't worry. Once your fast is running, you will see a **pencil icon** next to the phrase "Fast started." Tap it to adjust the exact date and time you actually stopped eating.
+* **Show off your achievement:** When you have a fast in progress, a **Share icon** will appear at the bottom. You can generate an elegant image with custom backgrounds for Instagram or WhatsApp.
+* **End:** Use the main button again to record the end of your fast.
+
+## 4. Education and Benefits
+
+You are not alone on this journey; the app teaches you as you go.
+
+* **The benefits of your effort:** In the upper right corner, tap the **information icon ("i")**. It will open a detailed list of physiological benefits separated by stages (from 12 hours to prolonged 96-hour fasts).
+* **Beginner's guide:** If you don't have an active fast, you'll see a button with a **question mark** at the bottom. It's a quick, step-by-step guide to ensure your first fast is a complete success.
+
+## 5. History and Statistics
+
+Just below your fasting ring, you will see a card congratulating you on your **Current Streak**. Tap it to enter your stats dashboard!
+
+* **Your Records:** View your KPIs such as your longest fast, your maximum streak, and average hours.
+* **Charts:** See your progress on a bar chart filterable by week, month, or year.
+* **Full Log:** You will find a list of all your historical fasts. If you long-press one, you can **Edit** the hours if you made a mistake or **Delete** it if it was a test entry.
+
+---
+
+## Frequently Asked Questions (FAQs)
+
+### What can I consume without breaking autophagy?
+During your fasting window, the goal is to keep insulin low. You can consume:
+* Still or sparkling water.
+* Black coffee and tea (no sweeteners).
+* Hydration salts (glucose-free) available in the app.
+* **Avoid:** Any food with calories or artificial sweeteners.
+
+### Why did my timer change time on its own?
+CaloriTrack is a comprehensive health tool. If you log a meal in your **Food Diary** during an hour when you were supposedly fasting, the app will automatically adjust the start of your fast to maintain the integrity of your biological data. Honesty with your data is the key to self-knowledge!
+
+:::info Technical Note
+Remember that for perfect synchronization, it is recommended to allow notification permissions so that CaloriTrack can notify you when you reach your cellular goals.
+:::
 -----
+Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/03-ayuno/faqs-ayuno.md
+---
+# Nombre del archivo: docs/03-ayuno/preguntas-y-respuestas-ayuno.md
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-12
+# Versión: 1.0
+# Descripción: Documento de Preguntas Frecuentes (FAQ) sobre configuración, historial y dudas técnicas del módulo de ayuno. Formato MD puro optimizado para SEO y UX.
+
+slug: preguntas-frecuentes-ayuno
+title: "Frequently asked questions about Fasting"
+sidebar_label: "Frequently Asked Questions"
+sidebar_position: 2
+---
+### How do I start my fasting timer?
+
+It's very simple! When you enter the **Fasting** tab (the clock icon in the bottom menu), you will see a large central circle with your hour goal. Simply adjust the hours by sliding your finger along the edge of the circle and press the large button that says **"Start Fasting"** at the bottom.
+
+### I forgot to tap "Start" when I finished eating. Can I change the start time?
+
+Yes, of course! Don't worry if you missed the exact time. Once you have started your fast in the app, you will see a text below the circle that says *"Fast started"* with the current time. Tap the **pencil icon** next to that time, and you can retroactively select the exact date and time you actually began your fast.
+
+### How do I stop my fast if I'm ready to eat?
+
+When you are ready to break your fast, go to the main view and tap the gold button that says **"End Fasting"**. The app will record the total time you achieved, update your stats, and show you a congratulatory screen with your new streak.
+
+### I ended my fast early, does it still save?
+
+The application is designed to help you build habits. If you stop your fast before reaching your goal, the record will only be saved in your history if more than **10 seconds** have passed. This prevents accidental taps from being saved. However, remember that to maintain your "Streak," it is best to reach the goal you set for yourself.
+
+---
+
+## 🎯 Custom Goals and Preferences
+
+### How do I change my hour goal while fasting?
+
+If you are already in the middle of a fast and decide you want to lengthen or shorten it, simply place your finger on the "dot" (indicator) on the edge of the circle and slide it. You will see the hour goal update in real-time. You will also see that the time your *"Fast ends"* adjusts automatically at the bottom.
+
+### I want to do an extended fast, what is the hour limit in the app?
+
+Our app supports everything from classic intermittent fasts (12 or 16 hours) to extended fasts. You can spin the circle to set a goal of **up to 96 hours**.
+
+### Do I have to set my hours every time I start a fast?
+
+It is not necessary. If you have a fixed protocol (e.g., 16 hours every day), you can tap the **settings icon** (the three lines with sliders) in the upper left corner of the Fasting screen. There you can define:
+
+* Your default hour goal (e.g., 16 hours).
+* Your usual start time (e.g., 8:00 PM).
+* Your calculated end time (e.g., 12:00 PM).
+
+Once saved, every time you open the app, your circle will already be set to that goal.
+
+---
+
+## 🎨 The Progress Circle and Colors
+
+### Why does the elapsed time text change color?
+
+The color of your fasting time is a visual indicator of the metabolic phase you are currently in:
+
+* 🟧 **Soft Orange (0 to 12 hours):** Your body is processing your last meal and using glycogen.
+* 🟩 **Mint Green (12 to 16 hours):** Fat burning and early ketosis begin.
+* 🟦 **Sky Blue (16 to 20 hours):** Fat burning increases, and autophagy may start.
+* 🟪 **Purple (Over 20 hours):** Deep autophagy phase and maximum cellular repair.
+
+### I met my hour goal, but the timer keeps counting. What does the "+" sign mean?
+
+When you reach your goal (the circle fills completely), the app does not automatically stop you, as you might decide to keep going a little longer. From that moment on, you will see the text change to *"Time exceeded"* and it will show you a timer with a **"+" sign** (e.g., `+45 m` or `+2 h`). This indicates exactly how much extra time you achieved beyond your original target.
+
+## 📚 Learning and Guides
+
+### I'm new to intermittent fasting. Do you have tips to get started?
+
+Absolutely! If you haven't started your fast yet, you will see a button with a **question mark (?)** at the bottom. Tapping it will open the *"Quick Guide for Beginners"*, where you will learn about hydration, what breaks a fast, how to manage hunger, and what to eat when you finish.
+
+### While fasting, I want to know what is happening to my body.
+
+In the top right corner of the main screen, you will see a button with an **"i" (Information)**. Tap there to open the *"Fasting Benefits"* section. It will show you a detailed timeline (from 0 to 96 hours) explaining how your body behaves at each stage (fat burning, ketosis, autophagy, etc.).
+
+---
+
+## 📊 History and Statistics
+
+### Where can I see how many consecutive days I've fasted?
+
+Tap the stats card that appears just below the progress circle on the main view. This will take you to the **Fasting Stats** screen. There you will see your *"Current streak"* (consecutive days meeting your goal) and your *"Longest historical streak"*.
+
+### What other metrics can I see in the statistics section?
+
+Within your stats, you can view:
+
+* Your current streak and historical record.
+* The longest fast you have achieved.
+* Your average hours per fast.
+* The total number of fasts completed.
+* An interactive bar chart that you can filter by Week, Month, or Year.
+
+### I ended my fast yesterday, but I forgot to tap "End" in the app and it saved way too many hours. Can I fix it?
+
+Yes! Go to the Stats screen and scroll down to the **"Full Log"** section. Find the fast you want to correct, long-press on it, and select **"Edit"**. You will be able to manually adjust the exact date and time you ended it.
+
+### Can I keep a journal of how I felt during each fast?
+
+Of course. In the same *"Edit"* option mentioned above, you will find a text box for **"Personal Notes"**. You can use it to write down if you had high energy, felt hungry, or what you ate to break your fast.
+
+### What does the "People fasting right now" box in my stats mean?
+
+It is a global summary that shows you how many CaloriTrack community members are in the middle of a fast right at this very moment. You are never alone on your journey to wellness!
+
+---
+
+## 📲 Sharing Your Achievements
+
+### I'm halfway through my fast and want to share my progress. Is it possible?
+
+Yes! While your fast is in progress, you will see a button with a **share icon** (a box with an upward arrow) in the bottom left of the screen. Tapping it will generate an elegant image showing how much time you have left and your current goal. You can choose different background colors and share it directly on your social networks or via message.
+
+### I completed my 24-hour fast! How do I show it off?
+
+When you press *"End Fasting"*, a congratulatory screen will appear with a summary of your streak and time achieved. On that same screen, you will see the **"Share your achievement"** button. You can customize the *"Fast Completed"* commemorative image and send it to your friends to inspire them to join you.-----
+Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/04-wellness/faq-welness.md
+---
+id: wellness-faq
+title: Wellness Frequently Asked Questions
+slug: /wellness-preguntas-frecuentes
+sidebar_position: 1
+---
+
+## 🧭 General Access and Exploration
+
+### Why do I see a screen asking me to upgrade my plan when I try to enter the Wellness tab?
+The entire catalog of meditations, frequencies, and breathing exercises in the Wellness tab is exclusive content. To play and explore this material, an active Premium membership on your Caloritrack account is required.
+
+### There is a lot of content, how can I quickly find something specific for how I feel today?
+You have two very quick ways to filter the content:
+
+* **Search bar:** At the top, there is a text bar where you can type keywords (e.g., "anxiety" or "sleep"), and the list will update automatically.
+* **Quick Filters (Chips):** Just below the search bar, you will see oval buttons with categories like "Sleep," "Relaxation," or "Focus" (if you are in Soundhealing), or "Reduce stress," "Energy," etc. (if you are in Breathwork). Tap any of them to see only the exercises in that category.
+
+### How do I save the audios or exercises I like the most so I don't have to search for them every time?
+You can save any exercise to your "Favorites" by tapping the star icon that appears on the exercise card directly in the list. If you are already inside the sound player, you can tap the heart icon in the top right corner. To see everything you have saved, select the "Favorites" filter on the main Wellness screen.
+
+---
+
+## 🎧 Soundhealing
+
+### When tapping an audio, it sends me to an information screen instead of playing immediately. Why?
+That is the Preview screen. It is designed to give you context before your session. There you can see the sound category, a short description, and a deeper explanation of how that frequency or sound will help you. You will also see a reminder to use headphones, which we recommend for the best benefits. Just tap "Play Now" at the bottom to start the audio.
+
+### What do the controls inside the sound player mean?
+The player has tools to customize your session:
+
+* **Central Button (Play/Pause):** Stops or resumes the main track.
+* **Timer (clock icon):** Allows you to set a specific time (e.g., 15 or 30 minutes) for the audio to turn off automatically, ideal if you use it to sleep.
+* **AirPlay (concentric screens icon):** Allows you to send the audio to your smart speakers, HomePod, or Apple TV.
+* **Repeat (looping arrows icon):** You can set it so the audio stops when the track ends, repeats once, or repeats infinitely.
+
+### Can I play rain or wind sounds in the background while listening to my sound therapy?
+Yes! We have unified the volume and ambient controls into a single card inside the player. Below the main track volume control, you will see a section called "Ambience". Tapping the "+" icon will open a menu where you can choose between options like stream, rain, forest, wind, storm, among others. Once selected, you can adjust the volume of that ambient sound independently from the main track.
+
+### If I use AirPlay to listen on my HomePod, will the ambient sound (e.g., rain) I added also be heard?
+Yes. The app's audio system is optimized (Dual AirPlay Support) to mix both audios (the Soundhealing track and the ambience) and send them together to your external device seamlessly.
+
+### I minimized the player to navigate the app. How do I open it again or remove it?
+While navigating, you will see a mini-player at the bottom of the screen. If you tap any part of it, it will reopen in full screen. If you decide to "swipe" it to the left, it will collapse into a small side tab so it doesn't get in your way.
+---
+## 🌬️ Breathwork
+
+### How should I follow the pace of the breathing exercise?
+The screen will guide you in three ways:
+
+* **Visually:** A Mint Green central circle will expand when you need to inhale, stay still when you need to hold the air, and contract when you need to exhale.
+* **By text:** In the center of the circle you will see clear instructions ("Inhale", "Hold", "Exhale", "Hold") along with a real-time seconds counter.
+* **Vibrations (Haptics):** You will feel pulsations on your device that vary in intensity to guide you without having to look at the screen.
+
+### The vibrations (haptics) distract me, can I turn them off?
+Of course. At the bottom right of the breathing player, you will find a button with a phone icon. Tap it to disable (or re-enable) the haptic feedback.
+
+### How do I know how much time is left to finish my breathing session?
+You have two indicators. At the top there is a linear progress bar and a timer showing the total remaining minutes. At the bottom, you will see the current number of "Cycles" versus the total (e.g., "2/5"), which helps you know which repetition you are on.
+
+---
+
+## 📊 History, Sync & Stats
+
+### If I do a Soundhealing or Breathwork exercise, is it saved in my history?
+Yes! As long as the audio or breathing session lasted more than 10 continuous seconds, the system will automatically register it as completed.
+
+### Does all this connect with the Health app (Apple Health) on my iPhone?
+Absolutely. The Wellness module syncs bidirectionally with Apple Health.
+
+* Your Soundhealing and Breathwork sessions are automatically sent as "Mindfulness Minutes" to Apple Health.
+* Your Mood logs, if you have iOS 17 or higher, are sent directly to the new native "State of Mind" section of Apple Health with their valence level (positive/negative). If you have an older iOS, it is alternatively registered as a general mindfulness log.-----
 Archivo: ./i18n/en/docusaurus-plugin-content-docs/current.json
 {
   "__comentario_cabecera__": {
@@ -20595,6 +21799,15 @@ export default function HomepageFeatures() {
     </section>
   );
 }
+-----
+Archivo: ./src/pages/markdown-page.mdx
+---
+title: Markdown page example
+---
+
+# Markdown page example
+
+You don't need React to write simple standalone pages.
 -----
 Archivo: ./src/pages/index.module.css
 /**

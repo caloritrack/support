@@ -7,11 +7,11 @@
 
 slug: faqs-dashboard-salud
 title: "Dashboard: Frequently Asked Questions"
-sidebar_label: "FAQ"
+sidebar_label: "Frequently Asked Questions"
 sidebar_position: 2
 ---
 
-# 🌿 Frequently Asked Questions: My Body | Main Dashboard
+# Frequently Asked Questions: My Body | Main Dashboard
 
 In this section, we address the most common questions regarding the interpretation of your daily metrics and the customization of your main command center.
 

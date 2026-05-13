@@ -1,6 +1,10 @@
 {
+  "__comentario_cabecera__": {
+    "message": "Nombre del archivo: navbar.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-13 | Versión: 1.1 | Descripción: Corrección del título del navbar para ocultar el texto en inglés dejándolo vacío, y actualización de la llave de 'Sitio Web Principal' para asegurar el match con docusaurus.config.js.",
+    "description": "Control de versión y autoría adaptado a formato JSON"
+  },
   "title": {
-    "message": "CaloriTrack",
+    "message": "",
     "description": "The title in the navbar"
   },
   "logo.alt": {
@@ -15,8 +19,8 @@
     "message": "App Releases",
     "description": "Navbar item with label Novedades de la App"
   },
-  "item.label.Web Oficial": {
-    "message": "Website",
-    "description": "Navbar item with label Web Oficial"
+  "item.label.Sitio Web Principal": {
+    "message": "Main Website",
+    "description": "Navbar item with label Sitio Web Principal"
   }
 }

@@ -26,6 +26,8 @@ When you are ready to break your fast, go to the main view and tap the gold butt
 
 The application is designed to help you build habits. If you stop your fast before reaching your goal, the record will only be saved in your history if more than **10 seconds** have passed. This prevents accidental taps from being saved. However, remember that to maintain your "Streak," it is best to reach the goal you set for yourself.
 
+---
+
 ## 🎯 Custom Goals and Preferences
 
 ### How do I change my hour goal while fasting?
@@ -45,6 +47,8 @@ It is not necessary. If you have a fixed protocol (e.g., 16 hours every day), yo
 * Your calculated end time (e.g., 12:00 PM).
 
 Once saved, every time you open the app, your circle will already be set to that goal.
+
+---
 
 ## 🎨 The Progress Circle and Colors
 
@@ -70,6 +74,8 @@ Absolutely! If you haven't started your fast yet, you will see a button with a *
 ### While fasting, I want to know what is happening to my body.
 
 In the top right corner of the main screen, you will see a button with an **"i" (Information)**. Tap there to open the *"Fasting Benefits"* section. It will show you a detailed timeline (from 0 to 96 hours) explaining how your body behaves at each stage (fat burning, ketosis, autophagy, etc.).
+
+---
 
 ## 📊 History and Statistics
 
@@ -98,6 +104,8 @@ Of course. In the same *"Edit"* option mentioned above, you will find a text box
 ### What does the "People fasting right now" box in my stats mean?
 
 It is a global summary that shows you how many CaloriTrack community members are in the middle of a fast right at this very moment. You are never alone on your journey to wellness!
+
+---
 
 ## 📲 Sharing Your Achievements
 

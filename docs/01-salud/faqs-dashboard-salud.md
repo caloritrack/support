@@ -11,11 +11,11 @@ sidebar_label: "Preguntas Frecuentes"
 sidebar_position: 2
 ---
 
-# 🌿 Preguntas Frecuentes: Mi Cuerpo | Dashboard Principal
+# Preguntas Frecuentes: Mi Cuerpo | Dashboard 
 
 En esta sección resolvemos las dudas más comunes sobre la interpretación de tus métricas diarias y la personalización de tu centro de mando principal.
 
-## 1. Panel Principal (Tu Dashboard)
+## 1. Panel Principal | Tu Dashboard
 
 ### ¿Por qué el saludo en la parte superior cambia a lo largo del día?
 CaloriTrack está diseñado para acompañarte en tu rutina diaria. El saludo se actualiza automáticamente leyendo la hora local de tu dispositivo, dándote los "Buenos días", "Buenas tardes" o "Buenas noches" según corresponda, junto con tu nombre.

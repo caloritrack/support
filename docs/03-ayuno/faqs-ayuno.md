@@ -11,7 +11,6 @@ sidebar_label: "Preguntas Frecuentes"
 sidebar_position: 2
 ---
 
-
 ### ¿Cómo inicio mi temporizador de ayuno?
 
 ¡Es muy sencillo! Al entrar a la pestaña de **Ayuno** (el icono del reloj en el menú inferior), verás un gran círculo central con tu meta de horas. Simplemente ajusta las horas deslizando el dedo sobre el borde del círculo y presiona el botón grande que dice **"Iniciar Ayuno"** en la parte inferior.
@@ -27,6 +26,8 @@ Cuando estés listo para romper tu ayuno, entra a la vista principal y toca el b
 ### Terminé mi ayuno antes de tiempo, ¿se guarda igual?
 
 La aplicación está diseñada para ayudarte a crear hábitos. Si detienes tu ayuno antes de cumplir la meta, el registro se guardará en tu historial solo si han pasado **más de 10 segundos**. Esto evita que se guarden toques accidentales. Sin embargo, recuerda que para mantener tu "Racha", lo ideal es alcanzar la meta que te propusiste.
+
+---
 
 ## 🎯 Metas y Preferencias Personalizadas
 
@@ -48,6 +49,8 @@ No es necesario. Si tienes un protocolo fijo (por ejemplo, 16 horas todos los d�
 
 Una vez guardado, cada vez que abras la app, tu círculo ya estará posicionado en esa meta.
 
+---
+
 ## 🎨 El Círculo de Progreso y Colores
 
 ### ¿Por qué cambia de color el texto del tiempo transcurrido?
@@ -63,6 +66,8 @@ El color del tiempo que llevas ayunando es un indicador visual de la fase metab�
 
 Cuando alcanzas tu meta (el círculo se llena por completo), la aplicación no te detiene automáticamente, ya que podrías decidir continuar un poco más. A partir de ese momento, verás que el texto cambia a *"Tiempo excedido"* y te mostrará un cronómetro con un **signo "+"** (ej. `+45 m` o `+2 h`). Esto indica exactamente cuánto tiempo extra lograste por encima de tu objetivo original.
 
+---
+
 ## 📚 Aprendizaje y Guías
 
 ### Soy nuevo en esto del ayuno intermitente. ¿Tienen consejos para empezar?
@@ -72,6 +77,8 @@ Cuando alcanzas tu meta (el círculo se llena por completo), la aplicación no t
 ### Mientras ayuno, quiero saber qué le está pasando a mi cuerpo.
 
 En la esquina superior derecha de la pantalla principal verás un botón con una **"i" (Información)**. Toca ahí para abrir la sección de *"Beneficios del Ayuno"*. Te mostrará una línea de tiempo detallada (de 0 a 96 horas) explicando cómo se comporta tu cuerpo en cada etapa (quema de grasa, cetosis, autofagia, etc.).
+
+---
 
 ## 📊 Historial y Estadísticas
 
@@ -100,6 +107,8 @@ Por supuesto. En la misma opción de *"Editar"* que mencionamos arriba, encontra
 ### ¿Qué significa el recuadro "Personas ayunando ahora" en mis estadísticas?
 
 Es un resumen global que te muestra cuántos usuarios de la comunidad CaloriTrack están en medio de un ayuno en este mismo momento. ¡Nunca estás solo en tu camino hacia el bienestar!
+
+---
 
 ## 📲 Compartir tus Logros
 

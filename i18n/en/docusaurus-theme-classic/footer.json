@@ -1,4 +1,8 @@
 {
+  "__comentario_cabecera__": {
+    "message": "Nombre del archivo: footer.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-13 | Versión: 1.1 | Descripción: Sincronización de llaves de traducción. Se ajustó 'link.item.label.Centro de Ayuda' para que el i18n de Docusaurus coincida con el config.",
+    "description": "Control de versión y autoría adaptado a formato JSON"
+  },
   "copyright": {
     "message": "© 2026 CaloriTrack ™, All Rights Reserved",
     "description": "The footer copyright"
@@ -11,9 +15,9 @@
     "message": "CaloriTrack",
     "description": "The title of the footer links column with title=CaloriTrack in the footer"
   },
-  "link.item.label.Inicio del Centro de Ayuda": {
+  "link.item.label.Centro de Ayuda": {
     "message": "Help Center",
-    "description": "The label of footer link with label=Inicio del Centro de Ayuda linking to /"
+    "description": "The label of footer link with label=Centro de Ayuda linking to /"
   },
   "link.item.label.Novedades y Actualizaciones": {
     "message": "App Releases",

@@ -6,7 +6,7 @@
     "version": "1.0",
     "descripcion": "Configuración del Pilar 1: Salud. Define la jerarquía principal en el sidebar, el nombre con emoji '🌿' y la descripción del índice generado para el Dashboard 'Mi Cuerpo'."
   },
-  "label": "🌿 Salud",
+  "label": "Salud",
   "position": 1,
   "link": {
     "type": "generated-index",
