@@ -14,10 +14,11 @@ Estructura de carpetas y archivos:
 | | |_____category_.json
 | | |____faqs-ayuno.md
 | | |____guia-ayuno.mdx
-| |____04-wellness
 | |____04-welness
 | | |____faq-wellness.md
 | |____05-kai
+| | |_____category_.json
+| | |____faq-kai-coach.md
 |____docusaurus.config.js
 |____i18n
 | |____en
@@ -37,6 +38,7 @@ Estructura de carpetas y archivos:
 | | | | |____04-wellness
 | | | | | |____faq-welness.md
 | | | | |____05-kai
+| | | | | |____faq-kai-coach.md
 | | |____docusaurus-theme-classic
 | | | |____footer.json
 | | | |____navbar.json
@@ -62,8 +64,8 @@ Archivo: ./docs/04-welness/faq-wellness.md
 ---
 id: wellness-faq
 title: Preguntas Frecuentes de Wellness
-slug: /wellness-preguntas-frecuentes
-sidebar_position: 1
+slug: /wellness-faq
+sidebar_position: 2
 ---
 
 ## 🧭 Acceso y Exploración General
@@ -657,6 +659,96 @@ Es un resumen global que te muestra cuántos usuarios de la comunidad CaloriTrac
 ### ¡Completé mi ayuno de 24 horas! ¿Cómo lo presumo?
 
 Cuando presiones *"Terminar Ayuno"*, aparecerá una pantalla de felicitación con un resumen de tu racha y tiempo logrado. En esa misma pantalla verás el botón **"Compartir tu logro"**. Podrás personalizar la imagen conmemorativa de *"Ayuno Completado"* y enviarla a tus amigos para inspirarlos a unirse a ti.-----
+Archivo: ./docs/05-kai/faq-kai-coach.md
+---
+id: faq-kai-coach
+title: Preguntas Frecuentes sobre Kai Coach
+slug: /kai-coach-faq
+sidebar_position: 2
+---
+
+## 🔐 Acceso y Disponibilidad
+
+### ¿Por qué me aparece una pantalla pidiendo que mejore mi plan cuando intento abrir a Kai?
+Kai Coach es tu asistente inteligente y es una herramienta exclusiva para los miembros con suscripción Premium. Si actualmente tienes la versión gratuita de la app, o si tu suscripción ha expirado, verás una pantalla informativa indicándote que debes obtener Premium para poder platicar con Kai.
+
+---
+
+## 💬 Iniciando una Conversación
+
+### Es mi primera vez aquí y no sé qué preguntar. ¿Cómo empiezo?
+¡No te preocupes! Cuando abres a Kai y el chat está vacío, la pantalla inicial te mostrará tres sugerencias de preguntas predeterminadas para romper el hielo. Si tocas cualquiera de esos botones, la pregunta se escribirá y enviará automáticamente para que Kai comience a ayudarte.
+
+### ¿En qué idioma puedo hablar con Kai?
+Puedes escribirle en el idioma que prefieras. Además, Kai está programado para detectar el idioma principal configurado en tu teléfono móvil y te responderá fluidamente en ese mismo idioma.
+
+---
+
+## ✍️ Escribiendo y Enviando Mensajes
+
+### ¿Por qué la caja de texto se hace más grande cuando escribo?
+Queremos que te sea cómodo explicarle tus dudas a Kai. Por eso, la caja de texto se expande automáticamente hacia arriba a medida que escribes mensajes más largos o de varias líneas, hasta alcanzar un tamaño máximo para no tapar el resto de la pantalla.
+
+### ¿Por qué el botón de enviar (el avión de papel) aparece desactivado o gris a veces?
+El botón de enviar se desactiva para proteger la fluidez de la app en dos situaciones:
+* Si no has escrito nada en la caja de texto o si solo pusiste espacios en blanco.
+* Mientras Kai está "escribiendo" y procesando una respuesta para ti. Podrás notar que está pensando porque verás una animación de tres puntos parpadeando junto a unas chispas.
+
+### Escribí un mensaje y el teclado desapareció de inmediato, ¿es normal?
+¡Sí! Al presionar el botón de enviar, ocultamos el teclado automáticamente para darte una visión amplia y limpia de la pantalla mientras esperas y lees la respuesta de Kai.
+
+---
+
+## 🧠 Memoria e Historial del Chat
+
+### ¿Kai recuerda lo que le dije en mensajes anteriores?
+Sí, Kai es un asistente conversacional. Para mantener el hilo de la plática y darte respuestas con contexto, Kai recuerda y analiza los últimos 15 mensajes que se han enviado en tu sesión actual.
+
+### Quiero empezar de cero y hablar de un tema completamente distinto. ¿Cómo borro el chat?
+En la esquina superior derecha de tu pantalla, verás un ícono cuadrado con un lápiz. Al tocarlo, aparecerá un aviso pidiéndote confirmación para iniciar una nueva conversación. Si aceptas, todo el historial del chat actual se borrará de la pantalla para darte un lienzo en blanco. Ten en cuenta que esta acción es definitiva y no se puede deshacer.
+
+---
+
+## 🛡️ Privacidad y Salud
+
+### ¿Es seguro contarle mis datos y hábitos a Kai?
+Totalmente. En la pantalla inicial (antes de enviar mensajes), verás una nota de privacidad con el ícono de un escudo. Toda la información que compartes con Kai es confidencial y procesada con estrictos estándares de seguridad.
+
+### Me siento mal físicamente, ¿Kai puede darme un diagnóstico o tratamiento?
+No. Kai es un coach de bienestar y nutrición, pero no es un doctor. En la pantalla principal siempre verás un aviso médico (Disclaimer) recordándote esto. Las respuestas de Kai nunca deben sustituir el consejo, diagnóstico o tratamiento de un profesional de la salud calificado.
+
+---
+
+## ⚠️ Errores y Solución de Problemas
+
+### Intenté mandar un mensaje y Kai respondió: "No tienes suficientes créditos". ¿Qué significa si ya pagué Premium?
+La inteligencia artificial requiere poder de procesamiento. En caso de llegar a ver este mensaje, significa que has agotado la cuota o límite de interacciones permitidas con Kai según tu plan actual.
+
+### El mensaje dice: "Kai no está disponible en este momento". ¿Qué hago?
+Este es un error temporal que ocurre si pierdes conexión a internet o si los servidores de Kai están en mantenimiento. Simplemente espera unos minutos, revisa tu conexión WiFi o de datos, y vuelve a intentarlo.
+
+---
+
+## 🏆 Recompensas por Usar a Kai
+
+### ¿Hablar con Kai me sirve para completar mis hábitos en la app?
+¡Sí! Cada interacción que tienes se registra automáticamente. En tu sección de "Mi Camino", verás que el hábito de "Conexión con Kai" se iluminará en los días que platiques con él. Además, coleccionarás medallas (Badges) exclusivas; desde tu primer mensaje, hasta alcanzar marcas de 10, 30, 50, 100, 200 y 500 chats. ¡Es una gran forma de progresar!-----
+Archivo: ./docs/05-kai/_category_.json
+{
+  "customProps": {
+    "archivo": "docs/05-kai/_category_.json",
+    "autor": "Arturo Enriquez Betancourt con Jarvis",
+    "fecha": "2026-05-13",
+    "version": "1.0",
+    "descripcion": "Configuración de la categoría Ayuno. Define el nombre con emoji para el sidebar, la posición jerárquica (3) y activa la página de índice generado. Absorbe automáticamente los MD y MDX de la carpeta."
+  },
+  "label": "Kai Coach",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Kai es tu coach personal de bienestar y nutrición impulsado por inteligencia artificial, diseñado de forma exclusiva para acompañarte paso a paso en tu camino hacia una vida más saludable dentro de Caloritrack. Más que un simple asistente, Kai es un compañero conversacional avanzado capaz de entender tu contexto, recordar tus pláticas recientes y ofrecerte orientación personalizada sobre tus hábitos, alimentación y metas diarias. Aunque no sustituye el diagnóstico o consejo de un profesional médico, Kai está siempre disponible en la palma de tu mano para motivarte, resolver tus dudas en tiempo real, sugerir ideas frescas y celebrar cada una de tus medallas mientras transformas tu estilo de vida."
+  }
+}-----
 Archivo: ./blog/2026-05-11-v1-4-0.md
 ---
 # Nombre del archivo: v1-4-0.mdx
@@ -21427,12 +21519,89 @@ Yes! While your fast is in progress, you will see a button with a **share icon**
 ### I completed my 24-hour fast! How do I show it off?
 
 When you press *"End Fasting"*, a congratulatory screen will appear with a summary of your streak and time achieved. On that same screen, you will see the **"Share your achievement"** button. You can customize the *"Fast Completed"* commemorative image and send it to your friends to inspire them to join you.-----
+Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/05-kai/faq-kai-coach.md
+---
+id: faq-kai-coach
+title: Kai Coach FAQ
+slug: /kai-coach-faq
+sidebar_position: 2
+---
+
+## 🔐 Access and Availability
+
+### Why do I see a screen asking me to upgrade my plan when I try to open Kai?
+
+Kai Coach is your smart assistant and an exclusive tool for Premium members. If you currently have the free version of the app, or if your subscription has expired, you will see an informative screen indicating that you must get Premium to chat with Kai.
+
+---
+
+## 💬 Starting a Conversation
+
+### It's my first time here and I don't know what to ask. How do I start?
+
+Don't worry! When you open Kai and the chat is empty, the initial screen will show you three default question suggestions to break the ice. If you tap any of those buttons, the question will be automatically typed and sent so Kai can start helping you.
+
+### What language can I speak to Kai in?
+You can type in the language of your choice. Additionally, Kai is programmed to detect the main language configured on your mobile phone and will respond fluently in that same language.
+
+---
+
+## ✍️ Typing and Sending Messages
+
+### Why does the text box get bigger when I type?
+We want it to be comfortable for you to explain your doubts to Kai. That's why the text box automatically expands upwards as you type longer or multi-line messages, up to a maximum size so as not to cover the rest of the screen.
+
+### Why does the send button (the paper airplane) appear disabled or gray sometimes?
+The send button is disabled to protect the app's fluidity in two situations:
+* If you haven't typed anything in the text box or if you only put blank spaces.
+* While Kai is "typing" and processing a response for you. You will notice that it's thinking because you'll see a blinking three-dot animation along with some sparks.
+
+### I typed a message and the keyboard disappeared immediately, is this normal?
+
+Yes! By pressing the send button, we automatically hide the keyboard to give you a wide, clean view of the screen while you wait and read Kai's response.
+
+---
+
+## 🧠 Chat Memory and History
+
+### Does Kai remember what I said in previous messages?
+Yes, Kai is a conversational assistant. To keep the thread of the conversation and give you responses with context, Kai remembers and analyzes the last 15 messages sent in your current session.
+
+### I want to start from scratch and talk about a completely different topic. How do I clear the chat?
+In the upper right corner of your screen, you will see a square icon with a pencil. Tapping it will bring up a prompt asking for confirmation to start a new conversation. If you accept, the entire current chat history will be cleared from the screen to give you a blank canvas. Please note that this action is final and cannot be undone.
+
+---
+
+## 🛡️ Privacy and Health
+
+### Is it safe to share my data and habits with Kai?
+Absolutely. On the initial screen (before sending messages), you will see a privacy note with a shield icon. All the information you share with Kai is confidential and processed under strict security standards.
+
+### I feel physically unwell, can Kai give me a diagnosis or treatment?
+No. Kai is a wellness and nutrition coach, but not a doctor. On the main screen, you will always see a medical disclaimer reminding you of this. Kai's responses should never replace the advice, diagnosis, or treatment of a qualified healthcare professional.
+
+---
+
+## ⚠️ Errors and Troubleshooting
+
+### I tried to send a message and Kai replied: "You do not have enough credits". What does this mean if I already paid for Premium?
+Artificial intelligence requires processing power. If you ever see this message, it means you have exhausted the quota or limit of interactions allowed with Kai according to your current plan.
+
+### The message says: "Kai is not available at the moment". What do I do?
+This is a temporary error that occurs if you lose your internet connection or if Kai's servers are under maintenance. Simply wait a few minutes, check your WiFi or data connection, and try again.
+
+---
+
+## 🏆 Rewards for Using Kai
+
+### Does talking to Kai help me complete my habits in the app?
+Yes! Every interaction you have is automatically logged. In your "My Path" section, you will see that the "Connection with Kai" habit will light up on the days you chat with him. Plus, you will collect exclusive badges (Badges); from your first message, to reaching milestones of 10, 30, 50, 100, 200, and 500 chats. It's a great way to make progress!-----
 Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/04-wellness/faq-welness.md
 ---
 id: wellness-faq
 title: Wellness Frequently Asked Questions
-slug: /wellness-preguntas-frecuentes
-sidebar_position: 1
+slug: /wellness-faq
+sidebar_position: 2
 ---
 
 ## 🧭 General Access and Exploration

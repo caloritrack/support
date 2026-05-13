@@ -1,8 +1,8 @@
 ---
 id: wellness-faq
 title: Preguntas Frecuentes de Wellness
-slug: /wellness-preguntas-frecuentes
-sidebar_position: 1
+slug: /wellness-faq
+sidebar_position: 2
 ---
 
 ## 🧭 Acceso y Exploración General
