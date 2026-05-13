@@ -1,8 +1,9 @@
 ---
 id: wellness-faq
 title: Wellness Frequently Asked Questions
-slug: /wellness-faq
+slug: /wellnes-faq
 sidebar_position: 2
+sidebar_label: Frequently Asked Questions
 ---
 
 ## 🧭 General Access and Exploration

@@ -3,6 +3,7 @@ id: wellness-faq
 title: Preguntas Frecuentes de Wellness
 slug: /wellness-faq
 sidebar_position: 2
+sidebar_label: Preguntas Frecuentes
 ---
 
 ## 🧭 Acceso y Exploración General
