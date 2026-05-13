@@ -10,15 +10,19 @@ Estructura de carpetas y archivos:
 | |____02-nutricion
 | | |_____category_.json
 | | |____faqs-nutricion.md
+| | |____guia-nutricion.mdx
 | |____03-ayuno
 | | |_____category_.json
 | | |____faqs-ayuno.md
 | | |____guia-ayuno.mdx
-| |____04-welness
+| |____04-wellness
+| | |_____category_.json
 | | |____faq-wellness.md
+| | |____guia-wellness.mdx
 | |____05-kai
 | | |_____category_.json
 | | |____faq-kai-coach.md
+| | |____guia-kai.mdx
 |____docusaurus.config.js
 |____i18n
 | |____en
@@ -32,13 +36,16 @@ Estructura de carpetas y archivos:
 | | | | | |____guia-salud.mdx
 | | | | |____02-nutricion
 | | | | | |____faqs-nutricion.md
+| | | | | |____guia-nutricion.mdx
 | | | | |____03-ayuno
 | | | | | |____faqs-ayuno.md
 | | | | | |____guia-ayuno.mdx
 | | | | |____04-wellness
-| | | | | |____faq-welness.md
+| | | | | |____faq-wellness.md
+| | | | | |____guia-wellness.mdx
 | | | | |____05-kai
 | | | | | |____faq-kai-coach.md
+| | | | | |____guia-kai.mdx
 | | |____docusaurus-theme-classic
 | | | |____footer.json
 | | | |____navbar.json
@@ -60,81 +67,6 @@ Estructura de carpetas y archivos:
 | | |____markdown-page.mdx
 -----
 Contenido de archivos:
-Archivo: ./docs/04-welness/faq-wellness.md
----
-id: wellness-faq
-title: Preguntas Frecuentes de Wellness
-slug: /wellness-faq
-sidebar_position: 2
----
-
-## 🧭 Acceso y Exploración General
-
-### ¿Por qué cuando intento entrar a la pestaña de Wellness me aparece una pantalla pidiéndome mejorar mi plan?
-Todo el catálogo de meditaciones, frecuencias y ejercicios de respiración de la pestaña Wellness es contenido exclusivo. Para poder reproducir y explorar este material, se requiere contar con la membresía Premium activa en tu cuenta de Caloritrack.
-
-### Hay mucho contenido, ¿cómo puedo encontrar rápidamente algo específico para lo que siento hoy?
-Tienes dos formas muy rápidas de filtrar el contenido:
-
-* **Buscador:** En la parte superior hay una barra de texto donde puedes escribir palabras clave (ej. "ansiedad" o "dormir") y la lista se actualizará automáticamente.
-* **Filtros Rápidos (Chips):** Justo debajo del buscador, verás botones ovalados con categorías como "Sueño", "Relajación" o "Enfoque" (si estás en Soundhealing), o "Reducir estrés", "Energía", etc. (si estás en Breathwork). Toca cualquiera de ellos para ver solo los ejercicios de esa categoría.
-
-### ¿Cómo guardo los audios o ejercicios que más me gustan para no tener que buscarlos cada vez?
-Puedes guardar cualquier ejercicio en tus "Favoritos" tocando el ícono de la estrella que aparece en la tarjeta del ejercicio directamente en la lista. Si ya estás dentro del reproductor de sonido, puedes tocar el ícono de corazón en la esquina superior derecha. Para ver todo lo que has guardado, selecciona el filtro "Favoritos" en la pantalla principal de Wellness.
-
----
-
-## 🎧 Soundhealing (Terapia de Sonido)
-
-### Al tocar un audio, me manda a una pantalla con información en lugar de empezar a sonar inmediatamente. ¿Por qué?
-Esa es la pantalla de previsualización (Preview). Está diseñada para darte contexto antes de tu sesión. Allí podrás ver la categoría del sonido, una descripción corta y una explicación más profunda de cómo esa frecuencia o sonido te ayudará. También verás un recordatorio para usar audífonos, lo cual recomendamos para obtener los mejores beneficios. Solo toca "Reproducir Ahora" en la parte inferior para iniciar el audio.
-
-### ¿Qué significan los controles dentro del reproductor de sonido?
-El reproductor cuenta con herramientas para personalizar tu sesión:
-
-* **Botón Central (Play/Pause):** Detiene o reanuda la pista principal.
-* **Temporizador (ícono de reloj):** Te permite establecer un tiempo específico (por ejemplo, 15 o 30 minutos) para que el audio se apague automáticamente, ideal si lo usas para dormir.
-* **AirPlay (ícono de pantallas concéntricas):** Te permite enviar el audio a tus bocinas inteligentes, HomePod o Apple TV.
-* **Repetición (ícono de flechas en bucle):** Puedes configurarlo para que el audio termine al acabar la pista, se repita una sola vez, o se repita infinitamente.
-
-### ¿Puedo poner sonido de lluvia o viento de fondo mientras escucho mi terapia de sonido?
-¡Sí! Hemos unificado los controles de volumen y ambiente en una sola tarjeta dentro del reproductor. Debajo del control de volumen de la pista principal, verás una sección llamada "Ambiente". Al tocar el ícono de "+", se abrirá un menú donde puedes elegir entre opciones como arroyo, lluvia, bosque, viento, tormenta, entre otros. Una vez seleccionado, podrás ajustar el volumen de ese sonido ambiental de forma independiente a la pista principal.
-
-### Si uso AirPlay para escuchar en mi HomePod, ¿se escuchará también el sonido ambiental (ej. la lluvia) que le agregué?
-Sí. El sistema de audio de la app está optimizado (Soporte AirPlay Dual) para mezclar ambos audios (la pista de Soundhealing y el ambiente) y enviarlos juntos a tu dispositivo externo sin problema.
-
-### Minimicé el reproductor para navegar por la app. ¿Cómo lo vuelvo a abrir o cómo lo quito?
-Mientras navegas, verás un minireproductor en la parte inferior de la pantalla. Si tocas cualquier parte de él, se volverá a abrir en pantalla completa. Si decides "deslizarlo" (swipe) hacia la izquierda, se colapsará en una pequeña pestaña lateral para no estorbarte.
-
----
-
-## 🌬️ Breathwork (Ejercicios de Respiración)
-
-### ¿Cómo debo seguir el ritmo del ejercicio de respiración?
-La pantalla te guiará de tres maneras:
-
-* **Visualmente:** Un círculo central de color Verde Menta se expandirá cuando debas inhalar, se mantendrá fijo cuando debas retener el aire, y se contraerá cuando debas exhalar.
-* **Por texto:** En el centro del círculo verás instrucciones claras ("Inhalar", "Retener", "Exhalar", "Sostener") junto con un contador de segundos en tiempo real.
-* **Vibraciones (Háptica):** Sentirás pulsaciones en tu dispositivo que varían en intensidad para guiarte sin que tengas que mirar la pantalla.
-
-### Las vibraciones (háptica) me distraen, ¿puedo apagarlas?
-Por supuesto. En la parte inferior derecha del reproductor de respiración, encontrarás un botón con el ícono de un teléfono. Tócalo para desactivar (o volver a activar) las vibraciones táctiles.
-
-### ¿Cómo sé cuánto me falta para terminar mi sesión de respiración?
-Tienes dos indicadores. En la parte superior hay una barra de progreso lineal y un temporizador que te muestra los minutos totales restantes. En la parte inferior, verás el número de "Ciclos" actuales frente al total (por ejemplo, "2/5"), lo que te ayuda a saber en qué repetición vas.
-
----
-
-## 📊 Historial, Sincronización y Estadísticas
-
-### Si hago un ejercicio de Soundhealing o Breathwork, ¿se guarda en mi historial?
-¡Sí! Siempre y cuando la sesión de audio o respiración haya durado más de 10 segundos continuos, el sistema la registrará automáticamente como completada.
-
-### ¿Se conecta todo esto con la app de Salud (Apple Health) de mi iPhone?
-Absolutamente. El módulo de Wellness sincroniza bidireccionalmente con Apple Salud.
-
-* Tus sesiones de Soundhealing y Breathwork se envían automáticamente como "Minutos de Mindfulness" a Apple Salud.
-* Tus registros de Estado de Ánimo, si tienes iOS 17 o superior, se envían directamente a la nueva sección nativa "State of Mind" de Apple Salud con su nivel de valencia (positivo/negativo). Si tienes un iOS anterior, se registra alternativamente como un registro general de atención plena.-----
 Archivo: ./docs/01-salud/_category_.json
 {
   "customProps": {
@@ -349,6 +281,113 @@ La cantidad de horas que pasas en la cama es solo una parte de la ecuación (rep
 
 ### ¿Cómo obtiene CaloriTrack la información sobre mi fase REM o Sueño Profundo?
 Nos conectamos de manera segura y privada con Apple Salud (HealthKit). Cuando usas tu Apple Watch para dormir, este registra las fases de tu sueño basándose en tu ritmo cardíaco y movimiento, y CaloriTrack extrae e interpreta estos datos por ti cada mañana. Solo asegúrate de tener los permisos activos en la sección de "Sincronización con terceros" en tu Perfil.-----
+Archivo: ./docs/02-nutricion/guia-nutricion.mdx
+---
+# Nombre del archivo: docs/02-nutricion/guia-nutricion.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-13
+# Versión: 1.2
+# Descripción: Guía maestra de la pantalla principal del Módulo de Nutrición. Se han añadido emojis a los puntos principales y se mantienen ocultas las referencias técnicas para una experiencia de usuario más amigable y visual.
+
+slug: guia-definitiva-nutricion
+title: "Guía Definitiva: Módulo de Nutrición"
+sidebar_label: "Módulo de Nutrición"
+sidebar_position: 1
+---
+
+# Guía Definitiva del Módulo de Nutrición de Caloritrack
+
+## ¿Para qué sirve esta sección?
+
+El módulo de Nutrición es el corazón metabólico y el centro de comando principal de Caloritrack, diseñado meticulosamente para transformar el registro de alimentos en una experiencia inteligente, guiada y sin fricciones. Su propósito es empoderar al usuario dándole un control absoluto sobre su ingesta diaria, yendo mucho más allá del simple conteo de calorías. 
+
+Esta sección funciona como un nutriólogo digital de bolsillo: permite gestionar planes de alimentación personalizados, evaluar en tiempo real el equilibrio exacto de macronutrientes, asegurar la ingesta de micronutrientes vitales y vigilar el límite de antinutrientes. En resumen, es la herramienta definitiva para planificar, registrar y auditar cada aspecto de la nutrición diaria, garantizando que alcances tus objetivos de salud (perder, mantener o ganar peso) con datos precisos, bases de datos confiables y una interfaz altamente visual e intuitiva.
+
+---
+
+## 📅 1. Navegación Principal y Calendario
+
+Al entrar a la pestaña de **Alimentación** (identificada con el ícono del tenedor y cuchillo), la cabecera ofrece un control total del tiempo:
+
+* **Calendario Semanal Deslizable:** En la parte superior, encontrarás un carrusel de fechas horizontales.
+* **Selección de Fecha:** Puedes deslizar hacia la izquierda o derecha para viajar en el tiempo, revisar días pasados o planificar días futuros.
+* **Indicadores de Registro:** Los días que ya contienen alimentos registrados mostrarán un pequeño punto indicador de color (Verde Menta para días pasados/hoy, o Azul Cielo para días futuros) debajo del número.
+* **Respuesta Háptica:** Tocar cualquier día genera una ligera vibración táctil para confirmar la selección.
+
+## 📋 2. Tu Plan de Alimentación (Gestión y Asistente)
+
+Justo debajo del calendario, se encuentra la sección de Planes, que es altamente dinámica:
+
+### Si no tienes un plan activo
+* Verás una atractiva tarjeta (**"Descubre tu Plan Ideal"**).
+* Al tocarla, se abrirá el asistente de 5 pasos.
+* **Paso 1 a 4:** Configurarás tu objetivo (perder, mantener o ganar peso), tu nivel de actividad física, tus restricciones alimentarias (sin lácteos, sin gluten, etc.), y tu filosofía de dieta (Keto, Vegana, Paleo, etc.).
+* **Paso 5:** El sistema te recomendará los planes perfectos del catálogo para que actives uno.
+
+### Si tienes un plan activo
+Verás una tarjeta deslizable de dos páginas:
+* **Página 1:** Muestra el nombre de tu plan, un ícono representativo de tu meta (ej. flecha hacia abajo para pérdida de peso), y una barra de progreso que indica en qué día del plan te encuentras.
+* **Página 2:** Si deslizas, verás las metas exactas de calorías y macronutrientes que ese plan exige.
+
+### Gestión del Plan
+Tocar el botón **"Gestionar"** abre un panel completo:
+* **Lista de Súper:** Puedes ver los ingredientes necesarios por semana, organizados por categoría, e incluso seleccionar ingredientes para exportarlos o compartirlos como texto.
+* **Menú Semanal:** Abre el menú generado para ver qué platillos te tocan cada día. Tocar un platillo te mostrará su receta detallada.
+* **Cambiar o Cancelar:** Tienes botones dedicados para abandonar el plan actual e iniciar uno nuevo.
+
+## 📊 3. Tarjetas de Resumen Diario (Paginador)
+
+El centro de control de tu consumo. Desliza horizontalmente para alternar entre tres vistas críticas de tus datos del día:
+
+### Tarjeta 1: Resumen de Macros
+* Muestra a la izquierda tu consumo total de calorías con un anillo de progreso de color degradado.
+* Al la derecha, verás barras de progreso individuales para tus **Proteínas** (Azul), **Grasas** (Amarillo Dorado) y **Carbohidratos** (Verde).
+* Tocar esta tarjeta te lleva al **Progreso Diario**, donde podrás ver una gráfica de barras con el resumen de toda tu semana.
+* Tocar el botón de "info" abre el tooltip de resumen nutricional, que explica la filosofía de nutrición de Caloritrack.
+
+### Tarjeta 2: Micronutrientes
+* Te da un vistazo rápido a 5 minerales y vitaminas esenciales: Potasio, Sodio, Vitamina D, Hierro y Zinc.
+* Tocar la tarjeta abre la vista detallada, donde puedes revisar docenas de vitaminas y minerales, filtrarlos por "Completados" o "Faltantes", y ver tus promedios semanales.
+
+### Tarjeta 3: Antinutrientes
+* Una métrica avanzada que vigila compuestos como Oxalatos, Ácido Fítico y Lectinas.
+* A diferencia de los nutrientes (donde quieres llegar a la meta), los antinutrientes usan barras inversas: se pondrán naranjas o rojas si excedes los límites saludables.
+* Entrar al detalle te permite ver el historial semanal y consultar el blog científico de la app para entender su impacto.
+
+## 🍎 4. El Diario: Registro y Gestión de Comidas
+
+Esta es el área donde aparecen tus alimentos ingresados.
+
+* **Organización Personalizada:** Al final de la lista, un botón (**"Ajustar comidas"**) te permite elegir cuántos bloques de comida quieres ver en tu día: 4 (Desayuno, Comida, Cena, Snack), 3, 2, o 1 sola comida si practicas OMAD.
+* **Cabecera de Comida:** Muestra el nombre (ej. "Desayuno") con su emoji y el total de calorías de ese bloque.
+    * Al la derecha tiene un **Menú de opciones** (tres puntos). Es una herramienta súper rápida que te permite: "Copiar de ayer", "Copiar a ayer", "Copiar a mañana" o "Editar/Eliminar".
+* **Visualización de Alimentos:**
+    * *Alimentos Individuales:* Verás el nombre, los gramos/porciones, y las calorías exactas.
+    * *Platillos:* Si registraste un platillo completo, verás el nombre principal y un botón desplegable. Al tocarlo, se expandirá para revelar todos los ingredientes individuales que lo componen.
+* **Certificaciones:** Los alimentos tienen iconos de confianza: Un sello indica que la información fue verificada por Caloritrack, y un globo terráqueo indica que proviene de bases de datos públicas como USDA.
+* **Editar y Borrar:** Tocar un alimento te lleva a la pantalla para editar su cantidad o cambiarlo de comida. También puedes deslizar o dejar presionado para eliminarlo.
+
+## 🔘 5. El Botón Flotante (Búsqueda y Catálogo)
+
+Para agregar nuevos alimentos, el sistema utiliza un botón flotante en la esquina inferior derecha para que siempre esté accesible. Contiene dos accesos:
+
+### Catálogo de Platillos (Ícono de Libro)
+* Abre la galería visual hermosa con nuestras recetas curadas.
+* Puedes filtrar la galería por tipo de dieta utilizando botones superiores (ej. "Cetogénica", "Vegana").
+* Tocar un platillo te permite ver su foto a pantalla completa, sus ingredientes y un resumen nutricional masivo antes de confirmar si lo añades a tu registro.
+
+### Buscador Inteligente (Ícono "+")
+* Abre la súper barra de búsqueda.
+* **Búsqueda de Texto:** Busca en vivo en las bases de datos de Caloritrack y USDA.
+* **Escáner de Código de Barras:** Un ícono junto a la barra de búsqueda abre tu cámara para escanear productos físicos.
+* **Historial Reciente:** Si la barra de búsqueda está vacía, te mostrará tus "Alimentos Recientes" para registros a un toque.
+* **Crear Alimento Privado:** Si no encuentras algo, puedes tocar el botón "Crear alimento privado" (cuando el buscador indique "Sin resultados"), para abrir el formulario y guardar permanentemente la tabla nutricional de tu propio producto.
+
+---
+
+:::warning Requisito de Acceso (Premium Paywall)
+Todo el módulo de Nutrición es una función exclusiva. Si no cuentas con una suscripción Premium activa, la aplicación presentará automáticamente un paywall. Este mensaje persuasivo explica los profundos beneficios del módulo e invita a suscribirse para desbloquear el máximo potencial de tu salud.
+:::-----
 Archivo: ./docs/02-nutricion/faqs-nutricion.md
 ---
 id: faqs-nutricion
@@ -747,6 +786,287 @@ Archivo: ./docs/05-kai/_category_.json
   "link": {
     "type": "generated-index",
     "description": "Kai es tu coach personal de bienestar y nutrición impulsado por inteligencia artificial, diseñado de forma exclusiva para acompañarte paso a paso en tu camino hacia una vida más saludable dentro de Caloritrack. Más que un simple asistente, Kai es un compañero conversacional avanzado capaz de entender tu contexto, recordar tus pláticas recientes y ofrecerte orientación personalizada sobre tus hábitos, alimentación y metas diarias. Aunque no sustituye el diagnóstico o consejo de un profesional médico, Kai está siempre disponible en la palma de tu mano para motivarte, resolver tus dudas en tiempo real, sugerir ideas frescas y celebrar cada una de tus medallas mientras transformas tu estilo de vida."
+  }
+}-----
+Archivo: ./docs/05-kai/guia-kai.mdx
+---
+# Nombre del archivo: docs/05-kai/guia-kai-coach.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-13
+# Versión: 1.0
+# Descripción: Guía maestra interactiva para el pilar kAI Coach. Detalla el uso del chat, la accesibilidad premium, el manejo del historial y las advertencias de salud.
+slug: guia-kai-coach
+title: "Conoce a Kai: Tu Coach Inteligente"
+sidebar_label: "Conoce a Kai"
+sidebar_position: 1
+---
+
+# Conoce a Kai: Tu Coach Inteligente en CaloriTrack
+
+Kai es tu asistente personal e inteligente de nutrición y bienestar, integrado directamente en CaloriTrack. Diseñado para ofrecerte apoyo, resolver tus dudas y motivarte en tu camino hacia una vida más saludable, Kai es como tener a un experto en tu bolsillo disponible las 24 horas del día. 
+
+A través de una interfaz de chat fluida y amigable, puedes conversar con Kai en tu propio idioma para recibir consejos personalizados, ideas de platillos o simplemente un impulso de motivación cuando más lo necesites.
+
+---
+
+## Guía Completa de Uso: Pantalla por Pantalla
+
+Para asegurarnos de que aproveches el 100% de lo que Kai tiene para ofrecerte, hemos dividido esta guía detallando cada rincón de su interfaz.
+
+### 🚪 Acceso y Pantalla de Inicio
+
+Cuando toques el ícono de Kai (los destellos mágicos) en la barra de navegación inferior, entrarás a su sección dedicada.
+
+:::info Acceso Exclusivo Premium
+Lo primero que debes saber es que Kai es una funcionalidad exclusiva para nuestros usuarios Premium. Si aún no cuentas con tu suscripción activa, la pantalla te mostrará nuestro elegante muro de pago (Paywall) invitándote a mejorar tu plan para desbloquear el acceso.
+:::
+
+* **El Encabezado:** En la parte superior de la pantalla, verás el logotipo oficial de CaloriTrack centrado, dándote la bienvenida.
+
+---
+
+### 🌟 El Estado Inicial (Antes de chatear)
+
+Si es tu primera vez hablando con Kai o si acabas de iniciar una nueva conversación, verás una pantalla de bienvenida limpia y amigable diseñada para romper el hielo:
+
+* **Bienvenida:** En el centro de la pantalla, serás recibido por un ícono de destellos azules, seguido de un título de bienvenida y un breve subtítulo explicativo.
+* **Sugerencias Rápidas (Atajos):** Para facilitarte las cosas, Kai te presenta tres botones con preguntas o temas sugeridos. Si tocas cualquiera de estas sugerencias, el texto se enviará automáticamente como tu primer mensaje, iniciando la conversación sin que tengas que teclear una sola palabra.
+* **Aviso de Privacidad:** En la parte inferior, encontrarás un ícono de un candado junto con un aviso de privacidad, garantizando que tus datos están 100% seguros y protegidos.
+
+:::caution Descargo Médico Importante
+Justo debajo del aviso de privacidad, verás un recordatorio fundamental: aunque Kai es muy inteligente y está basado en evidencia científica, **sus consejos no sustituyen la opinión, diagnóstico o tratamiento de un profesional de la salud calificado.**
+:::
+
+---
+
+### ⌨️ Escribiendo e Interactuando
+
+La parte inferior de la pantalla está dedicada a tu interacción directa con Kai:
+
+* **La Barra de Mensajes:** Aquí verás un cuadro de texto con un mensaje que te invita a escribir (ej. *"Escribe un mensaje..."*). Al tocarlo, tu teclado se desplegará de forma inteligente, empujando suavemente el chat hacia arriba para que nunca pierdas de vista lo que estás escribiendo.
+* **El Botón de Envío:** A la derecha del cuadro de texto, hay un botón circular de color **Verde Menta** con un ícono de un avión de papel. Este botón se mantendrá desactivado (gris) si el cuadro de texto está vacío. Una vez que escribas algo, se activará.
+* **Ocultar el Teclado:** Si decides no enviar un mensaje o quieres leer mejor el historial, simplemente toca cualquier parte vacía del fondo del chat y el teclado se ocultará suavemente de forma automática.
+
+---
+
+### 💬 La Dinámica de la Conversación
+
+Una vez que envíes tu primer mensaje, la pantalla inicial desaparecerá para dar paso a tu historial de chat:
+
+* **Tus Mensajes:** Todo lo que tú escribas aparecerá alineado a la derecha de la pantalla, dentro de burbujas de chat de un color azul claro, permitiéndote identificar fácilmente tus preguntas.
+* **Las Respuestas de Kai:** Aparecerán alineadas a la izquierda, dentro de burbujas grises y siempre acompañadas de su distintivo ícono circular con destellos.
+* **Idioma Inteligente:** ¡No te preocupes por el idioma! Kai detecta automáticamente el idioma en el que está configurado tu dispositivo y te responderá en esa misma lengua.
+* **Indicador de "Escribiendo...":** Dado que Kai procesa mucha información para darte la mejor respuesta, a veces toma unos segundos pensar. Durante este breve momento, verás aparecer un indicador animado con tres puntos saltando (`...`), haciéndote saber que Kai está trabajando para ti.
+* **Desplazamiento Automático:** A medida que la conversación se hace más larga, la pantalla se desplazará automáticamente hacia abajo cada vez que tú envíes un mensaje o cuando Kai termine de escribir el suyo.
+
+---
+
+### 🔄 Reiniciar y Gestionar tu Chat
+
+Kai recuerda el contexto de tu conversación actual (hasta tus últimos 15 mensajes) para darte respuestas coherentes. Si deseas cambiar radicalmente de tema o empezar desde cero:
+
+1. **Botón de Nueva Conversación:** En la esquina superior derecha de la pantalla (en la barra superior), verás un ícono de un cuadrado con un lápiz.
+2. **Confirmación de Borrado:** Al tocar este botón, aparecerá una alerta de seguridad preguntándote si estás seguro de iniciar una nueva conversación. La alerta te avisará que esta acción borrará el historial del chat actual y no se puede deshacer.
+
+Si confirmas, el chat se limpiará por completo y volverás a ver la Pantalla Inicial de Bienvenida con las sugerencias rápidas.
+
+---
+
+### ⚠️ Consideraciones Especiales (Límites y Errores)
+
+Para mantener un servicio óptimo, existen un par de situaciones que la vista de Kai maneja con gracia:
+
+* **Límite de Uso:** Si en algún momento alcanzas el límite de consultas permitidas por tu plan, Kai te responderá con un mensaje amable indicándote que no tienes suficientes créditos en ese momento y te sugerirá revisar las opciones de tu cuenta.
+* **Problemas de Conexión:** Si llegara a haber una falla en nuestros servidores o problemas con tu conexión a internet, Kai te notificará que *"no está disponible en este momento"* y te pedirá que lo intentes más tarde, mostrando este aviso como un mensaje normal dentro de la conversación para no interrumpir tu experiencia.-----
+Archivo: ./docs/04-wellness/faq-wellness.md
+---
+id: wellness-faq
+title: Preguntas Frecuentes de Wellness
+slug: /wellness-faq
+sidebar_position: 2
+sidebar_label: Preguntas Frecuentes
+---
+
+## 🧭 Acceso y Exploración General
+
+### ¿Por qué cuando intento entrar a la pestaña de Wellness me aparece una pantalla pidiéndome mejorar mi plan?
+Todo el catálogo de meditaciones, frecuencias y ejercicios de respiración de la pestaña Wellness es contenido exclusivo. Para poder reproducir y explorar este material, se requiere contar con la membresía Premium activa en tu cuenta de Caloritrack.
+
+### Hay mucho contenido, ¿cómo puedo encontrar rápidamente algo específico para lo que siento hoy?
+Tienes dos formas muy rápidas de filtrar el contenido:
+
+* **Buscador:** En la parte superior hay una barra de texto donde puedes escribir palabras clave (ej. "ansiedad" o "dormir") y la lista se actualizará automáticamente.
+* **Filtros Rápidos (Chips):** Justo debajo del buscador, verás botones ovalados con categorías como "Sueño", "Relajación" o "Enfoque" (si estás en Soundhealing), o "Reducir estrés", "Energía", etc. (si estás en Breathwork). Toca cualquiera de ellos para ver solo los ejercicios de esa categoría.
+
+### ¿Cómo guardo los audios o ejercicios que más me gustan para no tener que buscarlos cada vez?
+Puedes guardar cualquier ejercicio en tus "Favoritos" tocando el ícono de la estrella que aparece en la tarjeta del ejercicio directamente en la lista. Si ya estás dentro del reproductor de sonido, puedes tocar el ícono de corazón en la esquina superior derecha. Para ver todo lo que has guardado, selecciona el filtro "Favoritos" en la pantalla principal de Wellness.
+
+---
+
+## 🎧 Soundhealing (Terapia de Sonido)
+
+### Al tocar un audio, me manda a una pantalla con información en lugar de empezar a sonar inmediatamente. ¿Por qué?
+Esa es la pantalla de previsualización (Preview). Está diseñada para darte contexto antes de tu sesión. Allí podrás ver la categoría del sonido, una descripción corta y una explicación más profunda de cómo esa frecuencia o sonido te ayudará. También verás un recordatorio para usar audífonos, lo cual recomendamos para obtener los mejores beneficios. Solo toca "Reproducir Ahora" en la parte inferior para iniciar el audio.
+
+### ¿Qué significan los controles dentro del reproductor de sonido?
+El reproductor cuenta con herramientas para personalizar tu sesión:
+
+* **Botón Central (Play/Pause):** Detiene o reanuda la pista principal.
+* **Temporizador (ícono de reloj):** Te permite establecer un tiempo específico (por ejemplo, 15 o 30 minutos) para que el audio se apague automáticamente, ideal si lo usas para dormir.
+* **AirPlay (ícono de pantallas concéntricas):** Te permite enviar el audio a tus bocinas inteligentes, HomePod o Apple TV.
+* **Repetición (ícono de flechas en bucle):** Puedes configurarlo para que el audio termine al acabar la pista, se repita una sola vez, o se repita infinitamente.
+
+### ¿Puedo poner sonido de lluvia o viento de fondo mientras escucho mi terapia de sonido?
+¡Sí! Hemos unificado los controles de volumen y ambiente en una sola tarjeta dentro del reproductor. Debajo del control de volumen de la pista principal, verás una sección llamada "Ambiente". Al tocar el ícono de "+", se abrirá un menú donde puedes elegir entre opciones como arroyo, lluvia, bosque, viento, tormenta, entre otros. Una vez seleccionado, podrás ajustar el volumen de ese sonido ambiental de forma independiente a la pista principal.
+
+### Si uso AirPlay para escuchar en mi HomePod, ¿se escuchará también el sonido ambiental (ej. la lluvia) que le agregué?
+Sí. El sistema de audio de la app está optimizado (Soporte AirPlay Dual) para mezclar ambos audios (la pista de Soundhealing y el ambiente) y enviarlos juntos a tu dispositivo externo sin problema.
+
+### Minimicé el reproductor para navegar por la app. ¿Cómo lo vuelvo a abrir o cómo lo quito?
+Mientras navegas, verás un minireproductor en la parte inferior de la pantalla. Si tocas cualquier parte de él, se volverá a abrir en pantalla completa. Si decides "deslizarlo" (swipe) hacia la izquierda, se colapsará en una pequeña pestaña lateral para no estorbarte.
+
+---
+
+## 🌬️ Breathwork (Ejercicios de Respiración)
+
+### ¿Cómo debo seguir el ritmo del ejercicio de respiración?
+La pantalla te guiará de tres maneras:
+
+* **Visualmente:** Un círculo central de color Verde Menta se expandirá cuando debas inhalar, se mantendrá fijo cuando debas retener el aire, y se contraerá cuando debas exhalar.
+* **Por texto:** En el centro del círculo verás instrucciones claras ("Inhalar", "Retener", "Exhalar", "Sostener") junto con un contador de segundos en tiempo real.
+* **Vibraciones (Háptica):** Sentirás pulsaciones en tu dispositivo que varían en intensidad para guiarte sin que tengas que mirar la pantalla.
+
+### Las vibraciones (háptica) me distraen, ¿puedo apagarlas?
+Por supuesto. En la parte inferior derecha del reproductor de respiración, encontrarás un botón con el ícono de un teléfono. Tócalo para desactivar (o volver a activar) las vibraciones táctiles.
+
+### ¿Cómo sé cuánto me falta para terminar mi sesión de respiración?
+Tienes dos indicadores. En la parte superior hay una barra de progreso lineal y un temporizador que te muestra los minutos totales restantes. En la parte inferior, verás el número de "Ciclos" actuales frente al total (por ejemplo, "2/5"), lo que te ayuda a saber en qué repetición vas.
+
+---
+
+## 📊 Historial, Sincronización y Estadísticas
+
+### Si hago un ejercicio de Soundhealing o Breathwork, ¿se guarda en mi historial?
+¡Sí! Siempre y cuando la sesión de audio o respiración haya durado más de 10 segundos continuos, el sistema la registrará automáticamente como completada.
+
+### ¿Se conecta todo esto con la app de Salud (Apple Health) de mi iPhone?
+Absolutamente. El módulo de Wellness sincroniza bidireccionalmente con Apple Salud.
+
+* Tus sesiones de Soundhealing y Breathwork se envían automáticamente como "Minutos de Mindfulness" a Apple Salud.
+* Tus registros de Estado de Ánimo, si tienes iOS 17 o superior, se envían directamente a la nueva sección nativa "State of Mind" de Apple Salud con su nivel de valencia (positivo/negativo). Si tienes un iOS anterior, se registra alternativamente como un registro general de atención plena.-----
+Archivo: ./docs/04-wellness/guia-wellness.mdx
+---
+# Nombre del archivo: docs/04-wellness/guia-wellness.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-13
+# Versión: 1.0
+# Descripción: Guía maestra de la sección Wellness. Explica el uso de Soundhealing, Breathwork y el registro del estado de ánimo (Mood Tracking).
+slug: guia-wellness
+title: "Tu Refugio de Paz: Guía Completa de la Sección Wellness"
+sidebar_label: "Guía Wellness"
+sidebar_position: 1
+---
+
+Bienvenido a la sección de **Wellness**, tu santuario personal diseñado para restaurar tu equilibrio mental, emocional y físico. En un mundo lleno de ruido y estrés, este espacio ha sido creado cuidadosamente para ofrecerte herramientas de grado clínico y terapéutico que te ayudarán a desconectar, enfocarte o prepararte para un sueño profundo. 
+
+A través de poderosas sesiones de **Soundhealing** (Sanación por Sonido), ejercicios guiados de **Breathwork** (Respiración Consciente) y un **Registro de Estado de Ánimo** detallado, CaloriTrack te acompaña paso a paso para que tomes el control de tu bienestar integral. ¡Descubre cómo aprovechar cada rincón de esta experiencia!
+
+## 1. Primeros Pasos: Acceso y Exploración Principal
+
+Para entrar a este ecosistema, simplemente toca el ícono de Wellness (la figura meditando) en la barra de navegación inferior de tu aplicación.
+
+:::info Acceso Premium
+Esta es una experiencia exclusiva de la suscripción Premium. Si aún no eres Premium, verás una pantalla invitándote a desbloquear todos sus beneficios.
+:::
+
+Una vez dentro, notarás que la pantalla principal está diseñada para ser intuitiva y fácil de navegar:
+
+* **Selector de Sección (Pestañas Superiores):** En la parte superior verás un interruptor para alternar rápidamente entre *Soundhealing* y *Breathwork*.
+* **Barra de Búsqueda:** ¿Buscas algo específico? Usa la barra con la lupa para escribir palabras clave (ej. *"Lluvia"*, *"Dormir"*, *"Estrés"*) y encontrar rápidamente tu sesión ideal.
+* **Filtros Rápidos (Chips):** Justo debajo del buscador, desliza hacia la izquierda o derecha para ver los botones de categorías. Puedes filtrar por *"Sueño"*, *"Relajación"*, *"Concentración"*, *"Ansiedad"* o ver exclusivamente tus *"Favoritos"*.
+* **Tarjetas de Contenido:** Cada sesión se presenta en una tarjeta elegante. Podrás ver el título, una breve descripción, la cantidad de veces que la comunidad ha reproducido esa pista y un ícono de estrella. ¡Toca la estrella para guardar ese ejercicio en tu lista personal de Favoritos!
+
+---
+
+## 2. Magia Auditiva: El Módulo de Soundhealing
+
+Cuando seleccionas una pista de Soundhealing, entras a un reproductor inmersivo diseñado para calmar tus sentidos.
+
+### 👁️ La Vista Previa (Preview)
+Antes de comenzar, verás una pantalla con la portada del sonido, su categoría, y una descripción detallada de sus beneficios. Si te convence, toca el gran botón verde **"Reproducir Ahora"**.
+
+### 📱 El Reproductor a Pantalla Completa
+Una vez en reproducción, la pantalla se oscurecerá sutilmente para no lastimar tu vista (ideal para la noche). Aquí tienes el control total:
+
+* **Botón Central (Play/Pause):** Toca el círculo verde menta en el centro para pausar o reanudar tu pista.
+* **Favorito (Corazón):** En la esquina superior derecha, toca el corazón para añadir o quitar la pista de tus favoritos en cualquier momento.
+* **Minimizar (Flecha hacia abajo):** En la esquina superior izquierda, toca la flecha para ocultar el reproductor. ¡La música seguirá sonando mientras navegas por otras partes de CaloriTrack!
+
+### 🛠️ Herramientas Avanzadas del Reproductor
+Justo al lado del botón de Play/Pause, encontrarás tres controles clave:
+
+1. **Temporizador (Timer - Ícono de Reloj):** ¿Vas a dormir? Toca este ícono para programar un apagado automático. Puedes usar la rueda para elegir horas y minutos exactos, o usar los botones de acceso rápido (15, 30, 45 o 60 minutos). La música se detendrá sola para no gastar tu batería mientras duermes.
+2. **AirPlay:** Toca este ícono para enviar el sonido envolvente a tu Apple TV, HomePod o cualquier bocina inteligente compatible.
+3. **Repetición (Loop - Ícono de Infinito/Flechas):** Toca para alternar entre tres modos:
+   * **Apagado:** La pista se detiene al terminar.
+   * **Repetir una vez (1):** Se vuelve a reproducir solo una vez.
+   * **Infinito (∞):** Ideal para dormir, la pista sonará en bucle toda la noche.
+
+### 🎛️ Tarjeta Unificada: Volumen y Sonido Ambiental (Ambience)
+En la parte inferior verás una tarjeta especial que es la joya de la corona del Soundhealing: el mezclador dual.
+
+* **Volumen Principal:** Usa el primer deslizador (slider) para ajustar el volumen de la melodía principal.
+* **Añadir Ambiente (El botón "+"):** Toca el botón con el símbolo "+" (o la imagen de la hoja) para abrir el Mezclador de Ambiente. Aquí puedes elegir entre una biblioteca de sonidos naturales de alta fidelidad: Lluvia, Olas del mar, Fogata, Viento fuerte, Bosque, Cascada, entre otros.
+* **Mezcla Perfecta:** Una vez elegido un ambiente, usa el segundo deslizador para ajustar exclusivamente el volumen de la lluvia o el bosque, creando la mezcla perfecta junto con la melodía principal. ¡Si deseas quitar el ambiente, solo toca la pequeña "X"!
+
+### 🪟 El Mini-Reproductor Dinámico
+Si minimizas el reproductor para ir a ver tus macros o tu ayuno, verás un "Mini Player" flotando en la parte inferior de la pantalla.
+
+* Tiene controles rápidos de Pausa/Play y AirPlay.
+* **Ocultado Inteligente:** Si sientes que estorba en la pantalla, simplemente desliza el mini-reproductor hacia la izquierda. Se esconderá en una pequeña pestaña en el borde de tu pantalla. Toca esa pestaña para expandirlo nuevamente.
+
+---
+
+## 3. Poder Pulmonar: El Módulo de Breathwork
+
+La respiración consciente es tu control remoto para el sistema nervioso. Selecciona la pestaña superior "Breathwork" y elige un ejercicio (por ejemplo, para "Dormir Mejor" o "Energía").
+
+### 🫁 Interfaz de Respiración Animada
+Al iniciar, la pantalla se transforma en un entorno minimalista. Verás un círculo central pulsante y colores dinámicos:
+
+* **Sigue el Círculo:** El círculo verde menta se expandirá cuando debas Inhalar y se contraerá cuando debas Exhalar.
+* **Instrucciones Claras:** En el centro del círculo, leerás exactamente qué hacer (Inhalar, Retener, Exhalar, Sostener) acompañado de un conteo regresivo de segundos en números grandes.
+
+### ⏯️ Controles de la Sesión
+* **Botón de Play/Stop:** En la parte inferior, toca el botón circular grande para iniciar el ejercicio. Si necesitas detenerte a la mitad, tócalo de nuevo (se pondrá rojo para detener).
+* **Progreso:** En la parte superior verás una barra que te indica cuánto tiempo falta para completar toda la sesión, además de un contador de los "Ciclos" (ej. 1/5) en la parte inferior.
+* **Vibración Háptica (El ícono del iPhone):** Al lado del botón de Play, hay un ícono de un teléfono vibrando. Al activarlo, tu iPhone emitirá pulsaciones sutiles sincronizadas con la respiración. Esto es increíble si prefieres cerrar los ojos; la vibración te guiará indicándote cuándo inhalar y cuándo exhalar sin tener que mirar la pantalla.
+
+---
+
+## 4. Registro de Estado de Ánimo (Mood Tracking)
+
+Aunque se accede desde el encabezado (Header) de la app, el control de tu estado emocional es una pieza vital de tu ecosistema Wellness.
+
+* **¿Cómo entrar?** Desde la pantalla de Mi Cuerpo (Health) o Alimentación, simplemente toca la fecha de hoy en la esquina superior izquierda.
+* **Selector de Ánimo:** Aparecerá un deslizador de colores vivos. Muévelo de izquierda (Muy Mal / Morado) a derecha (Muy Bien / Naranja). La carita y el ícono cambiarán para reflejar tu selección.
+* **Identifica los Factores:** Una vez elegido cómo te sientes, toca "Siguiente". Se abrirá un menú desplegable con categorías: Vida, Salud, Trabajo y Actividades. Selecciona qué cosas (Familia, Sueño, Dinero, etc.) están influyendo en tu día.
+* **Notas Privadas:** Hay un recuadro de texto por si quieres escribir un pequeño diario o pensamiento sobre por qué te sientes así.
+* **Historial y Apoyo de Kai:** Tus registros se guardarán en una lista temporalizada. Si en algún momento registras un estado de ánimo negativo ("Mal" o "Muy Mal"), CaloriTrack te mostrará un botón especial de "Kai Coach" invitándote a platicar con tu inteligencia artificial, quien estará lista para ofrecerte contención, consejos estoicos o simplemente escucharte.-----
+Archivo: ./docs/04-wellness/_category_.json
+{
+  "customProps": {
+    "archivo": "docs/04-wellness/_category_.json",
+    "autor": "Arturo Enriquez Betancourt con Jarvis",
+    "fecha": "2026-05-13",
+    "version": "1.0",
+    "descripcion": "Configuración de la categoría Ayuno. Define el nombre con emoji para el sidebar, la posición jerárquica (3) y activa la página de índice generado. Absorbe automáticamente los MD y MDX de la carpeta."
+  },
+  "label": "Wellness",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "La sección de Wellness de Caloritrack es tu espacio exclusivo diseñado para el cuidado integral de tu bienestar mental y emocional. A través de un completo catálogo premium, te ofrece herramientas prácticas para tu día a día, como sesiones de Soundhealing —terapias de sonido y frecuencias con ambientes personalizables— y ejercicios de Breathwork —rutinas de respiración guiadas de forma visual y táctil—. Ya sea que busques reducir el estrés, mejorar tu enfoque o conciliar el sueño, esta sección te permite encontrar rápidamente lo que necesitas, registrando tu progreso de forma automática y sincronizando tus minutos de atención plena directamente con Apple Health."
   }
 }-----
 Archivo: ./blog/2026-05-11-v1-4-0.md
@@ -20395,11 +20715,14 @@ Archivo: ./package.json
 Archivo: ./docusaurus.config.js
 // Nombre del archivo: docusaurus.config.js
 // Autor: Arturo Enriquez Betancourt con Jarvis
-// Fecha: 2026-05-12
-// Versión: 1.6
-// Descripción: Actualización de la configuración del navbar para ocultar el texto junto al logo (title vacío) y aplicar cache-busting al logo para forzar su actualización visual. Se documenta la ubicación para futuros cambios de nombre de archivo.
+// Fecha: 2026-05-13
+// Versión: 1.9
+// Descripción: Solución definitiva para enlaces externos multilingües en el footer. Uso de process.env.DOCUSAURUS_CURRENT_LOCALE para inyectar dinámicamente las URLs y etiquetas en inglés, garantizando estabilidad absoluta.
 
 import {themes as prismThemes} from 'prism-react-renderer';
+
+// Capturamos el idioma que Docusaurus está compilando en este momento
+const currentLocale = process.env.DOCUSAURUS_CURRENT_LOCALE || 'es';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -20535,9 +20858,17 @@ const config = {
             title: 'CaloriTrack',
             items: [
               {
-                label: 'Sitio Web Principal',
-                href: 'https://caloritrack.com',
+                label: currentLocale === 'en' ? 'Main Website' : 'Sitio Web Principal',
+                href: currentLocale === 'en' ? 'https://caloritrack.com/en/' : 'https://caloritrack.com',
               },
+              {
+                label: currentLocale === 'en' ? 'Terms and Conditions' : 'Términos y Condiciones',
+                href: currentLocale === 'en' ? 'https://caloritrack.com/en/terms-and-conditions-of-use/' : 'https://caloritrack.com/terminos-y-condiciones-de-uso-de-caloritrack/',
+              },
+              {
+                label: currentLocale === 'en' ? 'Privacy Policy' : 'Políticas de Privacidad',
+                href: currentLocale === 'en' ? 'https://caloritrack.com/en/privacy-policy/' : 'https://caloritrack.com/politica-de-privacidad/',
+              }
             ],
           },
         ],
@@ -20987,7 +21318,7 @@ Archivo: ./i18n/en/code.json
 Archivo: ./i18n/en/docusaurus-theme-classic/footer.json
 {
   "__comentario_cabecera__": {
-    "message": "Nombre del archivo: footer.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-13 | Versión: 1.1 | Descripción: Sincronización de llaves de traducción. Se ajustó 'link.item.label.Centro de Ayuda' para que el i18n de Docusaurus coincida con el config.",
+    "message": "Nombre del archivo: footer.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-13 | Versión: 1.4 | Descripción: Limpieza de llaves HTML frágiles. La traducción de los enlaces legales ahora es manejada dinámicamente desde docusaurus.config.js mediante variables de entorno de locale.",
     "description": "Control de versión y autoría adaptado a formato JSON"
   },
   "copyright": {
@@ -21009,10 +21340,6 @@ Archivo: ./i18n/en/docusaurus-theme-classic/footer.json
   "link.item.label.Novedades y Actualizaciones": {
     "message": "App Releases",
     "description": "The label of footer link with label=Novedades y Actualizaciones linking to /blog"
-  },
-  "link.item.label.Sitio Web Principal": {
-    "message": "Main Website",
-    "description": "The label of footer link with label=Sitio Web Principal linking to https://caloritrack.com"
   }
 }-----
 Archivo: ./i18n/en/docusaurus-theme-classic/navbar.json
@@ -21243,6 +21570,113 @@ The amount of hours you spend in bed is only part of the equation (it represents
 
 ### How does CaloriTrack get information about my REM phase or Deep Sleep?
 We connect securely and privately with Apple Health (HealthKit). When you use your Apple Watch to sleep, it records your sleep phases based on your heart rate and movement, and CaloriTrack extracts and interprets this data for you every morning. Just make sure you have the permissions active in the "Third-party synchronization" section in your Profile.-----
+Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/02-nutricion/guia-nutricion.mdx
+---
+# Nombre del archivo: i18n/en/docusaurus-plugin-content-docs/current/02-nutricion/guia-nutricion.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-13
+# Versión: 1.2
+# Descripción: Master guide for the main Nutrition screen. Main headings now include emojis, and technical references remain removed for a cleaner, more engaging user experience.
+
+slug: guia-definitiva-nutricion
+title: "Ultimate Guide: Nutrition Module"
+sidebar_label: "Nutrition Module"
+sidebar_position: 1
+---
+
+# Ultimate Guide to the CaloriTrack Nutrition Module
+
+## What is this section for?
+
+The Nutrition module is the metabolic heart and main command center of CaloriTrack, meticulously designed to transform food logging into a smart, guided, and frictionless experience. Its purpose is to empower the user by giving them absolute control over their daily intake, going far beyond simple calorie counting. 
+
+This section works as a digital pocket nutritionist: it allows you to manage personalized meal plans, evaluate the exact balance of macronutrients in real-time, ensure the intake of vital micronutrients, and monitor antinutrient limits. In short, it is the ultimate tool to plan, log, and audit every aspect of your daily nutrition, ensuring you reach your health goals (lose, maintain, or gain weight) with precise data, reliable databases, and a highly visual and intuitive interface.
+
+---
+
+## 📅 1. Main Navigation and Calendar
+
+Upon entering the **Nutrition** tab (identified by the fork and knife icon), the header offers total control of your timeline:
+
+* **Swipeable Weekly Calendar:** At the top, you will find a horizontal date carousel.
+* **Date Selection:** You can swipe left or right to travel in time, reviewing past days or planning future ones.
+* **Logging Indicators:** Days that already contain logged foods will show a small colored indicator dot (Mint Green for past/today, or Sky Blue for future days) below the number.
+* **Haptic Feedback:** Tapping any day generates a slight tactile vibration to confirm the selection.
+
+## 📋 2. Your Meal Plan (Management and Wizard)
+
+Just below the calendar is the Plans section, which is highly dynamic:
+
+### If you don't have an active plan
+* You will see an attractive card (**"Discover your Ideal Plan"**).
+* Tapping it will open the 5-step wizard.
+* **Steps 1 to 4:** You will configure your goal (lose, maintain, or gain weight), physical activity level, dietary restrictions (dairy-free, gluten-free, etc.), and your diet philosophy (Keto, Vegan, Paleo, etc.).
+* **Step 5:** The system will recommend the perfect plans from the catalog for you to activate.
+
+### If you have an active plan
+You will see a swipeable two-page card:
+* **Page 1:** Shows your plan's name, an icon representing your goal (e.g., down arrow for weight loss), and a progress bar indicating what day of the plan you are on.
+* **Page 2:** If you swipe, you will see the exact calorie and macronutrient goals that plan requires.
+
+### Plan Management
+Tapping the **"Manage"** button opens a full panel:
+* **Grocery List:** You can see the necessary ingredients per week, organized by category, and even select ingredients to export or share as text.
+* **Weekly Menu:** Opens the generated menu to see what dishes you have scheduled each day. Tapping a dish will show its detailed recipe.
+* **Change or Cancel:** You have dedicated buttons to abandon the current plan and start a new one.
+
+## 📊 3. Daily Summary Cards (Paginator)
+
+The control center for your intake. Swipe horizontally to toggle between three critical views of your daily data:
+
+### Card 1: Macros Summary
+* Shows your total calorie consumption on the left with a gradient-colored progress ring.
+* On the right, you will see individual progress bars for your **Proteins** (Blue), **Fats** (Golden Yellow), and **Carbs** (Green).
+* Tapping this card takes you to the **Daily Progress**, where you can see a bar chart summarizing your entire week.
+* Tapping the "info" button opens the nutrition summary tooltip, which explains CaloriTrack's nutrition philosophy.
+
+### Card 2: Micronutrients
+* Gives you a quick glance at 5 essential minerals and vitamins: Potassium, Sodium, Vitamin D, Iron, and Zinc.
+* Tapping the card opens the detailed view, where you can review dozens of vitamins and minerals, filter them by "Completed" or "Missing", and see your weekly averages.
+
+### Card 3: Antinutrients
+* An advanced metric that monitors compounds like Oxalates, Phytic Acid, and Lectins.
+* Unlike nutrients (where you want to reach the goal), antinutrients use reverse bars: they will turn orange or red if you exceed healthy limits.
+* Entering the detail view allows you to see your weekly history and read the app's scientific blog to understand their impact.
+
+## 🍎 4. The Diary: Food Logging and Management
+
+This is the area where your entered foods appear.
+
+* **Custom Organization:** At the end of the list, a button (**"Adjust meals"**) lets you choose how many meal blocks you want to see in your day: 4 (Breakfast, Lunch, Dinner, Snack), 3, 2, or a single meal if you practice OMAD.
+* **Meal Header:** Shows the name (e.g., "Breakfast") with its emoji and the total calories for that block.
+    * On the right, it has an **Options menu** (three dots). It's a super-fast tool that allows you to: "Copy from yesterday", "Copy to yesterday", "Copy to tomorrow", or "Edit/Delete".
+* **Food Display:**
+    * *Individual Foods:** You will see the name, grams/portions, and exact calories.
+    * *Dishes:* If you logged a complete dish, you will see the main name and a dropdown button. Tapping it expands to reveal all the individual ingredients that make it up.
+* **Certifications:** Foods have trust icons: A seal indicates the information was verified by CaloriTrack, and a globe indicates it comes from public databases like the USDA.
+* **Edit and Delete:** Tapping a food takes you to the screen to edit its quantity or move it to another meal. You can also swipe or long-press to delete it.
+
+## 🔘 5. The Floating Button (Search and Catalog)
+
+To add new foods, the system uses a floating button in the bottom right corner so it's always accessible. It contains two shortcuts:
+
+### Dish Catalog (Book Icon)
+* Opens the beautiful visual gallery featuring our curated recipes.
+* You can filter the gallery by diet type using the top buttons (e.g., "Ketogenic", "Vegan").
+* Tapping a dish lets you see its full-screen photo, ingredients, and a massive nutritional summary before confirming if you want to add it to your log.
+
+### Smart Search ("+" Icon)
+* Opens the super search bar.
+* **Text Search:** Search live in the CaloriTrack and USDA databases.
+* **Barcode Scanner:** An icon next to the search bar opens your camera to scan physical products.
+* **Recent History:** If the search bar is empty, it will show your "Recent Foods" for one-tap logging.
+* **Create Private Food:** If you can't find something, you can tap the "Create private food" button (when the search shows "No results") to open the form and permanently save the nutritional facts of your own product.
+
+---
+
+:::warning Access Requirement (Premium Paywall)
+The entire Nutrition module is an exclusive feature. If you do not have an active Premium subscription, the application will automatically present a paywall. This persuasive message explains the deep benefits of the module and invites you to subscribe to unlock your health's maximum potential.
+:::-----
 Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/02-nutricion/faqs-nutricion.md
 ---
 id: faqs-nutricion
@@ -21596,12 +22030,103 @@ This is a temporary error that occurs if you lose your internet connection or if
 
 ### Does talking to Kai help me complete my habits in the app?
 Yes! Every interaction you have is automatically logged. In your "My Path" section, you will see that the "Connection with Kai" habit will light up on the days you chat with him. Plus, you will collect exclusive badges (Badges); from your first message, to reaching milestones of 10, 30, 50, 100, 200, and 500 chats. It's a great way to make progress!-----
-Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/04-wellness/faq-welness.md
+Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/05-kai/guia-kai.mdx
+---
+# Nombre del archivo: i18n/en/docusaurus-plugin-content-docs/current/05-kai/guia-kai-coach.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-13
+# Versión: 1.0
+# Descripción: English translation for the kAI Coach master guide. Details chat interactions, premium accessibility, history management, and health disclaimers.
+slug: guia-kai-coach
+title: "Meet Kai: Your Smart Coach"
+sidebar_label: "Meet Kai"
+sidebar_position: 1
+---
+
+# Meet Kai: Your Smart Coach in CaloriTrack
+
+Kai is your personal, smart nutrition and wellness assistant, integrated directly into CaloriTrack. Designed to offer you support, answer your questions, and motivate you on your journey to a healthier life, Kai is like having an expert in your pocket available 24 hours a day.
+
+Through a fluid and friendly chat interface, you can talk to Kai in your own language to receive personalized advice, meal ideas, or simply a motivational boost when you need it most.
+
+---
+
+## Complete Usage Guide: Screen by Screen
+
+To ensure you get 100% out of what Kai has to offer, we have divided this guide to detail every corner of its interface.
+
+### 🚪 Access and Home Screen
+
+When you tap the Kai icon (the magical sparkles) in the bottom navigation bar, you will enter its dedicated section.
+
+:::info Exclusive Premium Access
+The first thing you should know is that Kai is an exclusive feature for our Premium users. If you do not yet have an active subscription, the screen will show our elegant Paywall inviting you to upgrade your plan to unlock access.
+:::
+
+* **The Header:** At the top of the screen, you will see the official CaloriTrack logo centered, welcoming you.
+
+---
+
+### 🌟 The Initial State (Before chatting)
+
+If it is your first time talking to Kai or if you have just started a new conversation, you will see a clean and friendly welcome screen designed to break the ice:
+
+* **Welcome:** In the center of the screen, you will be greeted by a blue sparkles icon, followed by a welcome title and a brief explanatory subtitle.
+* **Quick Suggestions (Shortcuts):** To make things easier for you, Kai presents three buttons with suggested questions or topics. If you tap any of these suggestions, the text will be sent automatically as your first message, starting the conversation without you having to type a single word.
+* **Privacy Notice:** At the bottom, you will find a padlock icon along with a privacy notice, guaranteeing that your data is 100% safe and secure.
+
+:::caution Important Medical Disclaimer
+Right below the privacy notice, you will see a fundamental reminder: although Kai is very smart and based on scientific evidence, **its advice does not replace the opinion, diagnosis, or treatment of a qualified healthcare professional.**
+:::
+
+---
+
+### ⌨️ Typing and Interacting
+
+The bottom part of the screen is dedicated to your direct interaction with Kai:
+
+* **The Message Bar:** Here you will see a text box with a prompt inviting you to type (e.g., *"Type a message..."*). When you tap it, your keyboard will intelligently deploy, gently pushing the chat upwards so you never lose sight of what you are typing.
+* **The Send Button:** To the right of the text box, there is a circular **Mint Green** button with a paper airplane icon. This button will remain disabled (gray) if the text box is empty. Once you type something, it will become active.
+* **Hide the Keyboard:** If you decide not to send a message or want a better view of the chat history, simply tap any empty part of the chat background, and the keyboard will smoothly hide automatically.
+
+---
+
+### 💬 Conversation Dynamics
+
+Once you send your first message, the initial screen will disappear to make way for your chat history:
+
+* **Your Messages:** Everything you type will appear aligned to the right side of the screen, inside light blue chat bubbles, allowing you to easily identify your questions.
+* **Kai's Responses:** These will appear aligned to the left, inside gray bubbles, and always accompanied by its distinctive circular sparkle icon.
+* **Smart Language:** Don't worry about the language! Kai automatically detects the language your device is set to and will respond to you in that same language.
+* **"Typing..." Indicator:** Since Kai processes a lot of information to give you the best answer, it sometimes takes a few seconds to think. During this brief moment, you will see an animated indicator with three bouncing dots (`...`), letting you know that Kai is working for you.
+* **Auto-Scroll:** As the conversation gets longer, the screen will automatically scroll down every time you send a message or when Kai finishes typing its response.
+
+---
+
+### 🔄 Resetting and Managing your Chat
+
+Kai remembers the context of your current conversation (up to your last 15 messages) to give you coherent answers. If you want to radically change the topic or start from scratch:
+
+1. **New Conversation Button:** In the upper right corner of the screen (on the top bar), you will see an icon of a square with a pencil.
+2. **Clear Confirmation:** When you tap this button, a security alert will appear asking if you are sure you want to start a new conversation. The alert will warn you that this action will clear the current chat history and cannot be undone.
+
+If you confirm, the chat will be completely cleared, and you will see the Initial Welcome Screen with the quick suggestions again.
+
+---
+
+### ⚠️ Special Considerations (Limits and Errors)
+
+To maintain optimal service, there are a couple of situations that the Kai view handles gracefully:
+
+* **Usage Limit:** If at any time you reach the limit of queries allowed by your plan, Kai will respond with a polite message indicating that you do not have enough credits at the moment and will suggest checking your account options.
+* **Connection Issues:** If there is a failure in our servers or problems with your internet connection, Kai will notify you that it is *"not available at the moment"* and will ask you to try again later, displaying this notice as a normal message within the conversation so as not to disrupt your experience.-----
+Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/04-wellness/faq-wellness.md
 ---
 id: wellness-faq
 title: Wellness Frequently Asked Questions
 slug: /wellness-faq
 sidebar_position: 2
+sidebar_label: Frequently Asked Questions
 ---
 
 ## 🧭 General Access and Exploration
@@ -21669,31 +22194,130 @@ Absolutely. The Wellness module syncs bidirectionally with Apple Health.
 
 * Your Soundhealing and Breathwork sessions are automatically sent as "Mindfulness Minutes" to Apple Health.
 * Your Mood logs, if you have iOS 17 or higher, are sent directly to the new native "State of Mind" section of Apple Health with their valence level (positive/negative). If you have an older iOS, it is alternatively registered as a general mindfulness log.-----
+Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/04-wellness/guia-wellness.mdx
+---
+# Nombre del archivo: i18n/en/docusaurus-plugin-content-docs/current/04-wellness/guia-wellness.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-13
+# Versión: 1.0
+# Descripción: Master guide for the Wellness section. Explains the use of Soundhealing, Breathwork, and Mood Tracking features.
+slug: guia-wellness
+title: "Your Peaceful Sanctuary: The Ultimate Guide to the Wellness Section"
+sidebar_label: "Wellness Guide"
+sidebar_position: 1
+---
+
+Welcome to the **Wellness** section, your personal sanctuary designed to restore your mental, emotional, and physical balance. In a world full of noise and stress, this space has been carefully crafted to offer you clinical and therapeutic-grade tools that will help you disconnect, focus, or prepare for deep sleep.
+
+Through powerful **Soundhealing** sessions, guided **Breathwork** exercises, and detailed **Mood Tracking**, CaloriTrack walks with you step-by-step so you can take control of your holistic well-being. Discover how to make the most out of every corner of this experience!
+
+## 1. Getting Started: Access and Main Exploration
+
+To enter this ecosystem, simply tap the Wellness icon (the meditating figure) on your app's bottom navigation bar.
+
+:::info Premium Access
+This is an exclusive experience for Premium subscribers. If you are not Premium yet, you will see a screen inviting you to unlock all of its benefits.
+:::
+
+Once inside, you'll notice that the main screen is designed to be intuitive and easy to navigate:
+
+* **Section Selector (Top Tabs):** At the top, you will see a switch to quickly toggle between *Soundhealing* and *Breathwork*.
+* **Search Bar:** Looking for something specific? Use the bar with the magnifying glass to type keywords (e.g., *"Rain"*, *"Sleep"*, *"Stress"*) and quickly find your ideal session.
+* **Quick Filters (Chips):** Just below the search bar, swipe left or right to view the category buttons. You can filter by *"Sleep"*, *"Relaxation"*, *"Focus"*, *"Anxiety"*, or exclusively view your *"Favorites"*.
+* **Content Cards:** Each session is presented on an elegant card. You can see the title, a brief description, how many times the community has played that track, and a star icon. Tap the star to save that exercise to your personal Favorites list!
+
+---
+
+## 2. Auditory Magic: The Soundhealing Module
+
+When you select a Soundhealing track, you enter an immersive player designed to soothe your senses.
+
+### 👁️ The Preview
+Before starting, you will see a screen with the sound's cover art, its category, and a detailed description of its benefits. If it sounds right for you, tap the large green **"Play Now"** button.
+
+### 📱 The Full-Screen Player
+Once playing, the screen will subtly darken to protect your eyes (ideal for nighttime). Here you have total control:
+
+* **Central Button (Play/Pause):** Tap the mint green circle in the center to pause or resume your track.
+* **Favorite (Heart):** In the top right corner, tap the heart to add or remove the track from your favorites at any time.
+* **Minimize (Down Arrow):** In the top left corner, tap the arrow to hide the player. The music will keep playing while you browse other parts of CaloriTrack!
+
+### 🛠️ Advanced Player Tools
+Right next to the Play/Pause button, you will find three key controls:
+
+1. **Timer (Clock Icon):** Going to sleep? Tap this icon to set an auto-turn-off timer. You can use the wheel to choose exact hours and minutes, or use the quick access buttons (15, 30, 45, or 60 minutes). The music will stop on its own so it won't drain your battery while you sleep.
+2. **AirPlay:** Tap this icon to send the surround sound to your Apple TV, HomePod, or any compatible smart speaker.
+3. **Repeat (Loop - Infinity/Arrows Icon):** Tap to toggle between three modes:
+   * **Off:** The track stops when it finishes.
+   * **Repeat once (1):** It plays again only one more time.
+   * **Infinity (∞):** Ideal for sleeping, the track will loop all night long.
+
+### 🎛️ Unified Card: Volume and Ambience
+At the bottom, you will see a special card that is the crown jewel of Soundhealing: the dual mixer.
+
+* **Main Volume:** Use the first slider to adjust the volume of the main melody.
+* **Add Ambience (The "+" button):** Tap the button with the "+" symbol (or the leaf icon) to open the Ambience Mixer. Here you can choose from a library of high-fidelity natural sounds: Rain, Ocean Waves, Campfire, Strong Wind, Forest, Waterfall, among others.
+* **Perfect Mix:** Once an ambience is chosen, use the second slider to exclusively adjust the volume of the rain or forest, creating the perfect mix alongside the main melody. If you want to remove the ambience, just tap the small "X"!
+
+### 🪟 The Dynamic Mini-Player
+If you minimize the player to go look at your macros or your fast, you will see a "Mini Player" floating at the bottom of the screen.
+
+* It has quick Play/Pause and AirPlay controls.
+* **Smart Hiding:** If you feel it's in the way on the screen, simply swipe the mini-player to the left. It will hide in a small tab on the edge of your screen. Tap that tab to expand it again.
+
+---
+
+## 3. Lung Power: The Breathwork Module
+
+Conscious breathing is your remote control for the nervous system. Select the top "Breathwork" tab and choose an exercise (for example, for "Better Sleep" or "Energy").
+
+### 🫁 Animated Breathing Interface
+Upon starting, the screen transforms into a minimalist environment. You will see a pulsating central circle and dynamic colors:
+
+* **Follow the Circle:** The mint green circle will expand when you should Inhale and contract when you should Exhale.
+* **Clear Instructions:** In the center of the circle, you will read exactly what to do (Inhale, Hold, Exhale, Hold) accompanied by a real-time seconds countdown in large numbers.
+
+### ⏯️ Session Controls
+* **Play/Stop Button:** At the bottom, tap the large circular button to start the exercise. If you need to stop halfway through, tap it again (it will turn red to stop).
+* **Progress:** At the top, you will see a bar indicating how much time is left to complete the entire session, plus a "Cycles" counter (e.g., 1/5) at the bottom.
+* **Haptic Vibration (The iPhone icon):** Next to the Play button, there is a vibrating phone icon. When activated, your iPhone will emit subtle pulses synchronized with the breathing. This is incredible if you prefer to close your eyes; the vibration will guide you, telling you when to inhale and when to exhale without having to look at the screen.
+
+---
+
+## 4. Mood Tracking
+
+Although accessed from the app's Header, tracking your emotional state is a vital piece of your Wellness ecosystem.
+
+* **How to enter?** From the My Body (Health) or Nutrition screen, simply tap today's date in the top left corner.
+* **Mood Selector:** A bright color slider will appear. Move it from left (Very Bad / Purple) to right (Very Good / Orange). The smiley face and icon will change to reflect your selection.
+* **Identify the Factors:** Once you've chosen how you feel, tap "Next". A dropdown menu will open with categories: Life, Health, Work, and Activities. Select which things (Family, Sleep, Money, etc.) are influencing your day.
+* **Private Notes:** There is a text box in case you want to write a short journal entry or thought about why you feel this way.
+* **History and Kai's Support:** Your logs will be saved in a timeline list. If you ever record a negative mood ("Bad" or "Very Bad"), CaloriTrack will show you a special "Kai Coach" button inviting you to chat with your artificial intelligence, who will be ready to offer you support, Stoic advice, or simply listen to you.-----
 Archivo: ./i18n/en/docusaurus-plugin-content-docs/current.json
 {
   "__comentario_cabecera__": {
-    "message": "Nombre del archivo: current.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-12 | Versión: 1.1 | Descripción: Se agregaron las traducciones para la categoría de Nutrición en el sidebar.",
+    "message": "Nombre del archivo: current.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-13 | Versión: 1.4 | Descripción: Se eliminaron los emojis de las llaves (keys) y traducciones de las categorías para asegurar una coincidencia exacta y literal con los archivos fuente en español, corrigiendo el problema de visualización en i18n.",
     "description": "Control de versión y autoría adaptado a formato JSON"
   },
   "version.label": {
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.tutorialSidebar.category.🌿 Salud": {
-    "message": "🌿 Health",
-    "description": "The label for category '🌿 Salud' in sidebar 'tutorialSidebar'"
+  "sidebar.tutorialSidebar.category.Salud": {
+    "message": "Health",
+    "description": "The label for category 'Salud' in sidebar 'tutorialSidebar'"
   },
-  "sidebar.tutorialSidebar.category.🌿 Salud.link.generated-index.description": {
+  "sidebar.tutorialSidebar.category.Salud.link.generated-index.description": {
     "message": "Your personal command center. Here, we reveal the hidden connections between your habits and your biological well-being to foster conscious and lasting change.",
-    "description": "The generated-index page description for category '🌿 Salud' in sidebar 'tutorialSidebar'"
+    "description": "The generated-index page description for category 'Salud' in sidebar 'tutorialSidebar'"
   },
-  "sidebar.tutorialSidebar.category.🥗 Nutrición": {
-    "message": "🥗 Nutrition",
-    "description": "The label for category '🥗 Nutrición' in sidebar 'tutorialSidebar'"
+  "sidebar.tutorialSidebar.category.Nutrición": {
+    "message": "Nutrition",
+    "description": "The label for category 'Nutrición' in sidebar 'tutorialSidebar'"
   },
-  "sidebar.tutorialSidebar.category.🥗 Nutrición.link.generated-index.description": {
+  "sidebar.tutorialSidebar.category.Nutrición.link.generated-index.description": {
     "message": "Guides on natural food logging, macronutrients, and antinutrient management in CaloriTrack.",
-    "description": "The generated-index page description for category '🥗 Nutrición' in sidebar 'tutorialSidebar'"
+    "description": "The generated-index page description for category 'Nutrición' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Ayuno Intermitente": {
     "message": "Intermittent Fasting",
@@ -21702,6 +22326,22 @@ Archivo: ./i18n/en/docusaurus-plugin-content-docs/current.json
   "sidebar.tutorialSidebar.category.Ayuno Intermitente.link.generated-index.description": {
     "message": "Explore the science of fasting, learn to configure your metabolic windows, and understand the cellular benefits of autophagy on Caloritrack.",
     "description": "The generated-index page description for category 'Ayuno Intermitente' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Wellness": {
+    "message": "Wellness",
+    "description": "The label for category 'Wellness' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Wellness.link.generated-index.description": {
+    "message": "Optimize your recovery through advanced sleep hygiene, stress management, and mindfulness practices integrated into your daily routine.",
+    "description": "The generated-index page description for category 'Wellness' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Kai Coach": {
+    "message": "kAI Coach",
+    "description": "The label for category 'kAI Coach' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Kai Coach.link.generated-index.description": {
+    "message": "Meet your AI companion. Learn to leverage Stoic principles and personalized guidance to navigate your health journey with clarity and purpose.",
+    "description": "The generated-index page description for category 'kAI Coach' in sidebar 'tutorialSidebar'"
   }
 }-----
 Archivo: ./sidebars.js

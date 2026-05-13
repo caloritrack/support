@@ -1,10 +1,13 @@
 // Nombre del archivo: docusaurus.config.js
 // Autor: Arturo Enriquez Betancourt con Jarvis
-// Fecha: 2026-05-12
-// Versión: 1.6
-// Descripción: Actualización de la configuración del navbar para ocultar el texto junto al logo (title vacío) y aplicar cache-busting al logo para forzar su actualización visual. Se documenta la ubicación para futuros cambios de nombre de archivo.
+// Fecha: 2026-05-13
+// Versión: 1.9
+// Descripción: Solución definitiva para enlaces externos multilingües en el footer. Uso de process.env.DOCUSAURUS_CURRENT_LOCALE para inyectar dinámicamente las URLs y etiquetas en inglés, garantizando estabilidad absoluta.
 
 import {themes as prismThemes} from 'prism-react-renderer';
+
+// Capturamos el idioma que Docusaurus está compilando en este momento
+const currentLocale = process.env.DOCUSAURUS_CURRENT_LOCALE || 'es';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -140,9 +143,17 @@ const config = {
             title: 'CaloriTrack',
             items: [
               {
-                label: 'Sitio Web Principal',
-                href: 'https://caloritrack.com',
+                label: currentLocale === 'en' ? 'Main Website' : 'Sitio Web Principal',
+                href: currentLocale === 'en' ? 'https://caloritrack.com/en/' : 'https://caloritrack.com',
               },
+              {
+                label: currentLocale === 'en' ? 'Terms and Conditions' : 'Términos y Condiciones',
+                href: currentLocale === 'en' ? 'https://caloritrack.com/en/terms-and-conditions-of-use/' : 'https://caloritrack.com/terminos-y-condiciones-de-uso-de-caloritrack/',
+              },
+              {
+                label: currentLocale === 'en' ? 'Privacy Policy' : 'Políticas de Privacidad',
+                href: currentLocale === 'en' ? 'https://caloritrack.com/en/privacy-policy/' : 'https://caloritrack.com/politica-de-privacidad/',
+              }
             ],
           },
         ],

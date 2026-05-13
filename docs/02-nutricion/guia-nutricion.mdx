@@ -1,0 +1,106 @@
+---
+# Nombre del archivo: docs/02-nutricion/guia-nutricion.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-13
+# Versión: 1.2
+# Descripción: Guía maestra de la pantalla principal del Módulo de Nutrición. Se han añadido emojis a los puntos principales y se mantienen ocultas las referencias técnicas para una experiencia de usuario más amigable y visual.
+
+slug: guia-definitiva-nutricion
+title: "Guía Definitiva: Módulo de Nutrición"
+sidebar_label: "Módulo de Nutrición"
+sidebar_position: 1
+---
+
+# Guía Definitiva del Módulo de Nutrición de Caloritrack
+
+## ¿Para qué sirve esta sección?
+
+El módulo de Nutrición es el corazón metabólico y el centro de comando principal de Caloritrack, diseñado meticulosamente para transformar el registro de alimentos en una experiencia inteligente, guiada y sin fricciones. Su propósito es empoderar al usuario dándole un control absoluto sobre su ingesta diaria, yendo mucho más allá del simple conteo de calorías. 
+
+Esta sección funciona como un nutriólogo digital de bolsillo: permite gestionar planes de alimentación personalizados, evaluar en tiempo real el equilibrio exacto de macronutrientes, asegurar la ingesta de micronutrientes vitales y vigilar el límite de antinutrientes. En resumen, es la herramienta definitiva para planificar, registrar y auditar cada aspecto de la nutrición diaria, garantizando que alcances tus objetivos de salud (perder, mantener o ganar peso) con datos precisos, bases de datos confiables y una interfaz altamente visual e intuitiva.
+
+---
+
+## 📅 1. Navegación Principal y Calendario
+
+Al entrar a la pestaña de **Alimentación** (identificada con el ícono del tenedor y cuchillo), la cabecera ofrece un control total del tiempo:
+
+* **Calendario Semanal Deslizable:** En la parte superior, encontrarás un carrusel de fechas horizontales.
+* **Selección de Fecha:** Puedes deslizar hacia la izquierda o derecha para viajar en el tiempo, revisar días pasados o planificar días futuros.
+* **Indicadores de Registro:** Los días que ya contienen alimentos registrados mostrarán un pequeño punto indicador de color (Verde Menta para días pasados/hoy, o Azul Cielo para días futuros) debajo del número.
+* **Respuesta Háptica:** Tocar cualquier día genera una ligera vibración táctil para confirmar la selección.
+
+## 📋 2. Tu Plan de Alimentación (Gestión y Asistente)
+
+Justo debajo del calendario, se encuentra la sección de Planes, que es altamente dinámica:
+
+### Si no tienes un plan activo
+* Verás una atractiva tarjeta (**"Descubre tu Plan Ideal"**).
+* Al tocarla, se abrirá el asistente de 5 pasos.
+* **Paso 1 a 4:** Configurarás tu objetivo (perder, mantener o ganar peso), tu nivel de actividad física, tus restricciones alimentarias (sin lácteos, sin gluten, etc.), y tu filosofía de dieta (Keto, Vegana, Paleo, etc.).
+* **Paso 5:** El sistema te recomendará los planes perfectos del catálogo para que actives uno.
+
+### Si tienes un plan activo
+Verás una tarjeta deslizable de dos páginas:
+* **Página 1:** Muestra el nombre de tu plan, un ícono representativo de tu meta (ej. flecha hacia abajo para pérdida de peso), y una barra de progreso que indica en qué día del plan te encuentras.
+* **Página 2:** Si deslizas, verás las metas exactas de calorías y macronutrientes que ese plan exige.
+
+### Gestión del Plan
+Tocar el botón **"Gestionar"** abre un panel completo:
+* **Lista de Súper:** Puedes ver los ingredientes necesarios por semana, organizados por categoría, e incluso seleccionar ingredientes para exportarlos o compartirlos como texto.
+* **Menú Semanal:** Abre el menú generado para ver qué platillos te tocan cada día. Tocar un platillo te mostrará su receta detallada.
+* **Cambiar o Cancelar:** Tienes botones dedicados para abandonar el plan actual e iniciar uno nuevo.
+
+## 📊 3. Tarjetas de Resumen Diario (Paginador)
+
+El centro de control de tu consumo. Desliza horizontalmente para alternar entre tres vistas críticas de tus datos del día:
+
+### Tarjeta 1: Resumen de Macros
+* Muestra a la izquierda tu consumo total de calorías con un anillo de progreso de color degradado.
+* Al la derecha, verás barras de progreso individuales para tus **Proteínas** (Azul), **Grasas** (Amarillo Dorado) y **Carbohidratos** (Verde).
+* Tocar esta tarjeta te lleva al **Progreso Diario**, donde podrás ver una gráfica de barras con el resumen de toda tu semana.
+* Tocar el botón de "info" abre el tooltip de resumen nutricional, que explica la filosofía de nutrición de Caloritrack.
+
+### Tarjeta 2: Micronutrientes
+* Te da un vistazo rápido a 5 minerales y vitaminas esenciales: Potasio, Sodio, Vitamina D, Hierro y Zinc.
+* Tocar la tarjeta abre la vista detallada, donde puedes revisar docenas de vitaminas y minerales, filtrarlos por "Completados" o "Faltantes", y ver tus promedios semanales.
+
+### Tarjeta 3: Antinutrientes
+* Una métrica avanzada que vigila compuestos como Oxalatos, Ácido Fítico y Lectinas.
+* A diferencia de los nutrientes (donde quieres llegar a la meta), los antinutrientes usan barras inversas: se pondrán naranjas o rojas si excedes los límites saludables.
+* Entrar al detalle te permite ver el historial semanal y consultar el blog científico de la app para entender su impacto.
+
+## 🍎 4. El Diario: Registro y Gestión de Comidas
+
+Esta es el área donde aparecen tus alimentos ingresados.
+
+* **Organización Personalizada:** Al final de la lista, un botón (**"Ajustar comidas"**) te permite elegir cuántos bloques de comida quieres ver en tu día: 4 (Desayuno, Comida, Cena, Snack), 3, 2, o 1 sola comida si practicas OMAD.
+* **Cabecera de Comida:** Muestra el nombre (ej. "Desayuno") con su emoji y el total de calorías de ese bloque.
+    * Al la derecha tiene un **Menú de opciones** (tres puntos). Es una herramienta súper rápida que te permite: "Copiar de ayer", "Copiar a ayer", "Copiar a mañana" o "Editar/Eliminar".
+* **Visualización de Alimentos:**
+    * *Alimentos Individuales:* Verás el nombre, los gramos/porciones, y las calorías exactas.
+    * *Platillos:* Si registraste un platillo completo, verás el nombre principal y un botón desplegable. Al tocarlo, se expandirá para revelar todos los ingredientes individuales que lo componen.
+* **Certificaciones:** Los alimentos tienen iconos de confianza: Un sello indica que la información fue verificada por Caloritrack, y un globo terráqueo indica que proviene de bases de datos públicas como USDA.
+* **Editar y Borrar:** Tocar un alimento te lleva a la pantalla para editar su cantidad o cambiarlo de comida. También puedes deslizar o dejar presionado para eliminarlo.
+
+## 🔘 5. El Botón Flotante (Búsqueda y Catálogo)
+
+Para agregar nuevos alimentos, el sistema utiliza un botón flotante en la esquina inferior derecha para que siempre esté accesible. Contiene dos accesos:
+
+### Catálogo de Platillos (Ícono de Libro)
+* Abre la galería visual hermosa con nuestras recetas curadas.
+* Puedes filtrar la galería por tipo de dieta utilizando botones superiores (ej. "Cetogénica", "Vegana").
+* Tocar un platillo te permite ver su foto a pantalla completa, sus ingredientes y un resumen nutricional masivo antes de confirmar si lo añades a tu registro.
+
+### Buscador Inteligente (Ícono "+")
+* Abre la súper barra de búsqueda.
+* **Búsqueda de Texto:** Busca en vivo en las bases de datos de Caloritrack y USDA.
+* **Escáner de Código de Barras:** Un ícono junto a la barra de búsqueda abre tu cámara para escanear productos físicos.
+* **Historial Reciente:** Si la barra de búsqueda está vacía, te mostrará tus "Alimentos Recientes" para registros a un toque.
+* **Crear Alimento Privado:** Si no encuentras algo, puedes tocar el botón "Crear alimento privado" (cuando el buscador indique "Sin resultados"), para abrir el formulario y guardar permanentemente la tabla nutricional de tu propio producto.
+
+---
+
+:::warning Requisito de Acceso (Premium Paywall)
+Todo el módulo de Nutrición es una función exclusiva. Si no cuentas con una suscripción Premium activa, la aplicación presentará automáticamente un paywall. Este mensaje persuasivo explica los profundos beneficios del módulo e invita a suscribirse para desbloquear el máximo potencial de tu salud.
+:::

@@ -1,6 +1,6 @@
 {
   "__comentario_cabecera__": {
-    "message": "Nombre del archivo: footer.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-13 | Versión: 1.1 | Descripción: Sincronización de llaves de traducción. Se ajustó 'link.item.label.Centro de Ayuda' para que el i18n de Docusaurus coincida con el config.",
+    "message": "Nombre del archivo: footer.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-13 | Versión: 1.4 | Descripción: Limpieza de llaves HTML frágiles. La traducción de los enlaces legales ahora es manejada dinámicamente desde docusaurus.config.js mediante variables de entorno de locale.",
     "description": "Control de versión y autoría adaptado a formato JSON"
   },
   "copyright": {
@@ -22,9 +22,5 @@
   "link.item.label.Novedades y Actualizaciones": {
     "message": "App Releases",
     "description": "The label of footer link with label=Novedades y Actualizaciones linking to /blog"
-  },
-  "link.item.label.Sitio Web Principal": {
-    "message": "Main Website",
-    "description": "The label of footer link with label=Sitio Web Principal linking to https://caloritrack.com"
   }
 }

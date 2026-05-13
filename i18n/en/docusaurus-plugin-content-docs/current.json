@@ -1,27 +1,27 @@
 {
   "__comentario_cabecera__": {
-    "message": "Nombre del archivo: current.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-12 | Versión: 1.1 | Descripción: Se agregaron las traducciones para la categoría de Nutrición en el sidebar.",
+    "message": "Nombre del archivo: current.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-13 | Versión: 1.4 | Descripción: Se eliminaron los emojis de las llaves (keys) y traducciones de las categorías para asegurar una coincidencia exacta y literal con los archivos fuente en español, corrigiendo el problema de visualización en i18n.",
     "description": "Control de versión y autoría adaptado a formato JSON"
   },
   "version.label": {
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.tutorialSidebar.category.🌿 Salud": {
-    "message": "🌿 Health",
-    "description": "The label for category '🌿 Salud' in sidebar 'tutorialSidebar'"
+  "sidebar.tutorialSidebar.category.Salud": {
+    "message": "Health",
+    "description": "The label for category 'Salud' in sidebar 'tutorialSidebar'"
   },
-  "sidebar.tutorialSidebar.category.🌿 Salud.link.generated-index.description": {
+  "sidebar.tutorialSidebar.category.Salud.link.generated-index.description": {
     "message": "Your personal command center. Here, we reveal the hidden connections between your habits and your biological well-being to foster conscious and lasting change.",
-    "description": "The generated-index page description for category '🌿 Salud' in sidebar 'tutorialSidebar'"
+    "description": "The generated-index page description for category 'Salud' in sidebar 'tutorialSidebar'"
   },
-  "sidebar.tutorialSidebar.category.🥗 Nutrición": {
-    "message": "🥗 Nutrition",
-    "description": "The label for category '🥗 Nutrición' in sidebar 'tutorialSidebar'"
+  "sidebar.tutorialSidebar.category.Nutrición": {
+    "message": "Nutrition",
+    "description": "The label for category 'Nutrición' in sidebar 'tutorialSidebar'"
   },
-  "sidebar.tutorialSidebar.category.🥗 Nutrición.link.generated-index.description": {
+  "sidebar.tutorialSidebar.category.Nutrición.link.generated-index.description": {
     "message": "Guides on natural food logging, macronutrients, and antinutrient management in CaloriTrack.",
-    "description": "The generated-index page description for category '🥗 Nutrición' in sidebar 'tutorialSidebar'"
+    "description": "The generated-index page description for category 'Nutrición' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Ayuno Intermitente": {
     "message": "Intermittent Fasting",
@@ -30,5 +30,21 @@
   "sidebar.tutorialSidebar.category.Ayuno Intermitente.link.generated-index.description": {
     "message": "Explore the science of fasting, learn to configure your metabolic windows, and understand the cellular benefits of autophagy on Caloritrack.",
     "description": "The generated-index page description for category 'Ayuno Intermitente' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Wellness": {
+    "message": "Wellness",
+    "description": "The label for category 'Wellness' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Wellness.link.generated-index.description": {
+    "message": "Optimize your recovery through advanced sleep hygiene, stress management, and mindfulness practices integrated into your daily routine.",
+    "description": "The generated-index page description for category 'Wellness' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Kai Coach": {
+    "message": "kAI Coach",
+    "description": "The label for category 'kAI Coach' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Kai Coach.link.generated-index.description": {
+    "message": "Meet your AI companion. Learn to leverage Stoic principles and personalized guidance to navigate your health journey with clarity and purpose.",
+    "description": "The generated-index page description for category 'kAI Coach' in sidebar 'tutorialSidebar'"
   }
 }
