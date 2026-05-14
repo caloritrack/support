@@ -1,6 +1,6 @@
 {
   "__comentario_cabecera__": {
-    "message": "Nombre del archivo: navbar.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-13 | Versión: 1.1 | Descripción: Corrección del título del navbar para ocultar el texto en inglés dejándolo vacío, y actualización de la llave de 'Sitio Web Principal' para asegurar el match con docusaurus.config.js.",
+    "message": "Nombre del archivo: navbar.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-13 | Versión: 1.2 | Descripción: Actualización de llaves de traducción para reflejar los nuevos textos del menú principal: 'Contactar al equipo' y 'Regresar a CaloriTrack'.",
     "description": "Control de versión y autoría adaptado a formato JSON"
   },
   "title": {
@@ -19,8 +19,12 @@
     "message": "App Releases",
     "description": "Navbar item with label Novedades de la App"
   },
-  "item.label.Sitio Web Principal": {
-    "message": "Main Website",
-    "description": "Navbar item with label Sitio Web Principal"
+  "item.label.Contactar al equipo": {
+    "message": "Contact the team",
+    "description": "Navbar item with label Contactar al equipo (opens modal)"
+  },
+  "item.label.Regresar a CaloriTrack": {
+    "message": "Back to CaloriTrack",
+    "description": "Navbar item with label Regresar a CaloriTrack"
   }
 }

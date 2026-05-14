@@ -1,8 +1,8 @@
 // Nombre del archivo: docusaurus.config.js
 // Autor: Arturo Enriquez Betancourt con Jarvis
 // Fecha: 2026-05-13
-// Versión: 1.9
-// Descripción: Solución definitiva para enlaces externos multilingües en el footer. Uso de process.env.DOCUSAURUS_CURRENT_LOCALE para inyectar dinámicamente las URLs y etiquetas en inglés, garantizando estabilidad absoluta.
+// Versión: 1.11
+// Descripción: Ajuste en el texto y orden del menú de navegación superior (navbar). Se renombraron las etiquetas a "Contactar al equipo" y "Regresar a CaloriTrack", y se reordenaron los elementos a la derecha: Selector de Idioma -> Regresar a CaloriTrack -> Contactar al equipo -> (Buscador insertado automáticamente al final).
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
@@ -65,14 +65,14 @@ const config = {
     ],
   ],
 
-  // --- NUEVA CONFIGURACIÓN DEL BUSCADOR LOCAL ---
+  // --- CONFIGURACIÓN DEL BUSCADOR LOCAL ---
   themes: [
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
       ({
         hashed: true,
-        language: ["es", "en"], // Activamos indexación para español e inglés
+        language: ["es", "en"], 
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         indexDocs: true,
@@ -95,15 +95,13 @@ const config = {
       },
 
       navbar: {
-        // Al dejar el title vacío (''), Docusaurus ocultará el texto y dejará solo el logo.
         title: '',
         logo: {
           alt: 'CaloriTrack Logo',
-          // AQUÍ CAMBIAS EL NOMBRE DEL ARCHIVO DEL LOGO.
-          // El ?v=2 es un "cache buster" para obligar al navegador a recargar la nueva imagen.
           src: 'img/logo-caloritrack.png', 
         },
         items: [
+          /* --- ELEMENTOS A LA IZQUIERDA --- */
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
@@ -111,15 +109,27 @@ const config = {
             label: 'Centro de Ayuda',
           },
           {to: '/blog', label: 'Novedades de la App', position: 'left'},
+          
+          /* --- ELEMENTOS A LA DERECHA (EN ESTRICTO ORDEN VISUAL) --- */
+          // 1. Selector de Idioma
           {
             type: 'localeDropdown',
             position: 'right', 
           },
+          // 2. Regresar a CaloriTrack
           {
             href: 'https://caloritrack.com',
-            label: 'Sitio Web Principal',
+            label: currentLocale === 'en' ? 'Back to CaloriTrack' : 'Regresar a CaloriTrack',
             position: 'right',
           },
+          // 3. Botón de Contacto (Destacado)
+          {
+            to: '#contacto',
+            label: currentLocale === 'en' ? 'Contact the team' : 'Contactar al equipo',
+            position: 'right',
+            className: 'nav-contact-btn', // Clase estilizada en custom.css
+          },
+          // 4. El Buscador se agrega automáticamente aquí por el plugin de búsqueda
         ],
       },
       

@@ -1,9 +1,9 @@
 /*
 // Nombre del archivo: src/css/custom.css
 // Autor: Arturo Enriquez Betancourt con Jarvis
-// Fecha: 2026-05-12
-// Versión: 1.13
-// Descripción: Estabilización de UX y limpieza minimalista. Se integró el aumento de tamaño del logo (.navbar__logo) con efecto de interacción (hover) para mejorar la presencia de la marca. Se mantienen las reglas previas de estabilidad del buscador, footer y limpieza de iconos.
+// Fecha: 2026-05-13
+// Versión: 1.20
+// Descripción: CORRECCIÓN DE ESPECIFICIDAD (Parte 2). Se limitó el centrado absoluto (position: absolute, top, left) estrictamente a '.navbar .navbar__search' para que el buscador principal del Hero recupere su flujo normal en el documento y se posicione correctamente entre el texto y las tarjetas sin encimarse.
 */
 
 /* ==============================================================================
@@ -34,11 +34,12 @@
   align-items: center;
   padding-top: var(--ifm-navbar-padding-vertical) !important;
   padding-bottom: var(--ifm-navbar-padding-vertical) !important;
+  position: relative; /* CRÍTICO: Necesario para que el buscador se centre respecto a esta barra */
 }
 
 /* --- AJUSTE DEL TAMAÑO DEL LOGO --- */
 .navbar__logo {
-  height: 4.0rem !important; /* Ajusta este valor si lo quieres aún más grande (ej: 4rem) */
+  height: 4.0rem !important; 
   width: auto !important; 
   margin-right: 0.5rem;
   transition: transform 0.2s ease-in-out;
@@ -47,6 +48,48 @@
 /* Efecto visual elegante al pasar el mouse por el logo */
 .navbar__logo:hover {
   transform: scale(1.05);
+}
+
+/* --- REGLA CRÍTICA: BUSCADOR CENTRADO ABSOLUTO (SOLO EN EL NAVBAR) --- */
+.navbar .navbar__search {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important; /* CRÍTICO: Lo baja a la mitad exacta de la barra */
+  transform: translate(-50%, -50%) !important; /* CRÍTICO: Centrado matemático en eje X y Y */
+  margin: 0 !important;
+  z-index: 10;
+}
+
+/* --- NUEVO: HACER EL BUSCADOR DEL HEADER MÁS LARGO --- */
+.navbar .navbar__search-input {
+  width: 300px !important; /* Buscador más largo */
+  border-radius: 20px !important; /* Bordes redondeados */
+  transition: width 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+/* Efecto para que crezca elegantemente al hacerle clic */
+.navbar .navbar__search-input:focus {
+  width: 350px !important;
+  border-color: var(--ifm-color-primary) !important;
+}
+
+/* Evitar traslape en pantallas pequeñas/medianas */
+@media (max-width: 1100px) {
+  .navbar .navbar__search {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    margin-left: 1rem !important;
+  }
+  .navbar .navbar__search-input {
+    width: 200px !important; /* Más pequeño en móviles o tablets */
+  }
+}
+
+/* --- REGLA CRÍTICA: OCULTAR BUSCADOR EN EL HOME --- */
+.is-home-page .navbar .navbar__search {
+  display: none !important;
 }
 
 /* ==============================================================================
@@ -99,7 +142,7 @@ kbd {
 /* ==============================================================================
    5. LIMPIEZA DE UX (PARTE 2): ICONOS DEL HEADER Y FOOTER (MINIMALISMO)
    ============================================================================== */
-/* Ocultar iconos de "Enlace Externo" (Flecha en diagonal) en Navbar y Footer */
+/* Ocultar iconos de "Enlace Externo" en Navbar y Footer */
 .navbar__link--external svg,
 .footer__link-item svg,
 a[target="_blank"] svg {
@@ -115,7 +158,7 @@ a[target="_blank"] svg {
    6. BUSCADOR DEL HOME: MEDIDA EXACTA, SEGURA Y ELEGANTE (450px)
    ============================================================================== */
 .hero-search-wrapper input.navbar__search-input {
-  width: 450px !important; /* Regresado al tamaño de oro (450px) para máxima estabilidad */
+  width: 450px !important; 
   height: 60px !important;
   font-size: 1.2rem !important;
   border-radius: 30px !important;
@@ -129,7 +172,7 @@ a[target="_blank"] svg {
 
 .hero-search-wrapper input.navbar__search-input:focus,
 .hero-search-wrapper input.navbar__search-input:hover {
-  width: 450px !important; /* Bloqueo firme en 450px */
+  width: 450px !important; 
   border-color: var(--ifm-color-primary) !important; 
   background-color: #ffffff !important;
   box-shadow: 0 10px 25px -5px rgba(91, 200, 91, 0.2) !important;
@@ -140,9 +183,114 @@ a[target="_blank"] svg {
   background-size: 1.4rem !important;
 }
 
-/* Corrección de posición para pantallas móviles pequeñas */
 @media (max-width: 600px) {
   .hero-search-wrapper input.navbar__search-input {
-    width: 90vw !important; /* Se adapta automáticamente si lo abren en iPhone */
+    width: 90vw !important; 
   }
+}
+
+/* ==============================================================================
+   7. MODAL DE CONTACTO & BOTÓN NAVBAR (NUEVO)
+   ============================================================================== */
+/* Estilo del botón en el Navbar para que destaque amigablemente */
+.nav-contact-btn {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #ffffff !important;
+  background-color: var(--ifm-color-primary);
+  border-radius: 20px;
+  padding: 0.4rem 1.2rem !important;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.nav-contact-btn:hover {
+  background-color: var(--ifm-color-primary-dark);
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+/* Fondo oscuro borroso (Overlay) */
+.contact-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+/* Contenedor blanco del Modal */
+.contact-modal-content {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 650px;
+  height: 85vh;
+  max-height: 800px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  animation: slideUp 0.3s ease-out forwards;
+}
+
+.contact-modal-header {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #eaeaea;
+  background-color: #f9fafb;
+}
+
+.contact-modal-header h2 {
+  margin: 0;
+  color: #111111;
+  font-size: 1.5rem;
+}
+
+.contact-modal-header p {
+  margin: 0.5rem 0 0 0;
+  color: #6B7280;
+  font-size: 0.95rem;
+}
+
+/* Botón de la X para cerrar */
+.contact-modal-close {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  color: #A9A9A9;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.contact-modal-close:hover {
+  color: #111111;
+}
+
+.contact-modal-iframe {
+  width: 100%;
+  flex: 1;
+  border: none;
+  background-color: #ffffff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
