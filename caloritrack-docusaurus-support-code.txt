@@ -22402,8 +22402,8 @@ Archivo: ./src/css/custom.css
 // Nombre del archivo: src/css/custom.css
 // Autor: Arturo Enriquez Betancourt con Jarvis
 // Fecha: 2026-05-13
-// Versión: 1.20
-// Descripción: CORRECCIÓN DE ESPECIFICIDAD (Parte 2). Se limitó el centrado absoluto (position: absolute, top, left) estrictamente a '.navbar .navbar__search' para que el buscador principal del Hero recupere su flujo normal en el documento y se posicione correctamente entre el texto y las tarjetas sin encimarse.
+// Versión: 1.21
+// Descripción: CORRECCIÓN DE NAVBAR STICKY. Se reemplazó `position: relative` por `position: sticky !important; top: 0 !important; z-index: 100 !important;` en `.navbar` para restaurar el comportamiento nativo de Docusaurus al hacer scroll, manteniendo el correcto centrado del buscador.
 */
 
 /* ==============================================================================
@@ -22434,7 +22434,9 @@ Archivo: ./src/css/custom.css
   align-items: center;
   padding-top: var(--ifm-navbar-padding-vertical) !important;
   padding-bottom: var(--ifm-navbar-padding-vertical) !important;
-  position: relative; /* CRÍTICO: Necesario para que el buscador se centre respecto a esta barra */
+  position: sticky !important; /* CORRECCIÓN: Restaura el comportamiento sticky al hacer scroll */
+  top: 0 !important;
+  z-index: 100 !important;
 }
 
 /* --- AJUSTE DEL TAMAÑO DEL LOGO --- */
