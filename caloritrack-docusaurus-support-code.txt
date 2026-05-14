@@ -65,6 +65,8 @@ Estructura de carpetas y archivos:
 | | |____index.js
 | | |____index.module.css
 | | |____markdown-page.mdx
+| |____theme
+| | |____Root.js
 -----
 Contenido de archivos:
 Archivo: ./docs/01-salud/_category_.json
@@ -20716,8 +20718,8 @@ Archivo: ./docusaurus.config.js
 // Nombre del archivo: docusaurus.config.js
 // Autor: Arturo Enriquez Betancourt con Jarvis
 // Fecha: 2026-05-13
-// Versión: 1.9
-// Descripción: Solución definitiva para enlaces externos multilingües en el footer. Uso de process.env.DOCUSAURUS_CURRENT_LOCALE para inyectar dinámicamente las URLs y etiquetas en inglés, garantizando estabilidad absoluta.
+// Versión: 1.11
+// Descripción: Ajuste en el texto y orden del menú de navegación superior (navbar). Se renombraron las etiquetas a "Contactar al equipo" y "Regresar a CaloriTrack", y se reordenaron los elementos a la derecha: Selector de Idioma -> Regresar a CaloriTrack -> Contactar al equipo -> (Buscador insertado automáticamente al final).
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
@@ -20780,14 +20782,14 @@ const config = {
     ],
   ],
 
-  // --- NUEVA CONFIGURACIÓN DEL BUSCADOR LOCAL ---
+  // --- CONFIGURACIÓN DEL BUSCADOR LOCAL ---
   themes: [
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
       ({
         hashed: true,
-        language: ["es", "en"], // Activamos indexación para español e inglés
+        language: ["es", "en"], 
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         indexDocs: true,
@@ -20810,15 +20812,13 @@ const config = {
       },
 
       navbar: {
-        // Al dejar el title vacío (''), Docusaurus ocultará el texto y dejará solo el logo.
         title: '',
         logo: {
           alt: 'CaloriTrack Logo',
-          // AQUÍ CAMBIAS EL NOMBRE DEL ARCHIVO DEL LOGO.
-          // El ?v=2 es un "cache buster" para obligar al navegador a recargar la nueva imagen.
           src: 'img/logo-caloritrack.png', 
         },
         items: [
+          /* --- ELEMENTOS A LA IZQUIERDA --- */
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
@@ -20826,15 +20826,27 @@ const config = {
             label: 'Centro de Ayuda',
           },
           {to: '/blog', label: 'Novedades de la App', position: 'left'},
+          
+          /* --- ELEMENTOS A LA DERECHA (EN ESTRICTO ORDEN VISUAL) --- */
+          // 1. Selector de Idioma
           {
             type: 'localeDropdown',
             position: 'right', 
           },
+          // 2. Regresar a CaloriTrack
           {
             href: 'https://caloritrack.com',
-            label: 'Sitio Web Principal',
+            label: currentLocale === 'en' ? 'Back to CaloriTrack' : 'Regresar a CaloriTrack',
             position: 'right',
           },
+          // 3. Botón de Contacto (Destacado)
+          {
+            to: '#contacto',
+            label: currentLocale === 'en' ? 'Contact the team' : 'Contactar al equipo',
+            position: 'right',
+            className: 'nav-contact-btn', // Clase estilizada en custom.css
+          },
+          // 4. El Buscador se agrega automáticamente aquí por el plugin de búsqueda
         ],
       },
       
@@ -21345,7 +21357,7 @@ Archivo: ./i18n/en/docusaurus-theme-classic/footer.json
 Archivo: ./i18n/en/docusaurus-theme-classic/navbar.json
 {
   "__comentario_cabecera__": {
-    "message": "Nombre del archivo: navbar.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-13 | Versión: 1.1 | Descripción: Corrección del título del navbar para ocultar el texto en inglés dejándolo vacío, y actualización de la llave de 'Sitio Web Principal' para asegurar el match con docusaurus.config.js.",
+    "message": "Nombre del archivo: navbar.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-13 | Versión: 1.2 | Descripción: Actualización de llaves de traducción para reflejar los nuevos textos del menú principal: 'Contactar al equipo' y 'Regresar a CaloriTrack'.",
     "description": "Control de versión y autoría adaptado a formato JSON"
   },
   "title": {
@@ -21364,9 +21376,13 @@ Archivo: ./i18n/en/docusaurus-theme-classic/navbar.json
     "message": "App Releases",
     "description": "Navbar item with label Novedades de la App"
   },
-  "item.label.Sitio Web Principal": {
-    "message": "Main Website",
-    "description": "Navbar item with label Sitio Web Principal"
+  "item.label.Contactar al equipo": {
+    "message": "Contact the team",
+    "description": "Navbar item with label Contactar al equipo (opens modal)"
+  },
+  "item.label.Regresar a CaloriTrack": {
+    "message": "Back to CaloriTrack",
+    "description": "Navbar item with label Regresar a CaloriTrack"
   }
 }-----
 Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/01-salud/guia-salud.mdx
@@ -22385,9 +22401,9 @@ Archivo: ./src/css/custom.css
 /*
 // Nombre del archivo: src/css/custom.css
 // Autor: Arturo Enriquez Betancourt con Jarvis
-// Fecha: 2026-05-12
-// Versión: 1.13
-// Descripción: Estabilización de UX y limpieza minimalista. Se integró el aumento de tamaño del logo (.navbar__logo) con efecto de interacción (hover) para mejorar la presencia de la marca. Se mantienen las reglas previas de estabilidad del buscador, footer y limpieza de iconos.
+// Fecha: 2026-05-13
+// Versión: 1.20
+// Descripción: CORRECCIÓN DE ESPECIFICIDAD (Parte 2). Se limitó el centrado absoluto (position: absolute, top, left) estrictamente a '.navbar .navbar__search' para que el buscador principal del Hero recupere su flujo normal en el documento y se posicione correctamente entre el texto y las tarjetas sin encimarse.
 */
 
 /* ==============================================================================
@@ -22418,11 +22434,12 @@ Archivo: ./src/css/custom.css
   align-items: center;
   padding-top: var(--ifm-navbar-padding-vertical) !important;
   padding-bottom: var(--ifm-navbar-padding-vertical) !important;
+  position: relative; /* CRÍTICO: Necesario para que el buscador se centre respecto a esta barra */
 }
 
 /* --- AJUSTE DEL TAMAÑO DEL LOGO --- */
 .navbar__logo {
-  height: 4.0rem !important; /* Ajusta este valor si lo quieres aún más grande (ej: 4rem) */
+  height: 4.0rem !important; 
   width: auto !important; 
   margin-right: 0.5rem;
   transition: transform 0.2s ease-in-out;
@@ -22431,6 +22448,48 @@ Archivo: ./src/css/custom.css
 /* Efecto visual elegante al pasar el mouse por el logo */
 .navbar__logo:hover {
   transform: scale(1.05);
+}
+
+/* --- REGLA CRÍTICA: BUSCADOR CENTRADO ABSOLUTO (SOLO EN EL NAVBAR) --- */
+.navbar .navbar__search {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important; /* CRÍTICO: Lo baja a la mitad exacta de la barra */
+  transform: translate(-50%, -50%) !important; /* CRÍTICO: Centrado matemático en eje X y Y */
+  margin: 0 !important;
+  z-index: 10;
+}
+
+/* --- NUEVO: HACER EL BUSCADOR DEL HEADER MÁS LARGO --- */
+.navbar .navbar__search-input {
+  width: 300px !important; /* Buscador más largo */
+  border-radius: 20px !important; /* Bordes redondeados */
+  transition: width 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+/* Efecto para que crezca elegantemente al hacerle clic */
+.navbar .navbar__search-input:focus {
+  width: 350px !important;
+  border-color: var(--ifm-color-primary) !important;
+}
+
+/* Evitar traslape en pantallas pequeñas/medianas */
+@media (max-width: 1100px) {
+  .navbar .navbar__search {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    margin-left: 1rem !important;
+  }
+  .navbar .navbar__search-input {
+    width: 200px !important; /* Más pequeño en móviles o tablets */
+  }
+}
+
+/* --- REGLA CRÍTICA: OCULTAR BUSCADOR EN EL HOME --- */
+.is-home-page .navbar .navbar__search {
+  display: none !important;
 }
 
 /* ==============================================================================
@@ -22483,7 +22542,7 @@ kbd {
 /* ==============================================================================
    5. LIMPIEZA DE UX (PARTE 2): ICONOS DEL HEADER Y FOOTER (MINIMALISMO)
    ============================================================================== */
-/* Ocultar iconos de "Enlace Externo" (Flecha en diagonal) en Navbar y Footer */
+/* Ocultar iconos de "Enlace Externo" en Navbar y Footer */
 .navbar__link--external svg,
 .footer__link-item svg,
 a[target="_blank"] svg {
@@ -22499,7 +22558,7 @@ a[target="_blank"] svg {
    6. BUSCADOR DEL HOME: MEDIDA EXACTA, SEGURA Y ELEGANTE (450px)
    ============================================================================== */
 .hero-search-wrapper input.navbar__search-input {
-  width: 450px !important; /* Regresado al tamaño de oro (450px) para máxima estabilidad */
+  width: 450px !important; 
   height: 60px !important;
   font-size: 1.2rem !important;
   border-radius: 30px !important;
@@ -22513,7 +22572,7 @@ a[target="_blank"] svg {
 
 .hero-search-wrapper input.navbar__search-input:focus,
 .hero-search-wrapper input.navbar__search-input:hover {
-  width: 450px !important; /* Bloqueo firme en 450px */
+  width: 450px !important; 
   border-color: var(--ifm-color-primary) !important; 
   background-color: #ffffff !important;
   box-shadow: 0 10px 25px -5px rgba(91, 200, 91, 0.2) !important;
@@ -22524,11 +22583,116 @@ a[target="_blank"] svg {
   background-size: 1.4rem !important;
 }
 
-/* Corrección de posición para pantallas móviles pequeñas */
 @media (max-width: 600px) {
   .hero-search-wrapper input.navbar__search-input {
-    width: 90vw !important; /* Se adapta automáticamente si lo abren en iPhone */
+    width: 90vw !important; 
   }
+}
+
+/* ==============================================================================
+   7. MODAL DE CONTACTO & BOTÓN NAVBAR (NUEVO)
+   ============================================================================== */
+/* Estilo del botón en el Navbar para que destaque amigablemente */
+.nav-contact-btn {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #ffffff !important;
+  background-color: var(--ifm-color-primary);
+  border-radius: 20px;
+  padding: 0.4rem 1.2rem !important;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.nav-contact-btn:hover {
+  background-color: var(--ifm-color-primary-dark);
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+/* Fondo oscuro borroso (Overlay) */
+.contact-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+/* Contenedor blanco del Modal */
+.contact-modal-content {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 650px;
+  height: 85vh;
+  max-height: 800px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  animation: slideUp 0.3s ease-out forwards;
+}
+
+.contact-modal-header {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #eaeaea;
+  background-color: #f9fafb;
+}
+
+.contact-modal-header h2 {
+  margin: 0;
+  color: #111111;
+  font-size: 1.5rem;
+}
+
+.contact-modal-header p {
+  margin: 0.5rem 0 0 0;
+  color: #6B7280;
+  font-size: 0.95rem;
+}
+
+/* Botón de la X para cerrar */
+.contact-modal-close {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  color: #A9A9A9;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.contact-modal-close:hover {
+  color: #111111;
+}
+
+.contact-modal-iframe {
+  width: 100%;
+  flex: 1;
+  border: none;
+  background-color: #ffffff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }-----
 Archivo: ./src/components/HomepageFeatures/styles.module.css
 .features {
@@ -22609,6 +22773,75 @@ export default function HomepageFeatures() {
   );
 }
 -----
+Archivo: ./src/theme/Root.js
+// Nombre del archivo: src/theme/Root.js
+// Autor: Arturo Enriquez Betancourt con Jarvis
+// Fecha: 2026-05-13
+// Versión: 1.3
+// Descripción: Componente Root devuelto de forma íntegra basado en tu versión proporcionada. Mantiene la lógica impecable de visibilidad del buscador (oculto en Home mediante 'is-home-page') y el modal de contacto. No requiere cambios lógicos adicionales para el centrado del buscador.
+
+import React, { useState, useEffect } from 'react';
+import { useLocation } from '@docusaurus/router';
+
+export default function Root({children}) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const location = useLocation();
+
+  // Detectamos si estamos en el Home (soporta raíz y versión en inglés)
+  const isHomePage = location.pathname === '/' || location.pathname === '/en' || location.pathname === '/en/';
+
+  useEffect(() => {
+    // 1. Gestión de clase para ocultar buscador en el Header
+    if (isHomePage) {
+      document.body.classList.add('is-home-page');
+    } else {
+      document.body.classList.remove('is-home-page');
+    }
+
+    // 2. Interceptor de clics para el Modal de Contacto
+    const handleClick = (e) => {
+      const target = e.target.closest('a');
+      if (target && target.getAttribute('href') === '#contacto') {
+        e.preventDefault();
+        setIsModalOpen(true);
+      }
+    };
+
+    document.addEventListener('click', handleClick);
+    return () => {
+      document.removeEventListener('click', handleClick);
+      document.body.classList.remove('is-home-page'); // Limpieza al desmontar
+    };
+  }, [isHomePage]);
+
+  const closeModal = () => setIsModalOpen(false);
+
+  return (
+    <>
+      {children}
+
+      {isModalOpen && (
+        <div className="contact-modal-overlay" onClick={closeModal}>
+          <div className="contact-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="contact-modal-close" onClick={closeModal} aria-label="Cerrar modal">&times;</button>
+            
+            <div className="contact-modal-header">
+              <h2>¿En qué podemos ayudarte?</h2>
+              <p>Cuéntanos qué sucede. Nuestro equipo revisará tu mensaje y te responderá lo más pronto posible para que sigas potenciando tu bienestar.</p>
+            </div>
+            
+            <iframe 
+              src="https://caloritrack.com/contacto-soporte-iframe" 
+              title="Formulario de Contacto Caloritrack"
+              className="contact-modal-iframe"
+              frameBorder="0"
+            ></iframe>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}-----
 Archivo: ./src/pages/markdown-page.mdx
 ---
 title: Markdown page example
