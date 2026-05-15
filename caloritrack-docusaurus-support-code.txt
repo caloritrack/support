@@ -17,12 +17,19 @@ Estructura de carpetas y archivos:
 | | |____guia-ayuno.mdx
 | |____04-wellness
 | | |_____category_.json
+| | |____faq-estado-animo.md
 | | |____faq-wellness.md
 | | |____guia-wellness.mdx
 | |____05-kai
 | | |_____category_.json
 | | |____faq-kai-coach.md
 | | |____guia-kai.mdx
+| |____06-perfil
+| | |_____category_.json
+| | |____faq-perfil.md
+| |____07-progreso
+| | |_____category_.json
+| | |____faq-progreso.md
 |____docusaurus.config.js
 |____i18n
 | |____en
@@ -41,11 +48,16 @@ Estructura de carpetas y archivos:
 | | | | | |____faqs-ayuno.md
 | | | | | |____guia-ayuno.mdx
 | | | | |____04-wellness
+| | | | | |____faq-estado-animo.md
 | | | | | |____faq-wellness.md
 | | | | | |____guia-wellness.mdx
 | | | | |____05-kai
 | | | | | |____faq-kai-coach.md
 | | | | | |____guia-kai.mdx
+| | | | |____06-perfil
+| | | | | |____faq-perfil.md
+| | | | |____07-progreso
+| | | | | |____faq-progreso.md
 | | |____docusaurus-theme-classic
 | | | |____footer.json
 | | | |____navbar.json
@@ -69,6 +81,124 @@ Estructura de carpetas y archivos:
 | | |____Root.js
 -----
 Contenido de archivos:
+Archivo: ./docs/07-progreso/faq-progreso.md
+---
+# Nombre del archivo: docs/07-progreso/faq-progreso.md
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-15
+# Versión: 1.0
+# Descripción: Documento de Preguntas Frecuentes (FAQ) sobre Mi Camino, mapas de calor (heatmaps) y sistema de logros (badges). Formato MD puro optimizado para SEO y UX.
+
+id: faq-progreso
+title: "Preguntas Frecuentes de Mi Camino y Logros"
+slug: /faq-progreso
+sidebar_position: 1
+sidebar_label: "Preguntas Frecuentes: Progreso"
+---
+
+# 🗺️ Preguntas frecuentes de Mi Camino y Logros
+
+¡Bienvenido a "Mi Camino"! Sabemos que al abrir esta sección puedes ver muchos colores, cuadros y medallas. No te abrumes, esta pantalla es el mapa visual de toda tu dedicación en CaloriTrack. Aquí te explicamos al máximo detalle cómo leer tu progreso y cómo ganar cada una de tus insignias.
+
+## 📊 Sección 1: Entendiendo tus Hábitos (Los Cuadritos de Colores)
+
+### ¿Qué significan exactamente los cuadritos que aparecen debajo de cada hábito?
+Ese bloque de cuadritos se conoce como "Mapa de Calor" (Heatmap). Representa tu constancia a lo largo del tiempo. Está compuesto por 7 filas (los días de la semana) y 26 columnas, lo que significa que estás viendo exactamente medio año (26 semanas) de tu historial de un solo vistazo. Cada cuadrito es un día de tu vida.
+
+### ¿Por qué algunos cuadros tienen un borde de color distinto?
+El cuadrito que tiene un borde resaltado alrededor representa el día de hoy. La cuadrícula está diseñada inteligentemente para que termine exactamente hoy, así siempre sabrás dónde estás parado.
+
+### ¿Qué significan los colores de los cuadros?
+Existen tres estados principales para leer tu mapa:
+
+* **Color brillante (Verde, Azul, Naranja, etc.):** ¡Día exitoso! Significa que ese día completaste el hábito. El color depende de la categoría del hábito.
+* **Color Gris/Opaco:** Día inactivo. Significa que ese día ya pasó y no registraste actividad para ese hábito específico.
+* **Color de Fondo Transparente/Tenue:** Son días en el futuro. Aún no han ocurrido, por lo que no puedes registrar nada todavía.
+
+### Mi aplicación tardó unos segundos en cargar "Mi Camino", ¿es normal?
+¡Sí, es completamente normal y una gran noticia! Cuando abres "Mi Camino", CaloriTrack no solo revisa tu día, sino que analiza y consolida hasta 2 años completos de tu historial de salud, ayunos, comidas y bienestar para poder dibujar tus gráficas y calcular tus rachas con precisión.
+
+## 🎯 Sección 2: ¿Cómo "enciendo" los cuadritos de cada Hábito?
+
+Verás 6 tarjetas distintas en tu pantalla de Hábitos. Cada una se ilumina siguiendo reglas muy específicas de la app. Si sientes que hiciste algo pero no se encendió, revisa esta lista:
+
+### ¿Cómo marco como completado el hábito "Ayuno Completado" (Reloj Verde)?
+No basta con iniciar el temporizador. Para que el cuadrito verde se encienda, el ayuno debe tener un estado de "completado". Si inicias un ayuno pero lo cancelas o eliminas, no contará para tu mapa de constancia.
+
+### ¿Qué necesito hacer para el "Registro Diario" (Calendario Azul)?
+Solo tienes que registrar al menos un alimento, platillo o entrada en tu bitácora de nutrición durante ese día calendario. Al hacerlo, el sistema detecta la fecha de consumo y pinta tu cuadrito de azul.
+
+### ¿Cómo mantengo encendido el hábito "KetoFlame" (Fuego Naranja)?
+Este indicador se enciende cuando mantienes tu estado de cetosis activo en la app y registras días compatibles con la dieta Keto.
+
+### ¿Qué actividades cuentan para la "Sesión Wellness" (Figura Morada)?
+Para iluminar este hábito, debes completar exitosamente una sesión de meditación guiada (Soundhealing) o de respiración (Breathwork) dentro del reproductor de la aplicación. Escuchar solo unos segundos y cerrarlo podría no registrar la sesión completa.
+
+### ¿Cómo registro mi "Conexión Kai" (Estrellas Turquesa)?
+Se iluminará en los días en los que tengas al menos una interacción en el chat con Kai, tu Coach de IA.
+
+### ¿Por qué hay un hábito rojo llamado "Historial de Salud" o "Días de Recuperación"?
+A diferencia de los demás, este hábito no es algo que debas esforzarte por llenar todos los días. Al contrario, rastrea los días en los que reportaste estar enfermo en la sección médica de la app. Convierte tus rangos de enfermedad en cuadritos rojos para que puedas visualizar con qué frecuencia tu cuerpo ha necesitado pausas para recuperarse a lo largo del semestre.
+
+## 🏅 Sección 3: Todo sobre la pestaña de "Logros" (Insignias)
+
+Al cambiar a la pestaña superior derecha verás tu vitrina de "Logros".
+
+### ¿Por qué mis insignias se ven grises y opacas?
+Las insignias grises están "bloqueadas". Aún no has cumplido los requisitos para obtenerlas. Cuando las desbloqueas, cobran vida con un hermoso gradiente de colores cálidos (amarillos y naranjas) y ganan total opacidad.
+
+### ¿Cómo sé qué me falta para desbloquear una insignia gris?
+¡Fácil! Toca la insignia gris. Se abrirá una pantalla de detalle donde, en la parte inferior, verás la sección "Cómo Desbloquear", que te explicará exactamente el criterio que te falta cumplir.
+
+### ¿Cuáles son las insignias de "Ayuno" y cómo las gano?
+Estas se basan estrictamente en tu racha más larga histórica de días consecutivos ayunando (no tu racha actual). Hay niveles para 1, 10, 21, 30, 90, 180, 365 y hasta 730 días (¡2 años!) de ayuno ininterrumpido.
+
+### Mis insignias de "KetoFlame" no avanzan, ¿cómo funcionan?
+Al igual que el ayuno, el sistema busca tu racha consecutiva más larga de días manteniendo tu "KetoFlame" encendido, otorgando medallas desde el día 1 hasta los 730 días.
+
+### En nutrición, veo insignias de "Explorar" y "Registrar", ¿cuál es la diferencia?
+Excelente pregunta.
+* **Las insignias de Racha (7 y 30 días)** premian que entres a la app a registrar comida diariamente.
+* **Las insignias de Registro/Contador (100, 500, 1000 entradas)** premian el volumen. Cada comida, snack o platillo cuenta como una entrada.
+* **Las insignias de Exploración (50 y 100 alimentos)** premian la variedad. Cuentan cuántos alimentos únicos y distintos has probado en la app. Comer pechuga de pollo todos los días te sube el "Contador", pero solo te da 1 punto en "Exploración".
+
+### Hice meditación hoy pero no me dio la insignia de 5 horas. ¿Por qué?
+Las insignias de Wellness (Soundhealing y Breathwork) se dividen en dos tipos de esfuerzo:
+* **Por Sesiones Totales:** Premian las veces que te sientas a practicar (1, 10, 30, 50 sesiones).
+* **Por Tiempo Invertido:** Suman todos los segundos de tus historiales. Te premiamos al acumular 5 horas, 20 horas, 50 horas y 100 horas totales de sanación sonora o respiración profunda. Toma tiempo, ¡es un maratón, no un sprint!
+
+### ¿Qué logros puedo obtener con Kai Coach?
+Obtienes logros por la constancia en tus consultas: desde tu primer chat, hasta hitos de 10, 30, 50, 100, 200 y 500 interacciones o sesiones resolviendo dudas con Kai.
+
+## 📲 Sección 4: Presumiendo tus Éxitos
+
+### ¿Puedo saber la fecha exacta en la que gané una insignia?
+¡Claro! Toca cualquier logro que ya tengas a color (desbloqueado). En la pantalla de detalle, la sección inferior cambiará para decir "Logro Desbloqueado el..." seguido de la fecha exacta.
+
+### Quiero compartir mi logro en Instagram o WhatsApp, ¿cómo lo hago?
+Entra al logro que quieres presumir. En la esquina superior derecha verás un icono de "Compartir" (un cuadrito con una flecha apuntando hacia arriba). **Ojo:** Este botón solo aparece en los logros que ya desbloqueaste; ¡no puedes compartir algo que aún no ganas!
+
+### Al darle compartir me aparece una pantalla con bolitas de colores, ¿qué es eso?
+¡Es nuestro estudio de personalización! Antes de enviar tu imagen, CaloriTrack te permite elegir el color de fondo perfecto para tu historia. Puedes elegir entre gradientes, oscuros elegantes (Negro, Pizarra) o colores vibrantes (Verde Menta, Azul Cielo, Morado, Naranja).
+
+### ¿Tarda mucho en generar la imagen?
+Verás un indicador de carga por un par de segundos. La app está generando una imagen en altísima calidad (resolución cuadrada 1080x1080, ideal para Instagram) con tu logro, sus detalles y un texto inspirador. Al terminar, se abrirá el menú nativo de tu teléfono para que lo envíes a donde quieras.-----
+Archivo: ./docs/07-progreso/_category_.json
+{
+  "customProps": {
+    "archivo": "docs/07-progreso/_category_.json",
+    "autor": "Arturo Enriquez Betancourt con Jarvis",
+    "fecha": "2026-05-15",
+    "version": "1.0",
+    "descripcion": "Configuración de la nueva categoría Comunidad y Progreso. Define la jerarquía en el sidebar (posición 7) y activa la página de índice generado para agrupar la documentación sobre gamificación, heatmaps de hábitos y círculos de apoyo."
+  },
+  "label": "Comunidad y Progreso",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Tu constancia recompensada. Descubre cómo interpretar tus heatmaps de disciplina, los requisitos para desbloquear insignias (badges) y cómo conectar con otros usuarios a través de nuestros Círculos de Apoyo."
+  }
+}-----
 Archivo: ./docs/01-salud/_category_.json
 {
   "customProps": {
@@ -1071,6 +1201,166 @@ Archivo: ./docs/04-wellness/_category_.json
     "description": "La sección de Wellness de Caloritrack es tu espacio exclusivo diseñado para el cuidado integral de tu bienestar mental y emocional. A través de un completo catálogo premium, te ofrece herramientas prácticas para tu día a día, como sesiones de Soundhealing —terapias de sonido y frecuencias con ambientes personalizables— y ejercicios de Breathwork —rutinas de respiración guiadas de forma visual y táctil—. Ya sea que busques reducir el estrés, mejorar tu enfoque o conciliar el sueño, esta sección te permite encontrar rápidamente lo que necesitas, registrando tu progreso de forma automática y sincronizando tus minutos de atención plena directamente con Apple Health."
   }
 }-----
+Archivo: ./docs/04-wellness/faq-estado-animo.md
+---
+# Nombre del archivo: docs/04-wellness/faq-estado-animo.md
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-15
+# Versión: 1.0
+# Descripción: Documento de Preguntas Frecuentes (FAQ) sobre el registro del estado de ánimo (Mood Tracking). Formato MD puro optimizado para SEO y UX.
+
+id: faq-estado-animo
+title: "Preguntas Frecuentes de Estado de Ánimo"
+slug: /faq-estado-animo
+sidebar_position: 3
+sidebar_label: "Preguntas Frecuentes: Ánimo"
+---
+
+# 📱 Acceso y Uso del Selector
+
+## ¿Cómo accedo a la sección para registrar mi estado de ánimo?
+En la pantalla principal de la aplicación, dirígete a la parte superior (el encabezado o header). Verás la fecha del día de hoy en un botón sutil. Al tocar esa fecha, se abrirá inmediatamente la pantalla **Log de Hoy** donde puedes comenzar tu registro.
+
+## Al entrar, veo una barra deslizable (slider) con una carita y colores. ¿Cómo funciona exactamente?
+Este es nuestro selector principal de ánimo. Debes deslizar el círculo blanco sobre la barra horizontal para elegir cómo te sientes en este momento. Existen 7 niveles de energía y ánimo, cada uno con un color y un ícono representativo:
+
+* **Muy Mal:** Color Morado, representado por una batería vacía.
+* **Mal:** Color Gris, representado por una batería en nivel bajo.
+* **Ligeramente Mal:** Color Gris claro, representado por una nube.
+* **Neutral:** Color Azul Cielo, representado por una línea.
+* **Ligeramente Bien:** Color Verde Menta suave, representado por una sonrisa invertida.
+* **Bien:** Color Verde Menta brillante, representado por una sonrisa.
+* **Muy Bien:** Color Naranja Suave, representado por un sol radiante.
+
+Una vez que acomodes el deslizador en el estado que mejor te represente, toca el botón inferior para continuar al siguiente paso.
+
+# 🧠 Factores y Notas Adicionales
+
+## ¿Para qué sirve la pantalla de Factores Influyentes?
+El estado de ánimo rara vez es aleatorio. Esta pantalla te permite detallar qué cosas específicas de tu día están afectando tu humor. Los factores están divididos en 4 categorías principales, las cuales puedes expandir o colapsar tocando su nombre:
+
+* **Vida:** Familia, amigos, pareja, citas románticas, mascotas.
+* **Salud:** Salud general, ejercicio, sueño, comida, ciclo menstrual, mindfulness.
+* **Trabajo:** Trabajo, estudios, dinero, clima, noticias, entorno.
+* **Actividades:** Pasatiempos, viajes, música, deberes, espiritualidad.
+
+Para seleccionar uno o varios, simplemente toca el botón (píldora) con el nombre del factor. Se resaltará para confirmar que está seleccionado.
+
+## ¿Qué hago si el motivo de mi estado de ánimo no está en las opciones de Factores?
+Justo debajo de las categorías de factores, encontrarás una sección llamada **Notas**. Es un editor de texto libre donde puedes escribir cualquier pensamiento, llevar un pequeño diario o agregar el contexto específico de cómo te sientes hoy. Es totalmente opcional.
+
+# 📊 Guardado, Historial y Edición
+
+## ¿Qué sucede al presionar el botón Guardar? ¿Se conecta con Apple Salud?
+Al presionar Guardar, tu registro se envía de forma segura a tu base de datos en CaloriTrack. Además, si nos has dado permisos para conectarnos con Apple Salud, la aplicación guardará inteligentemente este registro en tu iPhone. Si usas iOS 17 o superior, se guardará en la nueva métrica nativa *State of Mind* (Estado de Ánimo) con todos tus factores; si usas una versión anterior, se registrará como una sesión de *Mindfulness*.
+
+## Ya guardé mi estado de ánimo, pero quiero ver mis registros anteriores de hoy. ¿Dónde están?
+Tras guardar tu registro, la pantalla principal de ánimo cambiará automáticamente para mostrarte tu **Historial de Hoy**. Verás una lista cronológica con todos los registros que has hecho en el día, mostrando la hora exacta, el ícono y color de tu ánimo, los factores que seleccionaste y las notas que escribiste.
+
+## Mi día mejoró (o empeoró). ¿Puedo registrar mi ánimo varias veces en un mismo día?
+¡Por supuesto! En la pantalla de tu historial diario, verás un botón con el símbolo **+** en la esquina superior derecha de la pantalla. Al tocarlo, se abrirá nuevamente el selector para que agregues un nuevo registro en ese momento exacto.
+
+## Me equivoqué al crear un registro, ¿hay forma de eliminarlo?
+Sí. En la lista de tu historial, simplemente desliza el registro que deseas borrar hacia la izquierda y verás aparecer un botón rojo para eliminarlo. Esto lo borrará tanto de tu pantalla como de tu cuenta de forma permanente.
+
+# 🤖 Asistencia y Beneficios Científicos
+
+## Registré un ánimo negativo (Muy Mal, Mal o Ligeramente Mal) y en mi historial apareció un botón de destellos, ¿qué hace?
+Tu bienestar mental es vital. Si tu registro indica un estado de ánimo por debajo de neutral, la aplicación te ofrecerá proactivamente un botón de soporte bajo ese registro. Al tocarlo, se abrirá instantáneamente una ventana de chat con **Kai Coach** (tu entrenador de Inteligencia Artificial) para brindarte apoyo emocional, reflexiones guiadas o simplemente un espacio seguro para conversar sobre ese momento difícil.
+
+## Veo un botón con un ícono de información ( i ) junto al título Log de Hoy, ¿para qué sirve?
+Ese botón abre una tarjeta informativa detallando la ciencia y los beneficios detrás del registro constante del estado de ánimo. Te explicará cómo esta práctica mejora tu autoconocimiento y te dará un botón de acceso directo a nuestro Blog oficial, donde podrás leer artículos completos sobre atención plena y salud mental.-----
+Archivo: ./docs/06-perfil/_category_.json
+{
+  "customProps": {
+    "archivo": "docs/06-cuenta/_category_.json",
+    "autor": "Arturo Enriquez Betancourt con Jarvis",
+    "fecha": "2026-05-15",
+    "version": "1.0",
+    "descripcion": "Configuración de la nueva categoría Cuenta y Configuración. Define la jerarquía en el sidebar (posición 6) y activa la página de índice generado para agrupar la documentación de perfil, seguridad, membresías y sincronización de dispositivos."
+  },
+  "label": "Cuenta y Configuración",
+  "position": 6,
+  "link": {
+    "type": "generated-index",
+    "description": "El centro administrativo de tu experiencia en CaloriTrack. Aprende a gestionar tu perfil, preferencias de idioma, estado de tu membresía Premium y la sincronización de datos con Apple Health o Garmin."
+  }
+}-----
+Archivo: ./docs/06-perfil/faq-perfil.md
+---
+# Nombre del archivo: docs/06-cuenta/faq-perfil.md
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-15
+# Versión: 1.0
+# Descripción: Documento de Preguntas Frecuentes (FAQ) sobre el perfil de usuario, ajustes de cuenta, seguridad, sincronización de dispositivos y membresías. Formato MD puro optimizado para SEO y UX.
+
+id: faq-perfil
+title: "Preguntas Frecuentes de Perfil y Ajustes"
+slug: /faq-perfil
+sidebar_position: 2
+sidebar_label: "Preguntas Frecuentes: Perfil"
+---
+
+# 📸 1. Foto de Perfil e Información Básica
+
+## ¿Cómo puedo cambiar mi foto de perfil?
+Para actualizar tu foto, simplemente dirígete a la vista principal de tu Perfil y toca el ícono de la cámara que aparece sobre tu imagen actual. Esto abrirá tu galería de fotos. Una vez que selecciones una imagen, la aplicación te pedirá que la recortes en un formato cuadrado (1:1) para asegurar que se vea perfecta.
+
+## ¿Por qué mi foto se ve recortada o diferente a la original?
+Para mantener la consistencia visual en toda la aplicación, utilizamos una herramienta de recorte que ajusta automáticamente cualquier imagen a un formato cuadrado (relación 1:1). Asegúrate de centrar bien tu rostro o el detalle importante al momento de recortarla.
+
+## ¿Dónde actualizo mi peso, altura y otros datos físicos?
+Debes ingresar a la sección "Datos Personales". Allí encontrarás los campos para actualizar tu "Nombre Completo", "Fecha de Nacimiento", "Género" (Masculino/Femenino), y tus medidas corporales exactas: "Altura (cm)" y "Peso (kg)". Recuerda presionar el botón "Guardar" en la esquina superior derecha para que los cambios surtan efecto.
+
+# 🎨 2. Ajustes de Apariencia e Idioma
+
+## ¿Cómo activo el Modo Oscuro?
+Dirígete a "Ajustes" dentro de tu Perfil. En la sección de "Apariencia", selecciona la opción "Oscuro". También puedes elegir "Sistema" si prefieres que CaloriTrack cambie automáticamente basándose en la configuración general de tu iPhone.
+
+## ¿Puedo cambiar el idioma de la aplicación sin cambiar el de mi teléfono?
+Sí, es posible. Dentro de la sección "Ajustes", ve al apartado de "Idioma". Podrás forzar la aplicación para que esté exclusivamente en "Español" o "Inglés", o simplemente dejarlo en "Sistema" para que siga el idioma de tu dispositivo.
+
+# 🔒 3. Seguridad y Gestión de Cuenta
+
+## Quiero cambiar mi contraseña, ¿cuáles son los requisitos de seguridad?
+Para proteger tus datos, requerimos que tu nueva contraseña cumpla con los siguientes criterios estrictos:
+* Mínimo 8 caracteres de longitud.
+* Al menos una letra mayúscula.
+* Al menos un carácter especial (como !, @, #, etc.).
+* Ambas contraseñas ingresadas (nueva y confirmación) deben coincidir.
+
+## ¿Cómo elimino mi cuenta definitivamente?
+Entendemos si decides dejarnos. En tu Perfil, toca el botón rojo "Eliminar Cuenta". Se te mostrará una alerta de confirmación. Si decides proceder, por motivos de seguridad, te pediremos que ingreses tu contraseña actual para confirmar tu identidad antes de borrar todos tus datos permanentemente. Esta acción no se puede deshacer.
+
+# ⌚ 4. Sincronización con Apple Health y Otros Dispositivos
+
+## ¿Cómo conecto CaloriTrack con Apple Salud (HealthKit)?
+Ve a la sección "Sincronización con 3ros". En el apartado de Apple Health, verás el estado actual de tu conexión. Si dice "No determinado", presiona "Conectar" para otorgar los permisos necesarios de lectura y escritura.
+
+## Hice ejercicio o registré peso en Apple Salud, pero no aparece en CaloriTrack. ¿Qué hago?
+A veces la sincronización en segundo plano de iOS se retrasa. Para solucionarlo rápidamente, ve a "Sincronización con 3ros", baja hasta la sección de "Solución de problemas" y presiona "Forzar Resincronización". Esto obligará a la aplicación a buscar y descargar todos los datos de los últimos 35 días.
+
+## ¿Puedo sincronizar mi reloj Garmin directamente?
+Por el momento, la integración directa con Garmin está marcada como "Próximamente". Sin embargo, si tienes la app de Garmin Connect enlazada a Apple Salud, CaloriTrack podrá leer esos datos indirectamente a través de HealthKit.
+
+# ⭐️ 5. Membresía y Pagos
+
+## ¿Cómo sé si mi plan Premium está activo y cuándo se renueva?
+Entra a la sección "Membresía". Aquí verás un desglose claro que incluye el nombre de tu plan, tu estado actual (por ejemplo: Activa, Prueba Gratuita, o Expirada) y la fecha exacta en la que se renovará o terminará tu acceso.
+
+## Pagué la suscripción pero la app me sigue mostrando contenido bloqueado. ¿Qué hago?
+No te preocupes, esto ocurre ocasionalmente si la comunicación con Apple se retrasa. Ve a la sección "Membresía" y presiona el botón "Restaurar Compras". Esto forzará a la aplicación a sincronizar tu recibo de pago directamente con los servidores de Apple para desbloquear tu acceso inmediatamente.
+
+## ¿Dónde puedo cancelar mi suscripción a CaloriTrack Premium?
+Si compraste tu suscripción a través de tu iPhone, la facturación la maneja Apple. En la vista de "Membresía", encontrarás un botón que dice "Gestionar en App Store". Al tocarlo, te llevaremos directamente a la sección de suscripciones de tu cuenta de Apple, donde podrás cancelarla.
+
+# 🔔 6. Notificaciones y Comunidad
+
+## ¿Cómo desactivo las notificaciones de la app?
+Para gestionar esto, entra en "Notificaciones" dentro de tu Perfil. Allí verás un interruptor (toggle) para permitir o bloquear las notificaciones Push generales de CaloriTrack. Si las desactivas desde aquí, se bloquearán a nivel de sistema para la app.
+
+## Quiero aprender más, ¿dónde encuentro los recursos educativos de CaloriTrack?
+En la mitad inferior de tu Perfil, bajo el encabezado "Aprende con nosotros", encontrarás enlaces directos a nuestro contenido multimedia. Puedes acceder a nuestro canal de YouTube, escuchar nuestros episodios en Spotify o Apple Podcasts, y leer nuestros "Artículos de Ciencia" (Science Posts) directamente en nuestro blog.-----
 Archivo: ./blog/2026-05-11-v1-4-0.md
 ---
 # Nombre del archivo: v1-4-0.mdx
@@ -20717,14 +21007,24 @@ Archivo: ./package.json
 Archivo: ./docusaurus.config.js
 // Nombre del archivo: docusaurus.config.js
 // Autor: Arturo Enriquez Betancourt con Jarvis
-// Fecha: 2026-05-13
-// Versión: 1.11
-// Descripción: Ajuste en el texto y orden del menú de navegación superior (navbar). Se renombraron las etiquetas a "Contactar al equipo" y "Regresar a CaloriTrack", y se reordenaron los elementos a la derecha: Selector de Idioma -> Regresar a CaloriTrack -> Contactar al equipo -> (Buscador insertado automáticamente al final).
+// Fecha: 2026-05-15
+// Versión: 1.12
+// Descripción: Ajuste en el texto y orden del menú de navegación superior. Se añadió también un "Descargo de Responsabilidad Médica" dinámico (ES/EN) en el footer justo por encima del Copyright en la sección oscura.
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
 // Capturamos el idioma que Docusaurus está compilando en este momento
 const currentLocale = process.env.DOCUSAURUS_CURRENT_LOCALE || 'es';
+
+// --- CONFIGURACIÓN DINÁMICA DE TEXTOS DEL FOOTER (DISCLAIMER Y COPYRIGHT) ---
+const footerDisclaimer = currentLocale === 'en'
+  ? '<strong>Medical Disclaimer:</strong> The content, metrics, and tools provided by Caloritrack (operated by KAI STUDIOS, S.A.S.) are strictly for informational, educational, and general wellness purposes. Caloritrack is not a healthcare provider or a clinical medical device. No information, support content, AI Coach suggestion, or displayed data is intended to substitute professional medical advice, diagnosis, treatment, or prevention. Always consult your physician or a qualified healthcare professional before making any changes to your diet, fasting routines, exercise, or lifestyle.'
+  : '<strong>Descargo de Responsabilidad Médica:</strong> El contenido, las métricas y las herramientas proporcionadas por Caloritrack (operado por KAI STUDIOS, S.A.S.) son estrictamente para fines informativos, educativos y de bienestar general. Caloritrack no es un proveedor de atención médica ni un dispositivo clínico. Ninguna información, contenido de soporte, sugerencia de nuestro AI Coach o dato mostrado debe interpretarse como un sustituto del diagnóstico, tratamiento, prevención o consejo médico profesional. Consulta siempre a tu médico o especialista calificado antes de realizar cualquier cambio en tu dieta, rutinas de ayuno, ejercicio o estilo de vida.';
+
+const footerCopyrightText = currentLocale === 'en'
+  ? `© ${new Date().getFullYear()} CaloriTrack ™. All Rights Reserved`
+  : `© ${new Date().getFullYear()} CaloriTrack ™, Todos los Derechos Reservados`;
+
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -20884,7 +21184,15 @@ const config = {
             ],
           },
         ],
-        copyright: `© ${new Date().getFullYear()} CaloriTrack ®, Todos los Derechos Reservados`,
+        // Inyectamos el disclaimer y el copyright a través de un template literal con HTML
+        copyright: `
+          <div class="footer__disclaimer">
+            ${footerDisclaimer}
+          </div>
+          <div class="footer__rights">
+            ${footerCopyrightText}
+          </div>
+        `,
       },
       prism: {
         theme: prismThemes.github,
@@ -21352,7 +21660,13 @@ Archivo: ./i18n/en/docusaurus-theme-classic/footer.json
   "link.item.label.Novedades y Actualizaciones": {
     "message": "App Releases",
     "description": "The label of footer link with label=Novedades y Actualizaciones linking to /blog"
+  },
+  "copyright": {
+    "message": "<div class=\"footer__disclaimer\"><strong>Medical Disclaimer:</strong> The content, metrics, and tools provided by Caloritrack (operated by KAI STUDIOS, S.A.S.) are strictly for informational, educational, and general wellness purposes. Caloritrack is not a healthcare provider or a clinical medical device. No information, support content, AI Coach suggestion, or displayed data is intended to substitute professional medical advice, diagnosis, treatment, or prevention. Always consult your physician or a qualified healthcare professional before making any changes to your diet, fasting routines, exercise, or lifestyle.</div><div class=\"footer__rights\">© 2026 CaloriTrack ™. All Rights Reserved</div>",
+    "description": "The footer copyright"
   }
+  
+  
 }-----
 Archivo: ./i18n/en/docusaurus-theme-classic/navbar.json
 {
@@ -21385,6 +21699,108 @@ Archivo: ./i18n/en/docusaurus-theme-classic/navbar.json
     "description": "Navbar item with label Regresar a CaloriTrack"
   }
 }-----
+Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/07-progreso/faq-progreso.md
+---
+# Nombre del archivo: i18n/en/docusaurus-plugin-content-docs/current/07-progreso/faq-progreso.md
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-15
+# Versión: 1.0
+# Descripción: English translation of the My Path and Achievements FAQ. Pure MD format optimized for SEO and UX.
+
+id: faq-progreso
+title: "My Path and Achievements FAQ"
+slug: /faq-progreso
+sidebar_position: 1
+sidebar_label: "Progress FAQ"
+---
+
+# 🗺️ My Path and Achievements FAQs
+
+Welcome to "My Path"! We know that when you open this section you might see many colors, squares, and medals. Don't be overwhelmed; this screen is the visual map of all your dedication in CaloriTrack. Here we explain in full detail how to read your progress and how to earn each of your badges.
+
+## 📊 Section 1: Understanding your Habits (The Colored Squares)
+
+### What exactly do the small squares under each habit mean?
+That block of squares is known as a "Heatmap". It represents your consistency over time. It is made up of 7 rows (the days of the week) and 26 columns, meaning you are looking at exactly half a year (26 weeks) of your history at a single glance. Every square is a day of your life.
+
+### Why do some squares have a different colored border?
+The square with a highlighted border around it represents today. The grid is intelligently designed to end exactly on today, so you'll always know where you stand.
+
+### What do the square colors mean?
+There are three main states to read your map:
+
+* **Bright color (Green, Blue, Orange, etc.):** Successful day! It means you completed the habit that day. The color depends on the habit category.
+* **Gray/Opaque color:** Inactive day. It means that day has passed and you did not log any activity for that specific habit.
+* **Transparent/Faint Background color:** These are days in the future. They haven't happened yet, so you can't log anything yet.
+
+### My app took a few seconds to load "My Path", is that normal?
+Yes, it is completely normal and great news! When you open "My Path", CaloriTrack doesn't just check your day; it analyzes and consolidates up to 2 full years of your health, fasting, food, and wellness history to accurately draw your charts and calculate your streaks.
+
+## 🎯 Section 2: How do I "light up" the squares for each Habit?
+
+You will see 6 different cards on your Habits screen. Each one lights up following very specific app rules. If you feel you did something but it didn't light up, check this list:
+
+### How do I mark the "Completed Fast" habit (Green Clock) as done?
+It is not enough to start the timer. For the green square to light up, the fast must have a "completed" status. If you start a fast but cancel or delete it, it will not count towards your consistency map.
+
+### What do I need to do for the "Daily Log" (Blue Calendar)?
+You just have to log at least one food, dish, or entry in your nutrition diary during that calendar day. By doing so, the system detects the consumption date and paints your square blue.
+
+### How do I keep the "KetoFlame" habit (Orange Fire) lit?
+This indicator lights up when you keep your ketosis state active in the app and log days compatible with the Keto diet.
+
+### What activities count towards the "Wellness Session" (Purple Figure)?
+To light up this habit, you must successfully complete a guided meditation (Soundhealing) or breathing (Breathwork) session inside the app's player. Just listening for a few seconds and closing it might not register the full session.
+
+### How do I log my "Kai Connection" (Turquoise Stars)?
+It will light up on the days you have at least one chat interaction with Kai, your AI Coach.
+
+### Why is there a red habit called "Health History" or "Recovery Days"?
+Unlike the others, this habit isn't something you should strive to fill every day. On the contrary, it tracks the days you reported being sick in the medical section of the app. It turns your sickness date ranges into red squares so you can visualize how often your body has needed breaks to recover throughout the semester.
+
+## 🏅 Section 3: Everything about the "Achievements" (Badges) tab
+
+Switching to the top right tab, you will see your "Achievements" showcase.
+
+### Why do my badges look gray and opaque?
+Gray badges are "locked". You haven't met the requirements to earn them yet. When you unlock them, they come to life with a beautiful warm color gradient (yellows and oranges) and gain full opacity.
+
+### How do I know what I'm missing to unlock a gray badge?
+Easy! Tap the gray badge. A detail screen will open where, at the bottom, you will see the "How to Unlock" section, explaining exactly the criteria you still need to meet.
+
+### What are the "Fasting" badges and how do I earn them?
+These are based strictly on your longest historical streak of consecutive fasting days (not your current streak). There are tiers for 1, 10, 21, 30, 90, 180, 365, and up to 730 days (2 years!) of uninterrupted fasting.
+
+### My "KetoFlame" badges aren't progressing, how do they work?
+Just like fasting, the system looks for your longest consecutive streak of days keeping your "KetoFlame" lit, awarding medals from day 1 up to 730 days.
+
+### Under nutrition, I see "Explore" and "Log" badges, what's the difference?
+Great question.
+* **Streak badges (7 and 30 days)** reward you for entering the app to log food daily.
+* **Log/Counter badges (100, 500, 1000 entries)** reward volume. Every meal, snack, or dish counts as an entry.
+* **Exploration badges (50 and 100 foods)** reward variety. They count how many unique and different foods you have tried in the app. Eating chicken breast every day increases your "Counter", but only gives you 1 point in "Exploration".
+
+### I did meditation today but didn't get the 5-hour badge. Why?
+Wellness badges (Soundhealing and Breathwork) are divided into two types of effort:
+* **By Total Sessions:** Reward the times you sit down to practice (1, 10, 30, 50 sessions).
+* **By Time Invested:** They add up all the seconds from your histories. We reward you when you accumulate 5 hours, 20 hours, 50 hours, and 100 total hours of sound healing or deep breathing. It takes time; it's a marathon, not a sprint!
+
+### What achievements can I get with Kai Coach?
+You get achievements for consistency in your consultations: from your first chat, up to milestones of 10, 30, 50, 100, 200, and 500 interactions or sessions resolving doubts with Kai.
+
+## 📲 Section 4: Showing off your Successes
+
+### Can I know the exact date I earned a badge?
+Sure! Tap any achievement you already have in color (unlocked). On the detail screen, the bottom section will change to say "Achievement Unlocked on..." followed by the exact date.
+
+### I want to share my achievement on Instagram or WhatsApp, how do I do it?
+Enter the achievement you want to show off. In the upper right corner, you will see a "Share" icon (a small square with an arrow pointing up). **Note:** This button only appears on achievements you have already unlocked; you cannot share something you haven't earned yet!
+
+### When I hit share, a screen with colored circles appears. What is that?
+That's our customization studio! Before sending your image, CaloriTrack allows you to choose the perfect background color for your story. You can choose from gradients, elegant darks (Black, Slate), or vibrant colors (Mint Green, Sky Blue, Purple, Orange).
+
+### Does it take a long time to generate the image?
+You will see a loading indicator for a couple of seconds. The app is generating a very high-quality image (1080x1080 square resolution, ideal for Instagram) with your achievement, its details, and an inspiring text. When finished, your phone's native menu will open so you can send it wherever you want.-----
 Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/01-salud/guia-salud.mdx
 ---
 # Nombre del archivo: guia-salud.mdx
@@ -22309,10 +22725,154 @@ Although accessed from the app's Header, tracking your emotional state is a vita
 * **Identify the Factors:** Once you've chosen how you feel, tap "Next". A dropdown menu will open with categories: Life, Health, Work, and Activities. Select which things (Family, Sleep, Money, etc.) are influencing your day.
 * **Private Notes:** There is a text box in case you want to write a short journal entry or thought about why you feel this way.
 * **History and Kai's Support:** Your logs will be saved in a timeline list. If you ever record a negative mood ("Bad" or "Very Bad"), CaloriTrack will show you a special "Kai Coach" button inviting you to chat with your artificial intelligence, who will be ready to offer you support, Stoic advice, or simply listen to you.-----
+Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/04-wellness/faq-estado-animo.md
+---
+# Nombre del archivo: i18n/en/docusaurus-plugin-content-docs/current/04-wellness/faq-estado-animo.md
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-15
+# Versión: 1.0
+# Descripción: English translation of the Mood Tracking FAQ. Pure MD format optimized for SEO and UX.
+
+id: faq-estado-animo
+title: "Mood Tracking Frequently Asked Questions"
+slug: /faq-estado-animo
+sidebar_position: 3
+sidebar_label: "Mood Tracking FAQ"
+---
+
+# 📱 Access and Using the Selector
+
+## How do I access the section to log my mood?
+On the main screen of the application, go to the top (the header). You will see today's date in a subtle button. Tapping that date will immediately open the **Today's Log** screen where you can start your record.
+
+## When I enter, I see a slider with a smiley face and colors. How exactly does it work?
+This is our main mood selector. You must slide the white circle over the horizontal bar to choose how you feel at this moment. There are 7 levels of energy and mood, each with a color and a representative icon:
+
+* **Very Bad:** Purple color, represented by an empty battery.
+* **Bad:** Gray color, represented by a low battery.
+* **Slightly Bad:** Light Gray color, represented by a cloud.
+* **Neutral:** Sky Blue color, represented by a line.
+* **Slightly Good:** Soft Mint Green color, represented by an inverted smile.
+* **Good:** Bright Mint Green color, represented by a smile.
+* **Very Good:** Soft Orange color, represented by a radiant sun.
+
+Once you place the slider on the state that best represents you, tap the bottom button to continue to the next step.
+
+# 🧠 Influencing Factors and Additional Notes
+
+## What is the Influencing Factors screen for?
+Mood is rarely random. This screen allows you to detail what specific things in your day are affecting your mood. The factors are divided into 4 main categories, which you can expand or collapse by tapping their name:
+
+* **Life:** Family, friends, partner, romantic dates, pets.
+* **Health:** General health, exercise, sleep, food, menstrual cycle, mindfulness.
+* **Work:** Work, studies, money, weather, news, environment.
+* **Activities:** Hobbies, travel, music, chores, spirituality.
+
+To select one or more, simply tap the button (pill) with the name of the factor. It will be highlighted to confirm that it is selected.
+
+## What do I do if the reason for my mood is not in the Factors options?
+Right below the factor categories, you will find a section called **Notes**. It is a free-text editor where you can write any thought, keep a small journal, or add the specific context of how you feel today. It is completely optional.
+
+# 📊 Saving, History, and Editing
+
+## What happens when I press the Save button? Does it connect with Apple Health?
+When you press Save, your log is securely sent to your database in CaloriTrack. Additionally, if you have given us permissions to connect with Apple Health, the application will intelligently save this record on your iPhone. If you use iOS 17 or higher, it will be saved in the new native *State of Mind* metric with all your factors; if you use an older version, it will be recorded as a *Mindfulness* session.
+
+## I already saved my mood, but I want to see my previous logs from today. Where are they?
+After saving your log, the main mood screen will automatically change to show your **Today's History**. You will see a chronological list of all the logs you have made in the day, showing the exact time, the icon and color of your mood, the factors you selected, and the notes you wrote.
+
+## My day improved (or worsened). Can I log my mood multiple times in the same day?
+Of course! On your daily history screen, you will see a button with the **+** symbol in the top right corner of the screen. Tapping it will open the selector again so you can add a new log at that exact moment.
+
+## I made a mistake when creating a log, is there a way to delete it?
+Yes. In your history list, simply swipe the log you want to delete to the left and you will see a red button appear to delete it. This will permanently remove it from both your screen and your account.
+
+# 🤖 Smart Support and Scientific Benefits
+
+## I logged a negative mood (Very Bad, Bad, or Slightly Bad) and a sparkles button appeared in my history, what does it do?
+Your mental well-being is vital. If your log indicates a mood below neutral, the application will proactively offer you a support button below that log. Tapping it will instantly open a chat window with **Kai Coach** (your Artificial Intelligence coach) to provide you with emotional support, guided reflections, or simply a safe space to talk about that difficult moment.
+
+## I see a button with an information icon ( i ) next to the Today's Log title, what is it for?
+That button opens an informative card detailing the science and benefits behind consistent mood tracking. It will explain how this practice improves your self-knowledge and will give you a direct access button to our official Blog, where you can read full articles about mindfulness and mental health.-----
+Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/06-perfil/faq-perfil.md
+---
+# Nombre del archivo: i18n/en/docusaurus-plugin-content-docs/current/06-cuenta/faq-perfil.md
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-15
+# Versión: 1.0
+# Descripción: English translation of the Profile and Settings FAQ. Pure MD format optimized for SEO and UX.
+
+id: faq-perfil
+title: "Profile and Settings Frequently Asked Questions"
+slug: /faq-perfil
+sidebar_position: 2
+sidebar_label: "Profile FAQ"
+---
+
+# 📸 1. Profile Picture and Basic Information
+
+## How can I change my profile picture?
+To update your photo, simply go to your main Profile view and tap the camera icon that appears over your current image. This will open your photo gallery. Once you select an image, the application will ask you to crop it into a square format (1:1 ratio) to ensure it looks perfect.
+
+## Why does my photo look cropped or different from the original?
+To maintain visual consistency throughout the application, we use a cropping tool that automatically adjusts any image to a square format (1:1 ratio). Make sure to properly center your face or the important detail when cropping it.
+
+## Where do I update my weight, height, and other physical data?
+You need to enter the "Personal Data" section. There you will find the fields to update your "Full Name", "Date of Birth", "Gender" (Male/Female), and your exact body measurements: "Height (cm)" and "Weight (kg)". Remember to press the "Save" button in the upper right corner for the changes to take effect.
+
+# 🎨 2. Appearance and Language Settings
+
+## How do I activate Dark Mode?
+Go to "Settings" within your Profile. In the "Appearance" section, select the "Dark" option. You can also choose "System" if you prefer CaloriTrack to change automatically based on your iPhone's general settings.
+
+## Can I change the app's language without changing my phone's language?
+Yes, it is possible. Inside the "Settings" section, go to the "Language" menu. You can force the application to be exclusively in "Spanish" or "English", or simply leave it on "System" so it follows your device's language.
+
+# 🔒 3. Security and Account Management
+
+## I want to change my password, what are the security requirements?
+To protect your data, we require your new password to meet the following strict criteria:
+* Minimum of 8 characters in length.
+* At least one uppercase letter.
+* At least one special character (such as !, @, #, etc.).
+* Both entered passwords (new and confirmation) must match exactly.
+
+## How do I permanently delete my account?
+We understand if you decide to leave us. In your Profile, tap the red "Delete Account" button. A confirmation alert will be shown to you. If you decide to proceed, for security reasons, we will ask you to enter your current password to confirm your identity before permanently deleting all your data. This action cannot be undone.
+
+# ⌚ 4. Synchronization with Apple Health and Other Devices
+
+## How do I connect CaloriTrack with Apple Health (HealthKit)?
+Go to the "Third-Party Sync" section. Under Apple Health, you will see your current connection status. If it says "Not determined", press "Connect" to grant the necessary read and write permissions.
+
+## I exercised or logged weight in Apple Health, but it doesn't appear in CaloriTrack. What do I do?
+Sometimes iOS background synchronization gets delayed. To fix this quickly, go to "Third-Party Sync", scroll down to the "Troubleshooting" section, and press "Force Resync". This will force the application to fetch and download all data from the last 35 days.
+
+## Can I sync my Garmin watch directly?
+At the moment, direct integration with Garmin is marked as "Coming Soon". However, if you have the Garmin Connect app linked to Apple Health, CaloriTrack will be able to read that data indirectly through HealthKit.
+
+# ⭐️ 5. Membership and Payments
+
+## How do I know if my Premium plan is active and when it renews?
+Enter the "Membership" section. Here you will see a clear breakdown that includes the name of your plan, your current status (for example: Active, Free Trial, or Expired), and the exact date your access will renew or end.
+
+## I paid for the subscription but the app still shows locked content. What do I do?
+Don't worry, this occasionally happens if communication with Apple is delayed. Go to the "Membership" section and press the "Restore Purchases" button. This will force the application to synchronize your payment receipt directly with Apple's servers to unlock your access immediately.
+
+## Where can I cancel my CaloriTrack Premium subscription?
+If you purchased your subscription through your iPhone, billing is handled by Apple. In the "Membership" view, you will find a button that says "Manage in App Store". Tapping it will take you directly to the subscriptions section of your Apple account, where you can cancel it.
+
+# 🔔 6. Notifications and Community
+
+## How do I turn off app notifications?
+To manage this, enter "Notifications" within your Profile. There you will see a toggle switch to allow or block CaloriTrack's general Push notifications. If you disable them from here, they will be blocked at the system level for the app.
+
+## I want to learn more, where do I find CaloriTrack's educational resources?
+In the bottom half of your Profile, under the heading "Learn with us", you will find direct links to our multimedia content. You can access our YouTube channel, listen to our episodes on Spotify or Apple Podcasts, and read our "Science Posts" directly on our blog.-----
 Archivo: ./i18n/en/docusaurus-plugin-content-docs/current.json
 {
   "__comentario_cabecera__": {
-    "message": "Nombre del archivo: current.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-13 | Versión: 1.4 | Descripción: Se eliminaron los emojis de las llaves (keys) y traducciones de las categorías para asegurar una coincidencia exacta y literal con los archivos fuente en español, corrigiendo el problema de visualización en i18n.",
+    "message": "Nombre del archivo: current.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-15 | Versión: 1.5 | Descripción: Se añadieron las traducciones de las categorías 'Cuenta y Configuración' y 'Comunidad y Progreso' para el menú lateral en inglés, manteniendo la estructura exacta de llaves sin emojis para coincidir con la fuente en español.",
     "description": "Control de versión y autoría adaptado a formato JSON"
   },
   "version.label": {
@@ -22358,6 +22918,22 @@ Archivo: ./i18n/en/docusaurus-plugin-content-docs/current.json
   "sidebar.tutorialSidebar.category.Kai Coach.link.generated-index.description": {
     "message": "Meet your AI companion. Learn to leverage Stoic principles and personalized guidance to navigate your health journey with clarity and purpose.",
     "description": "The generated-index page description for category 'kAI Coach' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Cuenta y Configuración": {
+    "message": "Account & Settings",
+    "description": "The label for category 'Cuenta y Configuración' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Cuenta y Configuración.link.generated-index.description": {
+    "message": "The administrative center of your CaloriTrack experience. Learn how to manage your profile, language preferences, Premium membership status, and data synchronization with Apple Health or Garmin.",
+    "description": "The generated-index page description for category 'Cuenta y Configuración' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Comunidad y Progreso": {
+    "message": "Community & Progress",
+    "description": "The label for category 'Comunidad y Progreso' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Comunidad y Progreso.link.generated-index.description": {
+    "message": "Your consistency rewarded. Discover how to interpret your discipline heatmaps, the requirements to unlock badges, and how to connect with other users through our Support Circles.",
+    "description": "The generated-index page description for category 'Comunidad y Progreso' in sidebar 'tutorialSidebar'"
   }
 }-----
 Archivo: ./sidebars.js
@@ -22401,9 +22977,9 @@ Archivo: ./src/css/custom.css
 /*
 // Nombre del archivo: src/css/custom.css
 // Autor: Arturo Enriquez Betancourt con Jarvis
-// Fecha: 2026-05-13
-// Versión: 1.21
-// Descripción: CORRECCIÓN DE NAVBAR STICKY. Se reemplazó `position: relative` por `position: sticky !important; top: 0 !important; z-index: 100 !important;` en `.navbar` para restaurar el comportamiento nativo de Docusaurus al hacer scroll, manteniendo el correcto centrado del buscador.
+// Fecha: 2026-05-15
+// Versión: 1.22
+// Descripción: CORRECCIÓN DE NAVBAR STICKY. Se añadió el estilo del Descargo de Responsabilidad (disclaimer) en el footer para controlar su color gris, tamaño de letra pequeño y márgenes antes del texto de Copyright.
 */
 
 /* ==============================================================================
@@ -22517,9 +23093,28 @@ Archivo: ./src/css/custom.css
 
 .footer__copyright {
   margin: 0 !important;
+}
+
+/* --- ESTILOS DEL DISCLAIMER Y COPYRIGHT --- */
+.footer__disclaimer {
+  font-size: 0.72rem; /* Un poco más pequeño para que fluya mejor en bloque */
+  font-weight: 400;
+  color: #8b8b8b; 
+  width: 100% !important; /* Fuerza el ancho total */
+  max-width: 100% !important; /* Elimina el límite de 950px */
+  padding: 0 4% !important; /* Margen elegante a los lados para que no toque el borde físico */
+  margin: 0 auto 1.2rem auto;
+  line-height: 1.4;
+  text-align: justify; /* Justificado para que se vea como un bloque legal profesional */
+}
+
+.footer__rights {
   font-size: 0.9rem;
   font-weight: 500;
   color: #ffffff;
+  text-align: center;
+  width: 100%;
+  display: block;
 }
 
 .footer.footer--dark {
@@ -22778,9 +23373,9 @@ export default function HomepageFeatures() {
 Archivo: ./src/theme/Root.js
 // Nombre del archivo: src/theme/Root.js
 // Autor: Arturo Enriquez Betancourt con Jarvis
-// Fecha: 2026-05-13
-// Versión: 1.3
-// Descripción: Componente Root devuelto de forma íntegra basado en tu versión proporcionada. Mantiene la lógica impecable de visibilidad del buscador (oculto en Home mediante 'is-home-page') y el modal de contacto. No requiere cambios lógicos adicionales para el centrado del buscador.
+// Fecha: 2026-05-15
+// Versión: 1.4
+// Descripción: Modal de contacto dinámico. Se añadió la detección del idioma (inglés/español) para cambiar dinámicamente la URL del iframe de contacto y los textos de la cabecera del modal, mejorando la UX internacional.
 
 import React, { useState, useEffect } from 'react';
 import { useLocation } from '@docusaurus/router';
@@ -22788,6 +23383,9 @@ import { useLocation } from '@docusaurus/router';
 export default function Root({children}) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const location = useLocation();
+
+  // Detectamos el idioma mediante la ruta (Docusaurus usa /en/ para inglés)
+  const isEnglish = location.pathname.startsWith('/en');
 
   // Detectamos si estamos en el Home (soporta raíz y versión en inglés)
   const isHomePage = location.pathname === '/' || location.pathname === '/en' || location.pathname === '/en/';
@@ -22818,6 +23416,19 @@ export default function Root({children}) {
 
   const closeModal = () => setIsModalOpen(false);
 
+  // Configuración dinámica por idioma para el Modal
+  const iframeUrl = isEnglish 
+    ? "https://caloritrack.com/en/contacto-soporte-iframe-2/" 
+    : "https://caloritrack.com/contacto-soporte-iframe";
+    
+  const modalTitle = isEnglish 
+    ? "How can we help you?" 
+    : "¿En qué podemos ayudarte?";
+    
+  const modalDescription = isEnglish 
+    ? "Tell us what's happening. Our team will review your message and reply as soon as possible so you can continue empowering your well-being." 
+    : "Cuéntanos qué sucede. Nuestro equipo revisará tu mensaje y te responderá lo más pronto posible para que sigas potenciando tu bienestar.";
+
   return (
     <>
       {children}
@@ -22825,16 +23436,22 @@ export default function Root({children}) {
       {isModalOpen && (
         <div className="contact-modal-overlay" onClick={closeModal}>
           <div className="contact-modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="contact-modal-close" onClick={closeModal} aria-label="Cerrar modal">&times;</button>
+            <button 
+              className="contact-modal-close" 
+              onClick={closeModal} 
+              aria-label={isEnglish ? "Close modal" : "Cerrar modal"}
+            >
+              &times;
+            </button>
             
             <div className="contact-modal-header">
-              <h2>¿En qué podemos ayudarte?</h2>
-              <p>Cuéntanos qué sucede. Nuestro equipo revisará tu mensaje y te responderá lo más pronto posible para que sigas potenciando tu bienestar.</p>
+              <h2>{modalTitle}</h2>
+              <p>{modalDescription}</p>
             </div>
             
             <iframe 
-              src="https://caloritrack.com/contacto-soporte-iframe" 
-              title="Formulario de Contacto Caloritrack"
+              src={iframeUrl} 
+              title={isEnglish ? "CaloriTrack Contact Form" : "Formulario de Contacto Caloritrack"}
               className="contact-modal-iframe"
               frameBorder="0"
             ></iframe>

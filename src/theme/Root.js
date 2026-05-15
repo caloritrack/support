@@ -1,8 +1,8 @@
 // Nombre del archivo: src/theme/Root.js
 // Autor: Arturo Enriquez Betancourt con Jarvis
-// Fecha: 2026-05-13
-// Versión: 1.3
-// Descripción: Componente Root devuelto de forma íntegra basado en tu versión proporcionada. Mantiene la lógica impecable de visibilidad del buscador (oculto en Home mediante 'is-home-page') y el modal de contacto. No requiere cambios lógicos adicionales para el centrado del buscador.
+// Fecha: 2026-05-15
+// Versión: 1.4
+// Descripción: Modal de contacto dinámico. Se añadió la detección del idioma (inglés/español) para cambiar dinámicamente la URL del iframe de contacto y los textos de la cabecera del modal, mejorando la UX internacional.
 
 import React, { useState, useEffect } from 'react';
 import { useLocation } from '@docusaurus/router';
@@ -10,6 +10,9 @@ import { useLocation } from '@docusaurus/router';
 export default function Root({children}) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const location = useLocation();
+
+  // Detectamos el idioma mediante la ruta (Docusaurus usa /en/ para inglés)
+  const isEnglish = location.pathname.startsWith('/en');
 
   // Detectamos si estamos en el Home (soporta raíz y versión en inglés)
   const isHomePage = location.pathname === '/' || location.pathname === '/en' || location.pathname === '/en/';
@@ -40,6 +43,19 @@ export default function Root({children}) {
 
   const closeModal = () => setIsModalOpen(false);
 
+  // Configuración dinámica por idioma para el Modal
+  const iframeUrl = isEnglish 
+    ? "https://caloritrack.com/en/contacto-soporte-iframe-2/" 
+    : "https://caloritrack.com/contacto-soporte-iframe";
+    
+  const modalTitle = isEnglish 
+    ? "How can we help you?" 
+    : "¿En qué podemos ayudarte?";
+    
+  const modalDescription = isEnglish 
+    ? "Tell us what's happening. Our team will review your message and reply as soon as possible so you can continue empowering your well-being." 
+    : "Cuéntanos qué sucede. Nuestro equipo revisará tu mensaje y te responderá lo más pronto posible para que sigas potenciando tu bienestar.";
+
   return (
     <>
       {children}
@@ -47,16 +63,22 @@ export default function Root({children}) {
       {isModalOpen && (
         <div className="contact-modal-overlay" onClick={closeModal}>
           <div className="contact-modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="contact-modal-close" onClick={closeModal} aria-label="Cerrar modal">&times;</button>
+            <button 
+              className="contact-modal-close" 
+              onClick={closeModal} 
+              aria-label={isEnglish ? "Close modal" : "Cerrar modal"}
+            >
+              &times;
+            </button>
             
             <div className="contact-modal-header">
-              <h2>¿En qué podemos ayudarte?</h2>
-              <p>Cuéntanos qué sucede. Nuestro equipo revisará tu mensaje y te responderá lo más pronto posible para que sigas potenciando tu bienestar.</p>
+              <h2>{modalTitle}</h2>
+              <p>{modalDescription}</p>
             </div>
             
             <iframe 
-              src="https://caloritrack.com/contacto-soporte-iframe" 
-              title="Formulario de Contacto Caloritrack"
+              src={iframeUrl} 
+              title={isEnglish ? "CaloriTrack Contact Form" : "Formulario de Contacto Caloritrack"}
               className="contact-modal-iframe"
               frameBorder="0"
             ></iframe>

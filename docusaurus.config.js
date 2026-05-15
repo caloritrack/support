@@ -1,13 +1,23 @@
 // Nombre del archivo: docusaurus.config.js
 // Autor: Arturo Enriquez Betancourt con Jarvis
-// Fecha: 2026-05-13
-// Versión: 1.11
-// Descripción: Ajuste en el texto y orden del menú de navegación superior (navbar). Se renombraron las etiquetas a "Contactar al equipo" y "Regresar a CaloriTrack", y se reordenaron los elementos a la derecha: Selector de Idioma -> Regresar a CaloriTrack -> Contactar al equipo -> (Buscador insertado automáticamente al final).
+// Fecha: 2026-05-15
+// Versión: 1.12
+// Descripción: Ajuste en el texto y orden del menú de navegación superior. Se añadió también un "Descargo de Responsabilidad Médica" dinámico (ES/EN) en el footer justo por encima del Copyright en la sección oscura.
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
 // Capturamos el idioma que Docusaurus está compilando en este momento
 const currentLocale = process.env.DOCUSAURUS_CURRENT_LOCALE || 'es';
+
+// --- CONFIGURACIÓN DINÁMICA DE TEXTOS DEL FOOTER (DISCLAIMER Y COPYRIGHT) ---
+const footerDisclaimer = currentLocale === 'en'
+  ? '<strong>Medical Disclaimer:</strong> The content, metrics, and tools provided by Caloritrack (operated by KAI STUDIOS, S.A.S.) are strictly for informational, educational, and general wellness purposes. Caloritrack is not a healthcare provider or a clinical medical device. No information, support content, AI Coach suggestion, or displayed data is intended to substitute professional medical advice, diagnosis, treatment, or prevention. Always consult your physician or a qualified healthcare professional before making any changes to your diet, fasting routines, exercise, or lifestyle.'
+  : '<strong>Descargo de Responsabilidad Médica:</strong> El contenido, las métricas y las herramientas proporcionadas por Caloritrack (operado por KAI STUDIOS, S.A.S.) son estrictamente para fines informativos, educativos y de bienestar general. Caloritrack no es un proveedor de atención médica ni un dispositivo clínico. Ninguna información, contenido de soporte, sugerencia de nuestro AI Coach o dato mostrado debe interpretarse como un sustituto del diagnóstico, tratamiento, prevención o consejo médico profesional. Consulta siempre a tu médico o especialista calificado antes de realizar cualquier cambio en tu dieta, rutinas de ayuno, ejercicio o estilo de vida.';
+
+const footerCopyrightText = currentLocale === 'en'
+  ? `© ${new Date().getFullYear()} CaloriTrack ™. All Rights Reserved`
+  : `© ${new Date().getFullYear()} CaloriTrack ™, Todos los Derechos Reservados`;
+
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -167,7 +177,15 @@ const config = {
             ],
           },
         ],
-        copyright: `© ${new Date().getFullYear()} CaloriTrack ®, Todos los Derechos Reservados`,
+        // Inyectamos el disclaimer y el copyright a través de un template literal con HTML
+        copyright: `
+          <div class="footer__disclaimer">
+            ${footerDisclaimer}
+          </div>
+          <div class="footer__rights">
+            ${footerCopyrightText}
+          </div>
+        `,
       },
       prism: {
         theme: prismThemes.github,

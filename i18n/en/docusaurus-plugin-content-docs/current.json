@@ -1,6 +1,6 @@
 {
   "__comentario_cabecera__": {
-    "message": "Nombre del archivo: current.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-13 | Versión: 1.4 | Descripción: Se eliminaron los emojis de las llaves (keys) y traducciones de las categorías para asegurar una coincidencia exacta y literal con los archivos fuente en español, corrigiendo el problema de visualización en i18n.",
+    "message": "Nombre del archivo: current.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-15 | Versión: 1.5 | Descripción: Se añadieron las traducciones de las categorías 'Cuenta y Configuración' y 'Comunidad y Progreso' para el menú lateral en inglés, manteniendo la estructura exacta de llaves sin emojis para coincidir con la fuente en español.",
     "description": "Control de versión y autoría adaptado a formato JSON"
   },
   "version.label": {
@@ -46,5 +46,21 @@
   "sidebar.tutorialSidebar.category.Kai Coach.link.generated-index.description": {
     "message": "Meet your AI companion. Learn to leverage Stoic principles and personalized guidance to navigate your health journey with clarity and purpose.",
     "description": "The generated-index page description for category 'kAI Coach' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Cuenta y Configuración": {
+    "message": "Account & Settings",
+    "description": "The label for category 'Cuenta y Configuración' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Cuenta y Configuración.link.generated-index.description": {
+    "message": "The administrative center of your CaloriTrack experience. Learn how to manage your profile, language preferences, Premium membership status, and data synchronization with Apple Health or Garmin.",
+    "description": "The generated-index page description for category 'Cuenta y Configuración' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Comunidad y Progreso": {
+    "message": "Community & Progress",
+    "description": "The label for category 'Comunidad y Progreso' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Comunidad y Progreso.link.generated-index.description": {
+    "message": "Your consistency rewarded. Discover how to interpret your discipline heatmaps, the requirements to unlock badges, and how to connect with other users through our Support Circles.",
+    "description": "The generated-index page description for category 'Comunidad y Progreso' in sidebar 'tutorialSidebar'"
   }
 }

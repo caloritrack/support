@@ -22,5 +22,11 @@
   "link.item.label.Novedades y Actualizaciones": {
     "message": "App Releases",
     "description": "The label of footer link with label=Novedades y Actualizaciones linking to /blog"
+  },
+  "copyright": {
+    "message": "<div class=\"footer__disclaimer\"><strong>Medical Disclaimer:</strong> The content, metrics, and tools provided by Caloritrack (operated by KAI STUDIOS, S.A.S.) are strictly for informational, educational, and general wellness purposes. Caloritrack is not a healthcare provider or a clinical medical device. No information, support content, AI Coach suggestion, or displayed data is intended to substitute professional medical advice, diagnosis, treatment, or prevention. Always consult your physician or a qualified healthcare professional before making any changes to your diet, fasting routines, exercise, or lifestyle.</div><div class=\"footer__rights\">© 2026 CaloriTrack ™. All Rights Reserved</div>",
+    "description": "The footer copyright"
   }
+  
+  
 }

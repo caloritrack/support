@@ -1,9 +1,9 @@
 /*
 // Nombre del archivo: src/css/custom.css
 // Autor: Arturo Enriquez Betancourt con Jarvis
-// Fecha: 2026-05-13
-// Versión: 1.21
-// Descripción: CORRECCIÓN DE NAVBAR STICKY. Se reemplazó `position: relative` por `position: sticky !important; top: 0 !important; z-index: 100 !important;` en `.navbar` para restaurar el comportamiento nativo de Docusaurus al hacer scroll, manteniendo el correcto centrado del buscador.
+// Fecha: 2026-05-15
+// Versión: 1.22
+// Descripción: CORRECCIÓN DE NAVBAR STICKY. Se añadió el estilo del Descargo de Responsabilidad (disclaimer) en el footer para controlar su color gris, tamaño de letra pequeño y márgenes antes del texto de Copyright.
 */
 
 /* ==============================================================================
@@ -117,9 +117,28 @@
 
 .footer__copyright {
   margin: 0 !important;
+}
+
+/* --- ESTILOS DEL DISCLAIMER Y COPYRIGHT --- */
+.footer__disclaimer {
+  font-size: 0.72rem; /* Un poco más pequeño para que fluya mejor en bloque */
+  font-weight: 400;
+  color: #8b8b8b; 
+  width: 100% !important; /* Fuerza el ancho total */
+  max-width: 100% !important; /* Elimina el límite de 950px */
+  padding: 0 4% !important; /* Margen elegante a los lados para que no toque el borde físico */
+  margin: 0 auto 1.2rem auto;
+  line-height: 1.4;
+  text-align: justify; /* Justificado para que se vea como un bloque legal profesional */
+}
+
+.footer__rights {
   font-size: 0.9rem;
   font-weight: 500;
   color: #ffffff;
+  text-align: center;
+  width: 100%;
+  display: block;
 }
 
 .footer.footer--dark {

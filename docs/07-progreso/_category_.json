@@ -1,0 +1,15 @@
+{
+  "customProps": {
+    "archivo": "docs/07-progreso/_category_.json",
+    "autor": "Arturo Enriquez Betancourt con Jarvis",
+    "fecha": "2026-05-15",
+    "version": "1.0",
+    "descripcion": "Configuración de la nueva categoría Comunidad y Progreso. Define la jerarquía en el sidebar (posición 7) y activa la página de índice generado para agrupar la documentación sobre gamificación, heatmaps de hábitos y círculos de apoyo."
+  },
+  "label": "Comunidad y Progreso",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Tu constancia recompensada. Descubre cómo interpretar tus heatmaps de disciplina, los requisitos para desbloquear insignias (badges) y cómo conectar con otros usuarios a través de nuestros Círculos de Apoyo."
+  }
+}
