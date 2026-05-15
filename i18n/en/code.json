@@ -1,6 +1,6 @@
 {
   "__comentario_cabecera__": {
-    "message": "Nombre del archivo: code.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-12 | Versión: 1.3 | Descripción: Diccionario maestro de traducciones al inglés. Combina los textos automáticos del tema clásico de Docusaurus con las traducciones personalizadas de la página de inicio (index.js).",
+    "message": "Nombre del archivo: code.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-15 | Versión: 1.4 | Descripción: Diccionario maestro de traducciones al inglés. Combina los textos automáticos del tema clásico de Docusaurus con las traducciones personalizadas de la página de inicio (index.js), incluyendo las 6 tarjetas de navegación.",
     "description": "Control de versión y autoría adaptado a formato JSON"
   },
   "theme.ErrorPageContent.title": {
@@ -400,5 +400,29 @@
   "homepage.card.kai.description": {
     "message": "Discover how to interact with your personal guide based on Stoic wisdom.",
     "description": "Description for the kAI Coach card"
+  },
+  "homepage.card.fasting.title": {
+    "message": "⏳ Intermittent Fasting",
+    "description": "Title for the Fasting card"
+  },
+  "homepage.card.fasting.description": {
+    "message": "Configure your metabolic windows and understand the cellular benefits of autophagy.",
+    "description": "Description for the Fasting card"
+  },
+  "homepage.card.wellness.title": {
+    "message": "🧘‍♀️ Wellness",
+    "description": "Title for the Wellness card"
+  },
+  "homepage.card.wellness.description": {
+    "message": "Restore your mental and emotional balance with sound and breathing therapies.",
+    "description": "Description for the Wellness card"
+  },
+  "homepage.card.progress.title": {
+    "message": "🏆 Community & Progress",
+    "description": "Title for the Community and Progress card"
+  },
+  "homepage.card.progress.description": {
+    "message": "Interpret your discipline heatmaps and discover how to unlock badges.",
+    "description": "Description for the Community and Progress card"
   }
 }

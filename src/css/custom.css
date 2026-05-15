@@ -2,8 +2,8 @@
 // Nombre del archivo: src/css/custom.css
 // Autor: Arturo Enriquez Betancourt con Jarvis
 // Fecha: 2026-05-15
-// Versión: 1.22
-// Descripción: CORRECCIÓN DE NAVBAR STICKY. Se añadió el estilo del Descargo de Responsabilidad (disclaimer) en el footer para controlar su color gris, tamaño de letra pequeño y márgenes antes del texto de Copyright.
+// Versión: 1.25
+// Descripción: Se añadieron estilos para los enlaces de las tarjetas del Home (.homepage-card-link), incluyendo animaciones y elevación al hacer hover para mejorar la affordance visual.
 */
 
 /* ==============================================================================
@@ -104,19 +104,29 @@
 }
 
 .footer__bottom {
-  background-color: #000000 !important;
+  background-color: transparent !important; /* Hereda el color gris elegante superior */
   margin-left: calc(50% - 50vw) !important;
   margin-right: calc(50% - 50vw) !important;
   width: 100vw !important;
   max-width: 100vw !important;
-  padding-top: 1.2rem !important;
-  padding-bottom: 1.2rem !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
   margin-bottom: 0 !important;
   text-align: center;
+  border: none !important;
 }
 
 .footer__copyright {
   margin: 0 !important;
+}
+
+/* --- NUEVO: SEPARADOR MINIMALISTA --- */
+.footer__divider {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto 2rem auto;
 }
 
 /* --- ESTILOS DEL DISCLAIMER Y COPYRIGHT --- */
@@ -125,20 +135,23 @@
   font-weight: 400;
   color: #8b8b8b; 
   width: 100% !important; /* Fuerza el ancho total */
-  max-width: 100% !important; /* Elimina el límite de 950px */
-  padding: 0 4% !important; /* Margen elegante a los lados para que no toque el borde físico */
-  margin: 0 auto 1.2rem auto;
+  max-width: 100% !important; /* Fluye por todo el ancho de la pantalla */
+  padding: 0 4% !important; /* Margen porcentual elegante a los lados para que no toque el borde físico */
+  margin: 0 auto 2rem auto;
   line-height: 1.4;
   text-align: justify; /* Justificado para que se vea como un bloque legal profesional */
 }
 
 .footer__rights {
+  background-color: #000000 !important; /* La pleca negra ahora está exclusivamente aquí */
   font-size: 0.9rem;
   font-weight: 500;
   color: #ffffff;
   text-align: center;
   width: 100%;
   display: block;
+  padding-top: 1.2rem !important;
+  padding-bottom: 1.2rem !important;
 }
 
 .footer.footer--dark {
@@ -211,9 +224,8 @@ a[target="_blank"] svg {
 }
 
 /* ==============================================================================
-   7. MODAL DE CONTACTO & BOTÓN NAVBAR (NUEVO)
+   7. MODAL DE CONTACTO & BOTÓN NAVBAR
    ============================================================================== */
-/* Estilo del botón en el Navbar para que destaque amigablemente */
 .nav-contact-btn {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -231,7 +243,6 @@ a[target="_blank"] svg {
   text-decoration: none;
 }
 
-/* Fondo oscuro borroso (Overlay) */
 .contact-modal-overlay {
   position: fixed;
   top: 0;
@@ -247,7 +258,6 @@ a[target="_blank"] svg {
   animation: fadeIn 0.2s ease-out forwards;
 }
 
-/* Contenedor blanco del Modal */
 .contact-modal-content {
   background-color: #ffffff;
   width: 90%;
@@ -281,7 +291,6 @@ a[target="_blank"] svg {
   font-size: 0.95rem;
 }
 
-/* Botón de la X para cerrar */
 .contact-modal-close {
   position: absolute;
   top: 1.2rem;
@@ -314,4 +323,24 @@ a[target="_blank"] svg {
 @keyframes slideUp {
   from { transform: translateY(20px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
+}
+
+/* ==============================================================================
+   8. ENLACES Y ANIMACIONES DE TARJETAS DEL HOME (NUEVO)
+   ============================================================================== */
+.homepage-card-link {
+  text-decoration: none !important;
+  color: inherit !important;
+  display: block;
+  height: 100%;
+}
+
+.homepage-card-link .card {
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.homepage-card-link:hover .card {
+  border-color: var(--ifm-color-primary) !important;
+  box-shadow: 0 12px 28px -6px rgba(91, 200, 91, 0.2) !important;
+  transform: translateY(-4px);
 }

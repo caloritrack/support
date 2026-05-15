@@ -1,8 +1,8 @@
 // Nombre del archivo: docusaurus.config.js
 // Autor: Arturo Enriquez Betancourt con Jarvis
 // Fecha: 2026-05-15
-// Versión: 1.12
-// Descripción: Ajuste en el texto y orden del menú de navegación superior. Se añadió también un "Descargo de Responsabilidad Médica" dinámico (ES/EN) en el footer justo por encima del Copyright en la sección oscura.
+// Versión: 1.13
+// Descripción: Ajuste en la estructura del footer. Se agregó un separador minimalista y se integró el disclaimer en la sección superior (menos negra) debajo de los enlaces, dejando únicamente los derechos reservados en la pleca negra inferior.
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
@@ -179,6 +179,7 @@ const config = {
         ],
         // Inyectamos el disclaimer y el copyright a través de un template literal con HTML
         copyright: `
+          <div class="footer__divider"></div>
           <div class="footer__disclaimer">
             ${footerDisclaimer}
           </div>
