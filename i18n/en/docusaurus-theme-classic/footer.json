@@ -1,11 +1,7 @@
 {
   "__comentario_cabecera__": {
-    "message": "Nombre del archivo: footer.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-13 | Versión: 1.4 | Descripción: Limpieza de llaves HTML frágiles. La traducción de los enlaces legales ahora es manejada dinámicamente desde docusaurus.config.js mediante variables de entorno de locale.",
+    "message": "Nombre del archivo: i18n/en/docusaurus-theme-classic/footer.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-15 | Versión: 1.5 | Descripción: Se agregó el separador minimalista (footer__divider) en el texto del copyright y se eliminaron llaves duplicadas para mantener la paridad de diseño y estructura con la versión base en español.",
     "description": "Control de versión y autoría adaptado a formato JSON"
-  },
-  "copyright": {
-    "message": "© 2026 CaloriTrack ™, All Rights Reserved",
-    "description": "The footer copyright"
   },
   "link.title.Soporte": {
     "message": "Support",
@@ -24,9 +20,7 @@
     "description": "The label of footer link with label=Novedades y Actualizaciones linking to /blog"
   },
   "copyright": {
-    "message": "<div class=\"footer__disclaimer\"><strong>Medical Disclaimer:</strong> The content, metrics, and tools provided by Caloritrack (operated by KAI STUDIOS, S.A.S.) are strictly for informational, educational, and general wellness purposes. Caloritrack is not a healthcare provider or a clinical medical device. No information, support content, AI Coach suggestion, or displayed data is intended to substitute professional medical advice, diagnosis, treatment, or prevention. Always consult your physician or a qualified healthcare professional before making any changes to your diet, fasting routines, exercise, or lifestyle.</div><div class=\"footer__rights\">© 2026 CaloriTrack ™. All Rights Reserved</div>",
+    "message": "<div class=\"footer__divider\"></div><div class=\"footer__disclaimer\"><strong>Medical Disclaimer:</strong> The content, metrics, and tools provided by Caloritrack (operated by KAI STUDIOS, S.A.S.) are strictly for informational, educational, and general wellness purposes. Caloritrack is not a healthcare provider or a clinical medical device. No information, support content, AI Coach suggestion, or displayed data is intended to substitute professional medical advice, diagnosis, treatment, or prevention. Always consult your physician or a qualified healthcare professional before making any changes to your diet, fasting routines, exercise, or lifestyle.</div><div class=\"footer__rights\">© 2026 CaloriTrack ™. All Rights Reserved</div>",
     "description": "The footer copyright"
   }
-  
-  
 }
