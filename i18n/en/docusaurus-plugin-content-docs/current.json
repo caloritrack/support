@@ -1,6 +1,6 @@
 {
   "__comentario_cabecera__": {
-    "message": "Nombre del archivo: current.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-15 | Versión: 1.5 | Descripción: Se añadieron las traducciones de las categorías 'Cuenta y Configuración' y 'Comunidad y Progreso' para el menú lateral en inglés, manteniendo la estructura exacta de llaves sin emojis para coincidir con la fuente en español.",
+    "message": "Nombre del archivo: current.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-16 | Versión: 1.6 | Descripción: Se añadieron las traducciones de las categorías 'Cuenta y Configuración', 'Comunidad y Progreso' y 'Glosario de Términos' para el menú lateral en inglés, manteniendo la estructura exacta de llaves sin emojis para coincidir con la fuente en español.",
     "description": "Control de versión y autoría adaptado a formato JSON"
   },
   "version.label": {
@@ -62,5 +62,13 @@
   "sidebar.tutorialSidebar.category.Comunidad y Progreso.link.generated-index.description": {
     "message": "Your consistency rewarded. Discover how to interpret your discipline heatmaps, the requirements to unlock badges, and how to connect with other users through our Support Circles.",
     "description": "The generated-index page description for category 'Comunidad y Progreso' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Glosario de Términos": {
+    "message": "Glossary of Terms",
+    "description": "The label for category 'Glosario de Términos' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Glosario de Términos.link.generated-index.description": {
+    "message": "Complete glossary containing technical biohacking terms and specific features of the CaloriTrack app.",
+    "description": "The generated-index page description for category 'Glosario de Términos' in sidebar 'tutorialSidebar'"
   }
 }

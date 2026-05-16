@@ -1,0 +1,9 @@
+{
+
+  "label": "Glosario de Términos",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Glosario completo con los términos técnicos de biohacking y características propias de la aplicación CaloriTrack."
+  }
+}

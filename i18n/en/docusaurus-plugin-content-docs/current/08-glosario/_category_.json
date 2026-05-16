@@ -1,0 +1,9 @@
+{
+
+  "label": "Glossary of Terms",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Complete glossary containing technical biohacking terms and specific features of the CaloriTrack app."
+  }
+}

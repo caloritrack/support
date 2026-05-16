@@ -27,9 +27,14 @@ Estructura de carpetas y archivos:
 | |____06-perfil
 | | |_____category_.json
 | | |____faq-perfil.md
+| | |____guia-perfil.mdx
 | |____07-progreso
 | | |_____category_.json
 | | |____faq-progreso.md
+| | |____guia-mi-camino.mdx
+| |____08-glosario
+| | |_____category_.json
+| | |____glosario.mdx
 |____docusaurus.config.js
 |____i18n
 | |____en
@@ -56,8 +61,13 @@ Estructura de carpetas y archivos:
 | | | | | |____guia-kai.mdx
 | | | | |____06-perfil
 | | | | | |____faq-perfil.md
+| | | | | |____guia-perfil.mdx
 | | | | |____07-progreso
 | | | | | |____faq-progreso.md
+| | | | | |____guia-mi-camino.mdx
+| | | | |____08-glosario
+| | | | | |_____category_.json
+| | | | | |____glosario.mdx
 | | |____docusaurus-theme-classic
 | | | |____footer.json
 | | | |____navbar.json
@@ -183,6 +193,91 @@ Entra al logro que quieres presumir. En la esquina superior derecha verás un ic
 
 ### ¿Tarda mucho en generar la imagen?
 Verás un indicador de carga por un par de segundos. La app está generando una imagen en altísima calidad (resolución cuadrada 1080x1080, ideal para Instagram) con tu logro, sus detalles y un texto inspirador. Al terminar, se abrirá el menú nativo de tu teléfono para que lo envíes a donde quieras.-----
+Archivo: ./docs/07-progreso/guia-mi-camino.mdx
+---
+id: guia-mi-camino
+title: 🗺️ Guía de Mi Camino
+sidebar_label: Mi Camino
+sidebar_position: 1
+---
+
+{/*
+// Nombre del archivo: docs/07-progreso/guia-mi-camino.mdx
+// Autor: Arturo Enriquez Betancourt con Jarvis
+// Fecha: 2026-05-16
+// Versión: 1.1
+// Descripción: Guía definitiva en formato MDX para la sección Mi Camino. Versión validada con ID único para evitar colisiones en Docusaurus.
+*/}
+
+¡Te damos la bienvenida a **Mi Camino**!
+
+Esta sección es el corazón de tu transformación en CaloriTrack. Aquí no contamos calorías ni pesamos gramos; aquí celebramos tu constancia, premiamos tu esfuerzo y construimos un mapa visual de tus nuevos hábitos de vida.
+
+Al entrar a "Mi Camino" (desde el menú inferior de tu app), notarás inmediatamente un selector en la parte superior que divide tu experiencia en dos universos increíbles: **Hábitos** y **Logros**. 
+
+A continuación, te explicamos paso a paso cómo dominar cada rincón de esta pantalla.
+
+---
+
+## 📅 Pestaña 1: Hábitos (Tu Mapa de Constancia)
+
+La pestaña de Hábitos es tu bitácora visual. ¿Alguna vez has sentido que haces mucho esfuerzo pero no ves tu progreso? El **"Heatmap" (Mapa de Calor)** soluciona esto mostrándote hasta **26 semanas** (¡medio año!) de tu historia de un solo vistazo.
+
+En esta pantalla encontrarás una serie de tarjetas, cada una dedicada a un pilar fundamental de tu salud.
+
+### 🔍 ¿Cómo leer los "cuadritos" (Heatmap)?
+Debajo de cada hábito verás un bloque lleno de pequeños cuadrados. Funciona de la siguiente manera:
+
+* **Cada cuadrito es un día.**
+* **De izquierda a derecha:** Avanzan las semanas (columnas).
+* **De arriba a abajo:** Son los días de la semana (lunes a domingo).
+* **Cuadro coloreado:** ¡Día de éxito! Significa que completaste ese hábito en esa fecha. (Cada hábito tiene su propio color distintivo).
+* **Cuadro gris claro:** Día en el que no registraste actividad para ese hábito.
+* **Cuadro gris oscuro/translúcido:** Días futuros que aún no han ocurrido.
+* **Cuadro con borde especial:** Representa el **día de hoy**. ¡Tu oportunidad diaria para llenarlo de color!
+
+### 📊 Los 6 Hábitos que monitoreamos por ti
+No tienes que llenar esta cuadrícula a mano, ¡CaloriTrack lo hace en automático mientras usas la app!
+
+* 🟢 **Ayuno Completado (Color Verde Menta):** Se enciende cada vez que terminas exitosamente tu ciclo de ayuno programado.
+* 🔵 **Registro de Alimentos (Color Azul Cielo):** Se ilumina los días que registras tus comidas (desayuno, comida, cena o snacks).
+* 🟠 **Días en Cetosis (Color Naranja Fuego):** Refleja los días consecutivos manteniendo tu estado de *KetoFlame*. ¡Ideal para ver tu racha en llamas!
+* 🟣 **Sesiones Wellness (Color Morado):** Premia tu bienestar mental. Se marca cuando escuchas frecuencias de *Soundhealing* o completas ejercicios de *Breathwork* (respiración).
+* 🩵 **Conexión con Kai (Color Turquesa):** Se pinta los días que interactúas, haces preguntas o pides consejos a **Kai**, tu Coach de Inteligencia Artificial.
+* 🔴 **Historial de Salud (Color Rojo):** Un rastreador clínico compasivo. Marca los días en los que has reportado estar enfermo o en recuperación, ayudándote a entender cómo se relacionan tus bajones de salud con el resto de tus hábitos.
+
+---
+
+## 🏆 Pestaña 2: Logros (Tu Vitrina de Trofeos)
+
+Si tocas el botón de **"Logros"** en la parte superior, entrarás a tu vitrina personal. Diseñada con un fondo negro puro y elegante, esta zona hace resaltar tus medallas como si fueran luces de neón.
+
+### 🎖️ ¿Cómo funciona la Vitrina?
+* **Insignias Brillantes (A color):** Son los trofeos que ya has desbloqueado gracias a tu esfuerzo.
+* **Insignias Apagadas (En blanco y negro):** Son tus próximas metas. Están esperando a que cumplas los requisitos para encenderse.
+
+Tenemos logros para todo tipo de esfuerzo: desde alcanzar tu primera racha de 7 días de ayuno, hasta explorar 100 alimentos diferentes o acumular decenas de horas de bienestar mental (*Wellness*).
+
+### 🔎 Descubre el Detalle de cada Logro
+¡Las insignias no son solo un dibujo! Toca cualquier insignia (brillante o apagada) y se abrirá una tarjeta detallada a pantalla completa:
+* **Si está apagada:** Te revelará el nombre del logro, una descripción inspiradora y las instrucciones exactas de lo que debes hacer para desbloquearlo.
+* **Si ya está encendida:** Te mostrará la fecha exacta en la que lo conseguiste. ¡Un recordatorio permanente de tu victoria!
+
+---
+
+## 📲 ¡Presume tus Victorias al Mundo!
+
+La salud se contagia, y tus logros pueden inspirar a otros. Si abres un logro que ya desbloqueaste, notarás un icono de **Compartir** (un cuadrado con una flecha hacia arriba) en la esquina superior derecha.
+
+Al tocarlo, entrarás al **Estudio de Compartir**:
+
+1. **Vista Previa:** Verás tu logro en un formato cuadrado, hermoso y diseñado profesionalmente (perfecto para Instagram, WhatsApp o Threads).
+2. **Personalización:** En la parte inferior, verás círculos de colores. ¡Tócalos para cambiar el fondo de tu insignia! Puedes elegir desde gradientes modernos hasta colores sólidos y elegantes (Pizarra, Negro, Menta, etc.). La tarjeta ajusta los colores de las letras automáticamente para que luzca perfecta.
+3. **Botón "Compartir":** Al presionarlo, CaloriTrack generará una imagen de alta resolución y abrirá las opciones de tu teléfono para que la envíes a tus amigos o la subas a tus redes, acompañada de un texto de felicitación y un enlace para que más personas se unan a ti.
+
+:::tip[El Consejo de Jarvis 💡]
+Visita esta sección cuando sientas que te falta motivación. Ver cómo los pequeños cuadrados de tus Hábitos se van llenando de color semana tras semana es la prueba irrefutable de que estás construyendo una mejor versión de ti. **¡Cada cuadrito de color es una promesa cumplida a ti mismo!**
+:::-----
 Archivo: ./docs/07-progreso/_category_.json
 {
   "customProps": {
@@ -830,6 +925,88 @@ Es un resumen global que te muestra cuántos usuarios de la comunidad CaloriTrac
 ### ¡Completé mi ayuno de 24 horas! ¿Cómo lo presumo?
 
 Cuando presiones *"Terminar Ayuno"*, aparecerá una pantalla de felicitación con un resumen de tu racha y tiempo logrado. En esa misma pantalla verás el botón **"Compartir tu logro"**. Podrás personalizar la imagen conmemorativa de *"Ayuno Completado"* y enviarla a tus amigos para inspirarlos a unirse a ti.-----
+Archivo: ./docs/08-glosario/_category_.json
+{
+
+  "label": "Glosario de Términos",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Glosario completo con los términos técnicos de biohacking y características propias de la aplicación CaloriTrack."
+  }
+}-----
+Archivo: ./docs/08-glosario/glosario.mdx
+---
+id: glosario
+title: 📖 Glosario de Términos
+sidebar_label: Glosario
+sidebar_position: 1
+---
+
+
+
+¡Hola! Bienvido a nuestro **Glosario de Bienestar**. En CaloriTrack sabemos que el verdadero cambio ocurre cuando entiendes el *"porqué"* de tus hábitos. 
+
+La ciencia de la salud y el biohacking pueden incluir palabras un poco extrañas a primera vista. Por eso, hemos preparado esta guía amigable para explicarte de forma muy sencilla esos términos que encontrarás a lo largo de tu aplicación. ¡Conviértete en un experto de tu propio cuerpo!
+
+---
+
+## 🥑 Conceptos de Nutrición y Metabolismo
+
+### Cetosis
+Es un estado metabólico completamente natural en el que tu cuerpo, al no tener suficientes carbohidratos disponibles para usar como energía, comienza a quemar **grasas** (tanto las que comes como las que tienes almacenadas) para convertirlas en combustible de alta eficiencia. 
+
+### KetoFlame
+:::tip[Concepto exclusivo de CaloriTrack]
+Es el nombre que le damos en la aplicación a tu racha activa en estado de cetosis. Cuando mantienes tus hábitos alineados para que tu cuerpo use grasa como energía de forma consecutiva, verás cómo tu *KetoFlame* se enciende en la app. ¡Es el indicador visual de que tu metabolismo está en llamas burning fat!
+:::
+
+### Macronutrientes (o "Macros")
+Son los nutrientes que tu cuerpo necesita en grandes cantidades diariamente para funcionar correctamente, tener energía y reparar sus tejidos. Se dividen en tres grandes grupos:
+* **Proteínas:** Los bloques de construcción para tus músculos y órganos (carne, pescado, huevo, legumbres).
+* **Grasas Saludables:** Combustible limpio y protector hormonal (aguacate, aceite de oliva, frutos secos).
+* **Carbohidratos:** Fuentes de energía de rápida absorción (vegetales, frutas, tubérculos, cereales).
+
+### Antinutrientes
+Son compuestos naturales que se encuentran principalmente en las capas externas de plantas, semillas, granos y legumbres (como los fitatos o las lectinas). Se llaman así porque pueden unirse a los minerales en tu sistema digestivo e interferir temporalmente con la absorción correcta de nutrientes. En CaloriTrack te enseñamos técnicas sencillas (como el remojo o la cocción adecuada) para neutralizarlos.
+
+---
+
+## 🕒 Ciencia del Estilo de Vida y Biohacking
+
+### Ritmos Circadianos
+Es el reloj biológico interno de 24 horas que se ejecuta en el fondo de tu cerebro. Regula de forma automática tus ciclos de sueño y vigilia, la producción de hormonas, la digestión y la temperatura corporal. Está fuertemente influenciado por la luz solar, por lo que CaloriTrack te ayuda a sincronizar tus comidas y descansos con la luz del día para mejorar tu energía.
+
+### Ayuno Intermitente
+No es una dieta, sino un modelo de alimentación que divide tu día en dos períodos claros: uno de **ayuno** (donde no consumes calorías y permites que tus células se limpien y reparen) y uno de **ingesta** (la ventana de tiempo donde consumes tus comidas del día). Es una herramienta poderosa para mejorar la flexibilidad de tu metabolismo.
+
+---
+
+## 🧘 Wellness y Bienestar Mental
+
+### Soundhealing (Terapia de Sonido)
+Es una práctica de relajación que utiliza frecuencias de sonido específicas y vibraciones acústicas (como cuencos tibetanos o frecuencias binaurales) para guiar a tu cerebro hacia estados de meditación profunda, reduciendo los niveles de cortisol (la hormona del estrés) y mejorando la calidad de tu sueño. Puedes escuchar estas sesiones directamente en la pestaña de Wellness.
+
+### Breathwork (Trabajo de Respiración)
+Se refiere a cualquier tipo de ejercicio de respiración consciente y controlada. Al cambiar deliberadamente el ritmo, la profundidad o la velocidad de tus inhalaciones y exhalaciones, puedes enviar señales directas a tu sistema nervioso para relajarte instantáneamente, bajar el ritmo cardíaco o aumentar tu concentración mental.
+
+---
+
+## 📱 Interfaz y Funciones de CaloriTrack
+
+### Heatmap (Mapa de Calor)
+:::info[¿Cómo se ve en la app?]
+Es la cuadrícula de pequeños cuadros que encontrarás en la sección de "Mi Camino". Cada cuadrito representa un día de tu año. A medida que completas tus hábitos diarios (ayunar, registrar alimentos, meditar), los cuadros se pintan de un color brillante. Es una bitácora visual diseñada para que veas tu disciplina acumulada de hasta medio año de un solo vistazo.
+:::
+
+### Kai
+Es tu **Coach de Salud con Inteligencia Artificial** integrado en CaloriTrack. Kai está entrenado con bases científicas profundas para responder tus dudas sobre nutrición, analizar tus combinaciones de alimentos, sugerirte ajustes en tus ayunos y darte consejos personalizados basados en los datos de salud que registras día con día.
+
+---
+
+:::tip[¿Tienes más dudas?]
+Si encuentras alguna otra palabra en la aplicación de la cual te gustaría conocer su significado científico o práctico, escríbenos a nuestro equipo y Kai se encargará de actualizar este glosario para ti.
+:::-----
 Archivo: ./docs/05-kai/faq-kai-coach.md
 ---
 id: faq-kai-coach
@@ -1270,6 +1447,118 @@ Tu bienestar mental es vital. Si tu registro indica un estado de ánimo por deba
 
 ## Veo un botón con un ícono de información ( i ) junto al título Log de Hoy, ¿para qué sirve?
 Ese botón abre una tarjeta informativa detallando la ciencia y los beneficios detrás del registro constante del estado de ánimo. Te explicará cómo esta práctica mejora tu autoconocimiento y te dará un botón de acceso directo a nuestro Blog oficial, donde podrás leer artículos completos sobre atención plena y salud mental.-----
+Archivo: ./docs/06-perfil/guia-perfil.mdx
+---
+id: guia-perfil
+title: 👤 Guía de Perfil
+sidebar_label: Guía de Perfil
+sidebar_position: 1
+slug: guia-perfil
+---
+
+
+¡Hola! Bienvenido a tu sección de **Perfil** en CaloriTrack. Este espacio es tu centro de control personal, diseñado específicamente para que puedas configurar la aplicación a tu medida, mantener al día tus datos de salud, gestionar tu suscripción y explorar todos los recursos educativos que hemos preparado para acompañarte en tu viaje hacia una vida más saludable. 
+
+A continuación, te presentamos una guía paso a paso para que descubras y le saques el máximo provecho a cada rincón de esta vista.
+
+---
+
+## 📸 1. Tu Tarjeta de Presentación (Foto y Nombre)
+
+En la parte superior de la pantalla encontrarás tu nombre completo y tu foto de perfil actual.
+
+* **Cambiar tu foto de perfil:** ¿Quieres darle un toque más personal? Simplemente toca el **ícono de la cámara** (ubicado directamente sobre el círculo de tu foto). Esto abrirá la galería de tu dispositivo móvil. Al seleccionar una imagen, accederás a un editor integrado donde podrás recortarla en un cuadrado perfecto para que luzca increíble. Una vez guardada, tu foto se sincronizará automáticamente en todo el ecosistema.
+
+---
+
+## ⚙️ 2. Sección: Tu Cuenta
+
+Aquí encontrarás todas las herramientas para personalizar la experiencia técnica de tu aplicación y salvaguardar la seguridad de tus datos.
+
+### 🎨 Ajustes (Apariencia e Idioma)
+* **Tema:** Toca esta opción para elegir si prefieres que la aplicación luzca en **Modo Claro** ☀️, **Modo Oscuro** 🌙 o que se adapte automáticamente a la configuración global del sistema de tu teléfono.
+* **Idioma:** Cambia el idioma de la aplicación en cualquier momento entre **Español**, **Inglés** o el idioma predeterminado de tu dispositivo.
+
+### 👤 Datos Personales
+Aquí puedes actualizar la información base que nuestro algoritmo utiliza para calcular tus requerimientos calóricos y de macronutrientes personalizados. Puedes modificar:
+* Nombre completo.
+* Fecha de nacimiento.
+* Género.
+* Medidas corporales principales: **Altura (cm)** y **Peso (kg)**.
+
+:::tip[¡Nota importante de guardado!]
+No olvides presionar el botón **"Guardar"** en la esquina superior derecha después de realizar cualquier cambio en tus datos para asegurar que los nuevos cálculos metabólicos se apliquen inmediatamente.
+:::
+
+### 🔑 Cambiar Contraseña
+Si creaste tu cuenta usando un correo electrónico y una contraseña tradicional, aquí podrás actualizarla por motivos de seguridad. 
+* El sistema te pedirá tu contraseña actual y te guiará para crear una nueva.
+* Para ser válida, debe ser segura: mínimo **8 caracteres**, al menos **una letra mayúscula** y **un carácter especial**.
+* Te mostraremos una lista de verificación dinámica (**✅**) en tiempo real para asegurarnos de que tu nueva contraseña cumpla con todas las directrices de seguridad.
+
+### 🔔 Configuración de Notificaciones
+Mantén el control absoluto de los recordatorios que deseas recibir. En esta sección puedes encender o apagar las alertas y notificaciones push de CaloriTrack en tu dispositivo, garantizando que nunca te pierdas los avisos importantes sobre tus hábitos de hidratación, ayuno o comidas.
+
+### 🔗 Sincronización de Salud (Apple Health)
+¡Sácale el máximo provecho a tus dispositivos inteligentes! Aquí puedes conectar CaloriTrack de forma nativa con la aplicación **Salud** de tu iPhone. 
+* Te informaremos de manera totalmente transparente qué datos leemos (actividad física, análisis de sueño, frecuencia cardíaca) y cuáles escribimos (registro de nutrición, medidas corporales, estados de ánimo).
+
+:::info[Solución de Problemas de Sincronización]
+Si notas que un entrenamiento realizado o un registro de salud no aparece reflejado en el dashboard central, dispones de un botón de **"Forzar Resincronización"**. Este comando se encargará de escanear, buscar y recuperar de forma retroactiva todos tus datos de los últimos **35 días**.
+*(Nota: La integración directa con relojes Garmin está marcada actualmente como "próximamente").*
+:::
+
+### 💳 Membresía
+Tu pase directo al nivel Premium. Aquí puedes consultar el estado en tiempo real de tu suscripción: **Activa**, **Prueba Gratuita**, **Expirada**, o **Plan Gratuito**.
+* Podrás visualizar con precisión qué plan tienes contratado y tu fecha exacta de expiración o renovación automática.
+* Si tu cuenta se encuentra en el nivel básico, aquí verás los accesos directos para **Obtener Premium** y el botón de **Restaurar Compras** en caso de que hayas cambiado de dispositivo móvil.
+
+### 🚪 Cerrar Sesión
+Te permite salir de tu cuenta de forma completamente segura en el dispositivo actual. Te mostraremos una pequeña ventana de confirmación antes de proceder para evitar cierres accidentales.
+
+### 🗑️ Eliminar Cuenta
+:::danger[Zona de Peligro: Eliminación de Información]
+Si decides que quieres borrar de forma permanente todo tu rastro y datos de nuestros servidores, puedes usar este botón rojo. Por motivos de **seguridad extrema**, el sistema te solicitará una doble confirmación de identidad y requerirá que ingreses tu contraseña actual antes de procesar el borrado total e irreversible de tu información.
+:::
+
+---
+
+## 🧠 3. Sección: Aprende con Nosotros
+
+En CaloriTrack creemos firmemente que la educación y el entendimiento científico son las verdaderas bases del éxito a largo plazo. Hemos integrado enlaces directos a nuestras plataformas oficiales de aprendizaje:
+
+* **🎙️ Apple Podcasts y Spotify:** Toca estos botones para ser dirigido automáticamente a nuestro podcast oficial *"Potencia tu vida, cuerpo sano, mente indestructible"*, donde desglosamos a fondo temas de metabolismo, nutrición consciente y hábitos biohackers.
+* **▶️ Canal de YouTube:** Un acceso directo a nuestros videos explicativos, guías visuales y tutoriales prácticos de la aplicación.
+* **🧬 Artículos de Ciencia:** ¿Te apasiona profundizar en el "porqué" de las cosas? Este botón te llevará directamente a nuestro blog científico de cabecera, donde desglosamos con rigor cómo funcionan realmente tu cuerpo, la cetosis, los antinutrientes, los ritmos circadianos y más.
+
+---
+
+## ℹ️ 4. Sección: Acerca de
+
+Espacio dedicado a la conexión comunitaria, navegación inicial y los aspectos legales de CaloriTrack.
+
+* **🚀 Ver el recorrido inicial:** Si pasaste muy rápido las pantallas de bienvenida cuando descargaste la app por primera vez (el proceso de *Onboarding*) y deseas volver a leer la filosofía base de CaloriTrack sobre la nutrición real, los ritmos circadianos y **Kai** (nuestro coach de IA), este botón desplegará esas láminas interactivas nuevamente de forma temporal.
+* **🌐 Redes Sociales y Comunidad:** Conéctate con nuestro movimiento en Instagram, Facebook, Threads y X (Twitter). También encontrarás la función **"Compartir App"**, que te permite enviar un enlace de descarga optimizado de forma rápida a un amigo o familiar a través de WhatsApp, Mensajería o tus redes preferidas.
+* **📚 Acerca de CaloriTrack y Rutas:** Enlaces exclusivos para que conozcas más sobre la historia de nuestra fundación y accedas a nuestros foros oficiales de debate sobre nutrición integral.
+* **⚖️ Términos de Uso y Política de Privacidad:** Toda la documentación legal obligatoria detallando con total transparencia cómo protegemos tu información privada y las reglas comunitarias de uso de la plataforma.
+
+---
+
+## 🛡️ 5. Avisos Legales y Versión de la App (Pie de Página)
+
+Al final de la pantalla de perfil, encontrarás dos elementos técnicos y éticos sumamente vitales:
+
+:::warning[Aviso Médico Obligatorio]
+CaloriTrack es una herramienta tecnológica orientada al bienestar integral y al autoconocimiento, por lo que **no constituye ni sustituye de ninguna manera el consejo, diagnóstico o tratamiento de un profesional médico**. Es indispensable que consultes con un médico o nutricionista certificado antes de realizar cambios drásticos en tu plan alimenticio o estilo de vida.
+:::
+
+* **Versión de la App y Actualizaciones:** Te mostraremos de forma explícita qué versión técnica e interno de compilación tienes instalada actualmente (por ejemplo, `Versión 1.0 (123)`). Además, nuestro sistema inteligente comprobará de fondo y en tiempo real el estado de la App Store. Si estás al día, verás un texto verde indicando **"Actualizado"**. En caso de que hayamos liberado una mejora, verás un botón azul de **"Actualización disponible"** que te redirigirá directamente a la tienda de Apple para descargarla.
+
+---
+
+:::tip[¡Hazla tuya!]
+¡Explora, configura minuciosamente cada sección y haz que CaloriTrack funcione exactamente con el ritmo y las necesidades de tu vida!
+:::-----
 Archivo: ./docs/06-perfil/_category_.json
 {
   "customProps": {
@@ -21820,6 +22109,91 @@ That's our customization studio! Before sending your image, CaloriTrack allows y
 
 ### Does it take a long time to generate the image?
 You will see a loading indicator for a couple of seconds. The app is generating a very high-quality image (1080x1080 square resolution, ideal for Instagram) with your achievement, its details, and an inspiring text. When finished, your phone's native menu will open so you can send it wherever you want.-----
+Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/07-progreso/guia-mi-camino.mdx
+---
+id: guia-mi-camino
+title: 🗺️ My Path Guide
+sidebar_label: My Path
+sidebar_position: 1
+---
+
+{/*
+// Nombre del archivo: i18n/en/docusaurus-plugin-content-docs/current/07-progreso/guia-mi-camino.mdx
+// Autor: Arturo Enriquez Betancourt con Jarvis
+// Fecha: 2026-05-16
+// Versión: 1.0
+// Descripción: Localized English version of the "Mi Camino" (My Path - Habits and Achievements) guide in MDX format, maintaining Docusaurus components and UX layout.
+*/}
+
+Welcome to **My Path**!
+
+This section is the heart of your transformation in CaloriTrack. Here, we don't count calories or weigh grams; here, we celebrate your consistency, reward your effort, and build a visual map of your new lifestyle habits.
+
+Upon entering "My Path" (from the bottom menu of your app), you will immediately notice a toggle at the top that divides your experience into two incredible universes: **Habits** and **Achievements**.
+
+Below, we explain step-by-step how to master every corner of this screen.
+
+---
+
+## 📅 Tab 1: Habits (Your Consistency Map)
+
+The Habits tab is your visual logbook. Have you ever felt like you're putting in a lot of effort but not seeing your progress? The **Heatmap** solves this by showing you up to **26 weeks** (half a year!) of your history at a single glance.
+
+On this screen, you will find a series of cards, each dedicated to a fundamental pillar of your health.
+
+### 🔍 How to read the squares (Heatmap)?
+Below each habit, you will see a block full of small squares. It works like this:
+
+* **Each square is a day.**
+* **From left to right:** Weeks advance (columns).
+* **From top to bottom:** Days of the week (Monday to Sunday).
+* **Colored square:** A day of success! It means you completed that habit on that date. (Each habit has its own distinctive color).
+* **Light gray square:** A day where no activity was recorded for that habit.
+* **Dark/translucent gray square:** Future days that have not yet occurred.
+* **Special bordered square:** Represents **today**. Your daily opportunity to fill it with color!
+
+### 📊 The 6 Habits we monitor for you
+You don't have to fill out this grid by hand—CaloriTrack does it automatically as you use the app!
+
+* 🟢 **Fasting Completed (Mint Green):** Lights up every time you successfully finish your scheduled fasting cycle.
+* 🔵 **Food Logging (Sky Blue):** Illuminates on days you log your meals (breakfast, lunch, dinner, or snacks).
+* 🟠 **Days in Ketosis (Fire Orange):** Reflects consecutive days maintaining your *KetoFlame* state. Ideal for tracking your blazing streak!
+* 🟣 **Wellness Sessions (Purple):** Rewards your mental well-being. It lights up when you listen to *Soundhealing* frequencies or complete *Breathwork* exercises.
+* 🩵 **Connection with Kai (Turquoise):** Colors in on days you interact, ask questions, or seek advice from **Kai**, your AI Coach.
+* 🔴 **Health History (Red):** A compassionate clinical tracker. Marks days you've reported being sick or in recovery, helping you understand how health dips relate to your other habits.
+
+---
+
+## 🏆 Tab 2: Achievements (Your Trophy Showcase)
+
+If you tap the **"Achievements"** button at the top, you will enter your personal showcase. Designed with a pure, elegant black background, this area makes your medals pop as if they were neon lights.
+
+### 🎖️ How does the Showcase work?
+* **Bright Badges (In color):** These are the trophies you have already unlocked through your hard work.
+* **Dimmed Badges (Black & White):** These are your upcoming goals. They are waiting for you to meet the requirements to light up.
+
+We have achievements for all kinds of milestones: from hitting your first 7-day fasting streak, to exploring 100 different foods, to accumulating dozens of hours of mental well-being (*Wellness*).
+
+### 🔎 Discover the Details of Each Achievement
+Badges aren't just pictures! Tap any badge (bright or dimmed), and a full-screen detailed card will open:
+* **If it's dimmed:** It will reveal the achievement's name, an inspiring description, and the exact instructions on what you need to do to unlock it.
+* **If it's already lit up:** It will show you the exact date you achieved it. A permanent reminder of your victory!
+
+---
+
+## 📲 Show Off Your Victories to the World!
+
+Health is contagious, and your achievements can inspire others. If you open an achievement you've already unlocked, you'll notice a **Share** icon (a square with an upward arrow) in the top right corner.
+
+Tapping it will take you into the **Share Studio**:
+
+1. **Preview:** You'll see your achievement in a beautifully and professionally designed square format (perfect for Instagram, WhatsApp, or Threads).
+2. **Customization:** At the bottom, you'll see colored circles. Tap them to change your badge's background! You can choose from modern gradients to elegant solid colors (Slate, Black, Mint, etc.). The card automatically adjusts font colors so it always looks perfect.
+3. **"Share" Button:** When pressed, CaloriTrack will generate a high-resolution image and open your phone's native sharing options so you can send it to friends or upload it to your social networks, accompanied by a congratulatory text and a link for others to join you.
+
+:::tip[Jarvis's Tip 💡]
+Visit this section whenever you feel you're lacking motivation. Seeing how the small squares of your Habits fill with color week after week is irrefutable proof that you are building a better version of yourself. **Every colored square is a promise kept to yourself!**
+:::-----
 Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/01-salud/guia-salud.mdx
 ---
 # Nombre del archivo: guia-salud.mdx
@@ -22404,6 +22778,87 @@ Yes! While your fast is in progress, you will see a button with a **share icon**
 ### I completed my 24-hour fast! How do I show it off?
 
 When you press *"End Fasting"*, a congratulatory screen will appear with a summary of your streak and time achieved. On that same screen, you will see the **"Share your achievement"** button. You can customize the *"Fast Completed"* commemorative image and send it to your friends to inspire them to join you.-----
+Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/08-glosario/_category_.json
+{
+
+  "label": "Glossary of Terms",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Complete glossary containing technical biohacking terms and specific features of the CaloriTrack app."
+  }
+}-----
+Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/08-glosario/glosario.mdx
+---
+id: glosario
+title: 📖 Glossary of Terms
+sidebar_label: Glossary
+sidebar_position: 1
+---
+
+
+
+Hello! Welcome to our **Well-being Glossary**. At CaloriTrack, we firmly believe that real change happens when you understand the *"why"* behind your habits. 
+
+Health science and biohacking can sometimes include words that look a bit strange at first glance. That is why we have prepared this friendly guide to easily break down those terms you will encounter throughout your application. Become an expert on your own body!
+
+---
+
+## 🥑 Nutrition and Metabolism Concepts
+
+### Ketosis
+A completely natural metabolic state where your body, lacking enough available carbohydrates to use for energy, begins to burn **fats** (both dietary fats and stored body fat) to convert them into highly efficient fuel called ketones.
+
+### KetoFlame
+:::tip[Exclusive CaloriTrack Concept]
+This is the specific name we use in the application to track your active streak in a state of ketosis. When you maintain consecutive lifestyle habits that keep your body burning fat as energy, you will see your *KetoFlame* light up in the app. It is the visual indicator that your metabolism is firing on all cylinders!
+:::
+
+### Macronutrients (or "Macros")
+These are the nutrients your body requires in large daily quantities to function properly, sustain energy, and repair tissues. They are divided into three primary groups:
+* **Proteins:** The building blocks for muscles and organs (meat, fish, eggs, legumes).
+* **Healthy Fats:** Clean metabolic fuel and hormone regulators (avocado, olive oil, nuts).
+* **Carbohydrates:** Fast-absorbing or complex energy sources (vegetables, fruits, tubers, grains).
+
+### Antinutrients
+Natural compounds found primarily in the outer layers of plants, seeds, grains, and legumes (such as phytates or lectinas). They are named so because they can bind to minerals in your digestive tract, temporarily interfering with the proper absorption of nutrients. At CaloriTrack, we teach you simple techniques (like soaking or correct cooking) to neutralize them.
+
+---
+
+## 🕒 Lifestyle Science & Biohacking
+
+### Circadian Rhythms
+The internal 24-hour biological clock running in the background of your brain. It automatically regulates your sleep-wake cycles, hormone production, digestion, and body temperature. It is heavily influenced by sunlight, which is why CaloriTrack helps you synchronize your meals and rest periods with daylight to optimize energy.
+
+### Intermittent Fasting
+Not a diet, but an eating pattern that splits your day into two clear blocks: a **fasting window** (where you consume no calories, allowing your cells to clean and repair themselves) and an **eating window** (the timeframe where you consume your daily meals). It is a powerful tool to enhance your metabolic flexibility.
+
+---
+
+## 🧘 Wellness and Mental Well-being
+
+### Soundhealing
+A relaxation practice that utilizes specific sound frequencies and acoustic vibrations (such as Tibetan singing bowls or binaural beats) to guide your brainwaves into deep meditative states, effectively lowering cortisol levels (the stress hormone) and improving sleep quality. You can listen to these sessions directly in the Wellness tab.
+
+### Breathwork
+Refers to any type of conscious, controlled breathing exercise. By deliberately changing the rhythm, depth, or speed of your inhalations and exhalaciones, you send direct signals to your nervous system to instantly relax, lower your heart rate, or boost mental focus.
+
+---
+
+## 📱 CaloriTrack Interface and Features
+
+### Heatmap
+:::info[How does it look in the app?]
+This is the grid of small squares located in the "My Path" section. Each square represents a single day of your year. As you complete your daily habits (fasting, logging food, meditating), the squares fill with a bright color. It is a visual logbook designed to let you evaluate up to half a year of discipline at a single glance.
+:::
+
+### Kai
+Your integrated **AI Health Coach** within CaloriTrack. Kai is trained with deep scientific backing to answer your nutrition questions, analyze your food combinations, suggest adjustments to your fasts, and provide personalized advice based on the health metrics you track day by day.
+
+---
+
+:::tip[Have more questions?]
+If you find any other word in the app whose scientific or practical meaning you would like to know, reach out to our team, and Kai will make sure to update this glossary for you!-----
 Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/05-kai/faq-kai-coach.md
 ---
 id: faq-kai-coach
@@ -22813,6 +23268,119 @@ Your mental well-being is vital. If your log indicates a mood below neutral, the
 
 ## I see a button with an information icon ( i ) next to the Today's Log title, what is it for?
 That button opens an informative card detailing the science and benefits behind consistent mood tracking. It will explain how this practice improves your self-knowledge and will give you a direct access button to our official Blog, where you can read full articles about mindfulness and mental health.-----
+Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/06-perfil/guia-perfil.mdx
+---
+id: guia-perfil
+title: 👤 Profile Guide
+sidebar_label: Profile Guide
+sidebar_position: 1
+slug: guia-perfil
+---
+
+
+
+Hello! Welcome to your **Profile** section in CaloriTrack. This space is your personal control center, specifically designed for you to customize the application to your needs, keep your health data up to date, manage your subscription, and explore all the educational resources we have prepared to accompany you on your journey toward a healthier life.
+
+Below, we present a step-by-step guide so you can discover and make the most out of every corner of this view.
+
+---
+
+## 📸 1. Your Profile Card (Photo and Name)
+
+At the top of the screen, you will find your full name and your current profile picture.
+
+* **Changing your profile picture:** Want to give it a more personal touch? Simply tap the **camera icon** (located directly over your profile picture circle). This will open your mobile device's media gallery. Upon selecting an image, you will access an integrated editor where you can crop it into a perfect square so it looks amazing. Once saved, your photo will synchronize automatically across the entire ecosystem.
+
+---
+
+## ⚙️ 2. Section: Your Account
+
+Here you will find all the tools to customize the technical experience of your application and safeguard your data security.
+
+### 🎨 Settings (Appearance & Language)
+* **Theme:** Tap this option to choose whether you prefer the app to display in **Light Mode** ☀️, **Dark Mode** 🌙, or automatically adapt to your phone's global system settings.
+* **Language:** Change the application's language at any time between **Spanish**, **English**, or your device's default language.
+
+### 👤 Personal Data
+Here you can update the baseline information that our algorithm uses to calculate your personalized caloric and macronutrient requirements. You can modify:
+* Full name.
+* Date of birth.
+* Gender.
+* Main body metrics: **Height (cm)** and **Weight (kg)**.
+
+:::tip[Important Saving Note!]
+Do not forget to press the **"Save"** button in the upper right corner after making any changes to your data to ensure that new metabolic calculations are applied immediately.
+:::
+
+### 🔑 Change Password
+If you created your account using a traditional email and password, you can update it here for security purposes.
+* The system will prompt you for your current password and guide you to create a new one.
+* To be valid, it must be secure: minimum of **8 characters**, at least **one uppercase letter**, and **one special character**.
+* We will show you a real-time dynamic checklist (**✅**) to ensure your new password complies with all safety guidelines.
+
+### 🔔 Notification Settings
+Stay in absolute control of the reminders you wish to receive. In this section, you can turn on or off CaloriTrack's alerts and push notifications on your device, ensuring you never miss important notices regarding your hydration, fasting, or meal habits.
+
+### 🔗 Health Synchronization (Apple Health)
+Get the most out of your smart devices! Here you can connect CaloriTrack natively with your iPhone's **Health** app.
+* We will transparently inform you which data we read (physical activity, sleep analysis, heart rate) and which data we write (nutrition logs, body measurements, moods).
+
+:::info[Synchronization Troubleshooting]
+If you notice that a completed workout or a health log is not showing up on your central dashboard, a **"Force Resync"** button is available. This command will scan, search, and retroactively recover all your data from the last **35 days**.
+*(Note: Direct integration with Garmin watches is currently marked as "coming soon").*
+:::
+
+### 💳 Membership
+Your direct pass to the Premium level. Here you can check the real-time status of your subscription: **Active**, **Free Trial**, **Expired**, or **Free Plan**.
+* You will be able to see exactly which plan you have contracted and the precise expiration or auto-renewal date.
+* If your account is on the basic tier, you will see shortcuts to **Get Premium** and the **Restore Purchases** button in case you have changed your mobile device.
+
+### 🚪 Log Out
+Allows you to log out of your account completely and securely on your current device. We will display a quick confirmation window before proceeding to prevent accidental logouts.
+
+### 🗑️ Delete Account
+:::danger[Danger Zone: Information Erasure]
+If you decide that you want to permanently delete all your traces and data from our servers, you can use this red button. For **extreme security reasons**, the system will request a double confirmation of identity and require you to enter your current password before processing the total and irreversible deletion of your information.
+:::
+
+---
+
+## 🧠 3. Section: Learn with Us
+
+At CaloriTrack, we firmly believe that education and scientific understanding are the true foundations for long-term success. We have integrated direct links to our official learning platforms:
+
+* **🎙️ Apple Podcasts & Spotify:** Tap these buttons to be automatically redirected to our official podcast *"Potencia tu vida, cuerpo sano, mente indestructible"*, where we dive deep into metabolism, conscious nutrition, and biohacking habits.
+* **▶️ YouTube Channel:** A direct access link to our explanatory videos, visual guides, and practical app tutorials.
+* **🧬 Science Articles:** Do you love to dive deeper into the "why" behind things? This button will take you straight to our core scientific blog, where we rigorously break down how your body truly works, ketosis, antinutrients, circadian rhythms, and more.
+
+---
+
+## ℹ️ 4. Section: About
+
+A space dedicated to community connection, initial navigation, and CaloriTrack's legal aspects.
+
+* **🚀 View Initial Onboarding:** If you skipped through the welcome screens too quickly when you first downloaded the app (the *Onboarding* process) and want to re-read CaloriTrack's core philosophy on real nutrition, circadian rhythms, and **Kai** (our AI coach), this button will temporarily display those interactive slides again.
+* **🌐 Social Media & Community:** Connect with our movement on Instagram, Facebook, Threads, and X (Twitter). You will also find the **"Share App"** feature, which allows you to quickly send an optimized download link to a friend or family member via WhatsApp, Messages, or your preferred networks.
+* **📚 About CaloriTrack & Routes:** Exclusive links to learn more about our founding history and access our official discussion forums on comprehensive nutrition.
+* **⚖️ Terms of Use & Privacy Policy:** All mandatory legal documentation detailing with absolute transparency how we protect your private information and the platform's community rules of use.
+
+---
+
+## 🛡️ 5. Legal Disclaimers & App Version (Footer)
+
+At the bottom of the profile screen, you will find two highly vital technical and ethical elements:
+
+:::warning[Mandatory Medical Disclaimer]
+CaloriTrack is a technological tool oriented toward comprehensive well-being and self-knowledge; therefore, **it does not constitute or replace in any way professional medical advice, diagnosis, or treatment**. It is essential that you consult with a certified physician or nutritionist before making drastic changes to your dietary plan or lifestyle.
+:::
+
+* **App Version & Updates:** We will explicitly display which technical version and internal build code you currently have installed (for example, `Version 1.0 (123)`). Additionally, our intelligent system will perform background checks in real-time with the App Store. If you are up to date, you will see a green text stating **"Updated"**. If we have released an improvement, you will see a blue **"Update available"** button that will redirect you straight to the Apple App Store to download it.
+
+---
+
+:::tip[Make it yours!]
+Explore, meticulously configure every section, and make CaloriTrack work exactly at the pace and rhythm of your life!
+:::-----
 Archivo: ./i18n/en/docusaurus-plugin-content-docs/current/06-perfil/faq-perfil.md
 ---
 # Nombre del archivo: i18n/en/docusaurus-plugin-content-docs/current/06-cuenta/faq-perfil.md
@@ -22891,7 +23459,7 @@ In the bottom half of your Profile, under the heading "Learn with us", you will 
 Archivo: ./i18n/en/docusaurus-plugin-content-docs/current.json
 {
   "__comentario_cabecera__": {
-    "message": "Nombre del archivo: current.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-15 | Versión: 1.5 | Descripción: Se añadieron las traducciones de las categorías 'Cuenta y Configuración' y 'Comunidad y Progreso' para el menú lateral en inglés, manteniendo la estructura exacta de llaves sin emojis para coincidir con la fuente en español.",
+    "message": "Nombre del archivo: current.json | Autor: Arturo Enriquez Betancourt con Jarvis | Fecha: 2026-05-16 | Versión: 1.6 | Descripción: Se añadieron las traducciones de las categorías 'Cuenta y Configuración', 'Comunidad y Progreso' y 'Glosario de Términos' para el menú lateral en inglés, manteniendo la estructura exacta de llaves sin emojis para coincidir con la fuente en español.",
     "description": "Control de versión y autoría adaptado a formato JSON"
   },
   "version.label": {
@@ -22953,6 +23521,14 @@ Archivo: ./i18n/en/docusaurus-plugin-content-docs/current.json
   "sidebar.tutorialSidebar.category.Comunidad y Progreso.link.generated-index.description": {
     "message": "Your consistency rewarded. Discover how to interpret your discipline heatmaps, the requirements to unlock badges, and how to connect with other users through our Support Circles.",
     "description": "The generated-index page description for category 'Comunidad y Progreso' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Glosario de Términos": {
+    "message": "Glossary of Terms",
+    "description": "The label for category 'Glosario de Términos' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Glosario de Términos.link.generated-index.description": {
+    "message": "Complete glossary containing technical biohacking terms and specific features of the CaloriTrack app.",
+    "description": "The generated-index page description for category 'Glosario de Términos' in sidebar 'tutorialSidebar'"
   }
 }-----
 Archivo: ./sidebars.js
