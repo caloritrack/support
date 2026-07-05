@@ -1,7 +1,16 @@
 Estructura de carpetas y archivos:
 |____README.md
 |____blog
+| |____2026-05-11-v1-3-9.md
 | |____2026-05-11-v1-4-0.md
+| |____2026-05-11-v1-4-1.md
+| |____2026-05-11-v1-4-2.md
+| |____2026-05-11-v1-4-3.md
+| |____2026-07-01-v2-0-0.md
+| |____2026-07-01-v2-0-1.md
+| |____2026-07-01-v2-0-2.md
+| |____2026-07-01-v2-1-0.md
+| |____2026-07-01-v2-1-1.md
 |____docs
 | |____01-salud
 | | |_____category_.json
@@ -1650,6 +1659,181 @@ Para gestionar esto, entra en "Notificaciones" dentro de tu Perfil. Allí verás
 
 ## Quiero aprender más, ¿dónde encuentro los recursos educativos de CaloriTrack?
 En la mitad inferior de tu Perfil, bajo el encabezado "Aprende con nosotros", encontrarás enlaces directos a nuestro contenido multimedia. Puedes acceder a nuestro canal de YouTube, escuchar nuestros episodios en Spotify o Apple Podcasts, y leer nuestros "Artículos de Ciencia" (Science Posts) directamente en nuestro blog.-----
+Archivo: ./blog/2026-07-01-v2-0-2.md
+---
+# Nombre del archivo: v2-0-2.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-06-13
+# Versión: 1.0
+# Descripción: Notas de la versión 2.0.2 de CaloriTrack. Actualización con nueva vista de sueño, app para Apple Watch, estado de ánimo y mejoras en nutrición y rendimiento.
+
+slug: v2-0-2
+title: "CaloriTrack v2.0.2: Optimiza tu descanso, tu nutrición y tu tiempo"
+authors: [arturo]
+tags: [sueno, apple-watch, bienestar, nutricion, rendimiento]
+date: 2026-06-13T10:00
+---
+
+¡Lleva tu bienestar al siguiente nivel! Hemos trabajado arduamente en esta actualización a la versión 2.0.2 para entregarte herramientas más inteligentes, precisas y conectadas con tu estilo de vida. 
+
+Conoce todo lo que hemos preparado para ti:
+
+### 💤 Descanso, Ayuno y Bienestar
+* **Revolucionamos tu forma de dormir:** Estrenamos una Nueva Vista de Sueño que va mucho más allá de medir tus fases (REM, profundo y ligero). Ahora cruzamos esta información con tu ritmo circadiano y tus hábitos de alimentación para ofrecerte un panorama completo de tu salud, entregándote acciones diarias, reales y personalizadas para que logres un descanso verdaderamente reparador.
+* **El control de tu ayuno, ahora en tu muñeca:** ¡Llegó la compatibilidad con Apple Watch! Ahora es mucho más práctico llevar tu estilo de vida. Hemos habilitado la pantalla para que puedas visualizar, iniciar y detener tus periodos de ayuno directamente desde tu reloj inteligente.
+* **Conexión mente-cuerpo más profunda:** Tu bienestar mental es nuestra prioridad. Incorporamos un nuevo indicador para registrar tu estado de ánimo de forma sencilla. Además, al terminar tu registro, descubrirás el nuevo Calendario Memento Mori, una poderosa herramienta visual diseñada para ayudarte a valorar cada día y mantenerte enfocado en lo que realmente importa.
+
+### 🥗 Decisiones nutricionales más rápidas e inteligentes
+* **Información al instante:** Ya puedes visualizar la cantidad de macronutrientes de cualquier alimento directamente desde los resultados de búsqueda.
+* **Mejores resultados:** Hemos perfeccionado el algoritmo de nuestros planes con déficit calórico para hacerlos más precisos y adaptados a tus objetivos.
+* **Mayor seguridad:** Corregimos la selección múltiple de alérgenos en la configuración de las dietas.
+
+### 🛠️ Rendimiento, Audio y Correcciones
+* **Relajación sin interrupciones:** Mejoramos drásticamente la reproducción de nuestras sesiones de Soundhealing. Hemos integrado servidores globales de alta potencia (CDN) para garantizarte una experiencia de audio fluida y de máxima calidad, sin importar en qué parte del mundo te encuentres.
+* **Correcciones y mejoras generales:** Para asegurarnos de que tu experiencia sea impecable, realizamos los siguientes ajustes técnicos:
+    * Solucionamos un error en la visualización de imágenes en la sección de sonidos ambientales.
+    * Optimizamos el motor de búsqueda en inglés para que todos los términos arrojen resultados precisos.
+    * Realizamos correcciones de idioma en las pantallas de registro y recuperación de contraseña.
+
+Actualiza ahora y descubre cómo cada pequeño hábito se conecta para transformar tu vida. ¡Tu mejor versión te está esperando!-----
+Archivo: ./blog/2026-05-11-v1-4-3.md
+---
+# Nombre del archivo: v1-4-3.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-22
+# Versión: 1.0
+# Descripción: Notas de la versión 1.4.3 de CaloriTrack. Actualización centrada en la sincronización circadiana, el calendario Memento Mori y mejoras significativas de rendimiento.
+
+slug: v1-4-3
+title: "CaloriTrack v1.4.3: Alineación biológica y rendimiento optimizado"
+authors: [arturo]
+tags: [ayuno, ritmo-circadiano, bienestar, rendimiento, ux]
+date: 2026-05-22T10:00
+---
+
+En esta actualización hemos llevado la experiencia de CaloriTrack a un nuevo nivel. Nos enfocamos en la alineación de tus hábitos con tu biología natural, introducimos herramientas de reflexión profunda y optimizamos el rendimiento general de la plataforma para que tu navegación sea impecable.
+
+Conoce todo lo nuevo que hemos preparado para ti:
+
+### 🧬 Sincronización Biológica y Ayuno
+* **Ayuno Estacional y Circadiano:** Revolucionamos la pantalla de ayuno para hacerla mucho más intuitiva y educativa. Ahora, la aplicación calcula tu ventana ideal de alimentación sincronizada estrictamente con tu ritmo circadiano local. Te indicamos el momento exacto del atardecer para promover una alimentación guiada por la luz del día, ayudando a optimizar tu metabolismo natural.
+* **Inmersión Circadiana Global:** Rediseñamos las cabeceras de la aplicación integrando un nuevo degradado dinámico. El entorno visual de CaloriTrack ahora se transforma en tiempo real para reflejar tu estado actual de ayuno y la fase biológica de tu día, brindándote una experiencia inmersiva en todas las pantallas.
+
+### 🧭 Perspectiva y Motivación
+* **Calendario Memento Mori:** Introducimos una poderosa herramienta visual y filosófica diseñada para darte perspectiva. El nuevo calendario Memento Mori te invita a reflexionar sobre el tiempo, motivándote a mantener el enfoque en tu bienestar y hacer que cada semana de tu vida verdaderamente cuente.
+* **Sistema de Logros Renovado:** Mejoramos la estética y la experiencia de nuestras insignias de logros. Tu esfuerzo, consistencia y disciplina ahora se celebran con un diseño visual mucho más pulido y gratificante.
+
+### ⚡ Experiencia de Usuario y Rendimiento
+* **Velocidad y Respuesta Optimizada:** Implementamos un sistema avanzado de caché y mejoras estructurales en el código que reducen drásticamente los tiempos de carga. Sentirás una navegación notablemente más rápida y fluida al interactuar con la aplicación.
+* **Refinamiento Visual y Contraste:** Ajustamos meticulosamente los contrastes de la interfaz, prestando especial atención a los módulos de Ayuno, Ritmo Circadiano y el Tip del Día. Esto garantiza una legibilidad perfecta y una experiencia visual cómoda bajo cualquier condición de iluminación.
+* **Gestión de Platillos Simplificada:** Perfeccionamos la experiencia de usuario al explorar y registrar platillos, logrando que el proceso de seguimiento nutricional sea más limpio, rápido y directo.
+
+Gracias por confiar en CaloriTrack para guiar tu bienestar integral. Seguimos trabajando para ofrecerte las mejores herramientas en tu camino hacia una salud óptima.-----
+Archivo: ./blog/2026-05-11-v1-3-9.md
+---
+# Nombre del archivo: v1-3-9.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-04-21
+# Versión: 1.0
+# Descripción: Notas de la versión 1.3.9 de CaloriTrack. Nuevas tarjetas de micronutrientes y antinutrientes, introducción de CaloriTrack Premium y mejoras en el inicio de sesión.
+
+slug: v1-3-9
+title: "CaloriTrack v1.3.9: Nutrición al detalle y la llegada de Premium"
+authors: [arturo]
+tags: [nutricion, dashboard, premium, ux]
+date: 2026-04-21T10:00
+---
+
+¡Gracias por usar CaloriTrack! En esta versión hemos añadido grandes novedades y mejorado tu experiencia para ayudarte a cumplir tus metas de salud:
+
+### ✨ Novedades y Nuevas Funciones
+* **Nueva Tarjeta de Micronutrientes:** Ahora puedes monitorear tus vitaminas y minerales esenciales consumidos frente a tu meta diaria.
+* **Nueva Tarjeta de Antinutrientes:** Mantén un control detallado de tu consumo para optimizar tu digestión y bienestar.
+* **Inspiración a tu medida:** ¿Necesitas motivación extra? Ahora puedes cambiar la frase del día de manera aleatoria con un solo toque.
+
+### 💎 Presentamos CaloriTrack Premium
+* **Flexibilidad y acceso gratuito:** Hemos estructurado nuestra app para darte más flexibilidad. Disfruta siempre gratis de nuestras funciones esenciales: seguimiento de Ayuno, Balance Hidroelectrolítico, Estado de Ánimo y Registro de Enfermedades.
+* **Lleva tu salud al siguiente nivel:** Actualiza a la versión Premium para desbloquear a Kai (tu asistente inteligente), los Planes de Alimentación personalizados y toda la sección Wellness.
+
+### 🛠️ Mejoras y Correcciones
+* **Carga de perfil impecable:** Solucionamos un inconveniente visual donde parecía que tu perfil no existía al registrarte o iniciar sesión por primera vez. ¡Tu información ahora carga a la perfección!
+* **Inicio de sesión más claro:** Mejoramos los mensajes de error en la pantalla de inicio de sesión para que sean mucho más claros y te ayuden a entrar sin problemas.
+
+¡Actualiza ahora y sigue cuidando de ti con CaloriTrack!-----
+Archivo: ./blog/2026-05-11-v1-4-2.md
+---
+# Nombre del archivo: v1-4-2.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-22
+# Versión: 1.0
+# Descripción: Notas de la versión 1.4.2 de CaloriTrack. Actualización centrada en la sincronización circadiana, el calendario Memento Mori y mejoras significativas de rendimiento.
+
+slug: v1-4-2
+title: "CaloriTrack v1.4.2: Alineación biológica y rendimiento optimizado"
+authors: [arturo]
+tags: [ayuno, ritmo-circadiano, bienestar, rendimiento, ux]
+date: 2026-05-22T10:00
+---
+
+En esta actualización hemos llevado la experiencia de CaloriTrack a un nuevo nivel. Nos enfocamos en la alineación de tus hábitos con tu biología natural, introducimos herramientas de reflexión profunda y optimizamos el rendimiento general de la plataforma para que tu navegación sea impecable.
+
+Conoce todo lo nuevo que hemos preparado para ti:
+
+### 🧬 Sincronización Biológica y Ayuno
+* **Ayuno Estacional y Circadiano:** Revolucionamos la pantalla de ayuno para hacerla mucho más intuitiva y educativa. Ahora, la aplicación calcula tu ventana ideal de alimentación sincronizada estrictamente con tu ritmo circadiano local. Te indicamos el momento exacto del atardecer para promover una alimentación guiada por la luz del día, ayudando a optimizar tu metabolismo natural.
+* **Inmersión Circadiana Global:** Rediseñamos las cabeceras de la aplicación integrando un nuevo degradado dinámico. El entorno visual de CaloriTrack ahora se transforma en tiempo real para reflejar tu estado actual de ayuno y la fase biológica de tu día, brindándote una experiencia inmersiva en todas las pantallas.
+
+### 🧭 Perspectiva y Motivación
+* **Calendario Memento Mori:** Introducimos una poderosa herramienta visual y filosófica diseñada para darte perspectiva. El nuevo calendario Memento Mori te invita a reflexionar sobre el tiempo, motivándote a mantener el enfoque en tu bienestar y hacer que cada semana de tu vida verdaderamente cuente.
+* **Sistema de Logros Renovado:** Mejoramos la estética y la experiencia de nuestras insignias de logros. Tu esfuerzo, consistencia y disciplina ahora se celebran con un diseño visual mucho más pulido y gratificante.
+
+### ⚡ Experiencia de Usuario y Rendimiento
+* **Velocidad y Respuesta Optimizada:** Implementamos un sistema avanzado de caché y mejoras estructurales en el código que reducen drásticamente los tiempos de carga. Sentirás una navegación notablemente más rápida y fluida al interactuar con la aplicación.
+* **Refinamiento Visual y Contraste:** Ajustamos meticulosamente los contrastes de la interfaz, prestando especial atención a los módulos de Ayuno, Ritmo Circadiano y el Tip del Día. Esto garantiza una legibilidad perfecta y una experiencia visual cómoda bajo cualquier condición de iluminación.
+* **Gestión de Platillos Simplificada:** Perfeccionamos la experiencia de usuario al explorar y registrar platillos, logrando que el proceso de seguimiento nutricional sea más limpio, rápido y directo.
+
+Gracias por confiar en CaloriTrack para guiar tu bienestar integral. Seguimos trabajando para ofrecerte las mejores herramientas en tu camino hacia una salud óptima.-----
+Archivo: ./blog/2026-05-11-v1-4-1.md
+---
+# Nombre del archivo: v1-4-1.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-15
+# Versión: 1.0
+# Descripción: Notas de la versión 1.4.1 de CaloriTrack. Ayuno sincronizado con ritmo circadiano, nueva tarjeta de plan alimenticio, mejoras en Breathwork y filosofía Zero-Tracking.
+
+slug: v1-4-1
+title: "CaloriTrack v1.4.1: Sincronización biológica y privacidad total"
+authors: [arturo]
+tags: [ayuno, ritmo-circadiano, dashboard, breathwork, privacidad]
+date: 2026-05-15T10:00
+---
+
+¡Nueva Actualización de CaloriTrack! Seguimos trabajando con pasión para ofrecerte la mejor experiencia en tu camino hacia un estilo de vida más saludable. En esta versión, hemos incluido herramientas poderosas para sincronizar tu biología, mejorar tu concentración y, sobre todo, proteger tu privacidad al máximo.
+
+Esto es todo lo nuevo que hemos preparado para ti:
+
+### 🧬 Sincronización Biológica y Nutrición
+* **Ayuno Sincronizado con tu Ritmo Circadiano:** Conecta con tu biología natural. Ahora, la tarjeta de ayuno en tu dashboard principal te muestra el tiempo transcurrido de tu fase de alimentación y el tiempo exacto que falta para la puesta de sol. Fomentamos un enfoque estacional: aliméntate mientras haya luz solar y permite que tu cuerpo descanse y se repare cuando el sol se oculta.
+* **Tu Plan Alimenticio a la Vista:** Añadimos una nueva tarjeta dedicada exclusivamente a tu plan alimenticio directamente en el dashboard principal. Todo lo que necesitas para cumplir tus metas nutricionales está ahora a un solo toque de distancia.
+
+### 🧘 Breathwork y Soporte
+* **Mejoras en tus Sesiones de Respiración (Breathwork):** Escuchamos tus comentarios para hacer tus rutinas más fluidas:
+    * *Pausa a tu ritmo:* Hemos integrado un nuevo botón de pausa en el reproductor de respiración. Toma el control total sin perder tu progreso.
+    * *Enfoque sin distracciones:* Si estás reproduciendo un audio de Soundhealing de fondo y decides iniciar una respiración, el mini-reproductor se minimizará automáticamente para no obstruir tu pantalla ni tus controles.
+* **Nuevo Centro de Ayuda:** Estrenamos una nueva sección con guías detalladas y preguntas frecuentes. Aprende a sacar el máximo provecho de todas las herramientas que CaloriTrack tiene para ofrecerte.
+
+### 🛡️ Privacidad Total (Filosofía Zero-Tracking)
+* Estamos firmemente en contra de las prácticas de rastreo y la venta de datos personales. Por ello, hemos desarrollado nuestro propio motor interno para registrar estadísticas de uso 100% anónimas.
+* **Solo vemos números, no identidades:** Esto nos ayuda a entender qué funciones te gustan más y a detectar errores para mejorar la app, pero tu identidad está completamente blindada. No sabemos quién eres, y tu información jamás será compartida con terceros para venderte publicidad. Tu salud y tu privacidad son solo tuyas.
+
+### ⚡ Optimización y Experiencia de Usuario (UX)
+* **Carga Ultrarrápida:** Optimizamos la memoria caché para que tus audios de Soundhealing carguen a la velocidad de la luz.
+* **Balance Hidroelectrolítico:** Mejoramos el diseño y la interacción visual en la tarjeta de hidratación para que registrar tus electrolitos sea más intuitivo.
+* **Lectura Perfecta:** Continuamos puliendo el contraste visual entre textos y fondos en toda la app para cuidar tu vista.
+
+### 🛠️ Corrección de Errores
+* Solucionamos un inconveniente que afectaba el inicio de sesión fluido con Apple Sign-In.
+* Corregimos y refinamos etiquetas de idioma, así como la redacción en los planes alimenticios para una experiencia impecable.-----
 Archivo: ./blog/2026-05-11-v1-4-0.md
 ---
 # Nombre del archivo: v1-4-0.mdx
@@ -1683,6 +1867,144 @@ date: 2026-05-11T10:00
 * **Estabilidad visual y técnica:** Corregimos los estilos en modo claro y oscuro para las tarjetas de búsqueda de alimentos y otras pantallas. Además, optimizamos el manejo de imágenes de platillos, los sonidos de la app y el registro de nutrición para un funcionamiento fluido.
 
 Agradecemos profundamente toda la retroalimentación recibida. Para nosotros, escuchar a nuestros clientes es lo más importante y el motor principal detrás de cada mejora. ¡Actualiza ahora y disfruta de la mejor versión de nuestra app!-----
+Archivo: ./blog/2026-07-01-v2-0-0.md
+---
+# Nombre del archivo: v2-0-0.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-05-29
+# Versión: 1.0
+# Descripción: Notas de la versión 2.0 de CaloriTrack. Nuevo motor de planes alimenticios, personalización total del Dashboard y mejoras en la experiencia de usuario (onboarding y accesibilidad).
+
+slug: v2-0-0
+title: "CaloriTrack v2.0: Más inteligente, más tuyo"
+authors: [arturo]
+tags: [planes, nutricion, dashboard, ux, accesibilidad]
+date: 2026-05-29T10:00
+---
+
+Te presentamos CaloriTrack 2.0: Más inteligente, más tuyo. Hemos escuchado tus comentarios y trabajado arduamente para llevar la aplicación al siguiente nivel. Esta actualización incluye una transformación completa en nuestra inteligencia nutricional y nuevas herramientas para personalizar tu experiencia diaria.
+
+Conoce lo que hemos preparado para ti:
+
+### 🥗 Nuevo Motor de Planes Alimenticios 2.0
+Hemos rediseñado desde cero la forma en que creamos tu ruta nutricional para que sea más precisa que nunca. Ahora disfrutarás de:
+* **Precisión calórica absoluta:** Optimizamos nuestros algoritmos para ofrecerte metas exactas, eliminando cualquier inconsistencia en los cálculos.
+* **Flexibilidad de objetivos:** Mayor capacidad para adaptar diferentes tipos de dietas a tus metas personales.
+* **Restricciones impecables:** Un manejo mucho más inteligente y estricto de tus alergias y exclusiones alimenticias.
+* **Control de fechas:** Ahora tienes el poder de elegir el día exacto en el que deseas comenzar tu plan.
+* **Imprime tu plan:** Agregamos la funcionalidad para generar, descargar e imprimir tu menú completo.
+
+### ✨ Tu Dashboard, a tu manera
+* **Personalización total:** Ahora tienes el control de tu pantalla principal. Puedes ocultar, mostrar y reorganizar las tarjetas de métricas para enfocarte solo en lo que más te importa.
+* **Conoce tu espacio:** Incorporamos un recorrido guiado directamente en el Dashboard para enseñarte a sacarle el máximo provecho a tus herramientas diarias.
+
+### 🎨 Mejoras en la Experiencia de Usuario
+* **Nueva bienvenida:** Un recorrido de inicio (onboarding) renovado que te explicará paso a paso las 5 secciones principales de la aplicación.
+* **Ritmo Circadiano optimizado:** Realizamos ajustes visuales en tu reloj biológico para que sea mucho más fácil y rápido comprender tus fases de energía a lo largo del día.
+* **Accesibilidad mejorada:** Refinamos el contraste de los botones en toda la aplicación, garantizando una lectura perfecta y cómoda, tanto en el modo claro como en el modo oscuro.
+
+Gracias por formar parte de la comunidad CaloriTrack. ¡Actualiza ahora y sigue avanzando hacia tu bienestar!-----
+Archivo: ./blog/2026-07-01-v2-1-1.md
+---
+# Nombre del archivo: v2-1-1.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-07-04
+# Versión: 1.0
+# Descripción: Notas de la versión 2.1.1 de Caloritrack. Actualización centrada en flexibilidad de platillos, integración con Apple Health y precisión en recetas.
+
+slug: v2-1-1
+title: "CaloriTrack v2.1.1: Más flexible, preciso y conectado que nunca"
+authors: [arturo]
+tags: [nutricion, integraciones, planes, cuenta-ajustes]
+date: 2026-07-04T10:00
+---
+
+¡Descubre CaloriTrack 2.1.1! Trabajamos constantemente para ofrecerte la herramienta de bienestar más inteligente y fácil de usar. En esta nueva actualización, hemos escuchado tus comentarios para integrar herramientas que adaptan la aplicación a tu estilo de vida, garantizando que alcances tus metas sin fricciones. 
+
+Conoce las novedades que preparamos para ti:
+
+### ✨ Novedades y Flexibilidad
+* **Sustitución Inteligente de Platillos:** ¿Tienes antojo de otra cosa? Ahora puedes cambiar un platillo por una alternativa similar directamente desde el menú de tu plan. Mantén tu progreso intacto y disfruta de la flexibilidad que necesitas.
+* **Integración Universal con Apple Health:** Tu ecosistema de salud, centralizado. Si tienes un dispositivo, reloj o báscula que no se sincroniza directamente con nosotros pero sí con Apple Health, ahora podemos extraer esos datos automáticamente. CaloriTrack trabaja en perfecta armonía con tus herramientas favoritas.
+
+### 🥗 Optimización de Planes y Nutrición
+* **Precisión Absoluta en tus Recetas:** Hemos ajustado los cálculos de porciones máximas y gramos en nuestro catálogo. Olvídate de medidas irreales; ahora cada sugerencia de platillo es exacta, lógica y lista para prepararse.
+* **Plan de Ganancia de Peso Optimizado:** Calibramos nuestro motor de nutrición para hacer que el plan de ganancia de peso sea más eficiente, respaldando tu crecimiento muscular de forma saludable y controlada.
+* **Información Científica Clara:** Refinamos las traducciones al español en nuestro avanzado módulo de antinutrientes, asegurando que recibas educación nutricional con total claridad y exactitud.
+
+### 🎨 Mejoras en la Experiencia de Usuario (UX)
+* **Selección de Objetivos Más Clara:** Elegir tu meta ideal nunca fue tan sencillo. Rediseñamos y detallamos las descripciones de todos nuestros planes alimenticios para que inicies tu camino con total seguridad.
+* **Experiencia Continua y Sin Interrupciones:** Mejoramos nuestra infraestructura de inicio de sesión. Si cambias de dispositivo iPhone, tu acceso seguro mediante Apple Sign-In funcionará a la perfección desde el primer instante.
+
+Actualiza hoy mismo y sigue transformando tu salud con la mejor tecnología a tu alcance. ¡Gracias por ser parte de nuestra comunidad!-----
+Archivo: ./blog/2026-07-01-v2-0-1.md
+---
+# Nombre del archivo: v2-0-1.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-06-03
+# Versión: 1.0
+# Descripción: Notas de la versión 2.0.1 de CaloriTrack. Búsqueda inteligente con IA, historial visual, rediseño del resumen semanal y mejoras en la experiencia de usuario.
+
+slug: v2-0-1
+title: "CaloriTrack v2.0.1: Registro más rápido, inteligente y visual"
+authors: [arturo]
+tags: [registro-alimentos, ai, progreso, bienestar, ux]
+date: 2026-06-03T10:00
+---
+
+En esta actualización nos hemos enfocado en hacer que tu experiencia de registro sea más rápida, inteligente y visualmente agradable.
+
+Conoce todo lo nuevo que hemos preparado para ti:
+
+### 🔍 Búsqueda de Alimentos Inteligente
+* **Buscador tolerante a errores:** Nuestro nuevo motor de búsqueda impulsado por IA ahora entiende lo que quieres decir, entregando resultados precisos incluso si hay pequeños errores ortográficos.
+* **Información nutricional inmediata:** Ahora puedes visualizar las calorías totales o por unidad de medida directamente desde la lista de resultados, ahorrándote tiempo al elegir tus alimentos.
+* **Historial optimizado:** Limpiamos los alimentos duplicados en tus búsquedas recientes y añadimos sus fotografías para que registrar tus comidas frecuentes sea un proceso visual y al instante.
+
+### 📊 Tu Progreso, Más Claro que Nunca
+* **Resumen semanal rediseñado:** Mejoramos la visualización de tu página de estadísticas para que analizar tu consumo de calorías y macronutrientes de la semana sea mucho más intuitivo.
+* **Control total de tus objetivos:** Ajustar y personalizar tus metas de macronutrientes ahora es un proceso más flexible y preciso.
+
+### 🧘 Mejoras de Bienestar y Experiencia de Usuario
+* **Interfaz de bienestar refinada:** Ajustamos el diseño de las sesiones de respiración y Soundhealing para garantizar que las guías y descripciones se lean por completo y sin interrupciones.
+* **Recorridos fluidos:** Corregimos los ajustes de idioma en los tutoriales interactivos y renovamos nuestra introducción para guiar a los nuevos usuarios paso a paso.
+* **Estabilidad visual:** Resolvimos problemas de conexión que impedían la carga de ciertas imágenes, garantizando una navegación ininterrumpida.
+
+Gracias por usar CaloriTrack. Si disfrutas la aplicación, te agradeceríamos mucho que nos dejaras una reseña.-----
+Archivo: ./blog/2026-07-01-v2-1-0.md
+---
+# Nombre del archivo: v2-1-0.mdx
+# Autor: Arturo Enriquez Betancourt con Jarvis
+# Fecha: 2026-06-16
+# Versión: 1.0
+# Descripción: Notas de la versión 2.1.0 de CaloriTrack. Actualización enfocada en el análisis detallado del sueño, la relación entre cena y descanso, y herramientas ágiles para el registro de alimentos.
+
+slug: v2-1-0
+title: "CaloriTrack v2.1.0: Conoce tu descanso y agiliza tu nutrición"
+authors: [arturo]
+tags: [sueno, nutricion, registro-alimentos, ux]
+date: 2026-06-16T10:00
+---
+
+¡Tu viaje hacia un cuerpo y mente saludables acaba de subir de nivel! En esta actualización nos enfocamos en darte información más profunda sobre tu descanso y herramientas más ágiles para tu nutrición. 
+
+Mira todo lo nuevo que preparamos para ti:
+
+### 💤 Descubre los Secretos de tu Descanso
+* **Análisis de fases de sueño:** Tu pantalla de sueño ha evolucionado. Mejoramos la precisión de tu gráfica y ahora la app te avisa exactamente si te faltó tiempo en alguna fase específica (Ligero, Profundo, REM) para que sepas qué necesitas para despertar al 100%.
+* **¿Tu Cena Afecta cómo Duermes?:** En tu cuerpo, todo está conectado. Ahora enlazamos la hora de tu última comida (el inicio de tu ayuno) con tu análisis de sueño. Descubre visualmente cómo los horarios de tus alimentos impactan directamente en tu calidad de descanso. 
+* **Tendencias impecables:** Refinamos tu gráfica de tendencias semanales para que el seguimiento de tu progreso sea mucho más claro.
+
+### 🥗 Nutrición Ágil y Eficiente
+* **Tu Platillo Ideal en Segundos:** Reimaginamos por completo la galería de platillos. Ahora es mucho más visual, destacando los nombres de forma clara. Filtra rápidamente por Desayuno, Comida o Cena, y selecciona tu tipo de dieta de la forma más intuitiva posible.
+* **Registro de Alimentos Ultrarrápido:** ¿Te encantó lo que comiste ayer o ya sabes qué comerás mañana? Agregamos la magia de los atajos: ahora puedes copiar un solo alimento directamente a tu día anterior o siguiente con un solo toque, ahorrando tiempo y manteniendo tu racha intacta.
+
+### 🛠️ Detalles que Enamoran y Correcciones
+* **Mejoras continuas:** Seguimos puliendo la app en cada rincón, incluyendo mejoras en las traducciones de tu lista del súper para brindarte una experiencia cada vez más fluida.
+* **Corrección de formato de hora:** Ah, ¡y adiós al molesto error que mostraba PM al despertar en algunos dispositivos!
+
+### 🤝 Construimos CaloriTrack Contigo
+Muchas de estas mejoras nacen directamente de ustedes. Nos encanta escuchar tus opiniones y sugerencias; son el motor que hace que esta app siga creciendo. ¡Déjanos una reseña en la tienda y cuéntanos qué te gustaría ver en la próxima versión!-----
 Archivo: ./README.md
 # Website
 
@@ -21296,9 +21618,9 @@ Archivo: ./package.json
 Archivo: ./docusaurus.config.js
 // Nombre del archivo: docusaurus.config.js
 // Autor: Arturo Enriquez Betancourt con Jarvis
-// Fecha: 2026-05-15
-// Versión: 1.13
-// Descripción: Ajuste en la estructura del footer. Se agregó un separador minimalista y se integró el disclaimer en la sección superior (menos negra) debajo de los enlaces, dejando únicamente los derechos reservados en la pleca negra inferior.
+// Fecha: 2026-07-04
+// Versión: 1.15
+// Descripción: Configuración general del sitio de soporte de CaloriTrack. Se incorpora la estructura oficial del script de Cloudflare Web Analytics específico para el subdominio, garantizando medición asíncrona (impacto cero en performance) y compatibilidad con SPA (React).
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
@@ -21345,6 +21667,16 @@ const config = {
       en: { label: 'English' },
     },
   },
+
+  // --- INYECCIÓN DE ANALÍTICA ULTRALIGERA CON IMPACTO CERO EN PERFORMANCE ---
+  // Estructura oficial para Cloudflare Web Analytics (SPA compatible)
+  scripts: [
+    {
+      src: 'https://static.cloudflareinsights.com/beacon.min.js',
+      defer: true,
+      'data-cf-beacon': '{"token": "91e2b441570d4c759ef194c50ec6453b"}',
+    },
+  ],
 
   presets: [
     [

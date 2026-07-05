@@ -1,8 +1,8 @@
 // Nombre del archivo: docusaurus.config.js
 // Autor: Arturo Enriquez Betancourt con Jarvis
-// Fecha: 2026-05-15
-// Versión: 1.13
-// Descripción: Ajuste en la estructura del footer. Se agregó un separador minimalista y se integró el disclaimer en la sección superior (menos negra) debajo de los enlaces, dejando únicamente los derechos reservados en la pleca negra inferior.
+// Fecha: 2026-07-04
+// Versión: 1.15
+// Descripción: Configuración general del sitio de soporte de CaloriTrack. Se incorpora la estructura oficial del script de Cloudflare Web Analytics específico para el subdominio, garantizando medición asíncrona (impacto cero en performance) y compatibilidad con SPA (React).
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
@@ -49,6 +49,16 @@ const config = {
       en: { label: 'English' },
     },
   },
+
+  // --- INYECCIÓN DE ANALÍTICA ULTRALIGERA CON IMPACTO CERO EN PERFORMANCE ---
+  // Estructura oficial para Cloudflare Web Analytics (SPA compatible)
+  scripts: [
+    {
+      src: 'https://static.cloudflareinsights.com/beacon.min.js',
+      defer: true,
+      'data-cf-beacon': '{"token": "91e2b441570d4c759ef194c50ec6453b"}',
+    },
+  ],
 
   presets: [
     [
