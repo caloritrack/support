@@ -1,4 +1,11 @@
 {
+  "__comentario_cabecera__": {
+    "archivo": "package.json",
+    "autor": "Arturo Enriquez Betancourt con Jarvis",
+    "fecha": "2026-11-17 15:39",
+    "version": "1.2 (Adición de override para uuid ^11.1.1 mitigando CVE-2026-41907 y eliminando alertas moderate)",
+    "descripcion": "Manifiesto principal de dependencias, scripts de compilación y reglas de resolución (overrides) del sitio de soporte de CaloriTrack en Docusaurus. En esta versión se suma uuid (^11.1.1, última rama compatible con CommonJS para sockjs) al bloque overrides junto con proxy-addr, serialize-javascript, shell-quote, tinypool y websocket-driver, dejando en cero las vulnerabilidades críticas, moderadas y bajas."
+  },
   "name": ".",
   "version": "0.0.0",
   "private": true,
@@ -14,9 +21,10 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@docusaurus/core": "3.10.1",
-    "@docusaurus/faster": "3.10.1",
-    "@docusaurus/preset-classic": "3.10.1",
+    "@docusaurus/core": "3.10.2",
+    "@docusaurus/faster": "3.10.2",
+    "@docusaurus/preset-classic": "3.10.2",
+    "@easyops-cn/docusaurus-search-local": "^0.55.3",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
     "prism-react-renderer": "^2.3.0",
@@ -24,8 +32,16 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.10.1",
-    "@docusaurus/types": "3.10.1"
+    "@docusaurus/module-type-aliases": "3.10.2",
+    "@docusaurus/types": "3.10.2"
+  },
+  "overrides": {
+    "proxy-addr": "^2.0.8",
+    "serialize-javascript": "^7.1.4",
+    "shell-quote": "^1.12.0",
+    "tinypool": "^2.2.0",
+    "uuid": "^11.1.1",
+    "websocket-driver": "^0.7.5"
   },
   "browserslist": {
     "production": [
